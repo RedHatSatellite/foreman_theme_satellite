@@ -3,6 +3,17 @@ require_relative '../../../lib/foreman_theme_satellite/documentation'
 module DocumentationControllerBranding
   extend ActiveSupport::Concern
 
+  def external_url(type:, options: {})
+    return super unless type == 'upgrade'
+
+    case options[:section]
+    when 'documentation'
+      ForemanThemeSatellite.unversioned_documentation_root
+    when 'helper'
+      "#{ForemanThemeSatellite.documentation_server}/labsinfo/satelliteupgradehelper"
+    end
+  end
+
   def documentation_url(section = nil, options = {})
     url = ''
     unless section.nil?

@@ -18,6 +18,7 @@ module ForemanThemeSatellite
       SettingRegistry.prepend SettingRegistryBranding
     end
 
+    # rubocop:disable Metrics/BlockLength
     initializer 'foreman_theme_satellite.register_plugin', :before=> :finisher_hook do |app|
       Foreman::Plugin.register :foreman_theme_satellite do
         requires_foreman '>= 3.7.0'
@@ -53,8 +54,19 @@ module ForemanThemeSatellite
 
         extend_rabl_template 'api/v2/home/status', 'api/v2/home/status_extensions'
         extend_template_helpers ForemanThemeSatellite::RendererMethods
+
+        divider :admin_menu, caption: N_('Upgrade'), parent: :administer_menu
+        menu :admin_menu, :general_documentation,
+          url_hash: { controller: :links, action: :show, type: :upgrade, section: :documentation },
+          caption: N_('Documentation'),
+          parent: :administer_menu
+        menu :admin_menu, :upgrade_helper,
+          url_hash: { controller: :links, action: :show, type: :upgrade, section: :helper },
+          caption: N_('Upgrade helper'),
+          parent: :administer_menu
       end
     end
+    # rubocop:enable Metrics/BlockLength
 
     initializer 'foreman_theme_satellite.load_app_instance_data' do |app|
       ForemanThemeSatellite::Engine.paths['db/migrate'].existent.each do |path|
@@ -148,7 +160,13 @@ module ForemanThemeSatellite
 
   def self.documentation_root
     @documentation_root ||= begin
-      "#{documentation_server}/documentation/en-us/red_hat_satellite/#{documentation_version}/html"
+      "#{unversioned_documentation_root}/#{documentation_version}/html"
+    end
+  end
+
+  def self.unversioned_documentation_root
+    @unversioned_documentation_root ||= begin
+      "#{documentation_server}/documentation/en-us/red_hat_satellite"
     end
   end
 
