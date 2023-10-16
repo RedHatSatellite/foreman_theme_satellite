@@ -1,3 +1,5 @@
+require 'rake/testtask'
+
 # Tasks
 namespace :foreman_theme_satellite do
   namespace :example do
@@ -12,10 +14,12 @@ end
 namespace :test do
   desc 'Test ForemanThemeSatellite'
   Rake::TestTask.new(:foreman_theme_satellite) do |t|
-    test_dir = File.join(File.dirname(__FILE__), '../..', 'test')
-    t.libs << ['test', test_dir]
+    test_dir = File.expand_path('../../test', __dir__)
+    t.libs << 'test'
+    t.libs << test_dir
     t.pattern = "#{test_dir}/**/*_test.rb"
     t.verbose = true
+    t.warning = false
   end
 end
 
@@ -36,14 +40,9 @@ namespace :foreman_theme_satellite do
   end
 end
 
-Rake::Task[:test].enhance do
-  Rake::Task['test:foreman_theme_satellite'].invoke
-end
+Rake::Task[:test].enhance ['test:foreman_theme_satellite']
 
 load 'tasks/jenkins.rake'
 if Rake::Task.task_defined?(:'jenkins:unit')
-  Rake::Task['jenkins:unit'].enhance do
-    Rake::Task['test:foreman_theme_satellite'].invoke
-    Rake::Task['foreman_theme_satellite:rubocop'].invoke
-  end
+  Rake::Task['jenkins:unit'].enhance ['test:foreman_theme_satellite', 'foreman_theme_satellite:rubocop']
 end
