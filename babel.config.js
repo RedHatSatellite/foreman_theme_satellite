@@ -1,3 +1,3 @@
- module.exports = {
-   presets: ['@theforeman/builder/babel'],
+module.exports = {
+  presets: ['@theforeman/builder/babel'],
 };
