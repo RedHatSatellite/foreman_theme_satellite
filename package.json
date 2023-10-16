@@ -1,0 +1,31 @@
+{
+  "name": "foreman_theme_satellite",
+  "version": "13.1.0",
+  "description": "Satellite theme =============",
+  "main": "index.js",
+  "scripts": {
+    "lint": "tfm-lint --plugin -d /webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedHatSatellite/foreman_theme_satellite.git"
+  },
+  "bugs": {
+    "url": "http://bugzilla.redhat.com/"
+  },
+  "peerDependencies": {
+    "@theforeman/vendor": "^4.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@theforeman/builder": "^4.12.0",
+    "@theforeman/eslint-plugin-foreman": "^4.12.0",
+    "@theforeman/test": "^4.12.0",
+    "@theforeman/vendor-dev": "^4.12.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "prettier": "^2.0.5",
+    "stylelint": "^9.3.0",
+    "stylelint-config-standard": "^18.0.0"
+  }
+}

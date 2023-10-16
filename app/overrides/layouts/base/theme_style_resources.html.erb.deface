@@ -1,0 +1,3 @@
+<!-- insert_bottom 'head' -->
+<%= favicon_link_tag "foreman_theme_satellite/favicon.ico"%>
+<%= stylesheet_link_tag('foreman_theme_satellite/theme') %>
