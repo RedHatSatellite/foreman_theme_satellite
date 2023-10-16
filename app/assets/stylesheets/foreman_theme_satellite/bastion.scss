@@ -1,0 +1,5 @@
+.bastion .dropdown-menu>.active>a, .bastion .dropdown-menu>.active>a:hover, .bastion .dropdown-menu>.active>a:focus {
+  border: 1px solid #999999/*{borderColorHover}*/ !important;
+  background: #dadada/*{bgColorHover}*/ 50%/*{bgHoverXPos}*/ 50%/*{bgHoverYPos}*/ repeat-x/*{bgHoverRepeat}*/;
+  font-weight: normal/*{fwDefault}*/;
+}

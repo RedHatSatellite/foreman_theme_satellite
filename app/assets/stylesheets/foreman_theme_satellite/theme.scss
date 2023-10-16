@@ -1,0 +1,14 @@
+@import "foreman_theme_satellite/bastion.scss";
+@import "foreman_theme_satellite/application_colors";
+@import "foreman_theme_satellite/login.scss";
+@import "foreman_theme_satellite/external_logout.scss";
+@import "foreman_theme_satellite/patternfly_and_overrides.scss";
+@import "foreman_theme_satellite/topbar.scss";
+@import "foreman_theme_satellite/wizard.scss";
+@import "foreman_theme_satellite/provisioning_templates.scss";
+
+.avatar{
+  &.small{
+    margin: -5px 5px 0 0;
+  }
+}

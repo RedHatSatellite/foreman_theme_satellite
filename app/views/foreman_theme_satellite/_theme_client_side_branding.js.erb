@@ -1,0 +1,63 @@
+<% require_relative '../../../lib/foreman_theme_satellite/branded_words' %>
+
+var branded_words = []
+<% ForemanThemeSatellite::FOREMAN_BRAND.map do |exp, replace|  %>
+branded_words.push([new RegExp("<%= exp.source.gsub('\\', '\\\\\\') %>", "g"), "<%= replace %>"]);
+<% end %>
+
+function brand_string(string){
+  result = string;
+  branded_words.some(function(tuple){
+    var regex = tuple[0];
+    var value = tuple[1];
+
+    parts = string.split(regex)
+    if (parts.length > 1) {
+      parts = parts.map(function(part) {
+        return brand_string(part)
+      })
+      result = parts.join(value)
+    }
+    return parts.length > 1;
+  });
+  return result;
+}
+
+tfm.i18n.jed.original_dcnp = tfm.i18n.jed.dcnpgettext
+
+tfm.i18n.jed.dcnpgettext = function( domain, context, singular_key, plural_key, val ) {
+  translated = tfm.i18n.jed.original_dcnp( domain, context, singular_key, plural_key, val );
+
+  return brand_string(translated);
+}
+
+if (typeof(angular) !== 'undefined') {
+  angular.module('Bastion.i18n').config([ '$provide', function($provide) {
+    $provide.decorator('translate', [
+      '$delegate',
+      function ($delegate) {
+        var originalTranslate = $delegate;
+        return function(str) {
+          originalStr = originalTranslate(str);
+          return brand_string(originalStr);
+        }
+      }
+    ]);
+  }]);
+}
+
+if (typeof(angular) !== 'undefined') {
+  angular.module('gettext').config([ '$provide', function($provide) {
+    $provide.decorator('gettextCatalog', [
+      '$delegate',
+      function ($delegate) {
+        var originalTranslate = $delegate.getString;
+        $delegate.getString = function(str) {
+          originalStr = originalTranslate.apply($delegate, [str]);
+          return brand_string(originalStr);
+        }
+        return $delegate;
+      }
+    ]);
+  }]);
+}

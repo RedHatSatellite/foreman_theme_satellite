@@ -1,0 +1,7 @@
+<!-- insert_after 'body script:last' -->
+<%= react_component(
+      'Helmet',
+      titleTemplate: 'Red Hat Satellite - %s',
+      defaultTitle: 'Red Hat Satellite'
+    )
+%>

@@ -1,0 +1,11 @@
+.pf-c-page .pf-c-masthead {
+  .pf-c-masthead__brand {
+    height: inherit;
+  }
+
+  .navbar-brand-txt {
+    display: none !important;
+  }
+  background: var(--pf-c-page__header--BackgroundColor);
+  background-size: cover;
+}

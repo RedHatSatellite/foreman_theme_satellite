@@ -1,0 +1,13 @@
+@import 'foreman_theme_satellite/login.scss';
+
+.external-logout {
+  background-image: $bg-img;
+  background-size: $bg-size;
+  background-color: $bg-color;
+  background-repeat: $bg-repeat;
+  
+  header img.brand {
+    margin: $brand-margin !important;
+    max-width: $brand-max-width !important;
+  }
+}

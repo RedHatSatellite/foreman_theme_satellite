@@ -1,0 +1,12 @@
+.login-pf body {
+  background: #202020;
+}
+.auto-refresh.on {
+  color: #393F44;
+}
+.login-pf body .login-page {
+  background: #393F44;
+}
+.stacked-content.tab-content {
+  border: 1px solid #474C51;
+}

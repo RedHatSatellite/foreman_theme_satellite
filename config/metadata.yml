@@ -1,0 +1,4 @@
+---
+version: '6.12.000'
+documentation_server: 'https://access.redhat.com'
+documentation_version: '6.12'
