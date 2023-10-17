@@ -103,7 +103,6 @@ module ForemanThemeSatellite
         assets_to_override.each { |path| Rails.application.config.assets.paths.unshift path }
         # Include your monkey-patches over here
         ::ForemanGoogle::GCE.send(:prepend, GCE::ClassMethods) if Foreman::Plugin.installed?("foreman_google")
-        ComputeResource.singleton_class.send :prepend, ComputeResourceBranding::ClassMethods
         require 'rss_checker_branding'
         UINotifications::RssNotificationsChecker.send :prepend, RssCheckerBranding
         Foreman::Model::Openstack.send :include, Openstack
