@@ -223,7 +223,7 @@ Later we will be able to register a `Fill` component in our global
 [`index.js`](https://github.com/RedHatSatellite/foreman_theme_satellite/blob/develop/webpack/index.js)
 file.
 
-Example slot [foreman](https://github.com/RedHatSatellite/foreman/blob/6ed930afb09f340ccc0106512df53e2874ba37a5/webpack/assets/javascripts/react_app/components/HostDetails/index.js#L140) code:
+Example slot [foreman](https://github.com/theforeman/foreman/blob/6ed930afb09f340ccc0106512df53e2874ba37a5/webpack/assets/javascripts/react_app/components/HostDetails/index.js#L140) code:
 
 ``` jsx
 <div className="host-details-tab-item">
@@ -254,7 +254,7 @@ server data as props to the component.
 It is advised to design such extension points with helper functions, to make the
 process of replacing props easier.
 
-For example in [`foreman`](https://github.com/RedHatSatellite/foreman/blob/develop/app/helpers/login_helper.rb)
+For example in [`foreman`](https://github.com/theforeman/foreman/blob/develop/app/helpers/login_helper.rb)
 we use
 
 ``` ruby
@@ -343,7 +343,7 @@ When there is a need to have a list of features/components e.t.c. it's
 recommended to add a method or constant in upstream foreman and override it in
 the theme by using concerns or redefining consts.
 
-[Upstream](https://github.com/RedHatSatellite/foreman/blob/e801f761eb3e709a0adc7a6e6d86f514b2f919dd/app/models/compute_resource.rb#L44):
+[Upstream](https://github.com/theforeman/foreman/blob/e801f761eb3e709a0adc7a6e6d86f514b2f919dd/app/models/compute_resource.rb#L44):
 ``` ruby
 class ComputeResource < ApplicationRecord
   # ...
