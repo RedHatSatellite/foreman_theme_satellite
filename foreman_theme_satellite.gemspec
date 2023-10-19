@@ -5,8 +5,8 @@ Gem::Specification.new do |s|
   s.version     = ForemanThemeSatellite::VERSION
   s.metadata    = { "is_foreman_plugin" => "true" }
   s.license     = 'GPL-3.0'
-  s.authors     = ['Alon Goldboim, Shimon Stein']
-  s.email       = ['agoldboi@redhat.com']
+  s.authors     = ['Shimon Stein', 'Eric Helms']
+  s.email       = ['sshtein@redhat.com', 'ehelms@redhat.com']
   s.homepage    = 'https://github.com/RedHatSatellite/foreman_theme_satellite'
   s.summary     = 'This is a plugin that enables building a theme for Foreman.'
   # also update locale/gemspec.rb
