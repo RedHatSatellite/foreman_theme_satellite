@@ -32,7 +32,7 @@ module ForemanThemeSatellite
     end
 
     initializer 'foreman_theme_satellite.register_gettext', :after => :load_config_initializers do
-      locale_dir = File.join(File.expand_path('../../..', __FILE__), 'locale')
+      locale_dir = File.join(File.expand_path('../..', __dir__), 'locale')
       locale_domain = 'foreman_theme_satellite'
 
       Foreman::Gettext::Support.add_text_domain locale_domain, locale_dir
@@ -84,7 +84,7 @@ module ForemanThemeSatellite
     end
 
     initializer 'foreman_theme_satellite.gettext.branding', :before => :finisher_hook do |app|
-      require File.expand_path('../replacer_repository', __FILE__)
+      require File.expand_path('replacer_repository', __dir__)
       FastGettext.translation_repositories.each do |key, repo|
         FastGettext.translation_repositories[key] = ::ForemanThemeSatellite::ReplacerRepository.new(repo)
       end
