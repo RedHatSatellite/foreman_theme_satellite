@@ -216,12 +216,6 @@ Lint/RedundantCopDisableDirective:
     - 'app/helpers/theme_application_helper.rb'
     - 'lib/foreman_theme_satellite/documentation.rb'
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Lint/ScriptPermission:
-  Exclude:
-    - 'Rakefile'
-
 # Offense count: 12
 # This cop supports safe autocorrection (--autocorrect).
 Lint/SendWithMixinArgument:
