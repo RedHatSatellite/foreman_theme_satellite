@@ -3,7 +3,7 @@ require File.expand_path('lib/foreman_theme_satellite/version', __dir__)
 Gem::Specification.new do |s|
   s.name        = 'foreman_theme_satellite'
   s.version     = ForemanThemeSatellite::VERSION
-  s.metadata    = { "is_foreman_plugin" => "true" }
+  s.metadata    = { 'is_foreman_plugin' => 'true' }
   s.license     = 'GPL-3.0'
   s.authors     = ['Shimon Stein', 'Eric Helms']
   s.email       = ['sshtein@redhat.com', 'ehelms@redhat.com']
