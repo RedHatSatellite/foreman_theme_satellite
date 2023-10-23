@@ -277,13 +277,6 @@ Naming/FileName:
     - 'db/seeds.d/850-global_parameters.rb'
 
 # Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: PreferredName.
-Naming/RescuedExceptionsVariableName:
-  Exclude:
-    - 'Rakefile'
-
-# Offense count: 1
 # This cop supports unsafe autocorrection (--autocorrect-all).
 Performance/InefficientHashSearch:
   Exclude:
