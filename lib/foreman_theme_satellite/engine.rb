@@ -6,6 +6,7 @@ require 'deface'
 module ForemanThemeSatellite
   class Engine < ::Rails::Engine
     engine_name 'foreman_theme_satellite'
+
     config.eager_load_paths += Dir["#{config.root}/app/overrides"]
     config.eager_load_paths += Dir["#{config.root}/app/controllers/concerns"]
     config.eager_load_paths += Dir["#{config.root}/app/helpers"]
@@ -31,16 +32,10 @@ module ForemanThemeSatellite
       SettingRegistry.prepend SettingRegistryBranding
     end
 
-    initializer 'foreman_theme_satellite.register_gettext', :after => :load_config_initializers do
-      locale_dir = File.join(File.expand_path('../..', __dir__), 'locale')
-      locale_domain = 'foreman_theme_satellite'
-
-      Foreman::Gettext::Support.add_text_domain locale_domain, locale_dir
-    end
-
     initializer 'foreman_theme_satellite.register_plugin', :before=> :finisher_hook do |app|
       Foreman::Plugin.register :foreman_theme_satellite do
-        requires_foreman '>= 3.0'
+        requires_foreman '>= 3.7.0'
+        register_gettext
 
         settings do
           category(:provisioning) do
