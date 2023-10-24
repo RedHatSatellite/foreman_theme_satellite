@@ -14,15 +14,7 @@ module ForemanThemeSatellite
     config.eager_load_paths += Dir["#{config.root}/app/services/concerns"]
     config.eager_load_paths += Dir["#{config.root}/lib/foreman_theme_satellite"]
 
-    # Precompile any JS or CSS files under app/assets/
-    # If requiring files from each other, list them explicitly here to avoid precompiling the same
-    # content twice.
-    assets_to_precompile =
-        Dir.chdir(root) do
-          Dir['app/assets/stylesheets/**/*', 'app/assets/images/**/*', 'app/assets/javascripts/**/*'].select{|f| File.file?(f)}.map do |f|
-            f.split(File::SEPARATOR, 4).last
-          end
-        end
+    assets_to_precompile = []
     assets_to_precompile << 'foreman_theme_satellite/theme.css'
 
     initializer 'foreman_theme_satellite.load_default_settings', :before => :load_config_initializers do |app|
