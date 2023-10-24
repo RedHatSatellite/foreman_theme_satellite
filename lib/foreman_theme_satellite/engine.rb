@@ -14,9 +14,6 @@ module ForemanThemeSatellite
     config.eager_load_paths += Dir["#{config.root}/app/services/concerns"]
     config.eager_load_paths += Dir["#{config.root}/lib/foreman_theme_satellite"]
 
-    assets_to_precompile = []
-    assets_to_precompile << 'foreman_theme_satellite/theme.css'
-
     initializer 'foreman_theme_satellite.load_default_settings', :before => :load_config_initializers do |app|
       SettingRegistry.prepend SettingRegistryBranding
     end
@@ -53,8 +50,6 @@ module ForemanThemeSatellite
                         "RealmTest" => ["realm can be assigned to locations"],
                         "LocationTest" => ["should clone location with all associations"]
                        })
-
-        precompile_assets(assets_to_precompile)
 
         extend_rabl_template 'api/v2/home/status', 'api/v2/home/status_extensions'
         extend_template_helpers ForemanThemeSatellite::RendererMethods
