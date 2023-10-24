@@ -13,9 +13,6 @@ module ForemanThemeSatellite
     config.eager_load_paths += Dir["#{config.root}/app/models/concerns"]
     config.eager_load_paths += Dir["#{config.root}/app/services/concerns"]
     config.eager_load_paths += Dir["#{config.root}/lib/foreman_theme_satellite"]
-    engine_path = config.root
-
-    assets_to_override = ["#{engine_path}/app/assets/images"]
 
     # Precompile any JS or CSS files under app/assets/
     # If requiring files from each other, list them explicitly here to avoid precompiling the same
@@ -95,7 +92,6 @@ module ForemanThemeSatellite
     # Include concerns in this config.to_prepare block
     config.to_prepare do
       begin
-        assets_to_override.each { |path| Rails.application.config.assets.paths.unshift path }
         # Include your monkey-patches over here
         ::ForemanGoogle::GCE.send(:prepend, GCE::ClassMethods) if Foreman::Plugin.installed?("foreman_google")
         require 'rss_checker_branding'
