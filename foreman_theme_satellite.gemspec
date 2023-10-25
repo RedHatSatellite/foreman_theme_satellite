@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = 'This is a plugin that enables building a theme for Foreman.'
   # also update locale/gemspec.rb
   s.description = 'Theme changes for Satellite 6.'
-  s.files = Dir['{app,config,db,lib,locale,webpack}/**/*'] +
+  s.files = Dir['{app,db,lib,locale,webpack}/**/*'] +
             ['LICENSE', 'Rakefile', 'README.md'] +
             ['package.json']
 
