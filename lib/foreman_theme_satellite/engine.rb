@@ -121,11 +121,11 @@ module ForemanThemeSatellite
     metadata_path = Rails.env.production? ? METADATA_PATH : "#{__dir__}/../../config/metadata.yml"
 
     @metadata_yaml ||= File.exist?(metadata_path) ? YAML.load_file(metadata_path) : {}
-    @metadata_yaml[key] || default
+    @metadata_yaml.fetch(key, default)
   end
 
   def self.get_satellite_version
-    metadata_field('version', '0.0.0-development')
+    metadata_field('version', '6.13.0-development')
   end
 
   def self.get_satellite_short_version

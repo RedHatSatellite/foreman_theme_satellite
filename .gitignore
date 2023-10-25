@@ -1,4 +1,5 @@
 .bundle/
+config/metadata.yml
 log/*.log
 pkg/
 test/dummy/db/*.sqlite3
