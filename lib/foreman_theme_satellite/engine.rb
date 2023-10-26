@@ -93,6 +93,7 @@ module ForemanThemeSatellite
           Katello::Ping.send :include, SatellitePackages
           Katello::Glue::Provider.send :include, DistributorVersion
           Katello::LayoutHelper.send :include, ThemeLayoutHelper
+          Katello::LayoutHelper.send :prepend, ThemeCssClassHelper
         end
 
         if defined?(ForemanRhCloud)
