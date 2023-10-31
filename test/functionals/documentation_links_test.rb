@@ -14,7 +14,7 @@ class DocumentationLinksTest < ActiveSupport::TestCase
 
   ForemanThemeSatellite::Documentation::USER_GUIDE_DICTIONARY.each do |key, doc_address|
     test "#{key} entry is valid" do
-      skip('Skip Managing_Compliance_Policies check until 6.14 docs published') if doc_address.include?('Managing_Compliance_Policies_security-compliance')
+      skip('Skip Managing_Compliance_Policies check until 6.14 docs published') if doc_address.match?(%r{/managing_security_compliance[#/]})
 
       uri = URI(doc_address)
       res = Net::HTTP.get_response(uri)
