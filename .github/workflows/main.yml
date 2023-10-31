@@ -20,6 +20,6 @@ jobs:
   test:
     name: Ruby
     needs: rubocop
-    uses: theforeman/actions/.github/workflows/foreman_plugin.yml@v0
+    uses: ekohl/actions/.github/workflows/foreman_plugin.yml@use-gha-matrix-builder
     with:
       plugin: foreman_theme_satellite
