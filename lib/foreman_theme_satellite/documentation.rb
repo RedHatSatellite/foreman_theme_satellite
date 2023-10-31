@@ -62,6 +62,13 @@ module ForemanThemeSatellite
 
       # Misc
       'GettingHelp' => "https://access.redhat.com/products/red-hat-satellite/#support",
+
+      # Managing Security Compliance
+      'Monitoring_Compliance_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Monitoring_Compliance_security-compliance",
+      'Managing_Compliance_Policies_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Managing_Compliance_Policies_security-compliance",
+      'Configuring_SCAP_Contents_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Configuring_SCAP_Contents_security-compliance",
+      'tailoring-xccdf-profiles_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Configuring_SCAP_Contents_security-compliance#tailoring-xccdf-profiles_security-compliance",
+      'deploying-compliance-policies_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Configuring_SCAP_Contents_security-compliance#deploying-compliance-policies_security-compliance",
     }.freeze
 
     PLUGINS_DOCUMENTATION = {
