@@ -3,19 +3,26 @@
 <% if User.current&.admin %>
 <% data = ForemanThemeSatellite.lifecycle_data %>
 
-<% text, icon = if data[:end_of_life].nil?
-   [nil, nil]
+<% text, icon, date = if data[:end_of_life].nil?
+   [nil, nil, nil]
 elsif data[:end_of_life] < Time.zone.now
-   [_('Satellite %{version} is estimated to have reached its End of Life on %{date}.'), 'danger']
+   [_('Satellite %{version} is estimated to have reached its End of Life on %{date}.'), 'danger', data[:end_of_life]]
 elsif data[:end_of_life] < 6.months.after
-   [_('Satellite %{version} is estimated to reach its End of Life on %{date}.'), 'warning']
+   [_('Satellite %{version} is estimated to reach its End of Life by the end of %{month} %{year}.'), 'warning', I18n.l(data[:end_of_life], format: "%B %Y")]
 end %>
 
 <% if text %>
 <div class="pf-c-banner pf-m-<%= icon %>" id="satellite-eol-banner">
   <div>
-    <%= text % { date: data[:end_of_life].to_date, version: data[:current_version] } %>
+    <% if icon == 'warning' %>
+      <%= text % { month: _(data[:end_of_life].strftime('%B')), year: data[:end_of_life].strftime('%Y'), version: data[:short_version] } %>
+    <% else %>
+      <%= text % { date: data[:end_of_life].to_date, version: data[:short_version] } %>
+    <% end %>
+    <div>
+    <%= _("For up to date information about Satellite's lifecycle see ") %><a href="https://access.redhat.com/support/policy/updates/satellite"><%= _("Red Hat Satellite Product Life Cycle") %></a>.
     <%= _("Kindly plan to upgrade Satellite to the supported version, for upgrade guidance see ") %><a href="<%= ForemanThemeSatellite.documentation_server %>/labsinfo/satelliteupgradehelper "><%= _("Red Hat Satellite Upgrade Helper") %>.
+    </div>
   </div>
   <span id="satellite-oel-banner-dismiss-button" style="position: absolute; font-size: 20px; top: 0px; right: 5px; cursor: pointer;">&times;</span>
 </div>
