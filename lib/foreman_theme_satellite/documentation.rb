@@ -51,7 +51,7 @@ module ForemanThemeSatellite
       'LDAPAuthentication' => "#{ForemanThemeSatellite.documentation_root}/installing_satellite_server_in_a_connected_network_environment/configuring_external_authentication_satellite#Using_LDAP_satellite",
       'Bookmarks' => "#{ForemanThemeSatellite.documentation_root}/administering_red_hat_satellite/searching_and_bookmarking_admin",
       'Policydeploymentoptions' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance#Managing_Compliance_Policies_security-compliance",
-      'CreatingSCAPcontent' => "#{ForemanThemeSatellite.documentation_root}/administering_red_hat_satellite/managing_security_compliance_admin#running-a-security-compliance-scan-on-demand_admin",
+      'CreatingSCAPcontent' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/configuring_scap_contents_security-compliance",
 
       # Planning
       'SmartProxies' => "#{ForemanThemeSatellite.documentation_root}/satellite_overview_concepts_and_deployment_considerations/chap-documentation-architecture_guide-capsule_server_overview",
