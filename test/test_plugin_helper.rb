@@ -17,7 +17,5 @@ class ActionDispatch::IntegrationTest
 end
 
 def theme_fixture_file(filename)
-  File.join(
-    ForemanThemeSatellite::Engine.root, 'test', 'fixtures', filename
-  )
+  ForemanThemeSatellite::Engine.root.join('test', 'fixtures', filename)
 end
