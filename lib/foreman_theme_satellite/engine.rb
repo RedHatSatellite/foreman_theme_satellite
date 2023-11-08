@@ -131,7 +131,7 @@ module ForemanThemeSatellite
   end
 
   def self.get_satellite_version
-    metadata_field('version', '6.13.0-development')
+    metadata_field('version', '6.14.0-development')
   end
 
   def self.get_satellite_short_version
