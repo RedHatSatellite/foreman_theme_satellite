@@ -4,8 +4,8 @@ class LifecycleTest < ActiveSupport::TestCase
   test "gracefully accepts non-existing metadata" do
     ForemanThemeSatellite.send(:const_set, 'LIFECYCLE_METADATA_PATH', theme_fixture_file('lifecycle-metadata-nope.yml'))
 
-    lifecycle_data = ForemanThemeSatellite::Lifecycle.lifecycle_data('something')
-    expected = { current_version: 'something' }
+    lifecycle_data = ForemanThemeSatellite::Lifecycle.lifecycle_data('25.17.1234-alpha')
+    expected = { current_version: '25.17.1234-alpha', short_version: '25.17' }
 
     assert_equal expected, lifecycle_data
   end
