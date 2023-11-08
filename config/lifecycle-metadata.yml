@@ -1,5 +1,0 @@
----
-version: '1'
-releases:
-  '6.15':
-    'end_of_life': '2025-10-31'
