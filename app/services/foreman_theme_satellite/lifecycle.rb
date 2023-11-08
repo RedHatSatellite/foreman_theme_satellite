@@ -3,7 +3,7 @@ module ForemanThemeSatellite
     class << self
       # rubocop:disable Metrics/AbcSize
       def lifecycle_data(version)
-        metadata_path = Rails.env.production? ? ::ForemanThemeSatellite::LIFECYCLE_METADATA_PATH : "#{__dir__}/../../../config/lifecycle-metadata.yml"
+        metadata_path = ::ForemanThemeSatellite::LIFECYCLE_METADATA_PATH
 
         lifecycle_data = { current_version: version }
 

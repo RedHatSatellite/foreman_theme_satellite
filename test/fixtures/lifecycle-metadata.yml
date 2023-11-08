@@ -1,0 +1,5 @@
+---
+version: '1'
+releases:
+  '25.25':
+    'end_of_life': '2525-10-31'

@@ -15,3 +15,9 @@ class ActionDispatch::IntegrationTest
     Webpack::Rails::Manifest.stubs(:asset_paths).returns([])
   end
 end
+
+def theme_fixture_file(filename)
+  File.join(
+    ForemanThemeSatellite::Engine.root, 'test', 'fixtures', filename
+  )
+end
