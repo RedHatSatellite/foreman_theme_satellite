@@ -1,21 +1,21 @@
- locales['foreman_theme_satellite'] = locales['foreman_theme_satellite'] || {}; locales['foreman_theme_satellite']['en'] = {
+ locales['foreman_theme_satellite'] = locales['foreman_theme_satellite'] || {}; locales['foreman_theme_satellite']['zh_CN'] = {
   "domain": "foreman_theme_satellite",
   "locale_data": {
     "foreman_theme_satellite": {
       "": {
-        "Project-Id-Version": "version 0.0.1",
+        "Project-Id-Version": "foreman_theme_satellite 1.0.0",
         "Report-Msgid-Bugs-To": "",
-        "PO-Revision-Date": "2014-08-20 08:54+0100",
-        "Last-Translator": "Foreman Team <foreman-dev@googlegroups.com>",
-        "Language-Team": "Foreman Team <foreman-dev@googlegroups.com>",
-        "Language": "",
+        "PO-Revision-Date": "2023-11-21 10:43+0000",
+        "Last-Translator": "Amit Upadhye <aupadhye@redhat.com>, 2023",
+        "Language-Team": "Chinese (China) (https://app.transifex.com/foreman/teams/114/zh_CN/)",
         "MIME-Version": "1.0",
         "Content-Type": "text/plain; charset=UTF-8",
         "Content-Transfer-Encoding": "8bit",
-        "Plural-Forms": "nplurals=2; plural=(n != 1);",
-        "lang": "en",
+        "Language": "zh_CN",
+        "Plural-Forms": "nplurals=1; plural=0;",
+        "lang": "zh_CN",
         "domain": "foreman_theme_satellite",
-        "plural_forms": "nplurals=2; plural=(n != 1);"
+        "plural_forms": "nplurals=1; plural=0;"
       },
       "(build: %{version})": [
         ""
@@ -36,16 +36,16 @@
         ""
       ],
       "Environment only": [
-        ""
+        "仅环境"
       ],
       "Full trace": [
         ""
       ],
       "Host group and Environment": [
-        ""
+        "主机组和环境"
       ],
       "Host group only": [
-        ""
+        "仅主机组"
       ],
       "IRC": [
         ""
@@ -63,10 +63,10 @@
         ""
       ],
       "Operating System": [
-        ""
+        "操作系统"
       ],
       "Operating system default": [
-        ""
+        "作業系統預設值"
       ],
       "RHEV integration is deprecated.": [
         ""
@@ -84,13 +84,13 @@
         ""
       ],
       "Support": [
-        ""
+        "支援"
       ],
       "Supported by Red Hat": [
         ""
       ],
       "The final entry, Operating System default, can be set by editing the %s page.": [
-        ""
+        "最终条目，操作系统默认值，可以通过编辑 %s 页设置。"
       ],
       "Theme changes for Satellite 6.": [
         ""
