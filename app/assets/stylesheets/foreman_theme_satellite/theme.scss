@@ -13,6 +13,10 @@
   }
 }
 
+#satellite-eol-banner .eol-banner-content {
+  overflow-x: auto;
+}
+
 #rails-app-content {
   --header-height: 70px;
   top: var(--header-height);

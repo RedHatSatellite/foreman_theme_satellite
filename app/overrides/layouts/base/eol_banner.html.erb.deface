@@ -19,7 +19,7 @@ end %>
     <% else %>
       <%= text % { date: data[:end_of_life].to_date, version: data[:short_version] } %>
     <% end %>
-    <div>
+    <div class="eol-banner-content">
     <%= _("For up to date information about Satellite's lifecycle see ") %><a href="https://access.redhat.com/support/policy/updates/satellite"><%= _("Red Hat Satellite Product Life Cycle") %></a>.
     <%= _("Kindly plan to upgrade Satellite to the supported version, for upgrade guidance see ") %><a href="<%= ForemanThemeSatellite.documentation_server %>/labsinfo/satelliteupgradehelper "><%= _("Red Hat Satellite Upgrade Helper") %>.
     </div>
