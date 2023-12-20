@@ -72,6 +72,7 @@ module ProvisioningTemplatesControllerBranding
     'pxelinux_discovery',
     'PXELinux global default',
     'redhat_register',
+    'remote_execution_pull_setup',
     'remote_execution_ssh_keys',
     'schedule_reboot',
     'UserData default',
