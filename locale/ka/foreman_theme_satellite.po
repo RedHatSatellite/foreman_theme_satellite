@@ -8,7 +8,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_theme_satellite 1.0.0\n"
+"Project-Id-Version: foreman_theme_satellite 13.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-11-21 10:43+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023\n"
@@ -20,28 +20,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 msgid "(build: %{version})"
-msgstr ""
+msgstr "(აგება: %{version})"
 
 msgid "API Guide"
-msgstr ""
+msgstr "API-ის გიდი"
 
 msgid "Administering Red Hat Satellite"
-msgstr ""
+msgstr "Red Hat Satellite-ის ადმინისტრირება"
 
 msgid "Blog"
-msgstr ""
+msgstr "ბლოგი"
 
 msgid "Customer portal"
-msgstr ""
+msgstr "მომხმარებლის პორტალი"
 
 msgid "Documentation"
-msgstr ""
+msgstr "დოკუმენტაცია"
 
 msgid "Environment only"
 msgstr "მხოლოდ გარემო"
 
 msgid "Full trace"
-msgstr ""
+msgstr "სრული ტრეისი"
 
 msgid "Host group and Environment"
 msgstr "ჰოსტების ჯგუფი და გარემო"
@@ -50,19 +50,19 @@ msgid "Host group only"
 msgstr "მხოლოდ ჰოსტების ჯგუფი"
 
 msgid "IRC"
-msgstr ""
+msgstr "IRC"
 
 msgid "If you feel this is an error with Satellite 6 itself, please open a new issue with"
-msgstr ""
+msgstr "თუ გგონიათ, რომ ეს შეცდომა Satellite 6-ის შეცდომაა, გახსენით ახალი ბილეთი"
 
 msgid "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy"
-msgstr ""
+msgstr "შეიცავს %{system} © 2009-%{year} პოლ კელი და ოჰედ ლევი"
 
 msgid "More information"
-msgstr ""
+msgstr "მეტი ინფორმაცია"
 
 msgid "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026."
-msgstr ""
+msgstr "2022 წლის 31 აგვისტოს RHEV რემონტის მხარდაჭერის ფაზაზე გადავიდა. ის 2024 წლის 31 აგვისტომდე გაგრძელდება, რომელიც გაფართოებული სიცოცხლის ფაზით გაგრძელდება, 2026 წლის 31 აგვისტომდე."
 
 msgid "Operating System"
 msgstr "ოპერაციული სისტემა"
@@ -71,52 +71,52 @@ msgid "Operating system default"
 msgstr "ოპერაციული სისტემის ნაგულისხმები მნიშვნელობა"
 
 msgid "RHEV integration is deprecated."
-msgstr ""
+msgstr "RHEV-ის ჩაშენება მოძველებულია."
 
 msgid "Red Hat Satellite Blog"
-msgstr ""
+msgstr "Red Hat Satellite-ის ბლოგი"
 
 msgid "Satellite ticketing system"
-msgstr ""
+msgstr "Satellite-ის ბილეთებს სისტემა"
 
 msgid "Show unsupported provisioning templates"
-msgstr ""
+msgstr "მხარდაუჭერელი გაშლის ნიმუშების ჩვენება"
 
 msgid "Show unsupported provisioning templates. When enabled, all the avaiable templates will be shown. When disabled, Red Hat supported templates will be shown only"
-msgstr ""
+msgstr "მხარდაუჭერელი გაშლის ნიმუშების ჩვენება. როცა ჩართულია, ნაჩვენები იქნება ყველა ხელმისაწვდომი ნიმუში. როცა გამორთულია, ნაჩვენები იქნება, მხოლოდ, Red Hat-ის მიერ მხარდაჭერილი ნმუშები"
 
 msgid "Support"
-msgstr ""
+msgstr "მხარდაჭერა"
 
 msgid "Supported by Red Hat"
-msgstr ""
+msgstr "მხარდაჭერილია Red Hat-ის მიერ"
 
 msgid "The final entry, Operating System default, can be set by editing the %s page."
-msgstr ""
+msgstr "საბოლოო ჩანაწერი, ოპერაციული სისტემის ნაგულისხმები, შეიძლება დაყენდეს %s გვერდის რედაქტირებით."
 
 msgid "Theme changes for Satellite 6."
-msgstr ""
+msgstr "თემის ცვლილებები Satellite 6-სთვის."
 
 msgid "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6"
-msgstr ""
+msgstr "გადასვლა Red Hat Satellite 5-დან to Red Hat Satellite 6-ზე"
 
 msgid "Version %{version}"
-msgstr ""
+msgstr "ვერსია %{version}"
 
 msgid "Version %{version} © %{year} Red Hat Inc."
-msgstr ""
+msgstr "ვერსია %{version} © %{year} Red Hat Inc."
 
 msgid "When a Host requests a template (e.g. during provisioning), Foreman selects the optimal match from the available templates of that type, in the following order:"
-msgstr ""
+msgstr "როდესაც ჰოსტი მოითხოვს შაბლონს (მაგ. სამუშაოდ მომზადების დროს), Foreman საუკეთესო შესატყვისს ამ ტიპის არსებული შაბლონებიდან შემდეგი თანამიმდევრობით შეარჩევს:"
 
 msgid "When editing a Template, you must assign a list of Operating Systems with which this Template can be used. Optionally, you can restrict a template to a list of Hostgroups or Environments."
-msgstr ""
+msgstr "შაბლონის რედაქტირებისას თქვენ უნდა მიანიჭოთ სია ოპერაციული სისტემებისა, რომლებთანაც შესაძლებელია ამ შაბლონის გამოყენება. სურვილისამებრ, შეგიძლიათ, შაბლონი ჰოსტების ჯგუფების სიით ან/და გარემოებით შეზღუდოთ."
 
 msgid "You can find us on %{liberachat} (irc.libera.chat) in #redhat-satellite."
-msgstr ""
+msgstr "%{liberachat}-ზე (irc.libera.chat) ჩვენი პოვნა #redhat-satellite არხზე შეგიძლიათ."
 
 msgid "You would probably need to attach the"
-msgstr ""
+msgstr "ალბათ, დაგჭირდებათ მიამაგროთ"
 
 msgid "and relevant log entries."
-msgstr ""
+msgstr "და შესაბამისი ჟურნალის ჩანაწერები."
