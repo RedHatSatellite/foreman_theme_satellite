@@ -23,3 +23,4 @@ jobs:
     uses: theforeman/actions/.github/workflows/foreman_plugin.yml@v0
     with:
       plugin: foreman_theme_satellite
+      foreman_version: feat-36849-add-ruby-3-ga
