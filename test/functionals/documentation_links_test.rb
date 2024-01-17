@@ -41,4 +41,16 @@ class DocumentationLinksTest < ActiveSupport::TestCase
       refute_equal '404', res.code, "Documentation link #{doc_address} was not found"
     end
   end
+
+  ForemanThemeSatellite::Documentation::DOCS_GUIDES_LINKS.each do |guide, chapters|
+    chapters.each do |key, doc_address|
+      test "#{guide} #{key} entry is valid" do
+        uri = URI(doc_address)
+        res = Net::HTTP.get_response(uri)
+
+        # it can be either 200 or 302
+        refute_equal '404', res.code, "Documentation link #{doc_address} was not found"
+      end
+    end
+  end
 end

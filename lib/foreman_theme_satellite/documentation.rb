@@ -80,5 +80,11 @@ module ForemanThemeSatellite
     SPECIAL_LINKS = [
       [/docs\.theforeman\.org\/.*?\/Managing_Hosts\/.*?registering-a-host.*?managing-hosts/i, "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_managing-hosts"],
     ]
+
+    DOCS_GUIDES_LINKS = {
+      'Managing_Hosts' => {
+        'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_managing-hosts",
+      }
+    }.freeze
   end
 end
