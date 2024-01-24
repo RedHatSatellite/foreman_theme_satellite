@@ -69,7 +69,7 @@ module ForemanThemeSatellite
       'Managing_Compliance_Policies_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Managing_Compliance_Policies_security-compliance",
       'Configuring_SCAP_Contents_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Configuring_SCAP_Contents_security-compliance",
       'tailoring-xccdf-profiles_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Configuring_SCAP_Contents_security-compliance#tailoring-xccdf-profiles_security-compliance",
-      'deploying-compliance-policies_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Configuring_SCAP_Contents_security-compliance#deploying-compliance-policies_security-compliance",
+      'deploying-compliance-policies_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/compliance-policy-deployment-options_security-compliance",
     }.freeze
 
     PLUGINS_DOCUMENTATION = {
