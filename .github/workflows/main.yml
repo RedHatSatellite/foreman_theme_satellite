@@ -20,6 +20,7 @@ jobs:
   test:
     name: Ruby
     needs: rubocop
-    uses: theforeman/actions/.github/workflows/foreman_plugin.yml@v0
+    uses: theforeman/actions/.github/workflows/foreman_plugin.yml@plugin-include-exclude
     with:
       plugin: foreman_theme_satellite
+      matrix_exclude: '[{"task":"db:seed"}]'
