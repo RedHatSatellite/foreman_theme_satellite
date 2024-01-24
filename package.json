@@ -1,6 +1,6 @@
 {
   "name": "foreman_theme_satellite",
-  "version": "13.2.2",
+  "version": "13.2.3",
   "description": "Satellite theme =============",
   "main": "index.js",
   "scripts": {
