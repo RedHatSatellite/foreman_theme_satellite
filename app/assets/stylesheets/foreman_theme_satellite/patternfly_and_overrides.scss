@@ -1,7 +1,9 @@
-body {
+body .satellite-theme {
   width: 100%;
 }
 
-#page-sidebar {
-  --pf-c-page__sidebar--Width: 250px;
+.satellite-theme {
+  #page-sidebar {
+    --pf-c-page__sidebar--Width: 250px;
+  }
 }
