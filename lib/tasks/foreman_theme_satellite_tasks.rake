@@ -55,6 +55,7 @@ namespace :foreman_theme_satellite do
 end
 
 Rake::Task[:test].enhance ['test:foreman_theme_satellite']
+Rake::Task['test:foreman_theme_satellite'].enhance ['foreman_theme_satellite:validate_docs']
 
 load 'tasks/jenkins.rake'
 if Rake::Task.task_defined?(:'jenkins:unit')
