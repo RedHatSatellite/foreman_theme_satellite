@@ -83,8 +83,24 @@ module ForemanThemeSatellite
 
     DOCS_GUIDES_LINKS = {
       'Managing_Hosts' => {
-        'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_managing-hosts",
+        'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts",
       }
     }.freeze
+
+    def self.flat_docs_guides_links
+      nested_to_flat_k_v(nil, DOCS_GUIDES_LINKS).to_h
+    end
+
+    private_class_method def self.nested_to_flat_k_v(prefix, source)
+      key_values = []
+      source.map do |k, v|
+        key = "#{prefix}/#{k}"
+        if v.is_a?(Hash)
+          key_values.concat(*nested_to_flat_k_v(key, v))
+        else
+          key_values.concat([key, v])
+        end
+      end
+    end
   end
 end

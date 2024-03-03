@@ -45,8 +45,9 @@ namespace :foreman_theme_satellite do
     all_links = ForemanThemeSatellite::Documentation::USER_GUIDE_DICTIONARY
                 .merge(ForemanThemeSatellite::Documentation::PLUGINS_DOCUMENTATION)
                 .merge(Hash[ForemanThemeSatellite::Documentation::SPECIAL_LINKS])
+                .merge(ForemanThemeSatellite::Documentation.flat_docs_guides_links)
 
-    failed = all_links.filter { |_key, doc_address| !doc_address.include?('/html/') && checker.test_link(doc_address) }
+    failed = all_links.filter { |_key, doc_address| doc_address.include?('/html/') && !checker.test_link(doc_address) }
 
     abort((failed.map { |key, doc_address| "FAILED: Cannot find #{doc_address} in TOC for entry: #{key}" } + ["Total failed: #{failed.count} entries"]).join("\n")) unless failed.empty?
 
