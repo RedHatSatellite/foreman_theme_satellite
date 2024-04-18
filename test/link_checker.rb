@@ -35,15 +35,15 @@ class LinksChecker
 
   def extract_doc_path(path)
     # take the right part of the path after the '/html/' from the original link
-    %r{/html/(.*)}.match(path)&.[](1)
+    path.split('/html/', 2)[1]
   end
 
   def navigate_path(path, hash = @toc)
     return nil unless hash
 
-    split = path.match(%r{([^/]*)/(.*)})
-    first = split&.[](1) || path
-    rest = split&.[](2)
+    split = path.split('/', 2)
+    first = split[0]
+    rest = split[1]
 
     inner_hash = hash[first]
 
