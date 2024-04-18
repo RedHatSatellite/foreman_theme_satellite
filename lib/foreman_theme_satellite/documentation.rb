@@ -10,7 +10,7 @@ module ForemanThemeSatellite
 
       # Managing Hosts
       'ForemanRemoteExecution' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts",
-      'ExecutingaJob' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#configuring-the-global-smartproxy-remote-execution-setting_managing-hosts",
+      'ExecutingaJob' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#Configuring_the_Global_capsule_Remote_Execution_Setting_in_satellite_managing-hosts",
       'JobTemplates' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#setting-up-job-templates_managing-hosts",
       'ReportTemplates' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/using_report_templates_to_monitor_hosts_managing-hosts",
       'Reports' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/using_report_templates_to_monitor_hosts_managing-hosts",
@@ -59,17 +59,17 @@ module ForemanThemeSatellite
       'Auditing' => "#{ForemanThemeSatellite.documentation_root}/satellite_overview_concepts_and_deployment_considerations/appe-architecture_guide-glossary_of_terms#varl-Glossary_of_Terms-Audits",
 
       # Install
-      'HTTP(S)Proxy' => "#{ForemanThemeSatellite.documentation_root}//installing_satellite_server_in_a_connected_network_environment/performing-additional-configuration#Configuring_Server_with_an_HTTP_Proxy_satellite",
+      'HTTP(S)Proxy' => "#{ForemanThemeSatellite.documentation_root}/installing_satellite_server_in_a_connected_network_environment/performing-additional-configuration#Configuring_Server_with_an_HTTP_Proxy_satellite",
 
       # Misc
       'GettingHelp' => "https://access.redhat.com/products/red-hat-satellite/#support",
 
       # Managing Security Compliance
-      'Monitoring_Compliance_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Monitoring_Compliance_security-compliance",
-      'Managing_Compliance_Policies_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Managing_Compliance_Policies_security-compliance",
-      'Configuring_SCAP_Contents_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Configuring_SCAP_Contents_security-compliance",
-      'tailoring-xccdf-profiles_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/Configuring_SCAP_Contents_security-compliance#tailoring-xccdf-profiles_security-compliance",
-      'deploying-compliance-policies_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/compliance-policy-deployment-options_security-compliance",
+      'Monitoring_Compliance_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/monitoring_compliance_security-compliance",
+      'Managing_Compliance_Policies_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/managing_compliance_policies_security-compliance",
+      'Configuring_SCAP_Contents_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/configuring_scap_contents_security-compliance",
+      'tailoring-xccdf-profiles_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/configuring_scap_contents_security-compliance#tailoring-xccdf-profiles_security-compliance",
+      'deploying-compliance-policies_security-compliance' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/deploying-compliance-policies_security-compliance",
     }.freeze
 
     PLUGINS_DOCUMENTATION = {
@@ -78,13 +78,29 @@ module ForemanThemeSatellite
     }.freeze
 
     SPECIAL_LINKS = [
-      [/docs\.theforeman\.org\/.*?\/Managing_Hosts\/.*?registering-a-host.*?managing-hosts/i, "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_managing-hosts"],
+      [/docs\.theforeman\.org\/.*?\/Managing_Hosts\/.*?registering-a-host.*?managing-hosts/i, "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts"],
     ]
 
     DOCS_GUIDES_LINKS = {
       'Managing_Hosts' => {
-        'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_managing-hosts",
+        'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts",
       }
     }.freeze
+
+    def self.flat_docs_guides_links
+      nested_to_flat_k_v(nil, DOCS_GUIDES_LINKS).to_h
+    end
+
+    private_class_method def self.nested_to_flat_k_v(prefix, source)
+      key_values = []
+      source.map do |k, v|
+        key = "#{prefix}/#{k}"
+        if v.is_a?(Hash)
+          key_values.concat(*nested_to_flat_k_v(key, v))
+        else
+          key_values.concat([key, v])
+        end
+      end
+    end
   end
 end

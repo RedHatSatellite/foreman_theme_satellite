@@ -1,0 +1,1595 @@
+{
+  "api_guide": {
+    "providing-feedback-on-red-hat-documentation_rest-api": [
+
+    ],
+    "chap-red_hat_satellite-api_guide-the_red_hat_satellite_api": [
+      "sect-Red_Hat_Satellite-API_Guide-Overview_of_the_Red_Hat_Satellite_API",
+      "sect-Red_Hat_Satellite-API_Guide-Satellite_API_Compared_to_Hammer_CLI_Tool"
+    ],
+    "chap-red_hat_satellite-api_guide-api_reference": [
+      "sect-API_Guide-Understanding_the_API_Syntax",
+      "sect-API_Guide-Understanding_the_JSON_Response_Format"
+    ],
+    "chap-red_hat_satellite-api_guide-authenticating_api_calls": [
+      "Authenticating_API_Calls-SSL_Authentication_Overview",
+      "Authenticating_API_Calls-HTTP_Authentication_Overview",
+      "Authenticating_API_Calls-PAT_Authentication_Overview",
+      "Authenticating_API_Calls-OAuth_Authentication_Overview"
+    ],
+    "chap-red_hat_satellite-api_guide-api_requests_in_different_languages": [
+      "sect-API_Guide-API_Requests_with_curl",
+      "sect-Red_Hat_Satellite-API_Guide-API_Requests_with_Ruby",
+      "sect-API_Guide-API_Requests_with_Python",
+      "ex-API_Guide-Creating_a_New_User"
+    ],
+    "chap-red_hat_satellite-api_guide-using_the_red_hat_satellite_api": [
+      "sect-Working_with_Hosts",
+      "sect-Working_with_Life_Cycle_Environments",
+      "sect-API_Guide-Uploading_Content_to_the_Satellite_Server",
+      "sect-API_Guide-Applying_Errata",
+      "sect-API_Guide-Using_Extended_Searches",
+      "sect-API-Guide-Using_Searches_with_Pagination_Control",
+      "sect-API_Guide-Overriding_Smart_Class_Parameters",
+      "sect-API_Guide-Modifying_a_Smart_Class_Parameter_Using_an_External_File",
+      "sect-API_Guide-Deleting-OpenSCAP-Reports",
+      "proc-Creating_Linked_Life_Cycle_Environments",
+      "proc-API_Guide-Uploading_Content_to_the_Satellite_Server",
+      "exam-API_Guide-Uploading_Content_Larger_than_2_MB",
+      "exam-API_Guide-Uploading_Duplicate_Content",
+      "exam-API_Guide-Applying_Errata_to_a_Host",
+      "exam-API_Guide-Applying_Errata_to_a_Host_Collection",
+      "ex-Listing_Content_Views",
+      "ex-Listing_Activation_Keys",
+      "ex-Returning_Multple_Pages",
+      "proc-API_Guide-Modifying_a_Smart_Class_Parameter_Using_an_External_File"
+    ],
+    "appe-response_codes": [
+
+    ],
+    "apipermsmatrix": [
+
+    ]
+  },
+  "administering_red_hat_satellite": {
+    "providing-feedback-on-red-hat-documentation_admin": [
+
+    ],
+    "accessing_server_admin": [
+      "Importing_the_Katello_Root_CA_Certificate_admin",
+      "Logging_in_admin",
+      "Using_Red_Hat_Identity_Management_credentials_to_log_in_to_the_satellite_Hammer_CLI_admin",
+      "Using_Red_Hat_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-a-Firefox-browser_admin",
+      "Using_Red_Hat_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-a-Chrome-browser_admin",
+      "Navigation_Tabs_in_the_Web_UI_admin",
+      "Changing_the_Password_admin",
+      "Resetting_the_Administrative_User_Password_admin",
+      "Setting_a_Custom_Message_on_the_Login_Page_admin",
+      "CLI_Importing_the_Katello_Root_CA_Certificate_admin"
+    ],
+    "starting_and_stopping_server_admin": [
+
+    ],
+    "cloning_satellite_server": [
+      "sec-Cloning_Workflow_Overview",
+      "sec-Cloning_Prerequisites",
+      "sec-Pulp_Data_Considerations",
+      "sec_Cloning_Satellite_Server"
+    ],
+    "tuning-with-predefined-profiles_admin": [
+
+    ],
+    "migrating_from_internal_databases_to_external_databases_admin": [
+      "postgresql-as-an-external-database-considerations_admin",
+      "preparing-a-host-for-external-databases_admin",
+      "installing-postgresql_admin",
+      "migrating-to-external-databases_admin"
+    ],
+    "managing_project_with_ansible_collections_admin": [
+      "Installing_the_Project_Ansible_Modules_admin",
+      "Viewing_the_Ansible_Modules_admin"
+    ],
+    "managing_organizations_admin": [
+      "Creating_an_Organization_admin",
+      "Setting_the_Organization_Context_admin",
+      "Creating_an_Organization_Debug_Certificate_admin",
+      "Browsing_Repository_Content_Using_an_Organization_Debug_Certificate_admin",
+      "Deleting_an_Organization_admin",
+      "cli-creating-an-organization"
+    ],
+    "managing_locations_admin": [
+      "Creating_a_Location_admin",
+      "Creating_Multiple_Locations_admin",
+      "Setting_the_Location_Context_admin",
+      "Deleting_a_Location_admin",
+      "cli-creating-a-location"
+    ],
+    "managing_users_and_roles_admin": [
+      "Managing_Users_admin",
+      "Managing_SSH_Keys_admin",
+      "managing-personal-access-tokens_admin",
+      "Creating_and_Managing_User_Groups_admin",
+      "Creating_and_Managing_Roles_admin",
+      "Predefined_Roles_Available_in_satellite_admin",
+      "Granular_Permission_Filtering_admin",
+      "cli-creating-a-user_admin",
+      "cli-assigning-roles-to-a-user_admin",
+      "cli-managing-ssh-keys-for-a-user_admin",
+      "cli-adding-permissions-to-a-role_admin",
+      "cli-creating-a-granular-permission-filter_admin"
+    ],
+    "configuring_email_notifications_admin": [
+      "Email_Notification_Types_admin",
+      "Configuring_Email_Notification_Preferences_admin",
+      "Testing_Email_Delivery_admin",
+      "Testing_Email_Notifications_admin",
+      "Changing_Email_Notifications_for_a_Host_admin"
+    ],
+    "backing-up-satellite-server-and-capsule_admin": [
+      "Estimating_the_Size_of_a_Backup_admin",
+      "Performing_a_Full_Backup_admin",
+      "Performing_a_Backup_Without_Pulp_Content_admin",
+      "Performing_an_Incremental_Backup_admin",
+      "Example_of_a_Weekly_Full_Backup_Followed_by_Daily_Incremental_Backups_admin",
+      "Performing_an_Online_Backup_admin",
+      "Performing_a_Snapshot_Backup_admin",
+      "White_Listing_and_Skipping_Steps_When_Performing_Backups_admin"
+    ],
+    "restoring-satellite-server-or-capsule-from-a-backup_admin": [
+      "Restoring_from_a_Full_Backup_admin",
+      "Restoring_from_Incremental_Backups_admin",
+      "backup-and-restore-capsule-using-a-virtual-machine-snapshot_admin"
+    ],
+    "renaming_satellite_server_or_capsule_admin": [
+      "Renaming_Server_admin",
+      "Renaming_Smart_Proxy_admin"
+    ],
+    "maintaining-satellite-server_admin": [
+      "Deleting_Audit_Records_admin",
+      "Anonymizing_Audit_Records_admin",
+      "Deleting_Report_Records_admin",
+      "Configuring_the_Cleaning_Unused_Tasks_Feature_admin",
+      "Deleting_Task_Records_admin",
+      "Deleting_a_Task_by_ID_admin",
+      "Recovering_from_a_Full_Disk_admin",
+      "Managing_Packages_on_the_Base_Operating_System_admin",
+      "reclaiming-postgresql-space-after-an-upgrade_admin",
+      "reclaiming-space-from-on-demand-repositories_admin"
+    ],
+    "renewing-the-custom-ssl-certificate_admin": [
+      "Renewing_a_Custom_SSL_Certificate_on_satellite_admin",
+      "Renewing_a_Custom_SSL_Certificate_on_capsule_admin"
+    ],
+    "logging_and_reporting_problems_admin": [
+      "Increasing_Logging_Levels_to_Help_with_Debugging_admin",
+      "Configuring-Logging-Levels-with-Hammer-CLI_admin",
+      "Configuring_Logging_to_Journal_or_File-based_Logging_admin",
+      "Selective_Debugging_with_Individual_Loggers_admin",
+      "Overview_of_Individual_Loggers_admin",
+      "Retrieving_the_Status_of_Services_admin",
+      "Restarting_Services_admin",
+      "Utilities_for_Processing_Log_Information_admin",
+      "Log_File_Directories_admin",
+      "system-journal-metadata_admin"
+    ],
+    "monitoring_resources_admin": [
+      "Using_the_Project_Content_Dashboard_admin",
+      "Configuring_RSS_Notifications_admin",
+      "monitoring-satellite-server_admin",
+      "monitoring-capsule-server_admin"
+    ],
+    "using_webhooks_admin": [
+      "migrating-to-webhooks_admin",
+      "installing-webhooks-plugin_admin",
+      "creating-a-webhook-template_admin",
+      "creating-a-webhook_admin",
+      "webhooks-available-events_admin",
+      "shellhooks_admin",
+      "installing-shellhooks-plugin_admin",
+      "passing-arguments-to-shellhook-script-using-webhooks_admin",
+      "passing-arguments-to-shellhook-script-using-curl_admin",
+      "creating-a-shellhook-to-print-arguments_admin"
+    ],
+    "searching_and_bookmarking_admin": [
+      "Building_Search_Queries_admin",
+      "Using_Free_Text_Search_admin",
+      "Managing_Bookmarks_admin",
+      "using-keyboard-shortcuts_admin"
+    ],
+    "administration_settings_admin": [
+      "general_settings_information_admin",
+      "satellite_tasks_admin",
+      "template_sync_settings_admin",
+      "discovered_settings_admin",
+      "boot_disk_settings_admin",
+      "redhat_cloud_settings_admin",
+      "content_settings_admin",
+      "authentication_settings_admin",
+      "email_settings_admin",
+      "notifications_settings_admin",
+      "provisioning_settings_admin",
+      "facts_settings_admin",
+      "config_management_settings_admin",
+      "remote_execution_settings_admin",
+      "ansible_settings_admin"
+    ]
+  },
+  "configuring_capsules_with_a_load_balancer": {
+    "providing-feedback-on-red-hat-documentation_load-balancing": [
+
+    ],
+    "load_balancing_solution_architecture_load-balancing": [
+
+    ],
+    "load_balancing_considerations_load-balancing": [
+
+    ],
+    "prerequisites_for_configuring_capsule_servers_for_load_balancing_load-balancing": [
+
+    ],
+    "configuring_capsule_servers_for_load_balancing_load-balancing": [
+      "Configuring_capsule_Server_with_Default_SSL_Certificates_for_Load_Balancing_without_Puppet_load-balancing",
+      "Configuring_capsule_Server_with_Default_SSL_Certificates_for_Load_Balancing_with_Puppet_load-balancing",
+      "con_Configuring_capsule_Server_with_Custom_SSL_Certificates_for_Load_Balancing_without_Puppet_load-balancing",
+      "Configuring_capsule_Server_with_Custom_SSL_Certificates_for_Load_Balancing_with_Puppet_load-balancing"
+    ],
+    "setting_the_load_balancer_for_host_registration_load-balancing": [
+
+    ],
+    "installing_the_load_balancer_load-balancing": [
+
+    ],
+    "verifying_the_load_balancing_configuration_load-balancing": [
+
+    ],
+    "registering_clients_to_the_load_balancer_load-balancing": [
+      "Registering_Clients_Using_Host_Registration_load-balancing",
+      "Registering_Clients_Using_the_Bootstrap_Script_load-balancing",
+      "Registering_Clients_Manually_Using_katello-ca-consumer_RPM_load-balancing"
+    ],
+    "propagating-scap-content-through-the-load-balancer_load-balancing": [
+      "Propagating_SCAP_Content_using_Ansible_Deployment_load-balancing",
+      "Propagating_SCAP_Content_using_Puppet_Deployment_load-balancing"
+    ]
+  },
+  "configuring_virtual_machine_subscriptions_in_red_hat_satellite": {
+    "providing-feedback-on-red-hat-documentation_vm-subs-satellite": [
+
+    ],
+    "_introduction": [
+      "host-based-subscriptions_vm-subs-satellite",
+      "configuration-overview",
+      "virt-who-configuration-for-each-virtualization-platform_vm-subs-satellite"
+    ],
+    "creating-an-activation-key-for-virtual-machines_vm-subs-satellite": [
+
+    ],
+    "attaching-a-host-based-subscription-to-hypervisors_vm-subs-satellite": [
+
+    ],
+    "creating-a-virt-who-configuration_vm-subs-satellite": [
+
+    ],
+    "deploying-a-virt-who-configuration": [
+      "deploying-a-virt-who-configuration-on-a-hypervisor_vm-subs-satellite",
+      "deploying-a-virt-who-configuration-on-satellite-server_vm-subs-satellite",
+      "deploying-a-virt-who-configuration-on-a-separate-rhel-server_vm-subs-satellite"
+    ],
+    "registering-virtual-machines-to-use-a-host-based-subscription_vm-subs-satellite": [
+
+    ],
+    "troubleshooting-virt-who": [
+      "modifying-virt-who-configuration_vm-subs-satellite",
+      "removing-an-existing-virt-who-configuration_vm-subs-satellite",
+      "virt-who-troubleshooting-methods_vm-subs-satellite",
+      "virt-who-troubleshooting-scenarios_vm-subs-satellite"
+    ]
+  },
+  "deploying_red_hat_satellite_on_amazon_web_services": {
+    "providing-feedback-on-red-hat-documentation_deploying-on-aws": [
+
+    ],
+    "use_case_considerations": [
+      "_use_cases_known_to_work",
+      "_use_cases_that_do_not_work"
+    ],
+    "deployment_scenarios": [
+
+    ],
+    "prerequisites": [
+      "_amazon_web_service_assumptions",
+      "_red_hat_cloud_prerequisites",
+      "_redhat_satellite_specific_prerequisites",
+      "_preparing_for_the_redhat_satellite_installation"
+    ],
+    "installing_satellite_on_aws": [
+
+    ],
+    "installing_capsule_on_aws": [
+
+    ],
+    "aws-registering-hosts": [
+
+    ]
+  },
+  "hammer_cli_guide": {
+    "providing-feedback-on-red-hat-documentation_hammer-cli": [
+
+    ],
+    "chap-cli_guide-introduction_to_hammer": [
+      "sect-CLI_Guide-Getting_Help",
+      "sect-CLI_Guide-Authentication",
+      "sect-CLI_Guide-Standalone_Use_of_Hammer",
+      "sect-CLI_Guide-Setting_a_Default_Organization",
+      "sect-CLI_Guide-Configuring_Hammer",
+      "sect-CLI_Guide-Configuring_Hammer_Logging",
+      "sect-CLI_Guide-Invoking_the_Hammer_Shell",
+      "sect-CLI_Guide-Generating_Formatted_Output",
+      "sect-CLI_Guide-Hiding_Header_Output",
+      "sect-CLI_Guide-Using-JSON_Complex_Parameters",
+      "sect-CLI_Guide-Troubleshooting_with_Hammer"
+    ],
+    "hammer-cheat-sheet": [
+      "general-information",
+      "organizations-locations-and-repositories",
+      "content-life-cycles",
+      "provisioning-environments",
+      "activation-keys",
+      "users-and-permissions",
+      "errata",
+      "hosts",
+      "tasks"
+    ],
+    "_reference": [
+      "hammer",
+      "hammer-activation-key",
+      "hammer-admin",
+      "hammer-ansible",
+      "hammer-architecture",
+      "hammer-arf-report",
+      "hammer-audit",
+      "hammer-auth",
+      "hammer-auth-source",
+      "hammer-bookmark",
+      "hammer-bootdisk",
+      "hammer-capsule",
+      "hammer-compute-profile",
+      "hammer-compute-resource",
+      "hammer-config-report",
+      "hammer-content-credentials",
+      "hammer-content-export",
+      "hammer-content-import",
+      "hammer-content-units",
+      "hammer-content-view",
+      "hammer-deb-package",
+      "hammer-defaults",
+      "hammer-discovery",
+      "hammer-discovery-rule",
+      "hammer-docker",
+      "hammer-domain",
+      "hammer-erratum",
+      "hammer-export-templates",
+      "hammer-fact",
+      "hammer-file",
+      "hammer-filter",
+      "hammer-foreign-input-set",
+      "hammer-full-help",
+      "hammer-global-parameter",
+      "hammer-host",
+      "hammer-host-collection",
+      "hammer-host-registration",
+      "hammer-hostgroup",
+      "hammer-http-proxy",
+      "hammer-import-templates",
+      "hammer-job-invocation",
+      "hammer-job-template",
+      "hammer-lifecycle-environment",
+      "hammer-location",
+      "hammer-mail-notification",
+      "hammer-medium",
+      "hammer-model",
+      "hammer-module-stream",
+      "hammer-organization",
+      "hammer-os",
+      "hammer-package",
+      "hammer-package-group",
+      "hammer-partition-table",
+      "hammer-ping",
+      "hammer-policy",
+      "hammer-prebuild-bash-completion",
+      "hammer-product",
+      "hammer-proxy",
+      "hammer-realm",
+      "hammer-recurring-logic",
+      "hammer-remote-execution-feature",
+      "hammer-report",
+      "hammer-report-template",
+      "hammer-repository",
+      "hammer-repository-set",
+      "hammer-role",
+      "hammer-scap-content",
+      "hammer-scap-content-profile",
+      "hammer-settings",
+      "hammer-shell",
+      "hammer-simple-content-access",
+      "hammer-srpm",
+      "hammer-status",
+      "hammer-subnet",
+      "hammer-subscription",
+      "hammer-sync-plan",
+      "hammer-tailoring-file",
+      "hammer-task",
+      "hammer-template",
+      "hammer-template-input",
+      "hammer-user",
+      "hammer-user-group",
+      "hammer-virt-who-config",
+      "hammer-webhook",
+      "hammer-webhook-template"
+    ]
+  },
+  "installing_capsule_server": {
+    "providing-feedback-on-red-hat-documentation_capsule": [
+
+    ],
+    "preparing-environment-for-capsule-installation": [
+      "system-requirements_capsule",
+      "capsule-storage-requirements_capsule",
+      "storage-guidelines_capsule",
+      "supported-operating-systems_capsule",
+      "capsule-ports-and-firewalls-requirements_capsule",
+      "Enabling_Connections_from_Proxy_to_Server_capsule",
+      "enabling-connections-to-capsule_capsule"
+    ],
+    "installing-capsule-server": [
+      "Registering_Proxy_to_Server_capsule",
+      "attaching-infrastructure-subscription_capsule",
+      "configuring-repositories-proxy_capsule",
+      "using-fapolicyd-on-server_capsule",
+      "Installing_Proxy_Packages_capsule",
+      "synchronizing-the-system-clock-with-chronyd_capsule",
+      "configuring-capsule-server-with-ssl-certificates",
+      "assigning-organization-location-capsule-server_capsule",
+      "installing-foreman-proxy-packages-dnf_capsule"
+    ],
+    "performing-additional-configuration-on-capsule-server": [
+      "configuring-capsule-for-host-registration-and-provisioning_capsule",
+      "configuring-remote-execution-for-pull-client_capsule",
+      "Enabling_OpenSCAP_on_capsule_Servers_capsule",
+      "Adding_Lifecycle_Environments_capsule",
+      "enabling-power-management-on-managed-hosts_capsule",
+      "configuring-dns-dhcp-and-tftp_capsule"
+    ],
+    "configuring-external-services": [
+      "configuring-external-dns_capsule",
+      "configuring-external-dhcp_capsule",
+      "configuring-external-tftp_capsule",
+      "configuring-external-idm-dns_capsule"
+    ],
+    "managing_dhcp_using_smart_proxy_capsule": [
+      "Securing_the_dhcpd_API_capsule"
+    ],
+    "managing_dns_using_smart_proxy_capsule": [
+
+    ],
+    "capsule-server-scalability-considerations_capsule": [
+
+    ],
+    "troubleshooting-dnf-modules_capsule": [
+      "Troubleshooting_Ruby_capsule",
+      "Troubleshooting_Postgresql_capsule"
+    ]
+  },
+  "installing_satellite_server_in_a_connected_network_environment": {
+    "providing-feedback-on-red-hat-documentation_satellite": [
+
+    ],
+    "preparing_your_environment_for_installation_satellite": [
+      "system-requirements_satellite",
+      "storage-requirements_satellite",
+      "storage-guidelines_satellite",
+      "supported-operating-systems_satellite",
+      "supported-browsers_satellite",
+      "Ports_and_Firewalls_Requirements_satellite",
+      "Enabling_Connections_from_a_Client_to_Server_satellite",
+      "verifying-dns-resolution_satellite"
+    ],
+    "preparing-environment-for-installation-in-ipv6-network_satellite": [
+      "limitations-of-installation-in-an-ipv6-network_satellite",
+      "requirements-for-installation-in-an-ipv6-network_satellite"
+    ],
+    "installing_server_connected_satellite": [
+      "configuring-http-proxy-to-connect-to-cdn_satellite",
+      "registering-to-red-hat-subscription-management_satellite",
+      "attaching-infrastructure-subscription_satellite",
+      "configuring-repositories_satellite",
+      "using-fapolicyd-on-server_satellite",
+      "Installing_Server_Packages_satellite",
+      "synchronizing-the-system-clock-with-chronyd_satellite",
+      "installing-the-sos-package_satellite",
+      "configuring-server_satellite",
+      "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite",
+      "configuring-foreman-repositories-el-dnf_el8"
+    ],
+    "performing-additional-configuration": [
+      "using-insights-with-satellite-server_satellite",
+      "disabling-registration-with-insights_satellite",
+      "Enabling_the_Client_Repository_satellite",
+      "Synchronizing_the_Client_Repository_satellite",
+      "configuring-remote-execution-for-pull-client-on-satellite-server_satellite",
+      "configuring-for-uefi-http-boot-provisioning-in-an-ipv6-network_satellite",
+      "Configuring_Server_with_an_HTTP_Proxy_satellite",
+      "enabling-power-management-on-managed-hosts_satellite",
+      "configuring-dns-dhcp-and-tftp_satellite",
+      "disabling-dns-dhcp-tftp-for-unmanaged-networks_satellite",
+      "Configuring_Server_for_Outgoing_Emails_satellite",
+      "configuring-an-alternate-cname_satellite",
+      "Configuring_Server_with_a_Custom_SSL_Certificate_satellite",
+      "using-external-databases_satellite",
+      "tuning-with-predefined-profiles_satellite",
+      "CLI_Enabling_the_Client_Repository_rhel_9_satellite",
+      "CLI_Enabling_the_Client_Repository_rhel_8_satellite",
+      "CLI_Enabling_the_Client_Repository_rhel_7_satellite",
+      "CLI_Enabling_the_Client_Repository_rhel_6_satellite",
+      "CLI_Synchronizing_the_Client_Repository_rhel_9_satellite",
+      "CLI_Synchronizing_the_Client_Repository_rhel_8_satellite",
+      "CLI_Synchronizing_the_Client_Repository_rhel_7_satellite",
+      "CLI_Synchronizing_the_Client_Repository_rhel_6_satellite",
+      "cli-adding-a-default-http-proxy_satellite"
+    ],
+    "configuring_external_authentication_satellite": [
+      "Using_LDAP_satellite",
+      "Using_FreeIPA_satellite",
+      "Using_Active_Directory_satellite",
+      "Configuring_External_User_Groups_satellite",
+      "Refreshing_External_User_Groups_for_LDAP_satellite",
+      "Refreshing_External_User_Groups_for_FreeIPA_or_AD_satellite",
+      "Configuring_the_Hammer_CLI_to_Use_Red_Hat_Identity_Management_User_Authentication_satellite",
+      "External_Authentication_for_Provisioned_Hosts_satellite",
+      "Configuring_Project_with_Keycloak_Authentication_keycloak-general",
+      "Configuring_Keycloak_Authentication_with_TOTP_keycloak-totp",
+      "Disabling_Keycloak_Authentication_satellite"
+    ],
+    "configuring-external-services": [
+      "configuring-external-dns_satellite",
+      "configuring-external-dhcp_satellite",
+      "configuring-external-tftp_satellite",
+      "configuring-external-idm-dns_satellite"
+    ],
+    "troubleshooting-dnf-modules_satellite": [
+      "Troubleshooting_Ruby_satellite",
+      "Troubleshooting_Postgresql_satellite"
+    ],
+    "applying-custom-configuration_satellite": [
+
+    ],
+    "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
+
+    ]
+  },
+  "installing_satellite_server_in_a_disconnected_network_environment": {
+    "providing-feedback-on-red-hat-documentation_satellite": [
+
+    ],
+    "preparing_your_environment_for_installation_satellite": [
+      "system-requirements_satellite",
+      "storage-requirements_satellite",
+      "storage-guidelines_satellite",
+      "supported-operating-systems_satellite",
+      "supported-browsers_satellite",
+      "Ports_and_Firewalls_Requirements_satellite",
+      "Enabling_Connections_from_a_Client_to_Server_satellite",
+      "verifying-dns-resolution_satellite"
+    ],
+    "installing_server_disconnected_satellite": [
+      "downloading-the-binary-dvd-images_satellite",
+      "configuring-the-base-operating-system-with-offline-repositories-in-rhel-8_satellite",
+      "using-fapolicyd-on-server_satellite",
+      "installing-from-the-offline-repositories_satellite",
+      "resolving-package-dependency-errors_satellite",
+      "synchronizing-the-system-clock-with-chronyd_satellite",
+      "installing-the-sos-package_satellite",
+      "configuring-server_satellite",
+      "disabling-subscription-connection_satellite",
+      "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite"
+    ],
+    "performing-additional-configuration": [
+      "configuring-satellite-server-to-consume-content-from-a-custom-cdn_satellite",
+      "how-to-configure-inter-server-sync_satellite",
+      "configuring-server-to-synchronize-content-over-a-network_satellite",
+      "configuring-server-to-sync-content-using-exports_satellite",
+      "Importing_Kickstart_Repositories_satellite",
+      "Enabling_the_Client_Repository_satellite",
+      "Synchronizing_the_Client_Repository_satellite",
+      "configuring-remote-execution-for-pull-client-on-satellite-server_satellite",
+      "enabling-power-management-on-managed-hosts_satellite",
+      "configuring-dns-dhcp-and-tftp_satellite",
+      "disabling-dns-dhcp-tftp-for-unmanaged-networks_satellite",
+      "Configuring_Server_for_Outgoing_Emails_satellite",
+      "Configuring_Server_with_a_Custom_SSL_Certificate_satellite",
+      "using-external-databases_satellite",
+      "tuning-with-predefined-profiles_satellite",
+      "CLI_Enabling_the_Client_Repository_rhel_9_satellite",
+      "CLI_Enabling_the_Client_Repository_rhel_8_satellite",
+      "CLI_Enabling_the_Client_Repository_rhel_7_satellite",
+      "CLI_Enabling_the_Client_Repository_rhel_6_satellite",
+      "CLI_Synchronizing_the_Client_Repository_rhel_9_satellite",
+      "CLI_Synchronizing_the_Client_Repository_rhel_8_satellite",
+      "CLI_Synchronizing_the_Client_Repository_rhel_7_satellite",
+      "CLI_Synchronizing_the_Client_Repository_rhel_6_satellite"
+    ],
+    "configuring-external-services": [
+      "configuring-external-dns_satellite",
+      "configuring-external-dhcp_satellite",
+      "configuring-external-tftp_satellite",
+      "configuring-external-idm-dns_satellite"
+    ],
+    "applying-custom-configuration_satellite": [
+
+    ],
+    "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
+
+    ],
+    "reverting_server_to_download_content_from_red_hat_cdn_satellite": [
+
+    ]
+  },
+  "managing_configurations_using_ansible_integration_in_red_hat_satellite": {
+    "providing-feedback-on-red-hat-documentation_ansible": [
+
+    ],
+    "getting_started_with_ansible_in_satellite_ansible": [
+      "supported-ansible-versions_ansible",
+      "Configuring_Your_satellite_to_Run_Ansible_Roles_ansible",
+      "Enabling_Ansible_Integration_with_satellite_ansible",
+      "Importing_Ansible_Roles_and_Variables_ansible",
+      "Overriding_Ansible_Variables_in_satellite_ansible",
+      "adding-rhel-system-roles_ansible",
+      "synchronizing-ansible-collections_ansible",
+      "customizing-ansible-configuration_ansible",
+      "using-ansible-vault-with-satellite_ansible",
+      "Ansible-paths_ansible"
+    ],
+    "using_ansible_roles_to_automate_repetitive_tasks_on_clients_ansible": [
+      "Assigning_Ansible_Roles_to_an_Existing_Host_ansible",
+      "removing-ansible-roles-from-a-host_ansible",
+      "changing-the-order-of-ansible-roles_ansible",
+      "running-ansible-roles-on-a-host_ansible",
+      "Assigning_Ansible_Roles_to_a_Host_Group_ansible",
+      "running-ansible-roles-on-a-host-group_ansible",
+      "running-ansible-roles-in-check-mode_ansible"
+    ],
+    "configuring_and_setting_up_remote_jobs_ansible": [
+      "about-running-jobs-on-hosts_ansible",
+      "remote-execution-workflow_ansible",
+      "permissions-for-remote-execution_ansible",
+      "transport-modes-for-remote-execution_ansible",
+      "Configuring_a_Host_to_Use_the_Pull_Client_ansible",
+      "creating-a-job-template_ansible",
+      "importing-an-ansible-playbook-by-name_ansible",
+      "importing-all-available-ansible-playbooks_ansible",
+      "Configuring_the_Fallback_to_any_capsule_Remote_Execution_Setting_in_satellite_ansible",
+      "Configuring_the_Global_capsule_Remote_Execution_Setting_in_satellite_ansible",
+      "Configuring_satellite_to_Use_an_Alternative_Directory_to_Execute_Remote_Jobs_on_Hosts_ansible",
+      "altering-the-privilege-elevation-method_ansible",
+      "Distributing_SSH_Keys_for_Remote_Execution_ansible",
+      "distributing-ssh-keys-for-remote-execution-manually_ansible",
+      "Using_the_satellite_API_to_Obtain_SSH_Keys_for_Remote_Execution_ansible",
+      "Configuring_a_Kickstart_Template_to_Distribute_SSH_Keys_During_Provisioning_ansible",
+      "configuring-a-keytab-for-kerberos-ticket-granting-tickets_ansible",
+      "configuring-kerberos-authentication-for-remote-execution_ansible",
+      "setting-up-job-templates_ansible",
+      "executing-a-remote-job_ansible",
+      "advanced-settings-in-the-job-wizard_ansible",
+      "using-extended-cron-lines_ansible",
+      "scheduling-a-recurring-ansible-job-for-a-host_ansible",
+      "Scheduling_a_Recurring_Ansible_Job_for_a_Host_Group_ansible",
+      "Monitoring_Jobs_ansible",
+      "setting-the-job-rate-limit-on-capsule_ansible",
+      "cli-creating-a-job-template_ansible",
+      "cli-executing-a-remote-job_ansible",
+      "cli-Monitoring_Jobs_ansible"
+    ],
+    "integrating_satellite_and_ansible_automation_controller_ansible": [
+      "Adding_satellite_Server_to_Ansible_Automation_Controller_as_a_Dynamic_Inventory_Item_ansible",
+      "Configuring_Provisioning_Callback_for_a_Host_ansible"
+    ],
+    "job_template_examples_and_extensions_ansible": [
+      "Customizing_Job_Templates_ansible",
+      "default-job-template-categories_ansible",
+      "Example_restorecon_Template_ansible",
+      "Rendering_a_restorecon_Template_ansible",
+      "Executing_a_restorecon_Template_on_Multiple_Hosts_ansible",
+      "Including_Power_Actions_in_Templates_ansible"
+    ]
+  },
+  "managing_configurations_using_puppet_integration_in_red_hat_satellite": {
+    "providing-feedback-on-red-hat-documentation_managing-configurations-puppet": [
+
+    ],
+    "introducing-configuration-management-using-puppet_managing-configurations-puppet": [
+      "How_Puppet_Integrates_With_Project_managing-configurations-puppet",
+      "supported-puppet-versions-and-system-requirements_managing-configurations-puppet",
+      "Enabling_Puppet_Integration_managing-configurations-puppet",
+      "Installing_and_Configuring_Puppet_Agent_during_Host_Provisioning_managing-configurations-puppet",
+      "installing-and-configuring-puppet-agent-during-host-registration_managing-configurations-puppet",
+      "Installing_and_Configuring_Puppet_Agent_Manually_managing-configurations-puppet",
+      "performing-configuration-management_managing-configurations-puppet",
+      "Disabling_Puppet_Integration_managing-configurations-puppet"
+    ],
+    "managing-puppet-modules_managing-configurations-puppet": [
+      "installing_a_puppet_module_managing-configurations-puppet",
+      "puppet_guide_updating_a_puppet_module_managing-configurations-puppet"
+    ],
+    "importing_puppet_classes_and_environments_managing-configurations-puppet": [
+
+    ],
+    "creating_a_custom_puppet_environment_managing-configurations-puppet": [
+
+    ],
+    "creating-a-puppet-config-group_managing-configurations-puppet": [
+
+    ],
+    "configuring_puppet_smart_class_parameters_managing-configurations-puppet": [
+      "Puppet_Parameter_Hierarchy_managing-configurations-puppet",
+      "Overriding_Smart_Class_Parameter_Globally_managing-configurations-puppet",
+      "Overriding_Smart_Class_Parameter_for_Organization_managing-configurations-puppet",
+      "Overriding_Smart_Class_Parameter_for_Location_managing-configurations-puppet",
+      "Overriding_Smart_Class_Parameter_Individual_Host_managing-configurations-puppet"
+    ],
+    "assigning-a-puppet-class-to-a-host-group_managing-configurations-puppet": [
+
+    ],
+    "assigning-a-puppet-class-to-an-individual-host_managing-configurations-puppet": [
+
+    ],
+    "enforcing-puppet-configuration-on-managed-hosts_managing-configurations-puppet": [
+      "running-puppet-once-using-ssh_managing-configurations-puppet",
+      "understanding-intervals-of-automatic-enforcement_managing-configurations-puppet",
+      "setting-the-puppet-agent-run-interval_managing-configurations-puppet",
+      "setting-the-global-out-of-sync-interval_managing-configurations-puppet",
+      "setting-the-puppet-out-of-sync-interval_managing-configurations-puppet",
+      "overriding-out-of-sync-interval-for-a-host-group_managing-configurations-puppet",
+      "overriding-out-of-sync-interval-for-an-individual-host_managing-configurations-puppet"
+    ]
+  },
+  "managing_content": {
+    "providing-feedback-on-red-hat-documentation_content-management": [
+
+    ],
+    "introduction_to_content_management_content-management": [
+
+    ],
+    "content_types_overview_content-management": [
+
+    ],
+    "managing_red_hat_subscriptions_content-management": [
+      "Importing_a_Red_Hat_Subscription_Manifest_into_Server_content-management",
+      "Locating_a_Red_Hat_Subscription_content-management",
+      "Adding_Red_Hat_Subscriptions_to_Subscription_Allocations_content-management",
+      "Removing_Red_Hat_Subscriptions_from_Subscription_Allocations_content-management",
+      "Updating_and_Refreshing_Red_Hat_Subscription_Manifests_content-management",
+      "Attaching_Red_Hat_Subscriptions_to_Content_Hosts_content-management",
+      "Updating_Red_Hat_Subscriptions_on_Multiple_Hosts_content-management"
+    ],
+    "managing_alternate_content_sources_content-management": [
+      "Configuring_Custom_Alternate_Content_Sources_content-management",
+      "Configuring_Simplified_Alternate_Content_Sources_content-management",
+      "Configuring_RHUI_Alternate_Content_Sources_content-management",
+      "cli-configuring-custom-alternate-content-sources_content-management",
+      "cli-configuring-simplified-alternate-content-sources_content-management",
+      "cli-configuring-rhui-alternate-content-sources_content-management"
+    ],
+    "importing_content_content-management": [
+      "Products_and_Repositories_content-management",
+      "Importing_Custom_SSL_Certificates_content-management",
+      "Creating_a_Custom_Product_content-management",
+      "Adding_Custom_RPM_Repositories_content-management",
+      "Enabling_Red_Hat_Repositories_content-management",
+      "Synchronizing_Repositories_content-management",
+      "Synchronizing_All_Repositories_in_an_Organization_content-management",
+      "Download_Policies_Overview_content-management",
+      "Changing_the_Default_Download_Policy",
+      "changing_the_download_policy_for_a_repository_content-management",
+      "Mirroring_Policies_Overview_content-management",
+      "Changing_the_Mirroring_Policy_for_a_Repository_content-management",
+      "Uploading_Content_to_custom_rpm_Repositories_content-management",
+      "Refreshing_Content_Counts_on_Capsule_content-management",
+      "configuring-selinux-to-permit-content-synchronization-on-custom-ports_content-management",
+      "Recovering_a_Corrupted_Repository_content-management",
+      "Republishing_Repository_Metadata_content-management",
+      "Republishing_Content_View_Metadata_content-management",
+      "Adding_an_HTTP_Proxy_content-management",
+      "Changing_the_HTTP_Proxy_Policy_for_a_Product_content-management",
+      "Changing_the_HTTP_Proxy_Policy_for_a_Repository_content-management",
+      "Creating_a_Sync_Plan_content-management",
+      "Assigning_a_Sync_Plan_to_a_Product_content-management",
+      "Assigning_a_Sync_Plan_to_Multiple_Products_content-management",
+      "Limiting_Synchronization_Concurrency_content-management",
+      "Importing_a_Custom_GPG_Key_content-management",
+      "Restricting_a_Custom_Repository_to_a_Specific_OS_Version_or_Architecture_in_Project_content-management",
+      "cli-importing-custom-ssl-certificates_content-management",
+      "cli-creating-a-custom-product",
+      "cli-adding-custom-rpm-repositories",
+      "cli-Changing_the_Mirroring_Policy_for_a_Repository_content-management",
+      "cli-adding-an-http-proxy",
+      "cli-Changing_the_HTTP_Proxy_Policy_for_a_Repository_content-management",
+      "cli-creating-a-sync-plan",
+      "cli-assigning-a-sync-plan-to-a-product",
+      "cli-importing-a-gpg-key"
+    ],
+    "restricting_hosts_access_to_content_content-management": [
+
+    ],
+    "managing_application_lifecycles_content-management": [
+      "introduction_to_application_lifecycle_content-management",
+      "Content_Promotion_across_the_Application_Lifecycle_content-management",
+      "Creating_a_Lifecycle_Environment_Path_content-management",
+      "Adding_Lifecycle_Environments_content-management",
+      "Removing_Lifecycle_Environments_from_Server_content-management",
+      "Removing_Lifecycle_Environments_from_Capsule_content-management",
+      "cli-Removing_Lifecycle_Environments_from_Server_content-management"
+    ],
+    "managing_content_views_content-management": [
+      "Creating_a_Content_View_content-management",
+      "Viewing_Module_Streams_content-management",
+      "Promoting_a_Content_View_content-management",
+      "Composite_Content_Views_Overview_content-management",
+      "Creating_a_Composite_Content_View_content-management",
+      "Content_Filter_Overview_content-management",
+      "Resolving_Package_Dependencies_content-management",
+      "enabling-dependency-solving-for-a-content-view_content-management",
+      "Content_Filter_Examples_content-management",
+      "Creating_a_Content_Filter_for_Yum_Content_content-management",
+      "Deleting_Multiple_Content_View_Versions_content-management",
+      "Clearing_the_Search_Filter_content-management",
+      "Standardizing_Content_View_Empty_States_content-management",
+      "Comparing_Content_View_Versions_content-management",
+      "Distributing_Archived_Content_View_Versions_content-management",
+      "cli-creating-a-content-view_content-management",
+      "cli-Viewing_Module_Streams_content-management",
+      "cli-promoting-a-content-view_content-management",
+      "cli-creating-a-composite-content-view_content-management",
+      "Combining_exclusion_filters_with_dependency_solving_content-management",
+      "Excluding_packages_and_dependency_solving_with_DNF_content-management",
+      "cli-creating-a-content-filter-yum_content-management"
+    ],
+    "synchronizing_content_between_servers_content-management": [
+      "how-to-synchronize-content-using-export-and-import_content-management",
+      "Synchronizing_a_Custom_Repository_content-management",
+      "Exporting_the_Library_Environment_content-management",
+      "Exporting_the_Library_Environment_in_a_Syncable_Format_content-management",
+      "Importing_Syncable_Exports_content-management",
+      "Exporting_Library_Incrementally_content-management",
+      "Exporting_the_Library_Environment_Incrementally_in_a_Syncable_Format_content-management",
+      "Exporting_a_Content_View_Version_content-management",
+      "Exporting_a_Content_View_Version_in_a_Syncable_Format_content-management",
+      "Exporting_a_Content_View_Version_Incrementally_content-management",
+      "Exporting_a_Content_View_Version_Incrementally_in_a_Syncable_Format_content-management",
+      "Exporting_a_Repository_content-management",
+      "Exporting_a_Repository_in_a_Syncable_Format_content-management",
+      "Exporting_Repository_Incrementally_content-management",
+      "Exporting_a_Repository_Incrementally_in_a_Syncable_Format_content-management",
+      "Keeping_Track_of_Your_Exports_content-management",
+      "Importing_into_the_Library_Environment_content-management",
+      "Importing_into_the_Library_Environment_from_a_web_server_content-management",
+      "Importing_a_Content_View_Version_content-management",
+      "Importing_a_Content_View_Version_from_a_web_servercontent-management",
+      "Importing_a_Repository_content-management",
+      "Importing_a_Repository_from_a_web_server_content-management",
+      "Exporting_and_Importing_Content_Using_Hammer_CLI_Cheat_Sheet_content-management"
+    ],
+    "managing_activation_keys_content-management": [
+      "Creating_an_Activation_Key_content-management",
+      "Updating_Subscriptions_Associated_with_an_Activation_Key_content-management",
+      "Using_Activation_Keys_for_Host_Registration_content-management",
+      "Enabling_Auto_Attach_content-management",
+      "Setting_the_Service_Level_content-management",
+      "enabling-and-disabling-repositories-on-activation-key_content-management",
+      "cli-creating-an-activation-key_content-management",
+      "cli-updating-subscriptions-associated-with-an-activation-key_content-management"
+    ],
+    "managing_errata_content-management": [
+      "Inspecting_Available_Errata_content-management",
+      "Parameters_Available_for_Errata_Search_content-management",
+      "Applying_installable_errata_content-management",
+      "Subscribing_to_Errata_Notifications_content-management",
+      "Limitations_to_Repository_Dependency_Resolution_content-management",
+      "Creating_a_Content_View_Filter_for_Errata_content-management",
+      "Adding_Errata_To_An_Incremental_Content_View_content-management",
+      "Applying_Errata_to_Hosts_content-management",
+      "Applying_Errata_to_Multiple_Hosts_content-management",
+      "Applying_Errata_to_a_Host_Collection_content-management",
+      "cli-inspecting-available-errata",
+      "cli-creating-a-content-view-filter-for-errata",
+      "cli-adding-errata-to-an-incremental-content-view",
+      "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_9_content-management",
+      "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_8_content-management",
+      "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_7_content-management"
+    ],
+    "con_managing-ostree-content_content-management": [
+      "importing-ostree-content_content-management",
+      "managing-ostree-content-with-content-views_content-management"
+    ],
+    "managing_container_images_content-management": [
+      "Importing_Container_Images_content-management",
+      "Managing_Container_Name_Patterns_content-management",
+      "Managing_Container_Registry_Authentication_content-management",
+      "Configuring_podman_to_trust_the_CA_content-management",
+      "Using_Container_Registries_content-management",
+      "cli-importing-container-images"
+    ],
+    "managing_iso_images_content-management": [
+      "Importing_ISO_Images_from_Red_Hat_content-management",
+      "Importing_Individual_ISO_Images_and_Files_content-management",
+      "cli-importing-iso-images-from-red-hat",
+      "cli-importing-individual-iso-images-and-files"
+    ],
+    "managing_ansible_content_content-management": [
+      "synchronizing-ansible-collections_content-management"
+    ],
+    "managing_custom_file_type_content_content-management": [
+      "Creating_a_Local_Source_for_a_Custom_File_Type_Repository_content-management",
+      "Creating_a_Remote_Source_for_a_Custom_File_Type_Repository_content-management",
+      "Creating_a_Custom_File_Type_Repository_content-management",
+      "Uploading_Files_To_a_Custom_File_Type_Repository_content-management",
+      "Downloading_Files_to_a_Host_from_a_Custom_File_Type_Repository_content-management",
+      "cli-creating-a-custom-file-type-repository_content-management"
+    ],
+    "using_an_nfs_share_for_content_storage_content-management": [
+
+    ],
+    "importing_kickstart_repositories_content-management": [
+      "Importing_Kickstart_Repositories_rhel-9",
+      "Importing_Kickstart_Repositories_rhel-8",
+      "Importing_Kickstart_Repositories_rhel-7"
+    ]
+  },
+  "managing_hosts": {
+    "providing-feedback-on-red-hat-documentation_managing-hosts": [
+
+    ],
+    "overview_of_hosts_managing-hosts": [
+
+    ],
+    "administering_hosts_managing-hosts": [
+      "Creating_a_Host_managing-hosts",
+      "Cloning_Hosts_managing-hosts",
+      "Associating_a_Virtual_Machine_from_a_Hypervisor_managing-hosts",
+      "Editing_the_System_Purpose_of_a_Host_managing-hosts",
+      "Editing_the_System_Purpose_of_Multiple_Hosts_managing-hosts",
+      "Changing_a_Module_Stream_for_a_Host_managing-hosts",
+      "Enabling_Custom_Repositories_on_Content_Hosts_managing-hosts",
+      "Creating_a_Host_Group_managing-hosts",
+      "Creating_a_Host_Group_for_each_Lifecycle_Environment_managing-hosts",
+      "adding-a-host-to-a-host-group_managing-hosts",
+      "Changing_the_Host_Group_of_a_Host_managing-hosts",
+      "adding-a-host-to-a-host-collection_managing-hosts",
+      "using-the-host-details-tab_managing-hosts",
+      "Changing_the_Content_Source_of_a_Host_managing-hosts",
+      "Changing_the_Environment_of_a_Host_managing-hosts",
+      "Changing_the_Managed_Status_of_a_Host_managing-hosts",
+      "enabling-tracer-on-a-host_managing-hosts",
+      "restarting-applications-on-a-host_managing-hosts",
+      "Assigning_a_Host_to_a_Specific_Organization_managing-hosts",
+      "Assigning_a_Host_to_a_Specific_Location_managing-hosts",
+      "switching-between-hosts_managing-hosts",
+      "Viewing_Host_Details_from_a_Content_Host_managing-hosts",
+      "selecting-host-columns_managing-hosts",
+      "Removing_a_Host_from_Server_managing-hosts",
+      "lifecycle_status_of_rhel_hosts_managing-hosts",
+      "cli-creating-a-host_managing-hosts",
+      "cli-creating-a-host-group_managing-hosts",
+      "cli-Removing_a_Host_from_Server_managing-hosts"
+    ],
+    "registering_hosts_to_server_managing-hosts": [
+      "supported-clients-in-registration_managing-hosts",
+      "registration-methods_managing-hosts",
+      "Registering_Hosts_by_Using_Global_Registration_managing-hosts",
+      "Registering_Hosts_by_Using_the_Bootstrap_Script_managing-hosts",
+      "Installing_Tracer_managing-hosts",
+      "installing-and-configuring-puppet-agent-during-host-registration_managing-hosts",
+      "Installing_and_Configuring_Puppet_Agent_Manually_managing-hosts",
+      "CLI_Setting_Permissions_for_the_Bootstrap_Script_managing-hosts"
+    ],
+    "adding_network_interfaces_managing-hosts": [
+      "Adding_a_Physical_Interface_managing-hosts",
+      "Adding_a_Virtual_Interface_managing-hosts",
+      "Adding_a_Bonded_Interface_managing-hosts",
+      "Bonding_Modes_Available_managing-hosts",
+      "Adding_a_Baseboard_Management_Controller_Interface_managing-hosts",
+      "cli-adding-a-bonded-interface_managing-hosts"
+    ],
+    "upgrading_hosts_to_next_major_rhel_release_managing-hosts": [
+
+    ],
+    "converting-a-host-to-rhel_managing-hosts": [
+      "ansible-variables-for-conversion_managing-hosts"
+    ],
+    "host_management_and_monitoring_using_cockpit_managing-hosts": [
+      "Enabling_Cockpit_on_Server_managing-hosts",
+      "Managing_and_Monitoring_Hosts_Using_Cockpit_managing-hosts",
+      "disabling-cockpit-on-project_managing-hosts"
+    ],
+    "monitoring_hosts_using_red_hat_insights_managing-hosts": [
+      "access_to_information_from_insights_in_Satellite_managing-hosts",
+      "excluding-hosts-from-rh-cloud-and-insights-client-reports_managing-hosts",
+      "deploying-red-hat-insights-using-the-ansible-role_managing-hosts",
+      "configuring_synchronization_of_insights_recommendations_for_hosts_managing-hosts",
+      "configuring_automatic_removal_of_hosts_from_the_insights_inventory_managing-hosts",
+      "Creating_an_Insights_Remediation_Plan_for_Hosts_managing-hosts"
+    ],
+    "using_report_templates_to_monitor_hosts_managing-hosts": [
+      "Generating_Host_Monitoring_Reports_managing-hosts",
+      "Creating_a_Report_Template_managing-hosts",
+      "Exporting_Report_Templates_managing-hosts",
+      "Exporting_Report_Templates_Using_the_API_managing-hosts",
+      "Importing_Report_Templates_managing-hosts",
+      "Importing_Report_Templates_Using_the_API_managing-hosts",
+      "Generating_a_List_of_Installed_Packages_managing-hosts",
+      "Creating_a_Report_Template_to_Monitor_Entitlements_managing-hosts",
+      "Report_Template_Safe_Mode_managing-hosts"
+    ],
+    "configuring_host_collections_managing-hosts": [
+      "Creating_a_Host_Collection_managing-hosts",
+      "Cloning_a_Host_Collection_managing-hosts",
+      "Removing_a_Host_Collection_managing-hosts",
+      "adding-hosts-to-a-host-collection-in-bulk_managing-hosts",
+      "Removing_a_Host_From_a_Host_Collection_managing-hosts",
+      "Adding_Content_to_a_Host_Collection_managing-hosts"
+    ],
+    "configuring_and_setting_up_remote_jobs_managing-hosts": [
+      "about-running-jobs-on-hosts_managing-hosts",
+      "remote-execution-workflow_managing-hosts",
+      "permissions-for-remote-execution_managing-hosts",
+      "transport-modes-for-remote-execution_managing-hosts",
+      "Configuring_a_Host_to_Use_the_Pull_Client_managing-hosts",
+      "creating-a-job-template_managing-hosts",
+      "importing-an-ansible-playbook-by-name_managing-hosts",
+      "importing-all-available-ansible-playbooks_managing-hosts",
+      "Configuring_the_Fallback_to_any_capsule_Remote_Execution_Setting_in_satellite_managing-hosts",
+      "Configuring_the_Global_capsule_Remote_Execution_Setting_in_satellite_managing-hosts",
+      "Configuring_satellite_to_Use_an_Alternative_Directory_to_Execute_Remote_Jobs_on_Hosts_managing-hosts",
+      "altering-the-privilege-elevation-method_managing-hosts",
+      "Distributing_SSH_Keys_for_Remote_Execution_managing-hosts",
+      "distributing-ssh-keys-for-remote-execution-manually_managing-hosts",
+      "Using_the_satellite_API_to_Obtain_SSH_Keys_for_Remote_Execution_managing-hosts",
+      "Configuring_a_Kickstart_Template_to_Distribute_SSH_Keys_During_Provisioning_managing-hosts",
+      "configuring-a-keytab-for-kerberos-ticket-granting-tickets_managing-hosts",
+      "configuring-kerberos-authentication-for-remote-execution_managing-hosts",
+      "setting-up-job-templates_managing-hosts",
+      "executing-a-remote-job_managing-hosts",
+      "advanced-settings-in-the-job-wizard_managing-hosts",
+      "using-extended-cron-lines_managing-hosts",
+      "scheduling-a-recurring-ansible-job-for-a-host_managing-hosts",
+      "Scheduling_a_Recurring_Ansible_Job_for_a_Host_Group_managing-hosts",
+      "Monitoring_Jobs_managing-hosts",
+      "setting-the-job-rate-limit-on-capsule_managing-hosts",
+      "cli-creating-a-job-template_managing-hosts",
+      "cli-executing-a-remote-job_managing-hosts",
+      "cli-Monitoring_Jobs_managing-hosts"
+    ],
+    "host_status_managing-hosts": [
+      "host-global-status-overview_managing-hosts",
+      "host-substatus-overview_managing-hosts"
+    ],
+    "synchronizing_templates_repositories_managing-hosts": [
+      "Enabling_the_TemplateSync_plugin_managing-hosts",
+      "Configuring_the_TemplateSync_plugin_managing-hosts",
+      "using-repository-sources_managing-hosts",
+      "Importing_and_Exporting_Templates_managing-hosts",
+      "Uninstalling_the_Foreman_Templates_Plugin_managing-hosts",
+      "cli_Importing_Templates_managing-hosts",
+      "api_Importing_Templates_managing-hosts",
+      "cli_Exporting_Templates_managing-hosts",
+      "api_Exporting_Templates_managing-hosts"
+    ],
+    "managing-packages_managing-hosts": [
+      "Enabling_and_Disabling_Repositories_on_Hosts_managing-hosts",
+      "Installing_Packages_on_a_Host_managing-hosts",
+      "upgrading-packages-on-a-host_managing-hosts",
+      "removing-packages-from-a-host_managing-hosts"
+    ],
+    "template_writing_reference_managing-hosts": [
+      "Accessing_the_Template_Writing_Reference_managing-hosts",
+      "Using_Autocompletion_in_Templates_managing-hosts",
+      "Writing_ERB_Templates_managing-hosts",
+      "Troubleshooting_ERB_Templates_managing-hosts",
+      "Generic_Project-specific_Macros_managing-hosts",
+      "Template_Macros_managing-hosts",
+      "Host_Specific_Variables_managing-hosts",
+      "Kickstart_Specific_Variables_managing-hosts",
+      "Conditional_Statements_managing-hosts",
+      "Parsing_Arrays_managing-hosts",
+      "Example_Template_Snippets_managing-hosts"
+    ],
+    "job_template_examples_and_extensions_managing-hosts": [
+      "Customizing_Job_Templates_managing-hosts",
+      "default-job-template-categories_managing-hosts",
+      "Example_restorecon_Template_managing-hosts",
+      "Rendering_a_restorecon_Template_managing-hosts",
+      "Executing_a_restorecon_Template_on_Multiple_Hosts_managing-hosts",
+      "Including_Power_Actions_in_Templates_managing-hosts"
+    ],
+    "overview-of-the-host-columns_managing-hosts": [
+
+    ]
+  },
+  "managing_security_compliance": {
+    "providing-feedback-on-red-hat-documentation_security-compliance": [
+
+    ],
+    "security-compliance-management_security-compliance": [
+
+    ],
+    "security_content_automation_protocol_security-compliance": [
+
+    ],
+    "scap_content_in_satellite_security-compliance": [
+      "supported-scap-versions_security-compliance"
+    ],
+    "compliance-policy-deployment-options_security-compliance": [
+
+    ],
+    "configuring-compliance-policy-deployment-methods_security-compliance": [
+
+    ],
+    "listing-available-scap-contents_security-compliance": [
+      "cli-listing-available-scap-contents_security-compliance"
+    ],
+    "configuring_scap_contents_security-compliance": [
+      "Loading_the_Default_SCAP_Contents_security-compliance",
+      "getting-supported-scap-contents-for-rhel_security-compliance",
+      "Uploading_Additional_SCAP_Content_security-compliance",
+      "tailoring-xccdf-profiles_security-compliance",
+      "Uploading_a_Tailoring_File_security-compliance",
+      "cli-Uploading_Additional_SCAP_Content_security-compliance"
+    ],
+    "managing_compliance_policies_security-compliance": [
+      "Creating_a_Compliance_Policy_security-compliance",
+      "Viewing_a_Compliance_Policy_security-compliance",
+      "Editing_a_Compliance_Policy_security-compliance",
+      "Deleting_a_Compliance_Policy_security-compliance"
+    ],
+    "deploying-compliance-policies_security-compliance": [
+      "inclusion-of-remote-scap-resources_security-compliance",
+      "applying-remote-scap-resources-in-a-disconnected-environment_security-compliance",
+      "Deploying_a_Policy_in_a_Host_Group_Using_Ansible_security-compliance",
+      "Deploying_a_Policy_on_a_Host_Using_Ansible_security-compliance",
+      "Deploying_a_Policy_in_a_Host_Group_Using_Puppet_security-compliance",
+      "Deploying_a_Policy_on_a_Host_Using_Puppet_security-compliance"
+    ],
+    "running-a-security-compliance-scan-on-demand_security-compliance": [
+
+    ],
+    "monitoring_compliance_security-compliance": [
+      "Searching_Compliance_Reports_security-compliance",
+      "Compliance_Email_Notifications_security-compliance",
+      "Viewing_Compliance_Policy_Statistics_security-compliance",
+      "examining-hosts-per-rule-compliance-result_security-compliance",
+      "Examining_Compliance_Failures_of_a_Host_security-compliance",
+      "Deleting_a_Compliance_Report_security-compliance",
+      "Deleting_Multiple_Compliance_Reports_security-compliance"
+    ]
+  },
+  "satellite_overview_concepts_and_deployment_considerations": {
+    "providing-feedback-on-red-hat-documentation_planning": [
+
+    ],
+    "introduction_to_server_planning": [
+      "System_Architecture_planning",
+      "sect-Architecture_System_Components",
+      "sect-Architecture_Supported_Usage",
+      "sect-Architecture_Supported_Client_Architectures",
+      "figu-Architecture_System_Architecture-System_Architecture",
+      "varl-Architecture_System_Architecture-External_Content_Sources",
+      "varl-Architecture_System_Architecture-RednbspHat_Satellite_Server",
+      "varl-Architecture_System_Architecture-Capsule_Servers",
+      "varl-Architecture_System_Architecture-Managed_Hosts",
+      "figu-Content_Lifecycle_planning",
+      "varl-Architecture_System_Components-Foreman",
+      "varl-Architecture_System_Components-Katello",
+      "varl-Architecture_System_Components-Candlepin",
+      "varl-Architecture_System_Components-Pulp",
+      "varl-Architecture_System_Components-Hammer",
+      "varl-Architecture_System_Components-REST_API",
+      "form-Architecture_Supported_Usage-Puppet",
+      "form-Architecture_Supported_Usage-Pulp",
+      "form-Architecture_Supported_Usage-Foreman",
+      "form-Architecture_Supported_Usage-Candlepin",
+      "form-Architecture_Supported_Usage-Embedded_Tomcat_Application_Server"
+    ],
+    "chap-documentation-architecture_guide-capsule_server_overview": [
+      "sect-Documentation-Architecture_Guide-Capsule_Features",
+      "sect-Documentation-Architecture_Guide-Capsule_Types",
+      "sect-Documentation-Architecture_Guide-Capsule_Networking",
+      "figu-Satellite_Topology_with_Isolated_Capsule",
+      "figu-Satellite_Topology_with_Internal_Capsule"
+    ],
+    "chap-architecture_guide-org_loc_and_lifecycle_environments": [
+      "_organizations",
+      "_locations",
+      "_lifecycle_environments",
+      "figu-Example_Topology_for_Server_planning",
+      "figu-An_Environment_Path_Containing_Four_Environments"
+    ],
+    "chap-architecture_guide-host_grouping_concepts": [
+      "sect-Architecture_Guide-Host_Group_Hierarchies",
+      "figu-Life_Cycle_Environment_Based_Structure",
+      "brid-Flat_Structure",
+      "brid-Lifecycle_Environment_Based_Structure",
+      "brid-Flat_Host_Group_Structure",
+      "brid-Location_Based_Structure"
+    ],
+    "chap-architecture_guide-provisioning_concepts": [
+      "_pxe_booting",
+      "http-booting",
+      "_kickstart"
+    ],
+    "chap-architecture_guide-content_delivery_network_structure": [
+
+    ],
+    "chap-architecture_guide-deployment_scenarios": [
+      "sect-Architecture_Guide-Single_Location",
+      "sect-Architecture_Guide-Single",
+      "sect-Architecture_Guide-Multiple_Locations",
+      "sect-Architecture_Guide-Disconnected_Satellite",
+      "sect-Architecture_Guide-Capsule_with_External_Services"
+    ],
+    "chap-architecture_guide-deployment_considerations": [
+      "sect-Satellite_Server_Configuration",
+      "satellite_server_with_external_database",
+      "sect-Mapping_the_Infrastructure_Topology",
+      "sect-Defining_Content_Sources",
+      "sect-Defining_the_Content_Lifecycle",
+      "sect-Defining_Content_Deployment",
+      "sect-Automating_the_Provisioning",
+      "sect-Defining_Role_Based_Authentication",
+      "sect-Additional_Tasks",
+      "satellite_server_with_multiple_manifests_image"
+    ],
+    "chap-documentation-architecture_guide-required_technical_users": [
+
+    ],
+    "appe-architecture_guide-glossary_of_terms": [
+      "varl-Glossary_of_Terms-Activation_Key",
+      "varl-Glossary_of_Terms-Answer_File",
+      "varl-Glossary_of_Terms-ARF_Report",
+      "varl-Glossary_of_Terms-Audits",
+      "varl-Glossary_of_Terms-BMC",
+      "varl-Glossary_of_Terms-Bootdisk",
+      "varl-Glossary_of_Terms-Capsule",
+      "varl-Glossary_of_Terms-Catalog",
+      "varl-Glossary_of_Terms-Candlepin",
+      "varl-Glossary_of_Terms-Compliance_Policy",
+      "varl-Glossary_of_Terms-Compute_Profile",
+      "varl-Glossary_of_Terms-Compute_Resource",
+      "varl-Glossary_of_Terms-Container",
+      "varl-Glossary_of_Terms-Container_Image",
+      "varl-Glossary_of_Terms-Content",
+      "varl-Glossary_of_Terms-Content_Delivery_Network_CDN",
+      "varl-Glossary_of_Terms-Content_Host",
+      "varl-Glossary_of_Terms-Content_View",
+      "varl-Glossary_of_Terms-Discovered_Host",
+      "varl-Glossary_of_Terms-Discovery_Image",
+      "varl-Glossary_of_Terms-Discovery_Plug-in",
+      "varl-Glossary_of_Terms-Discovery_Rule",
+      "varl-Glossary_of_Terms-Docker_Tag",
+      "varl-Glossary_of_Terms-ERB",
+      "varl-Glossary_of_Terms-Errata",
+      "varl-Glossary_of_Terms-External_Node_Classifier",
+      "varl-Glossary_of_Terms-Facter",
+      "varl-Glossary_of_Terms-Facts",
+      "varl-Glossary_of_Terms-Foreman",
+      "varl-Glossary_of_Terms-satellite-maintain_Services",
+      "varl-Glossary_of_Terms-Foreman_Hooks",
+      "varl-Glossary_of_Terms-Full_Host_Image",
+      "varl-Glossary_of_Terms-Generic_Image",
+      "varl-Glossary_of_Terms-Hammer",
+      "varl-Glossary_of_Terms-Host",
+      "varl-Glossary_of_Terms-Host_Collection",
+      "varl-Glossary_of_Terms-Host_Group",
+      "varl-Glossary_of_Terms-Host_Image",
+      "varl-Glossary_of_Terms-Incremental_Update",
+      "varl-Glossary_of_Terms-Job",
+      "varl-Glossary_of_Terms-Job_Template",
+      "varl-Glossary_of_Terms-Katello",
+      "varl-Glossary_of_Terms-Location",
+      "varl-Glossary_of_Terms-Library",
+      "varl-Glossary_of_Terms-Life_Cycle_Environment",
+      "varl-Glossary_of_Terms-Life_Cycle_Environment_Path",
+      "varl-Glossary_of_Terms-Manifest",
+      "varl-Glossary_of_Terms-Migrating",
+      "varl-Glossary_of_Terms-OpenSCAP",
+      "varl-Glossary_of_Terms-Organization",
+      "varl-Glossary_of_Terms-Parameters",
+      "varl-Glossary_of_Terms-Parametrized_Class",
+      "varl-Glossary_of_Terms-Permission",
+      "varl-Glossary_of_Terms-Product",
+      "varl-Glossary_of_Terms-Promote",
+      "varl-Glossary_of_Terms-Provisioning_Template",
+      "varl-Glossary_of_Terms-Publish",
+      "varl-Glossary_of_Terms-Pulp",
+      "varl-Glossary_of_Terms-Pulp_Mirror",
+      "varl-Glossary_of_Terms-Puppet",
+      "varl-Glossary_of_Terms-Puppet_Agent",
+      "varl-Glossary_of_Terms-Puppet_Environment",
+      "varl-Glossary_of_Terms-Puppet_Manifest",
+      "varl-Glossary_of_Terms-Puppet_Master",
+      "varl-Glossary_of_Terms-Puppet_Module",
+      "varl-Glossary_of_Terms-Recurring_Logic",
+      "varl-Glossary_of_Terms-Registry",
+      "varl-Glossary_of_Terms-Repository",
+      "varl-Glossary_of_Terms-Resource_type",
+      "varl-Glossary_of_Terms-Role",
+      "varl-Glossary_of_Terms-SCAP_Content",
+      "varl-Glossary_of_Terms-Scenario",
+      "varl-Glossary_of_Terms-Smart_Proxy",
+      "varl-Glossary_of_Terms-Standard_Operating_Environment_SOE",
+      "varl-Glossary_of_Terms-Subnet_Image",
+      "varl-Glossary_of_Terms-Subscription",
+      "varl-Glossary_of_Terms-Synchronization",
+      "varl-Glossary_of_Terms-Synchronization_Plans",
+      "varl-Glossary_of_Terms-Task",
+      "varl-Glossary_of_Terms-Trend",
+      "varl-Glossary_of_Terms-Updating",
+      "varl-Glossary_of_Terms-Upgrading",
+      "varl-Glossary_of_Terms-User_Group",
+      "varl-Glossary_of_Terms-User",
+      "varl-Glossary_of_Terms-virt-who"
+    ]
+  },
+  "provisioning_hosts": {
+    "providing-feedback-on-red-hat-documentation_provisioning": [
+
+    ],
+    "introduction_to_provisioning_provisioning": [
+      "provisioning-overview_provisioning",
+      "supported-cloud-providers_provisioning",
+      "supported-virtualization-infrastructure_provisioning",
+      "Network_Boot_Provisioning_Workflow_provisioning"
+    ],
+    "configuring_provisioning_resources_provisioning": [
+      "provisioning-contexts_provisioning",
+      "setting-the-provisioning-context_provisioning",
+      "creating-operating-systems_provisioning",
+      "updating-the-details-of-multiple-operating-systems_provisioning",
+      "creating-architectures_provisioning",
+      "creating-hardware-models_provisioning",
+      "using-a-synced-kickstart-repository_provisioning",
+      "adding-installation-media_provisioning",
+      "creating-partition-tables_provisioning",
+      "dynamic-partition-example_provisioning",
+      "provisioning-templates_provisioning",
+      "types-of-provisioning-templates_provisioning",
+      "creating-provisioning-templates_provisioning",
+      "cloning-provisioning-templates_provisioning",
+      "Creating_Custom_Provisioning_Snippets_provisioning",
+      "Custom_Provisioning_Snippet_Example_for_Enterprise_Linux_provisioning",
+      "Associating_Templates_with_Operating_Systems_provisioning",
+      "creating-compute-profiles_provisioning",
+      "setting-a-default-encrypted-root-password_provisioning",
+      "using-novnc-to-access-virtual-machines_provisioning",
+      "cli-creating-operating-systems_provisioning",
+      "cli-adding-installation-media_provisioning",
+      "cli-creating-partition-tables_provisioning",
+      "cli-Creating_Custom_Provisioning_Snippets_provisioning"
+    ],
+    "configuring_networking_provisioning": [
+      "facts-and-nic-filtering_provisioning",
+      "optimizing-performance-by-removing-nics-from-database_provisioning",
+      "Network_Resources_provisioning",
+      "DHCP_Options_provisioning",
+      "Troubleshooting_DHCP_Problems_provisioning",
+      "Prerequisites_for_Image_Based_Provisioning_provisioning",
+      "Configuring_Network_Services_provisioning",
+      "Adding_a_Domain_to_Server_provisioning",
+      "Adding_a_Subnet_to_Server_provisioning",
+      "cli-adding-a-domain_provisioning",
+      "cli-adding-a-subnet_provisioning"
+    ],
+    "using_infoblox_as_dhcp_and_dns_providers_provisioning": [
+      "Infoblox_Limitations_provisioning",
+      "Infoblox_Prerequisites_provisioning",
+      "Installing_the_Infoblox_CA_Certificate_on_Smart_Proxy_provisioning",
+      "Installing_the_DHCP_Infoblox_Module_provisioning",
+      "Installing_the_DNS_Infoblox_Module_provisioning"
+    ],
+    "configuring_ipxe_to_reduce_provisioning_times_provisioning": [
+      "Booting_Virtual_Machines_provisioning",
+      "Chainbooting_iPXE_from_PXELinux_provisioning"
+    ],
+    "using_pxe_to_provision_hosts_provisioning": [
+      "Prerequisites_for_Bare_Metal_Provisioning_provisioning",
+      "Configuring_the_Security_Token_Validity_Duration_provisioning",
+      "Creating_Hosts_with_Unattended_Provisioning_provisioning",
+      "Creating_Hosts_with_PXE_less_Provisioning_provisioning",
+      "Creating_Hosts_with_UEFI_HTTP_Boot_Provisioning_provisioning",
+      "Deploying_SSH_Keys_During_Provisioning_provisioning",
+      "cli-creating-hosts-with-unattended-provisioning_provisioning",
+      "cli-creating-hosts-with-pxe-less-provisioning_provisioning",
+      "cli-creating-hosts-with-uefi-http-boot-provisioning_provisioning"
+    ],
+    "configuring_the_discovery_service_provisioning": [
+      "Installing_the_Discovery_Service_provisioning",
+      "Provisioning_Template_PXELinux_Discovery_Snippet_provisioning",
+      "Automatic_Contexts_for_Discovered_Hosts_provisioning",
+      "Discovery_Templates_and_Snippets_Settings_provisioning",
+      "Creating_Hosts_from_Discovered_Hosts_provisioning",
+      "Creating_Discovery_Rules_provisioning",
+      "Implementing_PXE_less_Discovery_provisioning",
+      "Unattended_Use_Customization_and_Image_Remastering_provisioning",
+      "Extending_the_Discovery_Image_provisioning",
+      "Troubleshooting_Discovery_provisioning",
+      "cli-creating-hosts-from-discovered-hosts_provisioning",
+      "cli-creating-discovery-rules_provisioning"
+    ],
+    "using_an_image_builder_image_for_provisioning_provisioning": [
+
+    ],
+    "provisioning_virtual_machines_on_kvm_kvm-provisioning": [
+      "configuring-server-for-kvm-connections_kvm-provisioning",
+      "adding-kvm-connection_kvm-provisioning",
+      "adding-images-to-server_kvm-provisioning",
+      "adding-kvm-details-to-a-compute-profile_kvm-provisioning",
+      "creating-network-or-image-based-hosts_kvm-provisioning",
+      "cli-adding-kvm-connection_kvm-provisioning",
+      "cli-adding-images-to-server_kvm-provisioning",
+      "cli-adding-kvm-details-to-a-compute-profile_kvm-provisioning",
+      "cli-creating-network-or-image-based-hosts_kvm-provisioning"
+    ],
+    "provisioning_virtual_machines_on_ovirt_rhv-provisioning": [
+      "adding-rhv-connection_rhv-provisioning",
+      "preparing-cloud-init-images-in-rhv_rhv-provisioning",
+      "adding-images-to-server_rhv-provisioning",
+      "preparing-a-cloud-init-template_rhv-provisioning",
+      "adding-rhv-details-to-a-compute-profile_rhv-provisioning",
+      "creating-network-or-image-based-hosts_rhv-provisioning",
+      "cli-adding-rhv-connection_rhv-provisioning",
+      "cli-adding-images-to-server_rhv-provisioning",
+      "cli-adding-rhv-details-to-a-compute-profile_rhv-provisioning",
+      "cli-creating-network-or-image-based-hosts_rhv-provisioning"
+    ],
+    "provisioning_virtual_machines_in_vmware_vmware-provisioning": [
+      "Installing_VMware_Plugin_vmware-provisioning",
+      "Prerequisites_for_VMware_Provisioning_vmware-provisioning",
+      "Creating_a_VMware_User_vmware-provisioning",
+      "Adding_a_VMware_Connection_to_Server_vmware-provisioning",
+      "Adding_VMware_Images_to_Server_vmware-provisioning",
+      "Adding_VMware_Details_to_a_Compute_Profile_vmware-provisioning",
+      "Creating_Hosts_on_VMware_vmware-provisioning",
+      "Using_VMware_Cloud_Init_and_Userdata_Templates_for_Provisioning_vmware-provisioning",
+      "Deleting_a_VM_on_VMware_vmware-provisioning",
+      "Importing_a_Virtual_Machine_from_VMware_vmware-provisioning",
+      "Caching_of_Compute_Resources_vmware-provisioning",
+      "cli-adding-vmware-vsphere-connection_vmware-provisioning",
+      "cli-adding-vmware-vsphere-images-to-server_vmware-provisioning",
+      "cli-Adding_VMware_Details_to_a_Compute_Profile_vmware-provisioning",
+      "cli-creating-hosts-on-vmware-vsphere_vmware-provisioning"
+    ],
+    "provisioning_virtual_machines_kubevirt_kubevirt-provisioning": [
+      "adding-kubevirt-connection_kubevirt-provisioning"
+    ],
+    "provisioning_cloud_instances_openstack_openstack-provisioning": [
+      "adding-openstack-connection_openstack-provisioning",
+      "adding-images-to-server_openstack-provisioning",
+      "adding-openstack-details-to-a-compute-profile_openstack-provisioning",
+      "creating-image-only-hosts_openstack-provisioning",
+      "cli-adding-openstack-connection_openstack-provisioning",
+      "cli-adding-images-to-server_openstack-provisioning",
+      "cli-creating-image-only-hosts_openstack-provisioning"
+    ],
+    "provisioning_cloud_instances_in_amazon_ec2_ec2-provisioning": [
+      "Prerequisites_for_Amazon_EC2_Provisioning_ec2-provisioning",
+      "Installing_Amazon_EC2_Plugin_ec2-provisioning",
+      "Adding_an_Amazon_EC2_Connection_to_Server_ec2-provisioning",
+      "Using_an_HTTP_Proxy_with_Compute_Resources_Amazon_EC2_ec2-provisioning",
+      "Creating_an_Image_for_Amazon_EC2_ec2-provisioning",
+      "Adding_Amazon_EC2_Images_to_Server_ec2-provisioning",
+      "Adding_Amazon_EC2_Details_to_a_Compute_Profile_ec2-provisioning",
+      "Creating_Image_Based_Hosts_on_Amazon_EC2_ec2-provisioning",
+      "Connecting_to_an_Amazon_EC2_Instance_Using_SSH_ec2-provisioning",
+      "Configuring_a_Finish_Template_for_Amazon_EC2_ec2-provisioning",
+      "Deleting_a_Virtual_Machine_on_Amazon_EC2_ec2-provisioning",
+      "Uninstalling_Amazon_EC2_Plugin_ec2-provisioning",
+      "More_Information_About_Amazon_Web_Services_ec2-provisioning",
+      "cli-adding-amazon-ec2-connection_ec2-provisioning",
+      "cli-adding-amazon-ec2-images_ec2-provisioning",
+      "cli-creating-hosts-on-amazon-ec2_ec2-provisioning"
+    ],
+    "provisioning_cloud_instances_on_google_compute_engine_gce-provisioning": [
+      "Adding_a_Google_GCE_Connection_gce-provisioning",
+      "adding-images-to-server_gce-provisioning",
+      "Adding_Google_GCE_Details_to_a_Compute_Profile_gce-provisioning",
+      "creating-image-only-hosts_gce-provisioning",
+      "Deleting_a_VM_on_Google_GCE_gce-provisioning",
+      "cli-Adding_a_Google_GCE_Connection_gce-provisioning",
+      "cli-adding-images-to-server_gce-provisioning",
+      "cli-Adding_Google_GCE_Details_to_a_Compute_Profile_gce-provisioning",
+      "cli-creating-image-only-hosts_gce-provisioning"
+    ],
+    "provisioning_cloud_instances_on_microsoft_azure_resource_manager_azure-provisioning": [
+      "Adding_a_Microsoft_Azure_Resource_Manager_Connection_azure-provisioning",
+      "adding-images-to-server_azure-provisioning",
+      "Adding_Microsoft_Azure_Resource_Manager_Details_to_a_Compute_Profile_azure-provisioning",
+      "creating-image-only-hosts_azure-provisioning",
+      "Deleting_a_VM_on_Microsoft_Azure_azure-provisioning",
+      "Uninstalling_Microsoft_Azure_Plugin_azure-provisioning",
+      "cli-Adding_a_Microsoft_Azure_Resource_Manager_Connection_azure-provisioning",
+      "cli-adding-images-to-server_azure-provisioning",
+      "cli-Adding_Microsoft_Azure_Resource_Manager_Details_to_a_Compute_Profile_azure-provisioning",
+      "cli-creating-image-only-hosts_azure-provisioning"
+    ],
+    "initialization_script_for_provisioning_examples_provisioning": [
+
+    ],
+    "provisioning_fips_compliant_hosts_provisioning": [
+      "Changing_the_Provisioning_Password_Hashing_Algorithm_provisioning",
+      "Setting_the_FIPS_Enabled_Parameter_provisioning",
+      "Verifying_FIPS_Mode_Is_Enabled_provisioning"
+    ],
+    "building_cloud_images_provisioning": [
+      "Creating_Custom_RHEL_Images_provisioning",
+      "supported-clients-in-registration_provisioning",
+      "Configuring_a_Host_for_Registration_provisioning",
+      "registering-a-host_provisioning",
+      "Installing_and_Configuring_Puppet_Agent_Manually_provisioning",
+      "Completing_the_RHEL7_Image_provisioning",
+      "Completing_the_RHEL6_Image_provisioning",
+      "Next_Steps_provisioning"
+    ],
+    "host_parameter_hierarchy_provisioning": [
+
+    ],
+    "permissions-required-to-provision-hosts_provisioning": [
+
+    ]
+  },
+  "tuning_performance_of_red_hat_satellite": {
+    "providing-feedback-on-red-hat-documentation_performance-tuning": [
+
+    ],
+    "introduction_to_performance_tuning_performance-tuning": [
+
+    ],
+    "performance_tuning_quickstart_performance-tuning": [
+
+    ],
+    "system_requirements_for_tuning_performance-tuning": [
+
+    ],
+    "determining_hardware_and_os_configuration_performance-tuning": [
+      "Benchmarking_Disk_Performance_performance-tuning",
+      "Enabling_Tuned_Profiles_performance-tuning",
+      "Disable_Transparent_Hugepage_performance-tuning"
+    ],
+    "configuring_project_for_performance_performance-tuning": [
+      "Applying_configurations_performance-tuning",
+      "Puma_Tunings_performance-tuning",
+      "Apache_HTTPD_Performance_Tuning_performance-tuning",
+      "Dynflow_Tuning_performance-tuning",
+      "Pull_based_REX_transport_tuning_performance-tuning",
+      "PostgreSQL_Tuning_performance-tuning",
+      "Redis_Tuning_performance-tuning",
+      "Smart_Proxy_Configuration_Tuning_performance-tuning"
+    ]
+  },
+  "upgrading_red_hat_satellite": {
+    "providing-feedback-on-red-hat-documentation_upgrading-connected": [
+
+    ],
+    "upgrading_overview_upgrading-connected": [
+      "upgrading_prerequisites_upgrading-connected",
+      "upgrade_paths_upgrading-connected",
+      "Upgrading_Proxies_Separately_from_Server_upgrading-connected",
+      "following_the_progress_of_the_upgrade_upgrading-connected"
+    ],
+    "upgrading_satellite_upgrading-connected": [
+      "Project_Upgrade_Considerations_upgrading-connected",
+      "upgrading_a_connected_satellite_server_upgrading-connected",
+      "synchronizing_the_new_repositories_upgrading-connected",
+      "upgrading_capsule_server_upgrading-connected",
+      "Upgrading_the_External_Database_upgrading-connected"
+    ]
+  }
+}
