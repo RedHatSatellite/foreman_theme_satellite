@@ -55,11 +55,11 @@ module ForemanThemeSatellite
       'CreatingSCAPcontent' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/configuring_scap_contents_security-compliance",
 
       # Planning
-      'SmartProxies' => "#{ForemanThemeSatellite.documentation_root}/overview_concepts_and_deployment_considerations/chap-documentation-architecture_guide-capsule_server_overview",
-      'Auditing' => "#{ForemanThemeSatellite.documentation_root}/overview_concepts_and_deployment_considerations/appe-architecture_guide-glossary_of_terms#varl-Glossary_of_Terms-Audits",
+      'SmartProxies' => "#{ForemanThemeSatellite.documentation_root}/overview_concepts_and_deployment_considerations/major-satellite-components_planning#Capsule-Overview_planning",
+      'Auditing' => "#{ForemanThemeSatellite.documentation_root}/overview_concepts_and_deployment_considerations/glossary-of-terms-used-in-satellite_planning#Audits",
 
       # Install
-      'HTTP(S)Proxy' => "#{ForemanThemeSatellite.documentation_root}/installing_satellite_server_in_a_connected_network_environment/performing-additional-configuration#Configuring_Server_with_an_HTTP_Proxy_satellite",
+      'HTTP(S)Proxy' => "#{ForemanThemeSatellite.documentation_root}/installing_satellite_server_in_a_connected_network_environment/performing-additional-configuration-on-server_satellite#Configuring_Server_with_an_HTTP_Proxy_satellite",
 
       # Misc
       'GettingHelp' => "https://access.redhat.com/products/red-hat-satellite/#support",
