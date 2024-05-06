@@ -5,8 +5,8 @@ module ForemanThemeSatellite
   module Documentation
     USER_GUIDE_DICTIONARY = {
       # Ansible
-      'ImportingRoles' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_ansible_integration_in_red_hat_satellite/getting_started_with_ansible_in_satellite_ansible#Importing_Ansible_Roles_and_Variables_ansible",
-      'Variables' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_ansible_integration_in_red_hat_satellite/getting_started_with_ansible_in_satellite_ansible#Overriding_Ansible_Variables_in_satellite_ansible",
+      'ImportingRoles' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_ansible_integration/getting_started_with_ansible_in_satellite_ansible#Importing_Ansible_Roles_and_Variables_ansible",
+      'Variables' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_ansible_integration/getting_started_with_ansible_in_satellite_ansible#Overriding_Ansible_Variables_in_satellite_ansible",
 
       # Managing Hosts
       'ForemanRemoteExecution' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts",
@@ -34,12 +34,12 @@ module ForemanThemeSatellite
       'Networking' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/configuring_networking_provisioning#Adding_a_Subnet_to_Server_provisioning",
 
       # Puppet Guide
-      'FactsandtheENC' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration_in_red_hat_satellite/introducing-configuration-management-using-puppet_managing-configurations-puppet#performing-configuration-management_managing-configurations-puppet",
-      'using-config-groups' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration_in_red_hat_satellite/creating-a-puppet-config-group_managing-configurations-puppet",
-      'SmartMatchers' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration_in_red_hat_satellite/configuring_puppet_smart_class_parameters_managing-configurations-puppet",
-      'Parameters' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration_in_red_hat_satellite/configuring_puppet_smart_class_parameters_managing-configurations-puppet",
-      'Classes' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration_in_red_hat_satellite/importing_puppet_classes_and_environments_managing-configurations-puppet",
-      'Environments' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration_in_red_hat_satellite/creating_a_custom_puppet_environment_managing-configurations-puppet",
+      'FactsandtheENC' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration/introducing-configuration-management-using-puppet_managing-configurations-puppet#performing-configuration-management_managing-configurations-puppet",
+      'using-config-groups' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration/creating-a-puppet-config-group_managing-configurations-puppet",
+      'SmartMatchers' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration/configuring_puppet_smart_class_parameters_managing-configurations-puppet",
+      'Parameters' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration/configuring_puppet_smart_class_parameters_managing-configurations-puppet",
+      'Classes' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration/importing_puppet_classes_and_environments_managing-configurations-puppet",
+      'Environments' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration/creating_a_custom_puppet_environment_managing-configurations-puppet",
 
       # Administering
       'ConfigurationOptions' => "#{ForemanThemeSatellite.documentation_root}/administering_red_hat_satellite/",
@@ -55,11 +55,11 @@ module ForemanThemeSatellite
       'CreatingSCAPcontent' => "#{ForemanThemeSatellite.documentation_root}/managing_security_compliance/configuring_scap_contents_security-compliance",
 
       # Planning
-      'SmartProxies' => "#{ForemanThemeSatellite.documentation_root}/satellite_overview_concepts_and_deployment_considerations/chap-documentation-architecture_guide-capsule_server_overview",
-      'Auditing' => "#{ForemanThemeSatellite.documentation_root}/satellite_overview_concepts_and_deployment_considerations/appe-architecture_guide-glossary_of_terms#varl-Glossary_of_Terms-Audits",
+      'SmartProxies' => "#{ForemanThemeSatellite.documentation_root}/overview_concepts_and_deployment_considerations/major-satellite-components_planning#Capsule-Overview_planning",
+      'Auditing' => "#{ForemanThemeSatellite.documentation_root}/overview_concepts_and_deployment_considerations/glossary-of-terms-used-in-satellite_planning#Audits",
 
       # Install
-      'HTTP(S)Proxy' => "#{ForemanThemeSatellite.documentation_root}/installing_satellite_server_in_a_connected_network_environment/performing-additional-configuration#Configuring_Server_with_an_HTTP_Proxy_satellite",
+      'HTTP(S)Proxy' => "#{ForemanThemeSatellite.documentation_root}/installing_satellite_server_in_a_connected_network_environment/performing-additional-configuration-on-server_satellite#Configuring_Server_with_an_HTTP_Proxy_satellite",
 
       # Misc
       'GettingHelp' => "https://access.redhat.com/products/red-hat-satellite/#support",
