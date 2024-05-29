@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# rubocop:disable Metrics/LineLength
+# rubocop:disable Layout/LineLength
 module ForemanThemeSatellite
   module Documentation
     USER_GUIDE_DICTIONARY = {

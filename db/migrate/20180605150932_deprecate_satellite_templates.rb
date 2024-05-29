@@ -1,3 +1,5 @@
+# rubocop:disable Rails/SkipsModelValidations
+
 require_relative '../../lib/foreman_theme_satellite/deprecated_templates'
 
 class DeprecateSatelliteTemplates < ActiveRecord::Migration[5.1]
@@ -50,3 +52,5 @@ class DeprecateSatelliteTemplates < ActiveRecord::Migration[5.1]
     destination.operatingsystem_ids = (destination.operatingsystem_ids + source.operatingsystem_ids).uniq
   end
 end
+
+# rubocop:enable Rails/SkipsModelValidations

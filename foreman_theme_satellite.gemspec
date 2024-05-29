@@ -20,8 +20,5 @@ Gem::Specification.new do |s|
   s.add_dependency "activesupport"
   s.add_dependency "deface"
   s.add_development_dependency 'rdoc'
-  s.add_development_dependency 'rubocop'
-  s.add_development_dependency 'rubocop-minitest'
-  s.add_development_dependency 'rubocop-performance'
-  s.add_development_dependency 'rubocop-rails'
+  s.add_development_dependency 'theforeman-rubocop', '~> 0.1.0'
 end

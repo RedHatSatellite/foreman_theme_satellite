@@ -1,9 +1,8 @@
 inherit_from: .rubocop_todo.yml
 
-require:
-  - rubocop-performance
-  - rubocop-rails
-  - rubocop-minitest
+inherit_gem:
+  theforeman-rubocop:
+    - default.yml
 
 AllCops:
   TargetRubyVersion: 2.7
@@ -12,25 +11,8 @@ AllCops:
     - 'node_modules/**/*'
     - 'vendor/**/*'
 
-Layout/ArgumentAlignment:
-  EnforcedStyle: with_fixed_indentation
-  IndentationWidth: 2
-
-Layout/EmptyLineAfterGuardClause:
-  Enabled: false
-
 Layout/LineLength:
   Enabled: 111 # TODO: discuss and set this
-
-Rails:
-  Enabled: true
-
-Style/Alias:
-  EnforcedStyle: prefer_alias_method
-
-# Don't enforce documentation
-Style/Documentation:
-  Enabled: false
 
 # Don't enforce frozen string literals
 Style/FrozenStringLiteralComment:
