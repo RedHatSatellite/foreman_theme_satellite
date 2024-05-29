@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# rubocop:disable Metrics/LineLength
+# rubocop:disable Layout/LineLength
 # Overrides for functions used in helpers.
 module ThemeApplicationHelper
   def association_text()
