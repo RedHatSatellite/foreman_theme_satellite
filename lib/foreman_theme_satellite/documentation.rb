@@ -77,10 +77,6 @@ module ForemanThemeSatellite
       'foreman_discovery' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/configuring_the_discovery_service_provisioning",
     }.freeze
 
-    SPECIAL_LINKS = [
-      [/docs\.theforeman\.org\/.*?\/Managing_Hosts\/.*?registering-a-host.*?managing-hosts/i, "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts"],
-    ]
-
     DOCS_GUIDES_LINKS = {
       'Managing_Hosts' => {
         'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts",

@@ -44,7 +44,6 @@ namespace :foreman_theme_satellite do
 
     all_links = ForemanThemeSatellite::Documentation::USER_GUIDE_DICTIONARY
                 .merge(ForemanThemeSatellite::Documentation::PLUGINS_DOCUMENTATION)
-                .merge(Hash[ForemanThemeSatellite::Documentation::SPECIAL_LINKS])
                 .merge(ForemanThemeSatellite::Documentation.flat_docs_guides_links)
 
     failed = all_links.filter { |_key, doc_address| doc_address.include?('/html/') && !checker.test_link(doc_address) }
