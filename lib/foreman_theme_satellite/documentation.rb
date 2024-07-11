@@ -82,6 +82,9 @@ module ForemanThemeSatellite
     ]
 
     DOCS_GUIDES_LINKS = {
+      'Managing_Content' => {
+        'Products_and_Repositories_content-management' => "#{ForemanThemeSatellite.documentation_root}/managing_content/importing_content_content-management#Products_and_Repositories_content-management",
+      },
       'Managing_Hosts' => {
         'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts",
       }
