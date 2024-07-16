@@ -45,7 +45,7 @@ module ForemanThemeSatellite
       'ConfigurationOptions' => "#{ForemanThemeSatellite.documentation_root}/administering_red_hat_satellite/",
       'PuppetReports' => "#{ForemanThemeSatellite.documentation_root}/administering_red_hat_satellite/monitoring_resources_admin#Using_the_Project_Content_Dashboard_admin",
       'Mail_Notifications' => "#{ForemanThemeSatellite.documentation_root}/administering_red_hat_satellite/configuring_email_notifications_admin",
-      'Realm' => "#{ForemanThemeSatellite.documentation_root}/installing_satellite_server_in_a_connected_network_environment/configuring_external_authentication_satellite#External_Authentication_for_Provisioned_Hosts_satellite",
+      'Realm' => "#{ForemanThemeSatellite.documentation_root}/installing_satellite_server_in_a_connected_network_environment/configuring_external_authentication_satellite#configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite",
       'Searching' => "#{ForemanThemeSatellite.documentation_root}/administering_red_hat_satellite/searching_and_bookmarking_admin",
       'RolesandPermissions' => "#{ForemanThemeSatellite.documentation_root}/administering_red_hat_satellite/managing_users_and_roles_admin",
       'LDAPAuthentication' => "#{ForemanThemeSatellite.documentation_root}/installing_satellite_server_in_a_connected_network_environment/configuring_external_authentication_satellite#Using_LDAP_satellite",
@@ -74,7 +74,7 @@ module ForemanThemeSatellite
 
     PLUGINS_DOCUMENTATION = {
       'foreman_azure' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_cloud_instances_on_microsoft_azure_resource_manager_azure-provisioning",
-      'foreman_discovery' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/configuring_the_discovery_service_provisioning",
+      'foreman_discovery' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/discovering-hosts-on-a-network_provisioning",
     }.freeze
 
     SPECIAL_LINKS = [
