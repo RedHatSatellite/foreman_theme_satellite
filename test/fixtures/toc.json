@@ -53,9 +53,6 @@
     ]
   },
   "administering_red_hat_satellite": {
-    "making-open-source-more-inclusive_admin": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_admin": [
 
     ],
@@ -228,9 +225,6 @@
     ]
   },
   "configuring_capsules_with_a_load_balancer": {
-    "making-open-source-more-inclusive_load-balancing": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_load-balancing": [
 
     ],
@@ -328,9 +322,6 @@
     ]
   },
   "deploying_red_hat_satellite_on_amazon_web_services": {
-    "making-open-source-more-inclusive_deploying-on-aws": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_deploying-on-aws": [
 
     ],
@@ -486,9 +477,6 @@
     ]
   },
   "installing_capsule_server": {
-    "making-open-source-more-inclusive_capsule": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_capsule": [
 
     ],
@@ -542,9 +530,6 @@
     ]
   },
   "installing_satellite_server_in_a_connected_network_environment": {
-    "making-open-source-more-inclusive_satellite": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_satellite": [
 
     ],
@@ -700,9 +685,6 @@
     ]
   },
   "managing_configurations_using_ansible_integration": {
-    "making-open-source-more-inclusive_ansible": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_ansible": [
 
     ],
@@ -775,9 +757,6 @@
     ]
   },
   "managing_configurations_using_puppet_integration": {
-    "making-open-source-more-inclusive_managing-configurations-puppet": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_managing-configurations-puppet": [
 
     ],
@@ -828,9 +807,6 @@
     ]
   },
   "managing_content": {
-    "making-open-source-more-inclusive_content-management": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_content-management": [
 
     ],
@@ -1018,9 +994,6 @@
     ]
   },
   "managing_hosts": {
-    "making-open-source-more-inclusive_managing-hosts": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_managing-hosts": [
 
     ],
@@ -1185,9 +1158,6 @@
     ]
   },
   "managing_security_compliance": {
-    "making-open-source-more-inclusive_security-compliance": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_security-compliance": [
 
     ],
@@ -1244,9 +1214,6 @@
     ]
   },
   "monitoring_satellite_performance": {
-    "making-open-source-more-inclusive_monitoring": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_monitoring": [
 
     ],
@@ -1275,9 +1242,6 @@
     ]
   },
   "overview_concepts_and_deployment_considerations": {
-    "making-open-source-more-inclusive_planning": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_planning": [
 
     ],
@@ -1459,9 +1423,6 @@
     ]
   },
   "provisioning_hosts": {
-    "making-open-source-more-inclusive_provisioning": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_provisioning": [
 
     ],
@@ -1672,9 +1633,6 @@
     ]
   },
   "tuning_performance_of_red_hat_satellite": {
-    "making-open-source-more-inclusive_performance-tuning": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_performance-tuning": [
 
     ],
@@ -1704,9 +1662,6 @@
     ]
   },
   "upgrading_red_hat_satellite": {
-    "making-open-source-more-inclusive_upgrading-connected": [
-
-    ],
     "providing-feedback-on-red-hat-documentation_upgrading-connected": [
 
     ],
