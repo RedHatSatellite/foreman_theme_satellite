@@ -99,9 +99,9 @@ module ForemanThemeSatellite
       source.map do |k, v|
         key = "#{prefix}/#{k}"
         if v.is_a?(Hash)
-          key_values.concat(*nested_to_flat_k_v(key, v))
+          key_values.append(*nested_to_flat_k_v(key, v))
         else
-          key_values.concat([key, v])
+          key_values.append([key, v])
         end
       end
     end
