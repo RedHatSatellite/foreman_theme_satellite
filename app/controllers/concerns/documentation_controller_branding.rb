@@ -12,11 +12,11 @@ module DocumentationControllerBranding
     end
     if url.empty?
       upstream_url = super(section, options)
-      if (upstream_url =~ /redhat.com/)
-        url = upstream_url
-      else
-        url = "#{ForemanThemeSatellite.documentation_root}/administering_red_hat_satellite"
-      end
+      url = if (upstream_url =~ /redhat.com/)
+              upstream_url
+            else
+              "#{ForemanThemeSatellite.documentation_root}/administering_red_hat_satellite"
+            end
     end
     url
   end
