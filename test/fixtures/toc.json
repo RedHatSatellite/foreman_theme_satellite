@@ -503,7 +503,7 @@
     ],
     "performing-additional-configuration-on-capsule-server_capsule": [
       "configuring-capsule-for-host-registration-and-provisioning_capsule",
-      "configuring-remote-execution-for-pull-client_capsule",
+      "configuring-pull-based-transport-for-remote-execution_capsule",
       "Enabling_OpenSCAP_on_capsule_Servers_capsule",
       "Adding_Lifecycle_Environments_capsule",
       "enabling-power-management-on-hosts_capsule",
@@ -564,8 +564,8 @@
     "performing-additional-configuration-on-server_satellite": [
       "using-insights-with-satellite-server_satellite",
       "disabling-red-hat-insights-registration_satellite",
-      "enabling-and-synchronizing-the-project-client-name-repository_satellite",
-      "configuring-remote-execution-for-pull-client-on-satellite-server_satellite",
+      "importing-the-project-client-name-repository_satellite",
+      "configuring-pull-based-transport-for-remote-execution_satellite",
       "configuring-for-uefi-http-boot-provisioning-in-an-ipv6-network_satellite",
       "Configuring_Server_with_an_HTTP_Proxy_satellite",
       "enabling-power-management-on-hosts_satellite",
@@ -575,14 +575,6 @@
       "Configuring_Server_with_a_Custom_SSL_Certificate_satellite",
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite_satellite",
       "using-external-databases_satellite",
-      "CLI_Synchronizing_the_Client_Repository_rhel_9_satellite",
-      "CLI_Synchronizing_the_Client_Repository_rhel_8_satellite",
-      "CLI_Synchronizing_the_Client_Repository_rhel_7_satellite",
-      "CLI_Synchronizing_the_Client_Repository_rhel_6_satellite",
-      "CLI_Enabling_the_Client_Repository_rhel_9_satellite",
-      "CLI_Enabling_the_Client_Repository_rhel_8_satellite",
-      "CLI_Enabling_the_Client_Repository_rhel_7_satellite",
-      "CLI_Enabling_the_Client_Repository_rhel_6_satellite",
       "cli-adding-a-default-http-proxy_satellite"
     ],
     "configuring_external_authentication_satellite": [
@@ -648,25 +640,15 @@
     ],
     "performing-additional-configuration": [
       "configuring-satellite-server-to-consume-content-from-a-custom-cdn_satellite",
-      "how-to-configure-inter-server-sync_satellite",
-      "configuring-server-to-synchronize-content-over-a-network_satellite",
-      "configuring-server-to-sync-content-using-exports_satellite",
+      "Configuring-ISS_satellite",
       "Importing_Kickstart_Repositories_satellite",
-      "enabling-and-synchronizing-the-project-client-name-repository_satellite",
-      "configuring-remote-execution-for-pull-client-on-satellite-server_satellite",
+      "importing-the-project-client-name-repository_satellite",
+      "configuring-pull-based-transport-for-remote-execution_satellite",
       "enabling-power-management-on-hosts_satellite",
       "configuring-dns-dhcp-and-tftp_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
       "Configuring_Server_with_a_Custom_SSL_Certificate_satellite",
-      "using-external-databases_satellite",
-      "CLI_Synchronizing_the_Client_Repository_rhel_9_satellite",
-      "CLI_Synchronizing_the_Client_Repository_rhel_8_satellite",
-      "CLI_Synchronizing_the_Client_Repository_rhel_7_satellite",
-      "CLI_Synchronizing_the_Client_Repository_rhel_6_satellite",
-      "CLI_Enabling_the_Client_Repository_rhel_9_satellite",
-      "CLI_Enabling_the_Client_Repository_rhel_8_satellite",
-      "CLI_Enabling_the_Client_Repository_rhel_7_satellite",
-      "CLI_Enabling_the_Client_Repository_rhel_6_satellite"
+      "using-external-databases_satellite"
     ],
     "configuring-external-services": [
       "configuring-external-dns_satellite",
@@ -847,6 +829,7 @@
       "Refreshing_Content_Counts_on_Capsule_content-management",
       "configuring-selinux-to-permit-content-synchronization-on-custom-ports_content-management",
       "Recovering_a_Corrupted_Repository_content-management",
+      "Recovering_Corrupted_Content_on_capsule_content-management",
       "Republishing_Repository_Metadata_content-management",
       "Republishing_Content_View_Metadata_content-management",
       "Adding_an_HTTP_Proxy_content-management",
@@ -910,7 +893,7 @@
       "cli-creating-a-content-filter-yum_content-management"
     ],
     "synchronizing_content_between_servers_content-management": [
-      "how-to-synchronize-content-using-export-and-import_content-management",
+      "content-synchronization-by-using-export-and-import_content-management",
       "Synchronizing_a_Custom_Repository_content-management",
       "Exporting_the_Library_Environment_content-management",
       "Exporting_the_Library_Environment_in_a_Syncable_Format_content-management",
