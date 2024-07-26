@@ -14,21 +14,6 @@ namespace :test do
 end
 
 namespace :foreman_theme_satellite do
-  task :rubocop do
-    begin
-      require 'rubocop/rake_task'
-      RuboCop::RakeTask.new(:rubocop_foreman_theme_satellite) do |task|
-        task.patterns = ["#{ForemanThemeSatellite::Engine.root}/app/**/*.rb",
-                         "#{ForemanThemeSatellite::Engine.root}/lib/**/*.rb",
-                         "#{ForemanThemeSatellite::Engine.root}/test/**/*.rb"]
-      end
-    rescue
-      puts 'Rubocop not loaded.'
-    end
-
-    Rake::Task['rubocop_foreman_theme_satellite'].invoke
-  end
-
   desc 'Validate documentation links against given TOC file'
   task :validate_docs do
     toc_file = ENV['TOC']
@@ -56,8 +41,3 @@ end
 
 Rake::Task[:test].enhance ['test:foreman_theme_satellite']
 Rake::Task['test:foreman_theme_satellite'].enhance ['foreman_theme_satellite:validate_docs']
-
-load 'tasks/jenkins.rake'
-if Rake::Task.task_defined?(:'jenkins:unit')
-  Rake::Task['jenkins:unit'].enhance ['test:foreman_theme_satellite', 'foreman_theme_satellite:rubocop']
-end
