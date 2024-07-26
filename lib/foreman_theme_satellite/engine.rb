@@ -139,7 +139,7 @@ module ForemanThemeSatellite
   end
 
   def self.documentation_server
-    @documentation_server ||= metadata_field('documentation_server', 'https://access.redhat.com')
+    @documentation_server ||= metadata_field('documentation_server', 'https://docs.redhat.com')
   end
 
   def self.documentation_version
