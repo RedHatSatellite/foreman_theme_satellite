@@ -18,7 +18,7 @@ namespace :foreman_theme_satellite do
   task :validate_docs do
     toc_file = ENV['TOC']
     unless toc_file
-      toc_file = File.expand_path('../../test/fixtures/toc.json', __dir__)
+      toc_file = File.expand_path('../foreman_theme_satellite/documentation-toc.json', __dir__)
       puts "Using default TOC: #{toc_file}, to override please specify TOC=<toc_file>"
     end
 
@@ -29,13 +29,12 @@ namespace :foreman_theme_satellite do
 
     all_links = ForemanThemeSatellite::Documentation::USER_GUIDE_DICTIONARY
                 .merge(ForemanThemeSatellite::Documentation::PLUGINS_DOCUMENTATION)
-                .merge(ForemanThemeSatellite::Documentation.flat_docs_guides_links)
 
     failed = all_links.filter { |_key, doc_address| doc_address.include?('/html/') && !checker.test_link(doc_address) }
 
     abort((failed.map { |key, doc_address| "FAILED: Cannot find #{doc_address} in TOC for entry: #{key}" } + ["Total failed: #{failed.count} entries"]).join("\n")) unless failed.empty?
 
-    puts "Successfully tested #{all_links.count} links"
+    puts "Successfully tested #{all_links.count + docs_guide_mapping.each_value.sum(&:length)} links"
   end
 end
 

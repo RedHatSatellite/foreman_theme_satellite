@@ -73,32 +73,59 @@ module ForemanThemeSatellite
       'foreman_discovery' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/discovering-hosts-on-a-network_provisioning",
     }.freeze
 
-    DOCS_GUIDES_LINKS = {
-      'Managing_Content' => {
-        'Products_and_Repositories_content-management' => "#{ForemanThemeSatellite.documentation_root}/managing_content/importing_content_content-management#Products_and_Repositories_content-management",
-      },
-      'Managing_Hosts' => {
-        'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts",
-      },
-      'Managing_Configurations_Ansible' => {
-        'Importing_Ansible_Roles_and_Variables_ansible' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_ansible_integration/getting_started_with_ansible_in_satellite_ansible#Importing_Ansible_Roles_and_Variables_ansible",
-        'Overriding_Ansible_Variables_in_foreman_ansible' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_ansible_integration/getting_started_with_ansible_in_satellite_ansible#Overriding_Ansible_Variables_in_satellite_ansible",
-      }
+    # Guide mapping. If no entry is present, it should be assumed that it can
+    # be downcased
+    # Copied from foreman-documentation's upstream_filename_to_satellite_link.json
+    DOCS_GUIDE_MAPPING = {
+      'Administering_Project' => 'administering_red_hat_satellite',
+      'Configuring_Load_Balancer' => 'configuring_capsules_with_a_load_balancer',
+      'Deploying_Project_on_AWS' => 'deploying_red_hat_satellite_on_amazon_web_services',
+      'Installing_Proxy' => 'installing_capsule_server',
+      'Installing_Server' => 'installing_satellite_server_in_a_connected_network_environment',
+      'Installing_Server_Disconnected' => 'installing_satellite_server_in_a_disconnected_network_environment',
+      'Managing_Configurations_Ansible' => 'managing_configurations_using_ansible_integration',
+      'Managing_Configurations_Puppet' => 'managing_configurations_using_puppet_integration',
+      'Managing_Content' => 'managing_content',
+      'Managing_Hosts' => 'managing_hosts',
+      'Managing_Security_Compliance' => 'managing_security_compliance',
+      'Monitoring_Project' => 'monitoring_satellite_performance',
+      'Planning_for_Project' => 'overview_concepts_and_deployment_considerations',
+      'Provisioning_Hosts' => 'provisioning_hosts',
+      'Tuning_Performance' => 'tuning_performance_of_red_hat_satellite',
+      'Updating_Project' => 'updating_red_hat_satellite',
+      'Upgrading_Project' => "upgrading_connected_red_hat_satellite_to_#{SATELLITE_SHORT_VERSION}",
+      'Upgrading_Project_Disconnected' => "upgrading_disconnected_red_hat_satellite_to_#{SATELLITE_SHORT_VERSION}",
     }.freeze
 
-    def self.flat_docs_guides_links
-      nested_to_flat_k_v(nil, DOCS_GUIDES_LINKS).to_h
-    end
+    # An upstream chapter mapping, in case downstream another chapter should be
+    # used. The top level key is the upstream guide name where the value is a
+    # mapping of upstream chapter to downstream mapping
+    DOCS_GUIDE_CHAPTER_MAPPING = {
+      'Managing_Hosts' => {
+        'registering-a-host_managing-hosts' => 'Registering_Hosts_by_Using_Global_Registration_managing-hosts',
+      },
+    }.freeze
 
-    private_class_method def self.nested_to_flat_k_v(prefix, source)
-      key_values = []
-      source.map do |k, v|
-        key = "#{prefix}/#{k}"
-        if v.is_a?(Hash)
-          key_values.concat(nested_to_flat_k_v(key, v))
+    DOCS_GUIDE_PAGES = JSON.load_file(File.join(__dir__, 'documentation-toc.json'))
+
+    def self.docs_url(guide, chapter, logger:)
+      root = ForemanThemeSatellite.documentation_root
+      downstream_guide = DOCS_GUIDE_MAPPING.fetch(guide) do
+        logger.debug("Could not find downstream guide for '#{guide}'")
+        guide.downcase
+      end
+
+      if chapter
+        downstream_chapter = DOCS_GUIDE_CHAPTER_MAPPING.fetch(guide, chapter) || chapter
+
+        if (page = DOCS_GUIDE_PAGES[downstream_guide]&.find { |_page, chapters| chapters.include?(downstream_chapter) }&.first)
+          "#{root}/#{downstream_guide}/#{page}##{downstream_chapter}"
         else
-          key_values.concat([[key, v]])
+          logger.warn("Could not find page for chapter '#{downstream_chapter}' in guide '#{downstream_guide}'")
+          "#{root}-single/#{downstream_guide}/index##{downstream_chapter}"
         end
+      else
+        "#{root}/#{downstream_guide}"
       end
       key_values
     end
