@@ -47,7 +47,9 @@ class LinksChecker
 
     inner_hash = hash[first]
 
-    return inner_hash if rest.empty?
+    # rubocop:disable Rails/Blank
+    return inner_hash if rest.nil? || rest.empty?
+    # rubocop:enable Rails/Blank
 
     navigate_path(rest, inner_hash)
   end
