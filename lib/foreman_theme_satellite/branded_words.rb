@@ -53,6 +53,5 @@ module ForemanThemeSatellite
     /\b[Kk]atello 4.11\b(?!-)/       => 'Satellite 6.15',
     /\b[Kk]atello 4.12\b(?!-)/       => 'Satellite 6.16',
     /\b[Kk]atello 4.13\b(?!-)/       => 'Satellite 6.16',
-    %r{https://theforeman.org/plugins/katello/(?!-)} => "https://access.redhat.com/documentation/en-us/red_hat_satellite/#{ForemanThemeSatellite::SATELLITE_SHORT_VERSION}/html/managing_hosts/registering_hosts#registering-a-host-to-satellite-using-the-bootstrap-script"
   }.freeze
 end
