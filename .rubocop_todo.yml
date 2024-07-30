@@ -84,7 +84,7 @@ Layout/FirstHashElementIndentation:
 # SupportedLastArgumentHashStyles: always_inspect, always_ignore, ignore_implicit, ignore_explicit
 Layout/HashAlignment:
   Exclude:
-    - 'lib/foreman_theme_satellite/branded_words.rb'
+    - 'lib/foreman_theme_satellite/foreman_brand.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -139,7 +139,7 @@ Layout/SpaceAfterComma:
 Layout/SpaceAroundOperators:
   Exclude:
     - 'app/overrides/bootdisk_help_page.rb'
-    - 'lib/foreman_theme_satellite/branded_words.rb'
+    - 'lib/foreman_theme_satellite/foreman_brand.rb'
     - 'lib/foreman_theme_satellite/engine.rb'
     - 'lib/generators/foreman_theme_satellite/lib/css_compare.rb'
 
@@ -409,7 +409,7 @@ Style/TrailingCommaInHashLiteral:
   Exclude:
     - 'app/models/concerns/provisioning.rb'
     - 'app/services/concerns/setting_registry_branding.rb'
-    - 'lib/foreman_theme_satellite/branded_words.rb'
+    - 'lib/foreman_theme_satellite/foreman_brand.rb'
     - 'lib/foreman_theme_satellite/deprecated_templates.rb'
     - 'lib/foreman_theme_satellite/documentation.rb'
     - 'lib/foreman_theme_satellite/engine.rb'

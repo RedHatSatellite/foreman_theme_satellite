@@ -6,21 +6,11 @@ require 'deface'
 module ForemanThemeSatellite
   class Engine < ::Rails::Engine
     engine_name 'foreman_theme_satellite'
-
-    config.eager_load_paths += Dir["#{config.root}/app/overrides"]
-    config.eager_load_paths += Dir["#{config.root}/app/controllers/concerns"]
-    config.eager_load_paths += Dir["#{config.root}/app/helpers"]
-    config.eager_load_paths += Dir["#{config.root}/app/models/concerns"]
-    config.eager_load_paths += Dir["#{config.root}/app/services/concerns"]
-    config.eager_load_paths += Dir["#{config.root}/lib/foreman_theme_satellite"]
-
-    initializer 'foreman_theme_satellite.load_default_settings', :before => :load_config_initializers do |app|
-      SettingRegistry.prepend SettingRegistryBranding
-    end
+    config.eager_load_paths += Dir["#{config.root}/lib"]
 
     initializer 'foreman_theme_satellite.register_plugin', :before=> :finisher_hook do |app|
       Foreman::Plugin.register :foreman_theme_satellite do
-        requires_foreman '>= 3.7.0'
+        requires_foreman '>= 3.13.0'
         register_gettext
 
         settings do
@@ -36,7 +26,7 @@ module ForemanThemeSatellite
           end
         end
 
-         tests_to_skip ({
+        tests_to_skip ({
                         "ComputeResourceTest" => ["friendly provider name"],
                         "RealmIntegrationTest" => ["create new page"],
                         "SmartProxyIntegrationTest" => ["create new page", "index page"],
@@ -49,7 +39,7 @@ module ForemanThemeSatellite
                         "OrganizationTest" => ["should clone organization with all associations"],
                         "RealmTest" => ["realm can be assigned to locations"],
                         "LocationTest" => ["should clone location with all associations"]
-                       })
+                      })
 
         extend_rabl_template 'api/v2/home/status', 'api/v2/home/status_extensions'
         extend_template_helpers ForemanThemeSatellite::RendererMethods
@@ -69,19 +59,12 @@ module ForemanThemeSatellite
       end
     end
 
-    initializer 'foreman_theme_satellite.rails_loading_workaround' do
-      # Without this, in production environment the module gets prepended too
-      # late and the extensions do not get applied
-      # the idea is stolen from https://github.com/theforeman/foreman_remote_execution/commit/2efd0a6eccfc19e282f453d5629cf46e729963eb
-      ProvisioningTemplatesHelper.prepend ProvisioningTemplatesHelperBranding
-    end
-
     # Include concerns in this config.to_prepare block
     config.to_prepare do
       begin
+        SettingRegistry.prepend SettingRegistryBranding
         # Include your monkey-patches over here
         ::ForemanGoogle::GCE.send(:prepend, GCE::ClassMethods) if Foreman::Plugin.installed?("foreman_google")
-        require 'rss_checker_branding'
         UINotifications::RssNotificationsChecker.send :prepend, RssCheckerBranding
         Foreman::Model::Openstack.send :include, Openstack
         Foreman::Model::Ovirt.send :include, Ovirt

@@ -1,5 +1,4 @@
 require 'fast_gettext'
-require_relative 'branded_words'
 
 module ForemanThemeSatellite
   # This repository is a wrapper above other repository,

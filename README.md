@@ -36,7 +36,7 @@ const SettingName = ({ setting }) => (
 
 In case there is a need to add more terms to be branded **or bypass branding**,
 it can be done in
-[`branded_words.rb`](https://github.com/RedHatSatellite/foreman_theme_satellite/blob/develop/lib/foreman_theme_satellite/branded_words.rb).
+[`foreman_brand.rb`](https://github.com/RedHatSatellite/foreman_theme_satellite/blob/develop/lib/foreman_theme_satellite/foreman_brand.rb).
 This is a dictionary where the key is a
 [Regular Expression](https://regex101.com/) and the value is a replacement
 string.
