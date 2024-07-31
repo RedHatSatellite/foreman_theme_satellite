@@ -37,7 +37,7 @@ Deface::Override.new(:virtual_path  => "about/index",
                      :text          =>  "    <div class=\"stats-well\"><h4><%= _(\"Support\") %></h4> <p>Visit the <%= link_to _('Customer Portal'), \"https://access.redhat.com/\",
                                        :rel => \"external\" %> to get support, find solutions to common questions, and more.</p><h6><%= _(\"Documentation\") %></h6>
                                         <ul>
-                                        <li><%= link_to _('Complete Product Documentation for Red Hat Satellite'),\"https://access.redhat.com/documentation/en/red_hat_satellite/#{ForemanThemeSatellite::SATELLITE_SHORT_VERSION}\", :rel => \"external\" %></li>
+                                        <li><%= link_to _('Complete Product Documentation for Red Hat Satellite'),\"#{ForemanThemeSatellite.documentation_server}/documentation/en/red_hat_satellite/#{ForemanThemeSatellite::SATELLITE_SHORT_VERSION}\", :rel => \"external\" %></li>
                                         <li><%= link_to _('API Resources'), apipie_apipie_path, :title => _('Automate Satellite via a simple and powerful API') %></li>
                                         <li><%= link_to _('Templates DSL'), apipie_dsl_apipie_dsl_path, :title => _('Get DSL reference for templates writing') %></li>
                                         </ul>
