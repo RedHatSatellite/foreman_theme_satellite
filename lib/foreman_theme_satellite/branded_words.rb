@@ -10,6 +10,8 @@ module ForemanThemeSatellite
   FOREMAN_BRAND = {
     /%{proxy}/               => '%{proxy}',
     /%{foreman}/             => '%{foreman}',
+    /\b[Pp]roxy [Hh][Tt][Tt][Pp]\b(?!-)/    => 'Proxy HTTP', # Workaround for French translation
+    /\b[Pp]roxies [Hh][Tt][Tt][Pp]\b(?!-)/ => 'Proxies HTTP', # Workaround for French translation
     /\b[Hh][Tt][Tt][Pp] [Pp]roxy\b(?!-)/    => 'HTTP Proxy',
     /\b[Hh][Tt][Tt][Pp] [Pp]roxies\b(?!-)/ => 'HTTP Proxies',
     /\bHTTP\(S\) proxy\b(?!-)/ => 'HTTP(S) proxy',
