@@ -101,6 +101,17 @@ ForemanThemeSatellite.documentation_root
 this constant is maintained by the theme and always point to the correct
 documentation version.
 
+### Fixing links checker failures
+
+The documentation table of contents is updated automatically from the downstream into the [`toc_update`](https://github.com/RedHatSatellite/foreman_theme_satellite/tree/toc_update) branch. If the links become incompatible with the new TOC, the links checker tests will fail in the PR for the new TOC. To fix the links the following procedure should be followed:
+
+1. Create a new branch from the latest `develop`
+2. Cherry pick the new TOC into the newly created branch from the `toc_update` branch.
+3. Update the links to work with the new TOC.
+4. Create a PR to theme's `develop` branch.
+
+The CI for this PR should become green, since both the TOC and the links match.
+
 ## Settings
 
 Most of the time a setting's default value should be changed to a downstream
