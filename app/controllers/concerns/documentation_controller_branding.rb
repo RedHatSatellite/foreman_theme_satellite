@@ -33,8 +33,7 @@ module DocumentationControllerBranding
   # We do not use flavor downstream, but keeping it here for the same method signature
   # rubocop:disable Lint/UnusedMethodArgument
   def docs_url(guide:, flavor:, chapter: nil)
-    url = ForemanThemeSatellite::Documentation::DOCS_GUIDES_LINKS.dig(guide, chapter)
-    url || "#{ForemanThemeSatellite.documentation_root}/#{guide.downcase}/#{chapter}"
+    ForemanThemeSatellite::Documentation.docs_url(guide, chapter, logger: Foreman::Logging.logger('app'))
   end
   # rubocop:enable Lint/UnusedMethodArgument
 end
