@@ -661,7 +661,7 @@
 
     ]
   },
-  "managing_configurations_using_ansible_integration": {
+  "managing_configurations_by_using_ansible_integration": {
     "providing-feedback-on-red-hat-documentation_ansible": [
 
     ],
@@ -732,7 +732,7 @@
       "Including_Power_Actions_in_Templates_ansible"
     ]
   },
-  "managing_configurations_using_puppet_integration": {
+  "managing_configurations_by_using_puppet_integration": {
     "providing-feedback-on-red-hat-documentation_managing-configurations-puppet": [
 
     ],
@@ -864,6 +864,7 @@
       "best-practices-for-content-views_content-management",
       "best-practices-for-patching-content-hosts_content-management",
       "Creating_a_Content_View_content-management",
+      "Copying_a_Content_View_content-management",
       "Viewing_Module_Streams_content-management",
       "Promoting_a_Content_View_content-management",
       "Composite_Content_Views_Overview_content-management",
@@ -879,6 +880,7 @@
       "Comparing_Content_View_Versions_content-management",
       "Distributing_Archived_Content_View_Versions_content-management",
       "cli-creating-a-content-view_content-management",
+      "cli-copying-a-content-view_content-management",
       "cli-Viewing_Module_Streams_content-management",
       "cli-promoting-a-content-view_content-management",
       "cli-creating-a-composite-content-view_content-management",
