@@ -30,12 +30,12 @@ module ForemanThemeSatellite
       'Networking' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/configuring_networking_provisioning#Adding_a_Subnet_to_Server_provisioning",
 
       # Puppet Guide
-      'FactsandtheENC' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration/introducing-configuration-management-using-puppet_managing-configurations-puppet#performing-configuration-management_managing-configurations-puppet",
-      'using-config-groups' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration/creating-a-puppet-config-group_managing-configurations-puppet",
-      'SmartMatchers' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration/configuring_puppet_smart_class_parameters_managing-configurations-puppet",
-      'Parameters' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration/configuring_puppet_smart_class_parameters_managing-configurations-puppet",
-      'Classes' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration/importing_puppet_classes_and_environments_managing-configurations-puppet",
-      'Environments' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_puppet_integration/creating_a_custom_puppet_environment_managing-configurations-puppet",
+      'FactsandtheENC' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/introducing-configuration-management-using-puppet_managing-configurations-puppet#performing-configuration-management_managing-configurations-puppet",
+      'using-config-groups' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/creating-a-puppet-config-group_managing-configurations-puppet",
+      'SmartMatchers' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/configuring_puppet_smart_class_parameters_managing-configurations-puppet",
+      'Parameters' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/configuring_puppet_smart_class_parameters_managing-configurations-puppet",
+      'Classes' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/importing_puppet_classes_and_environments_managing-configurations-puppet",
+      'Environments' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/creating_a_custom_puppet_environment_managing-configurations-puppet",
 
       # Administering
       'ConfigurationOptions' => "#{ForemanThemeSatellite.documentation_root}/administering_red_hat_satellite/",
@@ -81,8 +81,8 @@ module ForemanThemeSatellite
         'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts",
       },
       'Managing_Configurations_Ansible' => {
-        'Importing_Ansible_Roles_and_Variables_ansible' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_ansible_integration/getting_started_with_ansible_in_satellite_ansible#Importing_Ansible_Roles_and_Variables_ansible",
-        'Overriding_Ansible_Variables_in_foreman_ansible' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_using_ansible_integration/getting_started_with_ansible_in_satellite_ansible#Overriding_Ansible_Variables_in_satellite_ansible",
+        'Importing_Ansible_Roles_and_Variables_ansible' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_ansible_integration/getting_started_with_ansible_in_satellite_ansible#Importing_Ansible_Roles_and_Variables_ansible",
+        'Overriding_Ansible_Variables_in_foreman_ansible' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_ansible_integration/getting_started_with_ansible_in_satellite_ansible#Overriding_Ansible_Variables_in_satellite_ansible",
       }
     }.freeze
 
