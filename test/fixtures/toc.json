@@ -521,6 +521,13 @@
     "managing_dns_using_smart_proxy_capsule": [
 
     ],
+    "using_infoblox_as_dhcp_and_dns_providers_capsule": [
+      "Infoblox_Limitations_capsule",
+      "Infoblox_Prerequisites_capsule",
+      "Installing_the_Infoblox_CA_Certificate_capsule",
+      "Installing_the_DHCP_Infoblox_Module_capsule",
+      "Installing_the_DNS_Infoblox_Module_capsule"
+    ],
     "capsule-server-scalability-considerations_capsule": [
 
     ],
@@ -592,6 +599,7 @@
     "configuring-external-services": [
       "configuring-external-dns_satellite",
       "configuring-external-dhcp_satellite",
+      "Using_Infoblox_as_DHCP_and_DNS_Providers_satellite",
       "configuring-external-tftp_satellite",
       "configuring-external-idm-dns_satellite"
     ],
@@ -648,6 +656,7 @@
     "configuring-external-services": [
       "configuring-external-dns_satellite",
       "configuring-external-dhcp_satellite",
+      "Using_Infoblox_as_DHCP_and_DNS_Providers_satellite",
       "configuring-external-tftp_satellite",
       "configuring-external-idm-dns_satellite"
     ],
@@ -1457,13 +1466,6 @@
       "cli-adding-a-domain_provisioning",
       "cli-adding-a-subnet_provisioning"
     ],
-    "using_infoblox_as_dhcp_and_dns_providers_provisioning": [
-      "Infoblox_Limitations_provisioning",
-      "Infoblox_Prerequisites_provisioning",
-      "Installing_the_Infoblox_CA_Certificate_on_Smart_Proxy_provisioning",
-      "Installing_the_DHCP_Infoblox_Module_provisioning",
-      "Installing_the_DNS_Infoblox_Module_provisioning"
-    ],
     "using_pxe_to_provision_hosts_provisioning": [
       "Prerequisites_for_Bare_Metal_Provisioning_provisioning",
       "Configuring_the_Security_Token_Validity_Duration_provisioning",
@@ -1659,6 +1661,9 @@
       "performing-post-upgrade-tasks_upgrading-connected",
       "upgrading_capsule_server_upgrading-connected",
       "Upgrading_the_External_Database_upgrading-connected"
+    ],
+    "upgrading-satellite-or-capsule-in-place-using-leapp_upgrading-connected": [
+
     ]
   },
   "upgrading_red_hat_satellite_disconnected": {
@@ -1678,6 +1683,9 @@
       "performing-post-upgrade-tasks_upgrading-disconnected",
       "upgrading_capsule_server_upgrading-disconnected",
       "Upgrading_the_External_Database_upgrading-disconnected"
+    ],
+    "upgrading-satellite-or-capsule-in-place-using-leapp_upgrading-disconnected": [
+
     ]
   }
 }
