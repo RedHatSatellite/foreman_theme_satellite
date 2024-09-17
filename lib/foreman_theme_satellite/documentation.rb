@@ -30,7 +30,7 @@ module ForemanThemeSatellite
       'Networking' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/configuring_networking_provisioning#Adding_a_Subnet_to_Server_provisioning",
 
       # Puppet Guide
-      'FactsandtheENC' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/introducing-configuration-management-using-puppet_managing-configurations-puppet#performing-configuration-management_managing-configurations-puppet",
+      'FactsandtheENC' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/introducing-configuration-management-by-using-puppet#performing-configuration-management_managing-configurations-puppet",
       'using-config-groups' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/creating-a-puppet-config-group_managing-configurations-puppet",
       'SmartMatchers' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/configuring_puppet_smart_class_parameters_managing-configurations-puppet",
       'Parameters' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/configuring_puppet_smart_class_parameters_managing-configurations-puppet",
