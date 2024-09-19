@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the foreman_theme_satellite package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# 21966816214bc546c1fc8a185e75ca1c, 2023
+# Amit Upadhye <aupadhye@redhat.com>, 2023
+# Claer <transiblu@claer.hammock.fr>, 2023
+# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: foreman_theme_satellite 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2023-11-21 10:43+0000\n"
+"Last-Translator: Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarde"
+"n.nl>, 2024\n"
+"Language-Team: French (https://app.transifex.com/foreman/teams/114/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 100000"
+"0 == 0 ? 1 : 2;\n"
+
+msgid "(build: %{version})"
+msgstr "(build: %{version})"
+
+msgid "API Guide"
+msgstr "Guide API"
+
+msgid "Administering Red Hat Satellite"
+msgstr "Administration de Red Hat Satellite"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Customer portal"
+msgstr "Portail clients"
+
+msgid "Documentation"
+msgstr "Documentation"
+
+msgid "Environment only"
+msgstr "Seulement un environnement"
+
+msgid "Full trace"
+msgstr "trace complète"
+
+msgid "Host group and Environment"
+msgstr "Groupe d'hôtes et Environnement"
+
+msgid "Host group only"
+msgstr "Seulement un groupe d'hôte"
+
+msgid "IRC"
+msgstr "IRC"
+
+msgid "If you feel this is an error with Satellite 6 itself, please open a new issue with"
+msgstr "Si vous pensez qu'il s'agisse d'une erreur de Satellite 6, merci d'ouvrir un ticket avec"
+
+msgid "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy"
+msgstr "Comprend%{system} © 2009-%{year} Paul Kelly et Ohad Levy"
+
+msgid "More information"
+msgstr "Plus d'information"
+
+msgid "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026."
+msgstr "Le 31 août 2022, Red Hat Virtualization est entré dans la phase de support de maintenance. La phase de support de maintenance s'étend jusqu'au 31 août 2024, suivie de la phase de durée de vie prolongée, qui s'étend jusqu'au 31 août 2026."
+
+msgid "Operating System"
+msgstr "Système d'exploitation"
+
+msgid "Operating system default"
+msgstr "Système d'Exploitation par défaut"
+
+msgid "RHEV integration is deprecated."
+msgstr "L’intégration RHEV est obsolète."
+
+msgid "Red Hat Satellite Blog"
+msgstr "Blog Red Hat Satellite"
+
+msgid "Satellite ticketing system"
+msgstr "Gestionnaire de tickets Satellite"
+
+msgid "Show unsupported provisioning templates"
+msgstr "Afficher les modèles de provisionnement non pris en charge"
+
+msgid "Show unsupported provisioning templates. When enabled, all the avaiable templates will be shown. When disabled, Red Hat supported templates will be shown only"
+msgstr "Afficher les modèles de provisionnement non pris en charge. Lorsqu'il est activé, tous les modèles disponibles seront affichés. Lorsqu'ils sont désactivés, les modèles pris en charge par Red Hat seront affichés uniquement"
+
+msgid "Support"
+msgstr "Assistance"
+
+msgid "Supported by Red Hat"
+msgstr "Pris en charge par Red Hat"
+
+msgid "The final entry, Operating System default, can be set by editing the %s page."
+msgstr "La dernière entrée, le système d'exploitation par défaut, peut être défini en modifiant la page %s."
+
+msgid "Theme changes for Satellite 6."
+msgstr "Changements de thèmes avec Satellite 6."
+
+msgid "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6"
+msgstr "Transition de Red Hat Satellite 5 vers Red Hat Satellite 6"
+
+msgid "Version %{version}"
+msgstr "Version %{version}"
+
+msgid "Version %{version} © %{year} Red Hat Inc."
+msgstr "Version%{version} ©%{year} Red Hat Inc."
+
+msgid "When a Host requests a template (e.g. during provisioning), Foreman selects the optimal match from the available templates of that type, in the following order:"
+msgstr "Quand un hôte demande un modèle (par ex. pendant le provisioning), Foreman va choisir la meilleure correspondance entre les types de modèles existants, dans l'ordre suivant :"
+
+msgid "When editing a Template, you must assign a list of Operating Systems with which this Template can be used. Optionally, you can restrict a template to a list of Hostgroups or Environments."
+msgstr "Lors de la modification d'un modèle, vous devez attribuer une liste de systèmes d'exploitation qui peuvent utiliser ce modèle. Vous pouvez également restreindre un modèle à un groupe d'hôtes et/ou à des environnements."
+
+msgid "You can find us on %{liberachat} (irc.libera.chat) in #redhat-satellite."
+msgstr "Vous pouvez nous retrouver sur%{liberachat} (irc.libera.chat) dans #redhat-satellite."
+
+msgid "You would probably need to attach the"
+msgstr "Vous aurez probablement besoin d'attacher la"
+
+msgid "and relevant log entries."
+msgstr "et les entrées de log correspondantes."
