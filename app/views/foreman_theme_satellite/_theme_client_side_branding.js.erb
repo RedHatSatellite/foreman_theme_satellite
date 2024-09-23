@@ -31,33 +31,43 @@ tfm.i18n.jed.dcnpgettext = function( domain, context, singular_key, plural_key, 
   return brand_string(translated);
 }
 
-if (typeof(angular) !== 'undefined') {
-  angular.module('Bastion.i18n').config([ '$provide', function($provide) {
-    $provide.decorator('translate', [
-      '$delegate',
-      function ($delegate) {
-        var originalTranslate = $delegate;
-        return function(str) {
-          originalStr = originalTranslate(str);
-          return brand_string(originalStr);
-        }
-      }
+document.addEventListener("loadAngularJSi18n", function () {
+  if (typeof angular !== "undefined") {
+    angular.module("Bastion.i18n").config([
+      "$provide",
+      function ($provide) {
+        $provide.decorator("translate", [
+          "$delegate",
+          function ($delegate) {
+            var originalTranslate = $delegate;
+            return function (str) {
+              originalStr = originalTranslate(str);
+              return brand_string(originalStr);
+            };
+          },
+        ]);
+      },
     ]);
-  }]);
-}
+  }
+});
 
-if (typeof(angular) !== 'undefined') {
-  angular.module('gettext').config([ '$provide', function($provide) {
-    $provide.decorator('gettextCatalog', [
-      '$delegate',
-      function ($delegate) {
-        var originalTranslate = $delegate.getString;
-        $delegate.getString = function(str) {
-          originalStr = originalTranslate.apply($delegate, [str]);
-          return brand_string(originalStr);
-        }
-        return $delegate;
-      }
+document.addEventListener("loadAngularJSgettext", function () {
+  if (typeof angular !== "undefined") {
+    angular.module("gettext").config([
+      "$provide",
+      function ($provide) {
+        $provide.decorator("gettextCatalog", [
+          "$delegate",
+          function ($delegate) {
+            var originalTranslate = $delegate.getString;
+            $delegate.getString = function (str) {
+              originalStr = originalTranslate.apply($delegate, [str]);
+              return brand_string(originalStr);
+            };
+            return $delegate;
+          },
+        ]);
+      },
     ]);
-  }]);
-}
+  }
+});
