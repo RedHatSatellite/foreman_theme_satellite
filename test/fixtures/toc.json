@@ -306,7 +306,6 @@
       "storage-guidelines_capsule",
       "supported-operating-systems_capsule",
       "capsule-port-and-firewall-requirements_capsule",
-      "Enabling_Connections_from_Proxy_to_Server_capsule",
       "enabling-connections-to-capsule_capsule"
     ],
     "installing-capsule-server": [
@@ -333,7 +332,8 @@
       "configuring-external-dns_capsule",
       "configuring-external-dhcp_capsule",
       "configuring-external-tftp_capsule",
-      "configuring-external-idm-dns_capsule"
+      "configuring-external-idm-dns_capsule",
+      "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_capsule"
     ],
     "managing-dhcp-by-using-capsule": [
       "Securing_the_dhcpd_API_capsule"
@@ -404,12 +404,11 @@
       "using-external-databases_satellite",
       "cli-adding-a-default-http-proxy_satellite"
     ],
-    "configuring_external_authentication_satellite": [
+    "configuring-external-authentication-and-enabling-single-sign-on-and-two-factor-authentication_satellite": [
       "configuring-an-ldap-server-as-an-external-identity-provider-for-project_satellite",
-      "configuring-Identity_Management-server-as-an-external-identity-provider-for-project_satellite",
+      "configuring-kerberos-single-sign-on-with-Identity_Management-in-project_satellite",
       "configuring-keycloak-wildfly-authentication-for-project_keycloak-wildfly",
       "configuring-active-directory-as-an-external-identity-provider-for-project_satellite",
-      "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite",
       "important-user-and-group-account-information-for-active-directory-accounts_satellite",
       "Configuring_External_User_Groups_satellite",
       "Refreshing_External_User_Groups_for_LDAP_satellite",
@@ -421,7 +420,8 @@
       "configuring-external-dhcp_satellite",
       "Using_Infoblox_as_DHCP_and_DNS_Providers_satellite",
       "configuring-external-tftp_satellite",
-      "configuring-external-idm-dns_satellite"
+      "configuring-external-idm-dns_satellite",
+      "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite"
     ],
     "troubleshooting-dnf-modules_satellite": [
       "Troubleshooting_Ruby_satellite",
@@ -478,7 +478,8 @@
       "configuring-external-dhcp_satellite",
       "Using_Infoblox_as_DHCP_and_DNS_Providers_satellite",
       "configuring-external-tftp_satellite",
-      "configuring-external-idm-dns_satellite"
+      "configuring-external-idm-dns_satellite",
+      "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite"
     ],
     "applying-custom-configuration_satellite": [
 
@@ -1490,6 +1491,9 @@
     "upgrading_el_on_satellite_or_proxy_upgrading-connected": [
       "upgrading-satellite-or-capsule-in-place-using-leapp_upgrading-connected",
       "migrating-satellite-or-proxy-using-backup_upgrading-connected"
+    ],
+    "troubleshooting-permission-issues": [
+
     ]
   },
   "upgrading_red_hat_satellite_disconnected": {
@@ -1513,6 +1517,9 @@
     "upgrading_el_on_satellite_or_proxy_upgrading-disconnected": [
       "upgrading-satellite-or-capsule-in-place-using-leapp_upgrading-disconnected",
       "migrating-satellite-or-proxy-using-backup_upgrading-disconnected"
+    ],
+    "troubleshooting-permission-issues": [
+
     ]
   },
   "using_the_hammer_cli_tool": {
