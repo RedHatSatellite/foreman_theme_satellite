@@ -836,7 +836,8 @@
       "cli-Removing_a_Host_from_Server_managing-hosts"
     ],
     "working_with_host_groups_managing-hosts": [
-      "Host_Group_Settings_and_Nested_Host_Groups_managing-hosts",
+      "host-groups-overview_managing-hosts",
+      "nested-host-groups_managing-hosts",
       "Creating_a_Host_Group_managing-hosts",
       "Creating_a_Host_Group_for_each_Lifecycle_Environment_managing-hosts",
       "adding-a-host-to-a-host-group_managing-hosts",
@@ -898,6 +899,7 @@
       "Report_Template_Safe_Mode_managing-hosts"
     ],
     "configuring_host_collections_managing-hosts": [
+      "host-collections-overview_managing-hosts",
       "Creating_a_Host_Collection_managing-hosts",
       "Cloning_a_Host_Collection_managing-hosts",
       "Removing_a_Host_Collection_managing-hosts",
@@ -1064,8 +1066,11 @@
     "content-and-patch-management-with-satellite_planning": [
       "Content-Flow-in-Satellite_planning",
       "Content-Views-in-Satellite_planning",
+      "lifecycle-environments-and-environment-paths_planning",
       "Content_Types_in_Satellite_planning",
-      "content-and-patch-management-with-project-additional-resources_planning"
+      "content-sources-in-Satellite_planning",
+      "content-and-patch-management-with-project-additional-resources_planning",
+      "figu-An_Environment_Path_Containing_Four_Environments"
     ],
     "subscription-management-with-satellite_planning": [
       "simple-content-access-sca-in-Satellite_planning",
@@ -1077,13 +1082,18 @@
     ],
     "major-satellite-components_planning": [
       "Satellite-Server-Overview_planning",
-      "Organizations-and-Locations-in-Satellite_planning",
       "Capsule-Overview_planning",
       "Overview-of-Hosts-in-Satellite_planning",
       "List-of-Key-System-Components-of-Satellite-Server_planning",
       "Capsule-Features_planning",
       "Capsule-Networking_planning",
       "major-project-components-additional-resources_planning"
+    ],
+    "project-infrastructure-organization-concepts_planning": [
+      "Organizations-and-Locations-in-Satellite_planning",
+      "host-groups-overview_planning",
+      "host-collections-overview_planning",
+      "additional-resources-project-infrastructure-organization-concepts_planning"
     ],
     "tools-for-administration-of-satellite_planning": [
       "Web-UI-Overview_planning",
@@ -1111,23 +1121,13 @@
       "sect-Satellite_Server_Configuration",
       "satellite_server_with_external_database",
       "sect-Mapping_the_Infrastructure_Topology",
-      "sect-Defining_Content_Sources",
       "sect-Defining_the_Content_Lifecycle",
       "sect-Defining_Content_Deployment",
       "sect-Automating_the_Provisioning",
       "sect-Defining_Role_Based_Authentication",
       "sect-Additional_Tasks",
-      "satellite_server_with_multiple_manifests_image"
-    ],
-    "chap-architecture_guide-org_loc_and_lifecycle_environments": [
-      "_organizations",
-      "_locations",
-      "_lifecycle_environments",
-      "figu-Example_Topology_for_Server_planning",
-      "figu-An_Environment_Path_Containing_Four_Environments"
-    ],
-    "chap-architecture_guide-host_grouping_concepts": [
-      "sect-Architecture_Guide-Host_Group_Hierarchies",
+      "sect-host-group-structures",
+      "satellite_server_with_multiple_manifests_image",
       "figu-Life_Cycle_Environment_Based_Structure",
       "brid-Flat_Structure",
       "brid-Lifecycle_Environment_Based_Structure",
