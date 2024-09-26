@@ -3,19 +3,6 @@
     "providing-feedback-on-red-hat-documentation_admin": [
 
     ],
-    "accessing_server_admin": [
-      "Web-UI-Overview_admin",
-      "Importing_the_Katello_Root_CA_Certificate_admin",
-      "Logging_in_admin",
-      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_Hammer_CLI_admin",
-      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-Mozilla-Firefox_admin",
-      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-a-Chrome-browser_admin",
-      "logging-in-to-project-configured-with-keycloak-as-an-authentication-source_admin",
-      "Changing_the_Password_admin",
-      "Resetting_the_Administrative_User_Password_admin",
-      "Setting_a_Custom_Message_on_the_Login_Page_admin",
-      "CLI_Importing_the_Katello_Root_CA_Certificate_admin"
-    ],
     "starting_and_stopping_server_admin": [
 
     ],
@@ -236,20 +223,70 @@
       "Troubleshooting_Postgresql_load-balancing"
     ]
   },
+  "configuring_authentication_for_red_hat_satellite_users": {
+    "providing-feedback-on-red-hat-documentation_authentication": [
+
+    ],
+    "accessing_server_authentication": [
+      "logging-in-to-the-satellite_web_UI_authentication",
+      "Importing_the_Katello_Root_CA_Certificate_authentication",
+      "Resetting_the_Administrative_User_Password_authentication",
+      "setting-a-custom-message-on-the-satellite_web_UI-login-page_authentication",
+      "CLI_Importing_the_Katello_Root_CA_Certificate_authentication"
+    ],
+    "configuring-an-ldap-server-as-an-external-identity-provider-for-project_authentication": [
+      "Configuring_TLS_for_Secure_LDAP_authentication",
+      "Configuring_Project_to_Use_LDAP_authentication",
+      "Example_Settings_for_LDAP_Connections_authentication",
+      "Example_LDAP_Filters_authentication",
+      "Using_LDAP_satellite"
+    ],
+    "configuring-kerberos-single-sign-on-with-identity_management-in-project_authentication": [
+      "enrolling-projectserver-in-freeipa-domain_authentication",
+      "configuring-the-freeipa-authentication-source-on-projectserver_authentication",
+      "configuring-host-based-access-control-for-Identity_Management-users-logging-in-to-project_authentication",
+      "configuring-hammer-cli-to-accept-Identity_Management-credentials_authentication",
+      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_Hammer_CLI_authentication",
+      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-Mozilla-Firefox_authentication",
+      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-a-Chrome-browser_authentication",
+      "Configuring-a-cross-forest-trust-between-Identity_Management-and-Active-Directory-for-Satellite_authentication"
+    ],
+    "configuring-keycloak-wildfly-authentication-for-project_keycloak-wildfly": [
+      "prerequisites-for-configuring-satellite-with-keycloak-authentication_keycloak-wildfly",
+      "registering-satellite-as-a-client-of-keycloak_keycloak-wildfly",
+      "configuring-the-satellite-client-in-keycloak_keycloak-wildfly",
+      "configuring-a-satellite-client-to-provide-satellite_web_UI-authentication-with-keycloak_keycloak-wildfly",
+      "configuring-a-satellite-client-to-provide-hammer-cli-authentication-with-keycloak_keycloak-wildfly",
+      "configuring-satellite-with-keycloak-for-totp-authentication_keycloak-wildfly",
+      "configuring-group-mapping-for-keycloak-authentication_keycloak-wildfly",
+      "logging-in-to-project-configured-with-keycloak-as-an-authentication-source_keycloak-wildfly"
+    ],
+    "configuring-active-directory-as-an-external-identity-provider-for-project_authentication": [
+      "configuring-the-active-directory-authentication-source-on-projectserver_authentication",
+      "Kerberos_Configuration_in_Web_Browsers_authentication"
+    ],
+    "important-user-and-group-account-information-for-active-directory-accounts_authentication": [
+
+    ],
+    "configuring_external_user_groups_authentication": [
+
+    ],
+    "refreshing_external_user_groups_for_ldap_authentication": [
+
+    ],
+    "refreshing_external_user_groups_for_freeipa_or_ad_authentication": [
+
+    ]
+  },
   "configuring_virtual_machine_subscriptions_in_red_hat_satellite": {
     "providing-feedback-on-red-hat-documentation_vm-subs-satellite": [
 
     ],
     "_introduction": [
+      "_recommendations_for_subscription_usage_reporting",
       "host-based-subscriptions_vm-subs-satellite",
       "configuration-overview",
       "virt-who-configuration-for-each-virtualization-platform_vm-subs-satellite"
-    ],
-    "creating-an-activation-key-for-virtual-machines_vm-subs-satellite": [
-
-    ],
-    "attaching-a-host-based-subscription-to-hypervisors_vm-subs-satellite": [
-
     ],
     "creating-a-virt-who-configuration_vm-subs-satellite": [
 
@@ -258,9 +295,6 @@
       "deploying-a-virt-who-configuration-on-a-hypervisor_vm-subs-satellite",
       "deploying-a-virt-who-configuration-on-satellite-server_vm-subs-satellite",
       "deploying-a-virt-who-configuration-on-a-separate-rhel-server_vm-subs-satellite"
-    ],
-    "registering-virtual-machines-to-use-a-host-based-subscription_vm-subs-satellite": [
-
     ],
     "troubleshooting-virt-who": [
       "modifying-virt-who-configuration_vm-subs-satellite",
@@ -403,17 +437,6 @@
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite_satellite",
       "using-external-databases_satellite",
       "cli-adding-a-default-http-proxy_satellite"
-    ],
-    "configuring-external-authentication-and-enabling-single-sign-on-and-two-factor-authentication_satellite": [
-      "configuring-an-ldap-server-as-an-external-identity-provider-for-project_satellite",
-      "configuring-kerberos-single-sign-on-with-Identity_Management-in-project_satellite",
-      "configuring-keycloak-wildfly-authentication-for-project_keycloak-wildfly",
-      "configuring-active-directory-as-an-external-identity-provider-for-project_satellite",
-      "important-user-and-group-account-information-for-active-directory-accounts_satellite",
-      "Configuring_External_User_Groups_satellite",
-      "Refreshing_External_User_Groups_for_LDAP_satellite",
-      "Refreshing_External_User_Groups_for_FreeIPA_or_AD_satellite",
-      "Using_LDAP_satellite"
     ],
     "configuring-external-services": [
       "configuring-external-dns_satellite",
