@@ -27,14 +27,16 @@ class SettingRegistryBrandingTest < ActiveSupport::TestCase
     end
 
     test 'hides upstream-only settings' do
-      assert_nil Setting['allow_multiple_content_views']
+      UpstreamOnlySettings.expects(:include?).with('test_setting').returns(true)
+      assert_nil Setting['test_setting']
     end
   end
 end
 
 class SettingBrandingTest < ActiveSupport::TestCase
   test 'replaces warning for upstream-only settings' do
-    Rails.logger.expects(:debug).with('Setting \'allow_multiple_content_views\' is not available in Satellite; ignoring')
-    Setting['allow_multiple_content_views']
+    UpstreamOnlySettings.expects(:include?).with('test_setting').returns(true)
+    Rails.logger.expects(:debug).with('Setting \'test_setting\' is not available in Satellite; ignoring')
+    Setting['test_setting']
   end
 end

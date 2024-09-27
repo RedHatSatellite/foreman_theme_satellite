@@ -1,6 +1,13 @@
 # Settings to hide in downstream (will return nil for all values)
-module UpstreamOnlySettings
+class UpstreamOnlySettings
   SETTINGS = %w[
-    allow_multiple_content_views
   ].freeze
+
+  def self.include?(key)
+    new.include?(key)
+  end
+
+  def include?(key)
+    SETTINGS.include?(key.to_s)
+  end
 end
