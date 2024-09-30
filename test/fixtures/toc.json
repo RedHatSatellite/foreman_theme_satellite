@@ -873,6 +873,7 @@
       "Installing_Tracer_managing-hosts",
       "installing-and-configuring-puppet-agent-during-host-registration_managing-hosts",
       "Installing_and_Configuring_Puppet_Agent_Manually_managing-hosts",
+      "running-ansible-roles-during-host-registration",
       "using-custom-ssl-certificate-for-hosts_managing-hosts",
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-hosts_managing-hosts",
       "CLI_Setting_Permissions_for_the_Bootstrap_Script_managing-hosts"
