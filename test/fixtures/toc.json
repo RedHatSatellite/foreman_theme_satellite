@@ -344,7 +344,6 @@
     ],
     "installing-capsule-server": [
       "Registering_Proxy_to_Server_capsule",
-      "attaching-infrastructure-subscription_capsule",
       "configuring-repositories-proxy_capsule",
       "using-fapolicyd-on-server_capsule",
       "Installing_Proxy_Packages_capsule",
@@ -412,7 +411,6 @@
     "installing_server_connected_satellite": [
       "configuring-http-proxy-to-connect-to-cdn_satellite",
       "registering-to-red-hat-subscription-management_satellite",
-      "attaching-infrastructure-subscription_satellite",
       "configuring-repositories_satellite",
       "using-fapolicyd-on-server_satellite",
       "Installing_Server_Packages_satellite",
