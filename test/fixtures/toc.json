@@ -98,7 +98,6 @@
       "Renewing_a_Custom_SSL_Certificate_on_capsule_admin"
     ],
     "synchronizing_templates_repositories_admin": [
-      "Configuring_the_TemplateSync_plugin_admin",
       "using-repository-sources_admin",
       "Importing_and_Exporting_Templates_admin",
       "cli_Importing_Templates_admin",
