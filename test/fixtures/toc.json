@@ -144,7 +144,7 @@
       "general_settings_information_admin",
       "satellite_tasks_admin",
       "template_sync_settings_admin",
-      "discovered_settings_admin",
+      "discovery-settings",
       "boot_disk_settings_admin",
       "redhat_cloud_settings_admin",
       "content_settings_admin",
