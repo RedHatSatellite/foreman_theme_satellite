@@ -98,10 +98,13 @@
       "Renewing_a_Custom_SSL_Certificate_on_capsule_admin"
     ],
     "synchronizing_templates_repositories_admin": [
-      "using-repository-sources_admin",
-      "Importing_and_Exporting_Templates_admin",
+      "synchronizing-templates-with-an-existing-repository_admin",
+      "Synchronizing_Templates_with_a_Local_Directory_admin",
+      "Importing_Templates_admin",
+      "Exporting_Templates_admin",
       "cli_Importing_Templates_admin",
       "api_Importing_Templates_admin",
+      "ansible_Importing_Templates_admin",
       "cli_Exporting_Templates_admin",
       "api_Exporting_Templates_admin"
     ],
@@ -1491,8 +1494,8 @@
 
     ],
     "upgrading_overview_upgrading-connected": [
-      "upgrading_prerequisites_upgrading-connected",
       "upgrade_paths_upgrading-connected",
+      "upgrading_prerequisites_upgrading-connected",
       "Upgrading_Proxies_Separately_from_Server_upgrading-connected",
       "following_the_progress_of_the_upgrade_upgrading-connected"
     ],
@@ -1517,8 +1520,8 @@
 
     ],
     "upgrading_overview_upgrading-disconnected": [
-      "upgrading_prerequisites_upgrading-disconnected",
       "upgrade_paths_upgrading-disconnected",
+      "upgrading_prerequisites_upgrading-disconnected",
       "Upgrading_Proxies_Separately_from_Server_upgrading-disconnected",
       "following_the_progress_of_the_upgrade_upgrading-disconnected"
     ],
