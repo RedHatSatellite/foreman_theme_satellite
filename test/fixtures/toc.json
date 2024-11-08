@@ -88,7 +88,6 @@
       "Deleting_Task_Records_admin",
       "Deleting_a_Task_by_ID_admin",
       "Recovering_from_a_Full_Disk_admin",
-      "Managing_Packages_on_the_Base_Operating_System_admin",
       "reclaiming-postgresql-space_admin",
       "reclaiming-space-from-on-demand-repositories_admin"
     ],
@@ -142,6 +141,9 @@
       "Using_Free_Text_Search_admin",
       "Managing_Bookmarks_admin",
       "using-keyboard-shortcuts_admin"
+    ],
+    "managing_packages_on_the_base_operating_system_admin": [
+
     ],
     "administration_settings_admin": [
       "general_settings_information_admin",
