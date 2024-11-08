@@ -78,7 +78,7 @@ module ForemanThemeSatellite
         'Products_and_Repositories_content-management' => "#{ForemanThemeSatellite.documentation_root}/managing_content/importing_content_content-management#Products_and_Repositories_content-management",
       },
       'Managing_Hosts' => {
-        'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering_hosts_to_server_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts",
+        'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering-hosts-and-setting-up-host-integration_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts",
       },
       'Managing_Configurations_Ansible' => {
         'Importing_Ansible_Roles_and_Variables_ansible' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_ansible_integration/getting_started_with_ansible_in_satellite_ansible#Importing_Ansible_Roles_and_Variables_ansible",
