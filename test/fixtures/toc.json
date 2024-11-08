@@ -88,7 +88,6 @@
       "Deleting_Task_Records_admin",
       "Deleting_a_Task_by_ID_admin",
       "Recovering_from_a_Full_Disk_admin",
-      "Managing_Packages_on_the_Base_Operating_System_admin",
       "reclaiming-postgresql-space_admin",
       "reclaiming-space-from-on-demand-repositories_admin"
     ],
@@ -98,11 +97,13 @@
       "Renewing_a_Custom_SSL_Certificate_on_capsule_admin"
     ],
     "synchronizing_templates_repositories_admin": [
-      "Configuring_the_TemplateSync_plugin_admin",
-      "using-repository-sources_admin",
-      "Importing_and_Exporting_Templates_admin",
+      "synchronizing-templates-with-an-existing-repository_admin",
+      "Synchronizing_Templates_with_a_Local_Directory_admin",
+      "Importing_Templates_admin",
+      "Exporting_Templates_admin",
       "cli_Importing_Templates_admin",
       "api_Importing_Templates_admin",
+      "ansible_Importing_Templates_admin",
       "cli_Exporting_Templates_admin",
       "api_Exporting_Templates_admin"
     ],
@@ -141,11 +142,14 @@
       "Managing_Bookmarks_admin",
       "using-keyboard-shortcuts_admin"
     ],
+    "managing_packages_on_the_base_operating_system_admin": [
+
+    ],
     "administration_settings_admin": [
       "general_settings_information_admin",
       "satellite_tasks_admin",
       "template_sync_settings_admin",
-      "discovered_settings_admin",
+      "discovery-settings",
       "boot_disk_settings_admin",
       "redhat_cloud_settings_admin",
       "content_settings_admin",
@@ -226,6 +230,9 @@
     "providing-feedback-on-red-hat-documentation_authentication": [
 
     ],
+    "overview-of-authentication-methods-in-project_authentication": [
+
+    ],
     "accessing_server_authentication": [
       "logging-in-to-the-satellite_web_UI_authentication",
       "Importing_the_Katello_Root_CA_Certificate_authentication",
@@ -233,14 +240,7 @@
       "setting-a-custom-message-on-the-satellite_web_UI-login-page_authentication",
       "CLI_Importing_the_Katello_Root_CA_Certificate_authentication"
     ],
-    "configuring-an-ldap-server-as-an-external-identity-provider-for-project_authentication": [
-      "Configuring_TLS_for_Secure_LDAP_authentication",
-      "Configuring_Project_to_Use_LDAP_authentication",
-      "Example_Settings_for_LDAP_Connections_authentication",
-      "Example_LDAP_Filters_authentication",
-      "Using_LDAP_satellite"
-    ],
-    "configuring-kerberos-single-sign-on-with-identity_management-in-project_authentication": [
+    "configuring-kerberos-sso-with-identity_management-in-project_authentication": [
       "enrolling-projectserver-in-freeipa-domain_authentication",
       "configuring-the-freeipa-authentication-source-on-projectserver_authentication",
       "configuring-host-based-access-control-for-Identity_Management-users-logging-in-to-project_authentication",
@@ -250,7 +250,7 @@
       "Using_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-a-Chrome-browser_authentication",
       "Configuring-a-cross-forest-trust-between-Identity_Management-and-Active-Directory-for-Satellite_authentication"
     ],
-    "configuring-keycloak-wildfly-authentication-for-project_keycloak-wildfly": [
+    "configuring-sso-and-2fa-with-keycloak-wildfly-in-project_keycloak-wildfly": [
       "prerequisites-for-configuring-satellite-with-keycloak-authentication_keycloak-wildfly",
       "registering-satellite-as-a-client-of-keycloak_keycloak-wildfly",
       "configuring-the-satellite-client-in-keycloak_keycloak-wildfly",
@@ -260,9 +260,15 @@
       "configuring-group-mapping-for-keycloak-authentication_keycloak-wildfly",
       "logging-in-to-project-configured-with-keycloak-as-an-authentication-source_keycloak-wildfly"
     ],
-    "configuring-active-directory-as-an-external-identity-provider-for-project_authentication": [
-      "configuring-the-active-directory-authentication-source-on-projectserver_authentication",
-      "Kerberos_Configuration_in_Web_Browsers_authentication"
+    "configuring-kerberos-sso-for-active-directory-users-in-project_authentication": [
+      "configuring-the-active-directory-authentication-source-on-projectserver_authentication"
+    ],
+    "configuring-an-ldap-server-as-an-external-identity-provider-for-project_authentication": [
+      "Configuring_TLS_for_Secure_LDAP_authentication",
+      "Configuring_Project_to_Use_LDAP_authentication",
+      "Example_Settings_for_LDAP_Connections_authentication",
+      "Example_LDAP_Filters_authentication",
+      "Using_LDAP_satellite"
     ],
     "important-user-and-group-account-information-for-active-directory-accounts_authentication": [
 
@@ -412,7 +418,6 @@
       "configuring-repositories_satellite",
       "using-fapolicyd-on-server_satellite",
       "Installing_Server_Packages_satellite",
-      "installing-the-sos-package_satellite",
       "configuring-server_satellite",
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite",
       "configuring-foreman-repositories-el-dnf_el8"
@@ -473,7 +478,6 @@
       "using-fapolicyd-on-server_satellite",
       "installing-from-the-offline-repositories_satellite",
       "resolving-package-dependency-errors_satellite",
-      "installing-the-sos-package_satellite",
       "configuring-server_satellite",
       "disabling-subscription-connection_satellite",
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite"
@@ -682,7 +686,7 @@
       "best-practices-for-sync-plans_content-management",
       "Limiting_Synchronization_Concurrency_content-management",
       "Importing_a_Custom_GPG_Key_content-management",
-      "Restricting_a_Custom_Repository_to_a_Specific_OS_Version_or_Architecture_in_Project_content-management",
+      "Restricting_a_Custom_Repository_to_a_Specific_operating_system_Version_or_Architecture_in_Project_content-management",
       "cli-importing-custom-ssl-certificates_content-management",
       "cli-creating-a-custom-product",
       "cli-adding-custom-rpm-repositories",
@@ -836,7 +840,6 @@
       "Editing_the_System_Purpose_of_Multiple_Hosts_managing-hosts",
       "Changing_a_Module_Stream_for_a_Host_managing-hosts",
       "Enabling_Custom_Repositories_on_Content_Hosts_managing-hosts",
-      "using-the-details-tab_managing-hosts",
       "Changing_the_Content_Source_of_a_Host_managing-hosts",
       "Changing_the_Environment_of_a_Host_managing-hosts",
       "Changing_the_Managed_Status_of_a_Host_managing-hosts",
@@ -861,7 +864,7 @@
       "Changing_the_Host_Group_of_a_Host_managing-hosts",
       "cli-creating-a-host-group_managing-hosts"
     ],
-    "registering_hosts_to_server_managing-hosts": [
+    "registering-hosts-and-setting-up-host-integration_managing-hosts": [
       "supported-clients-in-registration_managing-hosts",
       "registration-methods_managing-hosts",
       "Registering_Hosts_by_Using_Global_Registration_managing-hosts",
@@ -1100,7 +1103,7 @@
       "Overview-of-Hosts-in-Satellite_planning",
       "List-of-Key-System-Components-of-Satellite-Server_planning",
       "Capsule-Features_planning",
-      "Capsule-Networking_planning",
+      "capsule-networking_planning",
       "major-project-components-additional-resources_planning"
     ],
     "project-infrastructure-organization-concepts_planning": [
@@ -1468,7 +1471,7 @@
     "system_requirements_for_tuning_performance-tuning": [
 
     ],
-    "determining_hardware_and_os_configuration_performance-tuning": [
+    "determining_hardware_and_operating_system_configuration_performance-tuning": [
       "Benchmarking_Disk_Performance_performance-tuning",
       "Enabling_Tuned_Profiles_performance-tuning",
       "Disable_Transparent_Hugepage_performance-tuning"
@@ -1489,8 +1492,8 @@
 
     ],
     "upgrading_overview_upgrading-connected": [
-      "upgrading_prerequisites_upgrading-connected",
       "upgrade_paths_upgrading-connected",
+      "upgrading_prerequisites_upgrading-connected",
       "Upgrading_Proxies_Separately_from_Server_upgrading-connected",
       "following_the_progress_of_the_upgrade_upgrading-connected"
     ],
@@ -1515,8 +1518,8 @@
 
     ],
     "upgrading_overview_upgrading-disconnected": [
-      "upgrading_prerequisites_upgrading-disconnected",
       "upgrade_paths_upgrading-disconnected",
+      "upgrading_prerequisites_upgrading-disconnected",
       "Upgrading_Proxies_Separately_from_Server_upgrading-disconnected",
       "following_the_progress_of_the_upgrade_upgrading-disconnected"
     ],
