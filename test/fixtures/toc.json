@@ -485,8 +485,6 @@
     "performing-additional-configuration": [
       "configuring-satellite-server-to-consume-content-from-a-custom-cdn_satellite",
       "Configuring-ISS_satellite",
-      "Importing_Kickstart_Repositories_satellite",
-      "importing-the-project-client-name-repository_satellite",
       "configuring-pull-based-transport-for-remote-execution_satellite",
       "enabling-power-management-on-hosts_satellite",
       "configuring-dns-dhcp-and-tftp_satellite",
@@ -818,11 +816,6 @@
     ],
     "using_an_nfs_share_for_content_storage_content-management": [
 
-    ],
-    "importing_kickstart_repositories_content-management": [
-      "Importing_Kickstart_Repositories_rhel-9",
-      "Importing_Kickstart_Repositories_rhel-8",
-      "Importing_Kickstart_Repositories_rhel-7"
     ]
   },
   "managing_hosts": {
