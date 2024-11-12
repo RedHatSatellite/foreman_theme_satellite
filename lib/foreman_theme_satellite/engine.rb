@@ -85,6 +85,10 @@ module ForemanThemeSatellite
           ForemanRhCloud::BranchInfo.send :prepend, BranchInfoBranding
         end
 
+        if defined?(ForemanOpenscap)
+          ForemanOpenscap::BulkUpload.send :prepend, ScapBulkUploadExtensions
+        end
+
         UINotifications::StringParser.send :prepend, DeprecationNotification::StringParser
         Notification.singleton_class.send :prepend, DeprecationNotification::Notification
         LinksController.prepend DocumentationControllerBranding
