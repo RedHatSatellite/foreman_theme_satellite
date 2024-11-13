@@ -49,6 +49,7 @@
       "Predefined_Roles_Available_in_satellite_admin",
       "Granular_Permission_Filtering_admin",
       "cli-creating-a-user_admin",
+      "api-creating-a-user",
       "cli-assigning-roles-to-a-user_admin",
       "cli-managing-ssh-keys-for-a-user_admin",
       "cli-adding-permissions-to-a-role_admin",
@@ -780,14 +781,16 @@
       "Adding_Errata_To_An_Incremental_Content_View_content-management",
       "Applying_Errata_to_Hosts_content-management",
       "Applying_Errata_to_Multiple_Hosts_content-management",
-      "Applying_Errata_to_a_Host_Collection_content-management",
+      "applying-errata-to-a-host-collection",
       "cli-inspecting-available-errata",
       "cli-running-custom-code-while-applying-errata_content-management",
       "cli-creating-a-content-view-filter-for-errata",
       "cli-adding-errata-to-an-incremental-content-view",
       "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_9_content-management",
       "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_8_content-management",
-      "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_7_content-management"
+      "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_7_content-management",
+      "cli-applying-errata-to-a-host-collection",
+      "api-applying-errata-to-a-host-collection"
     ],
     "managing_container_images_content-management": [
       "Importing_Container_Images_content-management",
@@ -1597,40 +1600,60 @@
     "api-syntax": [
       "api-request-composition",
       "json-response-format",
-      "relating-api-error-messages-to-the-api-reference"
+      "relating-api-error-messages-to-the-api-reference",
+      "api-using-the-get-http-method",
+      "api-using-the-post-http-method",
+      "api-using-the-put-http-method",
+      "api-using-the-delete-http-method",
+      "api-json-response-format-for-single-objects",
+      "api-json-response-format-for-collections"
     ],
     "api-call-authentication": [
       "ssl-authentication-overview",
       "http-authentication-overview",
       "token-authentication-overview",
-      "oauth-authentication-overview"
+      "oauth-authentication-overview",
+      "api-oauth-request-format"
     ],
     "api-requests-in-various-languages": [
       "calling-the-api-in-curl",
       "calling-the-api-in-ruby",
       "calling-the-api-in-python",
-      "ex-API_Guide-Creating_a_New_User"
+      "api-listing-users",
+      "api-creating-a-user",
+      "api-modifying-a-user"
     ],
     "api-cheat-sheet": [
       "working-with-hosts",
       "working-with-lifecycle-environments",
       "uploading-content-to-satellite-server",
       "applying-errata-to-hosts",
+      "applying-errata-to-a-host-collection",
       "using-extended-searches",
       "using-searches-with-pagination-control",
       "overriding-smart-class-parameters",
       "modifying-a-smart-class-parameter-by-using-an-external-file",
       "deleting-openscap-reports",
-      "proc-Creating_Linked_Life_Cycle_Environments",
-      "proc-API_Guide-Uploading_Content_to_the_Satellite_Server",
-      "exam-API_Guide-Uploading_Content_Larger_than_2_MB",
-      "exam-API_Guide-Uploading_Duplicate_Content",
-      "exam-API_Guide-Applying_Errata_to_a_Host",
-      "exam-API_Guide-Applying_Errata_to_a_Host_Collection",
-      "listing-content-views",
-      "listing-activation-keys",
-      "ex-Returning_Multiple_Pages",
-      "proc-API_Guide-Modifying_a_Smart_Class_Parameter_Using_an_External_File"
+      "api-listing-hosts",
+      "api-requesting-information-for-a-host",
+      "api-listing-host-facts",
+      "api-searching-for-hosts-with-matching-patterns",
+      "api-searching-for-hosts-in-an-environment",
+      "api-searching-for-hosts-with-a-specific-fact-value",
+      "api-deleting-a-host",
+      "api-downloading-a-full-host-boot-disk-image",
+      "api-listing-lifecycle-environments",
+      "api-creating-linked-lifecycle-environments",
+      "api-updating-a-lifecycle-environment",
+      "api-deleting-a-lifecycle-environment",
+      "api-uploading-content-larger-than-2-mb",
+      "api-uploading-duplicate-content",
+      "api-applying-errata-to-hosts",
+      "api-applying-errata-to-a-host-collection",
+      "api-using-searches-with-pagination-control",
+      "api-modifying-a-smart-class-parameter-by-using-an-external-file",
+      "api-deleting-openscap-reports",
+      "shell-deleting-openscap-reports"
     ],
     "api-response_codes": [
 
