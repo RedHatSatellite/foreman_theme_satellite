@@ -684,7 +684,7 @@
       "best-practices-for-sync-plans_content-management",
       "Limiting_Synchronization_Concurrency_content-management",
       "Importing_a_Custom_GPG_Key_content-management",
-      "Restricting_a_Custom_Repository_to_a_Specific_OS_Version_or_Architecture_in_Project_content-management",
+      "Restricting_a_Custom_Repository_to_a_Specific_operating_system_Version_or_Architecture_in_Project_content-management",
       "cli-importing-custom-ssl-certificates_content-management",
       "cli-creating-a-custom-product",
       "cli-adding-custom-rpm-repositories",
@@ -1468,7 +1468,7 @@
     "system_requirements_for_tuning_performance-tuning": [
 
     ],
-    "determining_hardware_and_os_configuration_performance-tuning": [
+    "determining_hardware_and_operating_system_configuration_performance-tuning": [
       "Benchmarking_Disk_Performance_performance-tuning",
       "Enabling_Tuned_Profiles_performance-tuning",
       "Disable_Transparent_Hugepage_performance-tuning"
