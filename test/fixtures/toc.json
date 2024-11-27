@@ -1259,6 +1259,7 @@
     ],
     "introduction_to_provisioning_provisioning": [
       "Provisioning-Methods-in-Satellite_provisioning",
+      "supported-host-platforms-in-provisioning",
       "supported-cloud-providers_provisioning",
       "supported-virtualization-infrastructures_provisioning",
       "Network_Boot_Provisioning_Workflow_provisioning",
