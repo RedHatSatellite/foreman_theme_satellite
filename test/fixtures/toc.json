@@ -840,7 +840,7 @@
       "Changing_the_Content_Source_of_a_Host_managing-hosts",
       "Changing_the_Environment_of_a_Host_managing-hosts",
       "Changing_the_Managed_Status_of_a_Host_managing-hosts",
-      "enabling-tracer-on-a-host_managing-hosts",
+      "configuring-tracer-on-a-host_managing-hosts",
       "restarting-applications-on-a-host_managing-hosts",
       "Assigning_a_Host_to_a_Specific_Organization_managing-hosts",
       "Assigning_a_Host_to_a_Specific_Location_managing-hosts",
@@ -849,7 +849,6 @@
       "selecting-host-columns_managing-hosts",
       "Removing_a_Host_from_Server_managing-hosts",
       "lifecycle_status_of_rhel_hosts_managing-hosts",
-      "cli-creating-a-host_managing-hosts",
       "cli-Removing_a_Host_from_Server_managing-hosts"
     ],
     "working_with_host_groups_managing-hosts": [
@@ -866,7 +865,6 @@
       "registration-methods_managing-hosts",
       "Registering_Hosts_by_Using_Global_Registration_managing-hosts",
       "Registering_Hosts_by_Using_the_Bootstrap_Script_managing-hosts",
-      "Installing_Tracer_managing-hosts",
       "installing-and-configuring-puppet-agent-during-host-registration_managing-hosts",
       "Installing_and_Configuring_Puppet_Agent_Manually_managing-hosts",
       "running-ansible-roles-during-host-registration",
@@ -874,13 +872,15 @@
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-hosts_managing-hosts",
       "CLI_Setting_Permissions_for_the_Bootstrap_Script_managing-hosts"
     ],
-    "adding_network_interfaces_managing-hosts": [
-      "Adding_a_Physical_Interface_managing-hosts",
-      "Adding_a_Virtual_Interface_managing-hosts",
-      "Adding_a_Bonded_Interface_managing-hosts",
-      "Bonding_Modes_Available_managing-hosts",
-      "Adding_a_Baseboard_Management_Controller_Interface_managing-hosts",
-      "cli-adding-a-bonded-interface_managing-hosts"
+    "configuring-network-interfaces": [
+      "configuring-a-physical-interface",
+      "configuring-a-virtual-interface",
+      "configuring-a-bonded-interface",
+      "configuring-a-bridge-interface",
+      "bonding-modes-available_managing-hosts",
+      "configuring-a-baseboard-management-controller-interface",
+      "network-interface-configuration-options",
+      "cli-configuring-a-bonded-interface"
     ],
     "refreshing-the-self-signed-ca-certificate-on-hosts": [
       "deploying-the-ca-certificate-on-a-host-by-using-script-rex",
