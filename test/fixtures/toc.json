@@ -221,10 +221,6 @@
     "propagating-scap-content-through-the-load-balancer_load-balancing": [
       "Propagating_SCAP_Content_using_Ansible_Deployment_load-balancing",
       "Propagating_SCAP_Content_using_Puppet_Deployment_load-balancing"
-    ],
-    "troubleshooting-dnf-modules_load-balancing": [
-      "Troubleshooting_Ruby_load-balancing",
-      "Troubleshooting_Postgresql_load-balancing"
     ]
   },
   "configuring_authentication_for_red_hat_satellite_users": {
@@ -388,10 +384,6 @@
     ],
     "capsule-server-scalability-considerations_capsule": [
 
-    ],
-    "troubleshooting-dnf-modules_capsule": [
-      "Troubleshooting_Ruby_capsule",
-      "Troubleshooting_Postgresql_capsule"
     ]
   },
   "installing_satellite_server_in_a_connected_network_environment": {
@@ -446,10 +438,6 @@
       "configuring-external-tftp_satellite",
       "configuring-external-idm-dns_satellite",
       "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite"
-    ],
-    "troubleshooting-dnf-modules_satellite": [
-      "Troubleshooting_Ruby_satellite",
-      "Troubleshooting_Postgresql_satellite"
     ],
     "applying-custom-configuration_satellite": [
 
@@ -1503,10 +1491,6 @@
       "upgrading_capsule_server_upgrading-connected",
       "Upgrading_the_External_Database_upgrading-connected"
     ],
-    "upgrading_el_on_satellite_or_proxy_upgrading-connected": [
-      "upgrading-satellite-or-capsule-in-place-using-leapp_upgrading-connected",
-      "migrating-satellite-or-proxy-using-backup_upgrading-connected"
-    ],
     "troubleshooting-permission-issues": [
 
     ]
@@ -1528,10 +1512,6 @@
       "performing-post-upgrade-tasks_upgrading-disconnected",
       "upgrading_capsule_server_upgrading-disconnected",
       "Upgrading_the_External_Database_upgrading-disconnected"
-    ],
-    "upgrading_el_on_satellite_or_proxy_upgrading-disconnected": [
-      "upgrading-satellite-or-capsule-in-place-using-leapp_upgrading-disconnected",
-      "migrating-satellite-or-proxy-using-backup_upgrading-disconnected"
     ],
     "troubleshooting-permission-issues": [
 
