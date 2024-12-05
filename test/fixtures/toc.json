@@ -126,6 +126,12 @@
       "monitoring-satellite-server_admin",
       "monitoring-capsule-server_admin"
     ],
+    "limiting-host-resources": [
+      "installing-the-resource-quota-plugin",
+      "managing-resource-quotas",
+      "assigning-resource-quotas-to-users",
+      "resource-quota-settings"
+    ],
     "using_webhooks_admin": [
       "migrating-to-webhooks_admin",
       "creating-a-webhook-template_admin",
