@@ -233,7 +233,7 @@
     "providing-feedback-on-red-hat-documentation_authentication": [
 
     ],
-    "overview-of-authentication-methods-in-project_authentication": [
+    "overview-of-authentication-methods-in-satellite_authentication": [
 
     ],
     "accessing_server_authentication": [
@@ -434,7 +434,7 @@
       "configuring-an-alternate-cname_satellite",
       "Configuring_Server_with_a_Custom_SSL_Certificate_satellite",
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite_satellite",
-      "using-external-databases_satellite",
+      "using-external-databases",
       "cli-adding-a-default-http-proxy_satellite"
     ],
     "configuring-external-services": [
@@ -485,7 +485,7 @@
       "configuring-dns-dhcp-and-tftp_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
       "Configuring_Server_with_a_Custom_SSL_Certificate_satellite",
-      "using-external-databases_satellite"
+      "using-external-databases"
     ],
     "configuring-external-services": [
       "configuring-external-dns_satellite",
@@ -1080,7 +1080,6 @@
       "Content-Views-in-Satellite_planning",
       "lifecycle-environments-and-environment-paths_planning",
       "Content_Types_in_Satellite_planning",
-      "content-sources-in-Satellite_planning",
       "content-and-patch-management-with-project-additional-resources_planning",
       "figu-An_Environment_Path_Containing_Four_Environments"
     ],
@@ -1118,22 +1117,25 @@
       "Supported-Client-Architectures-for-Configuration-Management_planning",
       "supported-usage-and-versions-of-foreman-components-additional-resources_planning"
     ],
+    "deployment-path_planning": [
+      "installing-a-satellite-server_planning",
+      "overview-of-authentication-methods-in-satellite_planning",
+      "planning-organization-and-location-context_planning",
+      "installing-capsule-servers_planning",
+      "adding-a-red-hat-subscription-to-project-planning",
+      "defining-your-content-library_planning",
+      "defining-content-access-strategies-for-hosts-planning",
+      "Creating_and_Managing_Roles_planning",
+      "configuring-provisioning_planning",
+      "planning-for-disaster-recovery_planning",
+      "additional-deployment-tasks_planning"
+    ],
     "chap-architecture_guide-deployment_scenarios": [
       "sect-Architecture_Guide-Single_Location",
       "sect-Architecture_Guide-Single",
       "sect-Architecture_Guide-Multiple_Locations",
-      "sect-Architecture_Guide-Disconnected_Satellite",
-      "sect-Architecture_Guide-Capsule_with_External_Services"
-    ],
-    "chap-architecture_guide-deployment_considerations": [
-      "sect-Satellite_Server_Configuration",
-      "satellite_server_with_external_database",
-      "sect-Mapping_the_Infrastructure_Topology",
-      "sect-Defining_the_Content_Lifecycle",
-      "sect-Defining_Content_Deployment",
-      "sect-Automating_the_Provisioning",
-      "sect-Defining_Role_Based_Authentication",
-      "sect-Additional_Tasks",
+      "sect-Architecture_Guide-Content_View_Scenarios",
+      "sect-Architecture_Guide-Multiple_Manifest_Scenarios",
       "sect-host-group-structures",
       "satellite_server_with_multiple_manifests_image",
       "figu-Life_Cycle_Environment_Based_Structure",
