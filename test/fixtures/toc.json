@@ -433,7 +433,7 @@
       "configuring-dns-dhcp-and-tftp_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
       "configuring-an-alternate-cname_satellite",
-      "Configuring_Server_with_a_Custom_SSL_Certificate_satellite",
+      "Configuring_Server_with_a_Custom_SSL_Certificate",
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite_satellite",
       "using-external-databases_satellite",
       "cli-adding-a-default-http-proxy_satellite"
@@ -489,7 +489,7 @@
       "enabling-power-management-on-hosts_satellite",
       "configuring-dns-dhcp-and-tftp_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
-      "Configuring_Server_with_a_Custom_SSL_Certificate_satellite",
+      "Configuring_Server_with_a_Custom_SSL_Certificate",
       "using-external-databases_satellite"
     ],
     "configuring-external-services": [
@@ -962,6 +962,9 @@
       "Installing_Packages_on_a_Host_managing-hosts",
       "upgrading-packages-on-a-host_managing-hosts",
       "removing-packages-from-a-host_managing-hosts"
+    ],
+    "troubleshooting-remote-jobs-timing-out-after-yggdrails-update": [
+
     ],
     "template_writing_reference_managing-hosts": [
       "Accessing_the_Template_Writing_Reference_managing-hosts",
