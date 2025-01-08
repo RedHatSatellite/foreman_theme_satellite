@@ -432,7 +432,7 @@
       "configuring-dns-dhcp-and-tftp_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
       "configuring-an-alternate-cname_satellite",
-      "Configuring_Server_with_a_Custom_SSL_Certificate_satellite",
+      "Configuring_Server_with_a_Custom_SSL_Certificate",
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite_satellite",
       "using-external-databases",
       "cli-adding-a-default-http-proxy_satellite"
@@ -484,7 +484,7 @@
       "enabling-power-management-on-hosts_satellite",
       "configuring-dns-dhcp-and-tftp_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
-      "Configuring_Server_with_a_Custom_SSL_Certificate_satellite",
+      "Configuring_Server_with_a_Custom_SSL_Certificate",
       "using-external-databases"
     ],
     "configuring-external-services": [
@@ -962,6 +962,9 @@
       "upgrading-packages-on-a-host_managing-hosts",
       "removing-packages-from-a-host_managing-hosts"
     ],
+    "troubleshooting-remote-jobs-timing-out-after-yggdrails-update": [
+
+    ],
     "template_writing_reference_managing-hosts": [
       "Accessing_the_Template_Writing_Reference_managing-hosts",
       "Using_Autocompletion_in_Templates_managing-hosts",
@@ -1130,19 +1133,13 @@
       "planning-for-disaster-recovery_planning",
       "additional-deployment-tasks_planning"
     ],
-    "chap-architecture_guide-deployment_scenarios": [
-      "sect-Architecture_Guide-Single_Location",
-      "sect-Architecture_Guide-Single",
-      "sect-Architecture_Guide-Multiple_Locations",
-      "sect-Architecture_Guide-Content_View_Scenarios",
-      "sect-Architecture_Guide-Multiple_Manifest_Scenarios",
-      "sect-host-group-structures",
-      "satellite_server_with_multiple_manifests_image",
-      "figu-Life_Cycle_Environment_Based_Structure",
-      "brid-Flat_Structure",
-      "brid-Lifecycle_Environment_Based_Structure",
-      "brid-Flat_Host_Group_Structure",
-      "brid-Location_Based_Structure"
+    "common-deployment-scenarios": [
+      "single-locations-with-segregated-subnets",
+      "multiple-locations",
+      "content-view-scenarios",
+      "projectserver-with-multiple-manifests",
+      "host-group-structures",
+      "figu-Life_Cycle_Environment_Based_Structure"
     ],
     "chap-architecture_guide-provisioning_concepts": [
       "_pxe_booting",
@@ -1294,7 +1291,7 @@
       "facts-and-nic-filtering_provisioning",
       "optimizing-performance-by-removing-nics-from-database_provisioning",
       "Network_Resources_provisioning",
-      "DHCP_Options_provisioning",
+      "satellite-and-dhcp-configuration",
       "Troubleshooting_DHCP_Problems_provisioning",
       "Prerequisites_for_Image_Based_Provisioning_provisioning",
       "Configuring_Network_Services_provisioning",
