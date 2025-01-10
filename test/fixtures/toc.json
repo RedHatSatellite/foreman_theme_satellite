@@ -406,7 +406,8 @@
       "Port_and_firewall_requirements_satellite",
       "Enabling_Connections_from_a_Client_to_Server_satellite",
       "verifying-dns-resolution_satellite",
-      "tuning-with-predefined-profiles_satellite"
+      "tuning-with-predefined-profiles_satellite",
+      "requirements-for-installation-in-an-ipv4-network"
     ],
     "preparing-environment-for-installation-in-ipv6-network_satellite": [
       "limitations-of-installation-in-an-ipv6-network_satellite",
