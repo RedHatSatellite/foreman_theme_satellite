@@ -101,6 +101,7 @@ module ForemanThemeSatellite
         end
 
         if defined?(ForemanOpenscap)
+          require 'foreman_theme_satellite/scap_bulk_upload_extensions'
           ForemanOpenscap::BulkUpload.send :prepend, ScapBulkUploadExtensions
         end
 
