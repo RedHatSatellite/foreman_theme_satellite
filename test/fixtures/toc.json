@@ -126,7 +126,6 @@
       "monitoring-capsule-server_admin"
     ],
     "using_webhooks_admin": [
-      "migrating-to-webhooks_admin",
       "creating-a-webhook-template_admin",
       "creating-a-webhook_admin",
       "webhooks-available-events_admin",
@@ -1510,7 +1509,8 @@
     ],
     "upgrading_el_on_satellite_or_proxy_upgrading-connected": [
       "upgrading-satellite-or-capsule-in-place-using-leapp_upgrading-connected",
-      "migrating-satellite-or-proxy-using-backup_upgrading-connected"
+      "migrating-satellite-to-el-9-by-using-cloning_upgrading-connected",
+      "migrating-satellite-or-proxy-using-backup-restore_upgrading-connected"
     ],
     "troubleshooting-permission-issues": [
 
@@ -1536,7 +1536,8 @@
     ],
     "upgrading_el_on_satellite_or_proxy_upgrading-disconnected": [
       "upgrading-satellite-or-capsule-in-place-using-leapp_upgrading-disconnected",
-      "migrating-satellite-or-proxy-using-backup_upgrading-disconnected"
+      "migrating-satellite-to-el-9-by-using-cloning_upgrading-disconnected",
+      "migrating-satellite-or-proxy-using-backup-restore_upgrading-disconnected"
     ],
     "troubleshooting-permission-issues": [
 
