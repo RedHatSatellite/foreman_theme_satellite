@@ -234,19 +234,19 @@
     ],
     "accessing_server_authentication": [
       "logging-in-to-the-satellite_web_UI_authentication",
-      "Importing_the_Katello_Root_CA_Certificate_authentication",
+      "importing-the-katello-root-ca-certificate",
       "Resetting_the_Administrative_User_Password_authentication",
       "setting-a-custom-message-on-the-satellite_web_UI-login-page_authentication",
-      "CLI_Importing_the_Katello_Root_CA_Certificate_authentication"
+      "cli-importing-the-katello-root-ca-certificate"
     ],
-    "configuring-kerberos-sso-with-identity_management-in-project_authentication": [
+    "configuring-kerberos-sso-with-identity_management-in-satellite": [
       "enrolling-projectserver-in-freeipa-domain_authentication",
       "configuring-the-freeipa-authentication-source-on-projectserver_authentication",
       "configuring-host-based-access-control-for-Identity_Management-users-logging-in-to-project_authentication",
       "configuring-hammer-cli-to-accept-Identity_Management-credentials_authentication",
-      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_Hammer_CLI_authentication",
-      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-Mozilla-Firefox_authentication",
-      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-a-Chrome-browser_authentication",
+      "logging-in-to-hammer-cli-with-Identity_Management-credentials",
+      "logging-in-to-the-webui-with-Identity_Management-credentials-in-mozilla-firefox",
+      "logging-in-to-the-webui-with-Identity_Management-credentials-in-chrome",
       "Configuring-a-cross-forest-trust-between-Identity_Management-and-Active-Directory-for-Satellite_authentication"
     ],
     "configuring-sso-and-2fa-with-keycloak-wildfly-in-project_keycloak-wildfly": [
