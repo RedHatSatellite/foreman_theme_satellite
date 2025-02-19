@@ -20,7 +20,7 @@
       "installing-postgresql_admin",
       "migrating-to-external-databases_admin"
     ],
-    "managing_project_with_ansible_collections_admin": [
+    "managing-satellite-with-ansible": [
       "Installing_the_Project_Ansible_Modules_admin",
       "Viewing_the_Ansible_Modules_admin"
     ],
@@ -129,10 +129,14 @@
       "installing-the-resource-quota-plugin",
       "managing-resource-quotas",
       "assigning-resource-quotas-to-users",
-      "resource-quota-settings"
+      "resource-quota-settings",
+      "cli-creating-a-resource-quota",
+      "cli-editing-a-resource-quota",
+      "cli-deleting-a-resource-quota",
+      "cli-assigning-resource-quotas-to-a-user",
+      "cli-assigning-resource-quotas-to-a-user-group"
     ],
     "using_webhooks_admin": [
-      "migrating-to-webhooks_admin",
       "creating-a-webhook-template_admin",
       "creating-a-webhook_admin",
       "webhooks-available-events_admin",
@@ -147,6 +151,10 @@
       "Using_Free_Text_Search_admin",
       "Managing_Bookmarks_admin",
       "using-keyboard-shortcuts_admin"
+    ],
+    "preparing-for-disaster-recovery-and-recovering-from-data-loss": [
+      "overview-of-recommended-disaster-recovery-plans",
+      "disaster-recovery-by-virtualizing-your-satellite-server"
     ],
     "managing_packages_on_the_base_operating_system_admin": [
 
@@ -237,19 +245,19 @@
     ],
     "accessing_server_authentication": [
       "logging-in-to-the-satellite_web_UI_authentication",
-      "Importing_the_Katello_Root_CA_Certificate_authentication",
+      "importing-the-katello-root-ca-certificate",
       "Resetting_the_Administrative_User_Password_authentication",
       "setting-a-custom-message-on-the-satellite_web_UI-login-page_authentication",
-      "CLI_Importing_the_Katello_Root_CA_Certificate_authentication"
+      "cli-importing-the-katello-root-ca-certificate"
     ],
-    "configuring-kerberos-sso-with-identity_management-in-project_authentication": [
+    "configuring-kerberos-sso-with-identity_management-in-satellite": [
       "enrolling-projectserver-in-freeipa-domain_authentication",
       "configuring-the-freeipa-authentication-source-on-projectserver_authentication",
       "configuring-host-based-access-control-for-Identity_Management-users-logging-in-to-project_authentication",
       "configuring-hammer-cli-to-accept-Identity_Management-credentials_authentication",
-      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_Hammer_CLI_authentication",
-      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-Mozilla-Firefox_authentication",
-      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-a-Chrome-browser_authentication",
+      "logging-in-to-hammer-cli-with-Identity_Management-credentials",
+      "logging-in-to-the-webui-with-Identity_Management-credentials-in-mozilla-firefox",
+      "logging-in-to-the-webui-with-Identity_Management-credentials-in-chrome",
       "Configuring-a-cross-forest-trust-between-Identity_Management-and-Active-Directory-for-Satellite_authentication"
     ],
     "configuring-sso-and-2fa-with-keycloak-wildfly-in-project_keycloak-wildfly": [
@@ -283,31 +291,6 @@
     ],
     "refreshing_external_user_groups_for_freeipa_or_ad_authentication": [
 
-    ]
-  },
-  "configuring_virtual_machine_subscriptions_in_red_hat_satellite": {
-    "providing-feedback-on-red-hat-documentation_vm-subs-satellite": [
-
-    ],
-    "_introduction": [
-      "_recommendations_for_subscription_usage_reporting",
-      "host-based-subscriptions_vm-subs-satellite",
-      "configuration-overview",
-      "virt-who-configuration-for-each-virtualization-platform_vm-subs-satellite"
-    ],
-    "creating-a-virt-who-configuration_vm-subs-satellite": [
-
-    ],
-    "deploying-a-virt-who-configuration": [
-      "deploying-a-virt-who-configuration-on-a-hypervisor_vm-subs-satellite",
-      "deploying-a-virt-who-configuration-on-satellite-server_vm-subs-satellite",
-      "deploying-a-virt-who-configuration-on-a-separate-rhel-server_vm-subs-satellite"
-    ],
-    "troubleshooting-virt-who": [
-      "modifying-virt-who-configuration_vm-subs-satellite",
-      "removing-an-existing-virt-who-configuration_vm-subs-satellite",
-      "virt-who-troubleshooting-methods_vm-subs-satellite",
-      "virt-who-troubleshooting-scenarios_vm-subs-satellite"
     ]
   },
   "deploying_red_hat_satellite_on_amazon_web_services": {
@@ -709,7 +692,7 @@
       "best-practices-for-patching-content-hosts_content-management",
       "Creating_a_Content_View_content-management",
       "Copying_a_Content_View_content-management",
-      "Synchronizing_a_Content_View_to_a_capsule_content-management",
+      "synchronizing-a-content-view-to-a-capsule-server",
       "Viewing_Module_Streams_content-management",
       "Promoting_a_Content_View_content-management",
       "Composite_Content_Views_Overview_content-management",
@@ -781,6 +764,7 @@
       "cli-running-custom-code-while-applying-errata_content-management",
       "cli-creating-a-content-view-filter-for-errata",
       "cli-adding-errata-to-an-incremental-content-view",
+      "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_10_content-management",
       "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_9_content-management",
       "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_8_content-management",
       "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_7_content-management",
@@ -864,6 +848,10 @@
       "running-ansible-roles-during-host-registration",
       "using-custom-ssl-certificate-for-hosts_managing-hosts",
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-hosts_managing-hosts",
+      "cli-invalidating-your-own-jwts",
+      "api-invalidating-your-own-jwts",
+      "cli-invalidating-jwts-of-other-users",
+      "api-invalidating-jwts-of-other-users",
       "CLI_Setting_Permissions_for_the_Bootstrap_Script_managing-hosts"
     ],
     "configuring-network-interfaces": [
@@ -962,7 +950,7 @@
       "upgrading-packages-on-a-host_managing-hosts",
       "removing-packages-from-a-host_managing-hosts"
     ],
-    "troubleshooting-remote-jobs-timing-out-after-yggdrails-update": [
+    "troubleshooting-remote-jobs-timing-out-after-yggdrasil-update": [
 
     ],
     "template_writing_reference_managing-hosts": [
@@ -1110,7 +1098,7 @@
       "Hammer-CLI-Overview_planning",
       "API-Overview_planning",
       "Remote-Execution-in-Satellite_planning",
-      "Managing_Project_with_Ansible_Collections_planning",
+      "managing-satellite-with-ansible",
       "Kickstart-Workflow_planning"
     ],
     "supported-usage-and-versions-of-project-components_planning": [
@@ -1130,7 +1118,7 @@
       "defining-content-access-strategies-for-hosts-planning",
       "Creating_and_Managing_Roles_planning",
       "configuring-provisioning_planning",
-      "planning-for-disaster-recovery_planning",
+      "overview-of-recommended-disaster-recovery-plans",
       "additional-deployment-tasks_planning"
     ],
     "common-deployment-scenarios": [
@@ -1141,11 +1129,11 @@
       "host-group-structures",
       "figu-Life_Cycle_Environment_Based_Structure"
     ],
-    "chap-architecture_guide-provisioning_concepts": [
-      "_pxe_booting",
+    "provisioning-requirements": [
+      "pxe-booting",
       "http-booting"
     ],
-    "chap-documentation-architecture_guide-required_technical_users": [
+    "technical-users-provided-and-required-by-satellite": [
 
     ],
     "glossary-of-terms-used-in-satellite_planning": [
@@ -1252,8 +1240,8 @@
     "introduction_to_provisioning_provisioning": [
       "Provisioning-Methods-in-Satellite_provisioning",
       "supported-host-platforms-in-provisioning",
-      "supported-cloud-providers_provisioning",
-      "supported-virtualization-infrastructures_provisioning",
+      "supported-cloud-providers",
+      "supported-virtualization-infrastructures",
       "Network_Boot_Provisioning_Workflow_provisioning",
       "required-boot-order-for-network-boot_provisioning"
     ],
@@ -1264,15 +1252,15 @@
       "updating-the-details-of-multiple-operating-systems_provisioning",
       "creating-architectures_provisioning",
       "creating-hardware-models_provisioning",
-      "using-a-synchronized-kickstart-repository-for-a-hosts-operating-system_provisioning",
+      "preparing-a-synchronized-kickstart-repository",
       "adding-installation-media_provisioning",
       "creating-partition-tables_provisioning",
       "associating-partition-tables-with-disk-encryption_provisioning",
       "dynamic-partition-example_provisioning",
-      "provisioning-templates_provisioning",
-      "kinds-of-provisioning-templates_provisioning",
-      "creating-provisioning-templates_provisioning",
-      "cloning-provisioning-templates_provisioning",
+      "provisioning-templates",
+      "kinds-of-provisioning-templates",
+      "creating-provisioning-templates",
+      "cloning-provisioning-templates",
       "Creating_Custom_Provisioning_Snippets_provisioning",
       "Custom_Provisioning_Snippet_Example_for_Enterprise_Linux_provisioning",
       "Associating_Templates_with_Operating_Systems_provisioning",
@@ -1287,7 +1275,7 @@
       "cli-creating-compute-profiles_provisioning",
       "cli-removing-a-virtual-machine-upon-host-deletion_provisioning"
     ],
-    "configuring_networking_provisioning": [
+    "preparing-networking": [
       "facts-and-nic-filtering_provisioning",
       "optimizing-performance-by-removing-nics-from-database_provisioning",
       "Network_Resources_provisioning",
@@ -1302,10 +1290,11 @@
     ],
     "using_pxe_to_provision_hosts_provisioning": [
       "Prerequisites_for_Bare_Metal_Provisioning_provisioning",
-      "Configuring_the_Security_Token_Validity_Duration_provisioning",
+      "configuring-the-security-token-validity-duration",
       "Creating_Hosts_with_Unattended_Provisioning_provisioning",
       "Creating_Hosts_with_PXE_less_Provisioning_provisioning",
-      "Creating_Hosts_with_UEFI_HTTP_Boot_Provisioning_provisioning",
+      "creating-hosts-with-uefi-http-boot-provisioning",
+      "configuring-capsule-to-provision-rhel-on-Secure-Boot-enabled-hosts",
       "Deploying_SSH_Keys_During_Provisioning_provisioning",
       "cli-creating-hosts-with-unattended-provisioning_provisioning",
       "cli-creating-hosts-with-pxe-less-provisioning_provisioning",
@@ -1317,11 +1306,11 @@
       "Booting_Virtual_Machines_provisioning",
       "Chainbooting_iPXE_from_PXELinux_provisioning"
     ],
-    "discovering-hosts-on-a-network_provisioning": [
+    "discovering-hosts-on-a-network": [
       "prerequisites-for-using-discovery_provisioning",
       "Installing_the_Discovery_Service_provisioning",
-      "discovery-in-pxe-mode_provisioning",
-      "discovery-in-pxeless-mode_provisioning",
+      "discovery-in-pxe-mode",
+      "discovery-in-pxeless-mode",
       "Automatic_Contexts_for_Discovered_Hosts_provisioning",
       "Creating_Hosts_from_Discovered_Hosts_provisioning",
       "Creating_Discovery_Rules_provisioning",
@@ -1331,7 +1320,7 @@
       "cli-creating-hosts-from-discovered-hosts_provisioning",
       "cli-creating-discovery-rules_provisioning"
     ],
-    "using_an_image_builder_image_for_provisioning_provisioning": [
+    "configuring-satellite-to-provision-from-a-builder-image": [
 
     ],
     "provisioning_virtual_machines_on_kvm_kvm-provisioning": [
