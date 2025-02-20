@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: foreman_theme_satellite 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-21 10:39+0100\n"
-"PO-Revision-Date: 2023-12-21 10:39+0100\n"
+"POT-Creation-Date: 2025-02-20 11:50+0100\n"
+"PO-Revision-Date: 2025-02-20 11:50+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -153,14 +153,14 @@ msgstr ""
 msgid "(build: %{version})"
 msgstr ""
 
-#: ../lib/foreman_theme_satellite/engine.rb:31
+#: ../lib/foreman_theme_satellite/engine.rb:22
 msgid ""
 "Show unsupported provisioning templates. When enabled, all the avaiable templa"
 "tes will be shown. When disabled, Red Hat supported templates will be shown on"
 "ly"
 msgstr ""
 
-#: ../lib/foreman_theme_satellite/engine.rb:34
+#: ../lib/foreman_theme_satellite/engine.rb:25
 msgid "Show unsupported provisioning templates"
 msgstr ""
 

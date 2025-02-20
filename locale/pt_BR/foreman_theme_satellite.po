@@ -11,7 +11,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_theme_satellite 1.0.0\n"
+"Project-Id-Version: foreman_theme_satellite 14.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-11-21 10:43+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarde"
