@@ -137,7 +137,6 @@
       "cli-assigning-resource-quotas-to-a-user-group"
     ],
     "using_webhooks_admin": [
-      "migrating-to-webhooks_admin",
       "creating-a-webhook-template_admin",
       "creating-a-webhook_admin",
       "webhooks-available-events_admin",
@@ -154,7 +153,8 @@
       "using-keyboard-shortcuts_admin"
     ],
     "preparing-for-disaster-recovery-and-recovering-from-data-loss": [
-      "overview-of-recommended-disaster-recovery-plans"
+      "overview-of-recommended-disaster-recovery-plans",
+      "disaster-recovery-by-virtualizing-your-satellite-server"
     ],
     "managing_packages_on_the_base_operating_system_admin": [
 
@@ -245,19 +245,19 @@
     ],
     "accessing_server_authentication": [
       "logging-in-to-the-satellite_web_UI_authentication",
-      "Importing_the_Katello_Root_CA_Certificate_authentication",
+      "importing-the-katello-root-ca-certificate",
       "Resetting_the_Administrative_User_Password_authentication",
       "setting-a-custom-message-on-the-satellite_web_UI-login-page_authentication",
-      "CLI_Importing_the_Katello_Root_CA_Certificate_authentication"
+      "cli-importing-the-katello-root-ca-certificate"
     ],
-    "configuring-kerberos-sso-with-identity_management-in-project_authentication": [
+    "configuring-kerberos-sso-with-identity_management-in-satellite": [
       "enrolling-projectserver-in-freeipa-domain_authentication",
       "configuring-the-freeipa-authentication-source-on-projectserver_authentication",
       "configuring-host-based-access-control-for-Identity_Management-users-logging-in-to-project_authentication",
       "configuring-hammer-cli-to-accept-Identity_Management-credentials_authentication",
-      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_Hammer_CLI_authentication",
-      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-Mozilla-Firefox_authentication",
-      "Using_Identity_Management_credentials_to_log_in_to_the_satellite_web_UI-with-a-Chrome-browser_authentication",
+      "logging-in-to-hammer-cli-with-Identity_Management-credentials",
+      "logging-in-to-the-webui-with-Identity_Management-credentials-in-mozilla-firefox",
+      "logging-in-to-the-webui-with-Identity_Management-credentials-in-chrome",
       "Configuring-a-cross-forest-trust-between-Identity_Management-and-Active-Directory-for-Satellite_authentication"
     ],
     "configuring-sso-and-2fa-with-keycloak-wildfly-in-project_keycloak-wildfly": [
@@ -291,31 +291,6 @@
     ],
     "refreshing_external_user_groups_for_freeipa_or_ad_authentication": [
 
-    ]
-  },
-  "configuring_virtual_machine_subscriptions_in_red_hat_satellite": {
-    "providing-feedback-on-red-hat-documentation_vm-subs-satellite": [
-
-    ],
-    "_introduction": [
-      "_recommendations_for_subscription_usage_reporting",
-      "host-based-subscriptions_vm-subs-satellite",
-      "configuration-overview",
-      "virt-who-configuration-for-each-virtualization-platform_vm-subs-satellite"
-    ],
-    "creating-a-virt-who-configuration_vm-subs-satellite": [
-
-    ],
-    "deploying-a-virt-who-configuration": [
-      "deploying-a-virt-who-configuration-on-a-hypervisor_vm-subs-satellite",
-      "deploying-a-virt-who-configuration-on-satellite-server_vm-subs-satellite",
-      "deploying-a-virt-who-configuration-on-a-separate-rhel-server_vm-subs-satellite"
-    ],
-    "troubleshooting-virt-who": [
-      "modifying-virt-who-configuration_vm-subs-satellite",
-      "removing-an-existing-virt-who-configuration_vm-subs-satellite",
-      "virt-who-troubleshooting-methods_vm-subs-satellite",
-      "virt-who-troubleshooting-scenarios_vm-subs-satellite"
     ]
   },
   "deploying_red_hat_satellite_on_amazon_web_services": {
