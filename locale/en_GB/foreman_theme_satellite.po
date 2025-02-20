@@ -4,123 +4,120 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Bryan Kearney <bryan.kearney@gmail.com>, 2023
-# Sergio Ocón-Cárdenas, 2023
-# Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
+# Andi Chandler <andi@gowling.com>, 2024
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: foreman_theme_satellite 14.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-11-21 10:43+0000\n"
-"Last-Translator: Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarde"
-"n.nl>, 2024\n"
-"Language-Team: Spanish (https://app.transifex.com/foreman/teams/114/es/)\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>, 2024\n"
+"Language-Team: English (United Kingdom) (https://app.transifex.com/foreman/tea"
+"ms/114/en_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 :"
-" 2;\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "(build: %{version})"
-msgstr ""
+msgstr "(build: %{version})"
 
 msgid "API Guide"
-msgstr "Guía API"
+msgstr "API Guide"
 
 msgid "Administering Red Hat Satellite"
-msgstr ""
+msgstr "Administering Red Hat Satellite"
 
 msgid "Blog"
-msgstr "Diario web"
+msgstr "Blog"
 
 msgid "Customer portal"
-msgstr "Portal del cliente"
+msgstr "Customer portal"
 
 msgid "Documentation"
-msgstr "Documentación"
+msgstr "Documentation"
 
 msgid "Environment only"
-msgstr "Solo entorno"
+msgstr "Environment only"
 
 msgid "Full trace"
-msgstr "Mensaje completo"
+msgstr "Full trace"
 
 msgid "Host group and Environment"
-msgstr "Grupo del host y Entorno"
+msgstr "Host group and Environment"
 
 msgid "Host group only"
-msgstr "Solo Grupo del host"
+msgstr "Host group only"
 
 msgid "IRC"
 msgstr "IRC"
 
 msgid "If you feel this is an error with Satellite 6 itself, please open a new issue with"
-msgstr "Si cree que esto es un error de Satellite 6, por favor, reporte una incidencia con"
+msgstr "If you feel this is an error with Satellite 6 itself, please open a new issue with"
 
 msgid "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy"
-msgstr ""
+msgstr "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy"
 
 msgid "More information"
-msgstr ""
+msgstr "More information"
 
 msgid "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026."
-msgstr ""
+msgstr "On 31st August 2022, Red Hat Virtualisation entered the Maintenance Support Phase. The Maintenance Support Phase runs until 31st August  2024, followed by the Extended Life Phase, which runs until 31st August  2026."
 
 msgid "Operating System"
-msgstr "Sistema operativo"
+msgstr "Operating System"
 
 msgid "Operating system default"
-msgstr "Sistema operativo predeterminado"
+msgstr "Operating system default"
 
 msgid "RHEV integration is deprecated."
-msgstr ""
+msgstr "RHEV integration is deprecated."
 
 msgid "Red Hat Satellite Blog"
 msgstr "Red Hat Satellite Blog"
 
 msgid "Satellite ticketing system"
-msgstr "Sistema de tiquetes Satellite "
+msgstr "Satellite ticketing system"
 
 msgid "Show unsupported provisioning templates"
-msgstr ""
+msgstr "Show unsupported provisioning templates"
 
 msgid "Show unsupported provisioning templates. When enabled, all the avaiable templates will be shown. When disabled, Red Hat supported templates will be shown only"
-msgstr ""
+msgstr "Show unsupported provisioning templates. When enabled, all the avaiable templates will be shown. When disabled, Red Hat supported templates will be shown only"
 
 msgid "Support"
-msgstr "Soporte"
+msgstr "Support"
 
 msgid "Supported by Red Hat"
-msgstr ""
+msgstr "Supported by Red Hat"
 
 msgid "The final entry, Operating System default, can be set by editing the %s page."
-msgstr "La última entrada, sistema operativo predeterminado, puede configurarse al editar la página %s."
+msgstr "The final entry, Operating System default, can be set by editing the %s page."
 
 msgid "Theme changes for Satellite 6."
-msgstr "Cambios de tema para Satellite 6."
+msgstr "Theme changes for Satellite 6."
 
 msgid "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6"
-msgstr ""
+msgstr "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6"
 
 msgid "Version %{version}"
-msgstr ""
+msgstr "Version %{version}"
 
 msgid "Version %{version} © %{year} Red Hat Inc."
-msgstr ""
+msgstr "Version %{version} © %{year} Red Hat Inc."
 
 msgid "When a Host requests a template (e.g. during provisioning), Foreman selects the optimal match from the available templates of that type, in the following order:"
-msgstr "Cuando un host solicita una plantilla (p. ej., durante el aprovisionamiento), Foreman selecciona la mejor coincidencia en las plantillas disponibles de ese tipo, en el siguiente orden:"
+msgstr "When a Host requests a template (e.g. during provisioning), Foreman selects the optimal match from the available templates of that type, in the following order:"
 
 msgid "When editing a Template, you must assign a list of Operating Systems with which this Template can be used. Optionally, you can restrict a template to a list of Hostgroups or Environments."
-msgstr "Cuando edita una plantilla, debe asignar una lista de sistemas operativos con los que esta plantilla puede usarse. De manera opcional, puede restringir una plantilla a una lista de grupos de hosts o entornos."
+msgstr "When editing a Template, you must assign a list of Operating Systems with which this Template can be used. Optionally, you can restrict a template to a list of Hostgroups or Environments."
 
 msgid "You can find us on %{liberachat} (irc.libera.chat) in #redhat-satellite."
-msgstr ""
+msgstr "You can find us on %{liberachat} (irc.libera.chat) in #redhat-satellite."
 
 msgid "You would probably need to attach the"
-msgstr "Probablemente sea necesario añadir el"
+msgstr "You would probably need to attach the"
 
 msgid "and relevant log entries."
-msgstr "y entradas relevantes de registros"
+msgstr "and relevant log entries."

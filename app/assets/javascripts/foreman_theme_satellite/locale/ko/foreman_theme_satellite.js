@@ -1,4 +1,4 @@
- locales['foreman_theme_satellite'] = locales['foreman_theme_satellite'] || {}; locales['foreman_theme_satellite']['zh_CN'] = {
+ locales['foreman_theme_satellite'] = locales['foreman_theme_satellite'] || {}; locales['foreman_theme_satellite']['ko'] = {
   "domain": "foreman_theme_satellite",
   "locale_data": {
     "foreman_theme_satellite": {
@@ -6,118 +6,118 @@
         "Project-Id-Version": "foreman_theme_satellite 14.3.0",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
-        "Last-Translator": "Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024",
-        "Language-Team": "Chinese (China) (https://app.transifex.com/foreman/teams/114/zh_CN/)",
+        "Last-Translator": "Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2025",
+        "Language-Team": "Korean (https://app.transifex.com/foreman/teams/114/ko/)",
         "MIME-Version": "1.0",
         "Content-Type": "text/plain; charset=UTF-8",
         "Content-Transfer-Encoding": "8bit",
-        "Language": "zh_CN",
+        "Language": "ko",
         "Plural-Forms": "nplurals=1; plural=0;",
-        "lang": "zh_CN",
+        "lang": "ko",
         "domain": "foreman_theme_satellite",
         "plural_forms": "nplurals=1; plural=0;"
       },
       "(build: %{version})": [
-        "（构建：%{version}）"
+        "(빌드:%{version} )"
       ],
       "API Guide": [
-        "API 指南"
+        "API 가이드"
       ],
       "Administering Red Hat Satellite": [
-        "管理 Red Hat Satellite"
+        "Red Hat Satellite 관리"
       ],
       "Blog": [
-        "部落格"
+        "블로그"
       ],
       "Customer portal": [
-        "客户门户"
+        "고객 포털"
       ],
       "Documentation": [
-        "文档"
+        "문서 "
       ],
       "Environment only": [
-        "仅环境"
+        "환경만 "
       ],
       "Full trace": [
-        "完整追蹤"
+        "완전 추적"
       ],
       "Host group and Environment": [
-        "主机组和环境"
+        "호스트 그룹 및 환경 "
       ],
       "Host group only": [
-        "仅主机组"
+        "호스트 그룹만 "
       ],
       "IRC": [
         "IRC"
       ],
       "If you feel this is an error with Satellite 6 itself, please open a new issue with": [
-        "若您認為這是 Satellite 6 本身的錯誤，請提交錯誤"
+        "Satellite 6 자체의 오류라고 생각되면 새 문제로 아래에 제출해 주세요."
       ],
       "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy": [
-        "包括 %{system} © 2009-%{year} Paul Kelly 和 Ohad Levy"
+        "%{system} © 2009-%{year} Paul Kelly and Ohad Levy 포함"
       ],
       "More information": [
-        "更多信息"
+        "자세한 정보"
       ],
       "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026.": [
-        "2022 年 8 月 31 日，Red Hat Virtualization 进入维护支持阶段。维护支持阶段持续到 2024 年 8 月 31 日，然后进入延长生命周期阶段，它会持续到 2026 年 8 月 31 日。"
+        "2022년 8월 31일, Red Hat Virtualization은 유지 관리 지원 단계에 들어갔습니다. 유지 관리(Maintenance Support) 지원 단계는 2024년 8월 31일까지 진행되며, 그 다음에는 2026년 8월 31일까지 진행되는 연장 라이프 단계(Extended Life Phase)가 이어집니다."
       ],
       "Operating System": [
-        "操作系统"
+        "운영체제"
       ],
       "Operating system default": [
-        "作業系統預設值"
+        "기본값 운영 체제 "
       ],
       "RHEV integration is deprecated.": [
-        "RHEV 集成已弃用。"
+        "RHEV 통합은 더 이상 지원되지 않습니다."
       ],
       "Red Hat Satellite Blog": [
-        "Red Hat Satellite 部落格"
+        "Red Hat Satellite 블로그"
       ],
       "Satellite ticketing system": [
-        "Satellite 的票證系統"
+        "Satellite 티켓팅 시스템"
       ],
       "Show unsupported provisioning templates": [
-        "显示不被支持的置备模板"
+        "지원되지 않는 프로비저닝 템플릿 표시"
       ],
       "Show unsupported provisioning templates. When enabled, all the avaiable templates will be shown. When disabled, Red Hat supported templates will be shown only": [
-        "显示不支持的置备模板。启用后，将显示所有可查询的模板。禁用时，仅显示红帽支持的模板"
+        "지원되지 않는 프로비저닝 템플릿을 표시합니다. 활성화하면 사용 가능한 모든 템플릿이 표시됩니다. 비활성화하면 Red Hat에서 지원하는 템플릿만 표시됩니다."
       ],
       "Support": [
-        "支援"
+        "지원"
       ],
       "Supported by Red Hat": [
-        "被红帽支持"
+        "Red Hat에서 지원됨"
       ],
       "The final entry, Operating System default, can be set by editing the %s page.": [
-        "最终条目，操作系统默认值，可以通过编辑 %s 页设置。"
+        "최종 엔트리, 운영 체제 기본값은 %s 페이지를 편집하여 설정할 수 있습니다. "
       ],
       "Theme changes for Satellite 6.": [
-        "Satellite 6 的主题更改。"
+        "Satellite 6의 테마가 변경되었습니다."
       ],
       "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6": [
-        "从 Red Hat Satellite 5 转换到 Red Hat Satellite 6"
+        "Red Hat Satellite 5에서 Red Hat Satellite 6으로 전환"
       ],
       "Version %{version}": [
-        "版本 %{version}"
+        "버전 %{version}"
       ],
       "Version %{version} © %{year} Red Hat Inc.": [
-        "版本 %{version} © %{year} Red Hat Inc。"
+        "버전 %{version} © %{year} Red Hat Inc."
       ],
       "When a Host requests a template (e.g. during provisioning), Foreman selects the optimal match from the available templates of that type, in the following order:": [
-        "当主机请求模板时（例如在置备期间），Foreman 按照以下顺序从该类型的可用模板中选择最佳的匹配项："
+        "호스트가 템플릿을 요청하면(예: 프로비저닝 중), Foreman은 다음 순서에 따라 해당 유형의 사용 가능한 템플릿 중에서 최적의 일치 항목을 선택합니다."
       ],
       "When editing a Template, you must assign a list of Operating Systems with which this Template can be used. Optionally, you can restrict a template to a list of Hostgroups or Environments.": [
-        "在编辑模板时，您必须分配可搭配此模板使用的一系列操作系统。您也可选择将模板限制到一组主机组或环境。"
+        "템플릿을 편집할 때 이 템플릿을 사용할 수 있는 운영 체제 목록을 지정해야 합니다. 선택적으로 템플릿을 호스트 그룹 또는 환경 목록으로 제한할 수 있습니다."
       ],
       "You can find us on %{liberachat} (irc.libera.chat) in #redhat-satellite.": [
-        "您可以在 #redhat-satellite 的 %{liberachat} (irc.libera.chat) 中找到我们。"
+        "#redhat-satellite에서 %{liberachat} (irc.libera.chat)을 찾을 수 있습니다."
       ],
       "You would probably need to attach the": [
-        "您可能需要附加"
+        "필요한 첨부"
       ],
       "and relevant log entries.": [
-        "和相關的日誌項目。"
+        "및 관련 로그 항목."
       ]
     }
   }

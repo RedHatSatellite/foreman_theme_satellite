@@ -3,7 +3,7 @@
   "locale_data": {
     "foreman_theme_satellite": {
       "": {
-        "Project-Id-Version": "foreman_theme_satellite 14.0.1",
+        "Project-Id-Version": "foreman_theme_satellite 14.3.0",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
         "Last-Translator": "Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023",
