@@ -950,6 +950,10 @@
       "upgrading-packages-on-a-host_managing-hosts",
       "removing-packages-from-a-host_managing-hosts"
     ],
+    "package-mode-and-image-mode-hosts": [
+      "viewing-booted-container-images",
+      "remote-execution-jobs-for-image-mode-hosts"
+    ],
     "troubleshooting-remote-jobs-timing-out-after-yggdrasil-update": [
 
     ],
