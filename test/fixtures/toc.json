@@ -779,6 +779,12 @@
       "Using_Container_Registries_content-management",
       "cli-importing-container-images"
     ],
+    "managing-flatpak-repositories-in-project": [
+      "enabling-the-flatpak-remote",
+      "installing-flatpak-applications-on-project-hosts",
+      "setting-up-Flatpak-remote_for_Smartproxy",
+      "importing_and_exporting_content_to_project_server_for_flatpak"
+    ],
     "managing_iso_images_content-management": [
       "Importing_ISO_Images_from_Red_Hat_content-management",
       "Importing_Individual_ISO_Images_and_Files_content-management",
