@@ -983,9 +983,6 @@
       "Rendering_a_restorecon_Template_managing-hosts",
       "Executing_a_restorecon_Template_on_Multiple_Hosts_managing-hosts",
       "Including_Power_Actions_in_Templates_managing-hosts"
-    ],
-    "overview-of-the-host-columns_managing-hosts": [
-
     ]
   },
   "managing_security_compliance": {
