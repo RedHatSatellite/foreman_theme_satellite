@@ -154,7 +154,8 @@
     ],
     "preparing-for-disaster-recovery-and-recovering-from-data-loss": [
       "overview-of-recommended-disaster-recovery-plans",
-      "disaster-recovery-by-virtualizing-your-satellite-server"
+      "disaster-recovery-by-virtualizing-your-satellite-server",
+      "disaster-recovery-for-active-and-passive-satellite-server-with-external-storage"
     ],
     "managing_packages_on_the_base_operating_system_admin": [
 
@@ -716,6 +717,14 @@
       "Excluding_packages_and_dependency_solving_with_DNF_content-management",
       "cli-creating-a-content-filter-yum_content-management"
     ],
+    "managing-content-view-environments": [
+      "content-view-environments-overview",
+      "content-view-environment-categories",
+      "content-view-environment-ordering-and-priority",
+      "assigning-content-view-environments-to-hosts",
+      "assigning-content-view-environments-to-hosts-by-using-subscription-manager",
+      "comparison-of-content-view-environments-and-composite-content-views"
+    ],
     "synchronizing_content_between_servers_content-management": [
       "content-synchronization-by-using-export-and-import_content-management",
       "Synchronizing_a_Custom_Repository_content-management",
@@ -745,6 +754,9 @@
       "Using_Activation_Keys_for_Host_Registration_content-management",
       "Setting_the_Service_Level_content-management",
       "enabling-and-disabling-repositories-on-activation-key_content-management",
+      "multiple-activation-keys-and-content-view-environments",
+      "assigning-content-view-environments-to-activation-keys",
+      "removing-all-content-view-environments-from-an-activation-key",
       "cli-creating-an-activation-key_content-management"
     ],
     "managing_errata_content-management": [
