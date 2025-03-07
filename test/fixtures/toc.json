@@ -67,8 +67,7 @@
       "Performing_a_Backup_Without_Pulp_Content_admin",
       "Performing_an_Incremental_Backup_admin",
       "Example_of_a_Weekly_Full_Backup_Followed_by_Daily_Incremental_Backups_admin",
-      "Performing_an_Online_Backup_admin",
-      "Skipping_Steps_When_Performing_Backups_admin"
+      "Performing_an_Online_Backup_admin"
     ],
     "restoring-satellite-server-or-capsule-from-a-backup_admin": [
       "Restoring_from_a_Full_Backup_admin",
