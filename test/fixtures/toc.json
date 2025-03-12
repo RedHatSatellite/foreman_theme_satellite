@@ -813,6 +813,9 @@
       "Downloading_Files_to_a_Host_from_a_Custom_File_Type_Repository_content-management",
       "cli-creating-a-custom-file-type-repository_content-management"
     ],
+    "required-red-hat-repositories": [
+
+    ],
     "using_an_nfs_share_for_content_storage_content-management": [
 
     ]
