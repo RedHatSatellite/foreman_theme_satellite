@@ -1,6 +1,7 @@
 # Settings to hide in downstream (will return nil for all values)
 class UpstreamOnlySettings
   SETTINGS = %w[
+    deb_enable_structured_apt
   ].freeze
 
   def self.include?(key)
