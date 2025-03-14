@@ -11,7 +11,7 @@ module ForemanThemeSatellite
     initializer 'foreman_theme_satellite.register_plugin', :before=> :finisher_hook do |app|
       app.reloader.to_prepare do
         Foreman::Plugin.register :foreman_theme_satellite do
-          requires_foreman '>= 3.13.0'
+          requires_foreman '>= 3.15.0'
           register_gettext
 
           settings do

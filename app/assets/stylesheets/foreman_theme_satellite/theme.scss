@@ -24,8 +24,8 @@
 
   &.eol-banner {
     --banner-height: calc(
-      2 * var(--pf-global--spacer--xs) +
-        2 * (var(--pf-global--LineHeight--md) * var(--pf-global--FontSize--sm))
+      2 * var(--pf-v5-global--spacer--xs) +
+        2 * (var(--pf-v5-global--LineHeight--md) * var(--pf-v5-global--FontSize--sm))
     ); // banner height is line height and a small padding
     top: calc(
       var(--header-height) + var(--banner-height)
