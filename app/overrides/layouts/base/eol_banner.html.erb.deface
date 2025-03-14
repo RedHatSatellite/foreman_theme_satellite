@@ -12,7 +12,7 @@ elsif data[:end_of_life] < 6.months.after
 end %>
 
 <% if text %>
-<div class="pf-c-banner pf-m-<%= icon %>" id="satellite-eol-banner">
+<div class="pf-v5-c-banner pf-m-<%= icon %>" id="satellite-eol-banner">
   <div>
     <% if icon == 'warning' %>
       <%= text % { month: _(data[:end_of_life].strftime('%B')), year: data[:end_of_life].strftime('%Y'), version: data[:short_version] } %>

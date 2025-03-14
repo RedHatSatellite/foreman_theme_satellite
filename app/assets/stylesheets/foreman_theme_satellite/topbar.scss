@@ -1,13 +1,13 @@
 .satellite-theme {
-  .pf-c-page .pf-c-masthead {
-    .pf-c-masthead__brand {
+  .pf-v5-c-page .pf-v5-c-masthead {
+    .pf-v5-c-masthead__brand {
       height: inherit;
     }
 
     .navbar-brand-txt {
       display: none !important;
     }
-    background: var(--pf-c-page__header--BackgroundColor);
+    background: var(--pf-v5-c-page__header--BackgroundColor);
     background-size: cover;
   }
 }
