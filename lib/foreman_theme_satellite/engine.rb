@@ -69,7 +69,6 @@ module ForemanThemeSatellite
         ::ForemanGoogle::GCE.send(:prepend, GCE::ClassMethods) if Foreman::Plugin.installed?("foreman_google")
         UINotifications::RssNotificationsChecker.send :prepend, RssCheckerBranding
         Foreman::Model::Openstack.send :include, Openstack
-        Foreman::Model::Ovirt.send :include, Ovirt
         Realm.send :include, RealmTheme
         ProvisioningTemplate.send :include, Provisioning
 

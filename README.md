@@ -361,7 +361,6 @@ class ComputeResource < ApplicationRecord
   def self.supported_providers
     {
       'Libvirt'   => 'Foreman::Model::Libvirt',
-      'Ovirt'     => 'Foreman::Model::Ovirt',
       'EC2'       => 'Foreman::Model::EC2',
       'Vmware'    => 'Foreman::Model::Vmware',
       'Openstack' => 'Foreman::Model::Openstack',
@@ -379,7 +378,7 @@ module ComputeResourceBranding
     end
 
     def providers_requiring_url
-      _('Libvirt, oVirt and OpenStack')
+      _('Libvirt and OpenStack')
     end
   end
 end

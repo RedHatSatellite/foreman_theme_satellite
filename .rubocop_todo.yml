@@ -278,7 +278,6 @@ Rails/DynamicFindBy:
 Rails/OutputSafety:
   Exclude:
     - 'app/helpers/provisioning_templates_helper_branding.rb'
-    - 'app/helpers/rhev_helper.rb'
     - 'app/helpers/theme_application_helper.rb'
 
 # Offense count: 2

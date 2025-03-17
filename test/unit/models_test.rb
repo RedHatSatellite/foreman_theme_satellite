@@ -5,10 +5,6 @@ class ModelsTest < ActiveSupport::TestCase
     assert_equal Foreman::Model::Openstack::provider_friendly_name, "RHEL OpenStack Platform", "Friendly name override was unsuccessful"
   end
 
-  test "check ovirt friendly name" do
-    assert_equal Foreman::Model::Ovirt::provider_friendly_name, "RHV", "Friendly name override was unsuccessful"
-  end
-
   test "check realms types" do
     assert_equal Realm::TYPES, ["Red Hat Identity Management", "Active Directory"]
   end

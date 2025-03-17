@@ -47,8 +47,6 @@ module ProvisioningTemplatesControllerBranding
     'kickstart_ifcfg_get_identifier_names',
     'kickstart_kernel_options',
     'kickstart_networking_setup',
-    'Kickstart oVirt-RHVH',
-    'Kickstart oVirt-RHVH PXELinux',
     'kickstart_rhsm',
     'Linux host_init_config default',
     'ntp',
