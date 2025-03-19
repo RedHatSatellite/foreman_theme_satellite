@@ -270,6 +270,16 @@
       "configuring-group-mapping-for-keycloak-authentication_keycloak-wildfly",
       "logging-in-to-project-configured-with-keycloak-as-an-authentication-source_keycloak-wildfly"
     ],
+    "configuring-sso-and-2fa-with-keycloak-in-project_keycloak-quarkus": [
+      "prerequisites-for-configuring-satellite-with-keycloak-authentication_keycloak-quarkus",
+      "registering-satellite-as-a-client-of-keycloak_keycloak-quarkus",
+      "configuring-the-satellite-client-in-keycloak_keycloak-quarkus",
+      "configuring-a-satellite-client-to-provide-satellite_web_UI-authentication-with-keycloak_keycloak-quarkus",
+      "configuring-a-satellite-client-to-provide-hammer-cli-authentication-with-keycloak_keycloak-quarkus",
+      "configuring-satellite-with-keycloak-for-totp-authentication_keycloak-quarkus",
+      "configuring-group-mapping-for-keycloak-authentication_keycloak-quarkus",
+      "logging-in-to-project-configured-with-keycloak-as-an-authentication-source_keycloak-quarkus"
+    ],
     "configuring-kerberos-sso-for-active-directory-users-in-project_authentication": [
       "configuring-the-active-directory-authentication-source-on-projectserver_authentication"
     ],
