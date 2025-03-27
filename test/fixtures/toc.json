@@ -95,7 +95,7 @@
       "Renewing_a_Custom_SSL_Certificate_on_satellite_admin",
       "Renewing_a_Custom_SSL_Certificate_on_capsule_admin"
     ],
-    "synchronizing_templates_repositories_admin": [
+    "synchronizing-template-repositories": [
       "synchronizing-templates-with-an-existing-repository_admin",
       "Synchronizing_Templates_with_a_Local_Directory_admin",
       "Importing_Templates_admin",
@@ -432,7 +432,7 @@
       "configuring-dns-dhcp-and-tftp_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
       "configuring-an-alternate-cname_satellite",
-      "Configuring_Server_with_a_Custom_SSL_Certificate",
+      "configuring-satellite-server-with-a-custom-ssl-certificate",
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite_satellite",
       "using-external-databases_satellite",
       "cli-adding-a-default-http-proxy_satellite"
@@ -488,7 +488,7 @@
       "enabling-power-management-on-hosts_satellite",
       "configuring-dns-dhcp-and-tftp_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
-      "Configuring_Server_with_a_Custom_SSL_Certificate",
+      "configuring-satellite-server-with-a-custom-ssl-certificate",
       "using-external-databases_satellite"
     ],
     "configuring-external-services": [
