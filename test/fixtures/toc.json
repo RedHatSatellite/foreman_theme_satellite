@@ -95,7 +95,7 @@
       "Renewing_a_Custom_SSL_Certificate_on_satellite_admin",
       "Renewing_a_Custom_SSL_Certificate_on_capsule_admin"
     ],
-    "synchronizing_templates_repositories_admin": [
+    "synchronizing-template-repositories": [
       "synchronizing-templates-with-an-existing-repository_admin",
       "Synchronizing_Templates_with_a_Local_Directory_admin",
       "Importing_Templates_admin",
@@ -154,7 +154,8 @@
     "preparing-for-disaster-recovery-and-recovering-from-data-loss": [
       "overview-of-recommended-disaster-recovery-plans",
       "disaster-recovery-by-virtualizing-your-satellite-server",
-      "disaster-recovery-for-active-and-passive-satellite-server-with-external-storage"
+      "disaster-recovery-for-active-and-passive-satellite-server-with-external-storage",
+      "disaster-recovery-for-active-and-passive-satellite-server-with-backup-and-restore"
     ],
     "managing_packages_on_the_base_operating_system_admin": [
 
@@ -270,6 +271,16 @@
       "configuring-group-mapping-for-keycloak-authentication_keycloak-wildfly",
       "logging-in-to-project-configured-with-keycloak-as-an-authentication-source_keycloak-wildfly"
     ],
+    "configuring-sso-and-2fa-with-keycloak-in-project_keycloak-quarkus": [
+      "prerequisites-for-configuring-satellite-with-keycloak-authentication_keycloak-quarkus",
+      "registering-satellite-as-a-client-of-keycloak_keycloak-quarkus",
+      "configuring-the-satellite-client-in-keycloak_keycloak-quarkus",
+      "configuring-a-satellite-client-to-provide-satellite_web_UI-authentication-with-keycloak_keycloak-quarkus",
+      "configuring-a-satellite-client-to-provide-hammer-cli-authentication-with-keycloak_keycloak-quarkus",
+      "configuring-satellite-with-keycloak-for-totp-authentication_keycloak-quarkus",
+      "configuring-group-mapping-for-keycloak-authentication_keycloak-quarkus",
+      "logging-in-to-project-configured-with-keycloak-as-an-authentication-source_keycloak-quarkus"
+    ],
     "configuring-kerberos-sso-for-active-directory-users-in-project_authentication": [
       "configuring-the-active-directory-authentication-source-on-projectserver_authentication"
     ],
@@ -297,27 +308,20 @@
     "providing-feedback-on-red-hat-documentation_deploying-on-aws": [
 
     ],
-    "use_case_considerations": [
-      "_use_cases_known_to_work",
-      "_use_cases_that_do_not_work"
-    ],
-    "deployment_scenarios": [
+    "scenarios-for-satellite-on-aws": [
 
     ],
-    "prerequisites": [
-      "_amazon_web_service_assumptions",
-      "_red_hat_cloud_prerequisites",
-      "_redhat_satellite_specific_prerequisites",
-      "_preparing_for_the_redhat_satellite_installation"
+    "use-case-considerations-for-satellite-on-aws": [
+      "supported-use-cases-for-satellite-on-aws",
+      "unsupported-use-cases-for-satellite-on-aws"
     ],
-    "installing_satellite_on_aws": [
+    "prerequisites-for-satellite-on-aws": [
 
     ],
-    "installing_capsule_on_aws": [
-
-    ],
-    "aws-registering-hosts": [
-
+    "deploying-satellite-on-aws": [
+      "installing-satellite-server-on-aws",
+      "installing-capsule-server-on-aws",
+      "registering-hosts-on-aws-to-satellite"
     ]
   },
   "installing_capsule_server": {
@@ -415,7 +419,7 @@
       "configuring-dns-dhcp-and-tftp_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
       "configuring-an-alternate-cname_satellite",
-      "Configuring_Server_with_a_Custom_SSL_Certificate",
+      "configuring-satellite-server-with-a-custom-ssl-certificate",
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite_satellite",
       "using-external-databases",
       "cli-adding-a-default-http-proxy_satellite"
@@ -467,7 +471,7 @@
       "enabling-power-management-on-hosts_satellite",
       "configuring-dns-dhcp-and-tftp_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
-      "Configuring_Server_with_a_Custom_SSL_Certificate",
+      "configuring-satellite-server-with-a-custom-ssl-certificate",
       "using-external-databases"
     ],
     "configuring-external-services": [
@@ -1148,6 +1152,7 @@
       "content-view-scenarios",
       "projectserver-with-multiple-manifests",
       "host-group-structures",
+      "iss-scenarios_planning",
       "figu-Life_Cycle_Environment_Based_Structure"
     ],
     "provisioning-requirements": [
@@ -1582,7 +1587,105 @@
       "tasks"
     ],
     "hammer-reference": [
-
+      "hammer",
+      "hammer-activation-key",
+      "hammer-admin",
+      "hammer-alternate-content-source",
+      "hammer-ansible",
+      "hammer-architecture",
+      "hammer-arf-report",
+      "hammer-audit",
+      "hammer-auth",
+      "hammer-auth-source",
+      "hammer-bookmark",
+      "hammer-bootdisk",
+      "hammer-capsule",
+      "hammer-compute-profile",
+      "hammer-compute-resource",
+      "hammer-config-report",
+      "hammer-content-credentials",
+      "hammer-content-export",
+      "hammer-content-import",
+      "hammer-content-units",
+      "hammer-content-view",
+      "hammer-content-view-environment",
+      "hammer-deb-package",
+      "hammer-defaults",
+      "hammer-discovery",
+      "hammer-discovery-rule",
+      "hammer-docker",
+      "hammer-domain",
+      "hammer-erratum",
+      "hammer-export-templates",
+      "hammer-fact",
+      "hammer-file",
+      "hammer-filter",
+      "hammer-flatpak-remote",
+      "hammer-foreign-input-set",
+      "hammer-full-help",
+      "hammer-global-parameter",
+      "hammer-host",
+      "hammer-host-collection",
+      "hammer-host-registration",
+      "hammer-hostgroup",
+      "hammer-http-proxy",
+      "hammer-import-templates",
+      "hammer-job-invocation",
+      "hammer-job-template",
+      "hammer-lifecycle-environment",
+      "hammer-location",
+      "hammer-mail-notification",
+      "hammer-medium",
+      "hammer-model",
+      "hammer-module-stream",
+      "hammer-organization",
+      "hammer-os",
+      "hammer-package",
+      "hammer-package-group",
+      "hammer-partition-table",
+      "hammer-ping",
+      "hammer-policy",
+      "hammer-prebuild-bash-completion",
+      "hammer-preupgrade-report",
+      "hammer-product",
+      "hammer-proxy",
+      "hammer-realm",
+      "hammer-recurring-logic",
+      "hammer-remote-execution-feature",
+      "hammer-report",
+      "hammer-report-template",
+      "hammer-repository",
+      "hammer-repository-set",
+      "hammer-role",
+      "hammer-scap-content",
+      "hammer-scap-content-profile",
+      "hammer-settings",
+      "hammer-shell",
+      "hammer-srpm",
+      "hammer-status",
+      "hammer-subnet",
+      "hammer-subscription",
+      "hammer-sync-plan",
+      "hammer-tailoring-file",
+      "hammer-task",
+      "hammer-template",
+      "hammer-template-input",
+      "hammer-user",
+      "hammer-user-group",
+      "hammer-virt-who-config",
+      "hammer-webhook",
+      "hammer-webhook-template",
+      "hammer-option-details",
+      "hammer-option-details-boolean",
+      "hammer-option-details-datetime",
+      "hammer-option-details-enum",
+      "hammer-option-details-file",
+      "hammer-option-details-key_value_list",
+      "hammer-option-details-list",
+      "hammer-option-details-multienum",
+      "hammer-option-details-number",
+      "hammer-option-details-schema",
+      "hammer-option-details-value"
     ]
   },
   "using_the_satellite_rest_api": {
