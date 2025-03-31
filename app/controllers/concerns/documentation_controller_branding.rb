@@ -29,12 +29,25 @@ module DocumentationControllerBranding
     documentation_url(section)
   end
 
+  def support_url
+    'https://access.redhat.com/products/red-hat-satellite#get-support'
+  end
+
   # For new documentation at docs.theforeman.org
   # We do not use flavor downstream, but keeping it here for the same method signature
   # rubocop:disable Lint/UnusedMethodArgument
   def docs_url(guide:, flavor:, chapter: nil)
     url = ForemanThemeSatellite::Documentation::DOCS_GUIDES_LINKS.dig(guide, chapter)
     url || "#{ForemanThemeSatellite.documentation_root}/#{guide.downcase}/#{chapter}"
+  end
+
+  def upgrade_url(section)
+    case section
+    when 'documentation'
+      "#{ForemanThemeSatellite.unversioned_documentation_root}#Upgrade"
+    when 'helper'
+      'https://access.redhat.com/labs/satelliteupgradehelper'
+    end
   end
   # rubocop:enable Lint/UnusedMethodArgument
 end
