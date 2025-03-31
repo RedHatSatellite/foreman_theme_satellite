@@ -137,7 +137,13 @@ module ForemanThemeSatellite
 
   def self.documentation_root
     @documentation_root ||= begin
-      "#{documentation_server}/documentation/en-us/red_hat_satellite/#{documentation_version}/html"
+      "#{unversioned_documentation_root}/#{documentation_version}/html"
+    end
+  end
+
+  def self.unversioned_documentation_root
+    @unversioned_documentation_root ||= begin
+      "#{documentation_server}/documentation/en-us/red_hat_satellite"
     end
   end
 
