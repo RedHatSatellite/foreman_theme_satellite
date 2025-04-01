@@ -24,6 +24,12 @@
       "Installing_the_Project_Ansible_Modules_admin",
       "Viewing_the_Ansible_Modules_admin"
     ],
+    "preparing-for-disaster-recovery-and-recovering-from-data-loss": [
+      "overview-of-recommended-disaster-recovery-plans",
+      "disaster-recovery-by-virtualizing-your-satellite-server",
+      "disaster-recovery-for-active-and-passive-satellite-server-with-external-storage",
+      "disaster-recovery-for-active-and-passive-satellite-server-with-backup-and-restore"
+    ],
     "managing_organizations_admin": [
       "examples-of-using-organizations-in-satellite_admin",
       "Creating_an_Organization_admin",
@@ -150,12 +156,6 @@
       "Using_Free_Text_Search_admin",
       "Managing_Bookmarks_admin",
       "using-keyboard-shortcuts_admin"
-    ],
-    "preparing-for-disaster-recovery-and-recovering-from-data-loss": [
-      "overview-of-recommended-disaster-recovery-plans",
-      "disaster-recovery-by-virtualizing-your-satellite-server",
-      "disaster-recovery-for-active-and-passive-satellite-server-with-external-storage",
-      "disaster-recovery-for-active-and-passive-satellite-server-with-backup-and-restore"
     ],
     "managing_packages_on_the_base_operating_system_admin": [
 
