@@ -28,7 +28,8 @@
       "overview-of-recommended-disaster-recovery-plans",
       "disaster-recovery-by-virtualizing-your-satellite-server",
       "disaster-recovery-for-active-and-passive-satellite-server-with-external-storage",
-      "disaster-recovery-for-active-and-passive-satellite-server-with-backup-and-restore"
+      "disaster-recovery-for-active-and-passive-satellite-server-with-backup-and-restore",
+      "disaster-recovery-with-two-active-satellite-servers"
     ],
     "managing_organizations_admin": [
       "examples-of-using-organizations-in-satellite_admin",
