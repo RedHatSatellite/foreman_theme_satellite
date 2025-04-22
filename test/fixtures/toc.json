@@ -784,8 +784,7 @@
       "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_9_content-management",
       "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_8_content-management",
       "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_7_content-management",
-      "cli-applying-errata-to-a-host-collection",
-      "api-applying-errata-to-a-host-collection"
+      "cli-applying-errata-to-a-host-collection"
     ],
     "managing_container_images_content-management": [
       "Importing_Container_Images_content-management",
@@ -1730,8 +1729,6 @@
       "working-with-hosts",
       "working-with-lifecycle-environments",
       "uploading-content-to-satellite-server",
-      "applying-errata-to-hosts",
-      "applying-errata-to-a-host-collection",
       "using-extended-searches",
       "using-searches-with-pagination-control",
       "overriding-smart-class-parameters",
@@ -1751,8 +1748,6 @@
       "api-deleting-a-lifecycle-environment",
       "api-uploading-content-larger-than-2-mb",
       "api-uploading-duplicate-content",
-      "api-applying-errata-to-hosts",
-      "api-applying-errata-to-a-host-collection",
       "api-using-searches-with-pagination-control",
       "api-modifying-a-smart-class-parameter-by-using-an-external-file",
       "api-deleting-openscap-reports",
