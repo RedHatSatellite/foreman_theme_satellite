@@ -787,8 +787,7 @@
       "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_9_content-management",
       "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_8_content-management",
       "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_7_content-management",
-      "cli-applying-errata-to-a-host-collection",
-      "api-applying-errata-to-a-host-collection"
+      "cli-applying-errata-to-a-host-collection"
     ],
     "managing_container_images_content-management": [
       "Importing_Container_Images_content-management",
@@ -1095,71 +1094,18 @@
     "providing-feedback-on-red-hat-documentation_planning": [
 
     ],
-    "content-and-patch-management-with-satellite": [
-      "Content-Flow-in-Satellite_planning",
-      "Content-Views-in-Satellite_planning",
-      "lifecycle-environments-and-environment-paths_planning",
-      "Content_Types_in_Satellite_planning",
-      "content-and-patch-management-with-project-additional-resources_planning"
+    "satellite-overview-and-concepts": [
+      "content-and-patch-management-with-satellite",
+      "Provisioning-Management-with-Satellite_planning",
+      "Major-Satellite-Components_planning",
+      "project-infrastructure-organization-concepts_planning",
+      "Tools-for-Administration-of-Satellite_planning",
+      "Supported-Usage-and-Versions-of-Project-Components_planning"
     ],
-    "provisioning-management-with-satellite_planning": [
-      "Provisioning-Methods-in-Satellite_planning",
-      "provisioning-management-with-project-additional-resources_planning"
-    ],
-    "major-satellite-components_planning": [
-      "Satellite-Server-Overview_planning",
-      "capsule-Overview_planning",
-      "Overview-of-Hosts-in-Satellite_planning",
-      "list-of-key-open-source-components-of-satellite",
-      "Capsule-Features_planning",
-      "capsule-networking_planning",
-      "major-project-components-additional-resources_planning"
-    ],
-    "project-infrastructure-organization-concepts_planning": [
-      "Organizations-and-Locations-in-Satellite_planning",
-      "host-groups-overview_planning",
-      "host-collections-overview_planning",
-      "additional-resources-project-infrastructure-organization-concepts_planning"
-    ],
-    "tools-for-administration-of-satellite_planning": [
-      "Web-UI-Overview_planning",
-      "Hammer-CLI-Overview_planning",
-      "API-Overview_planning",
-      "Remote-Execution-in-Satellite_planning",
-      "managing-satellite-with-ansible",
-      "Kickstart-Workflow_planning"
-    ],
-    "supported-usage-and-versions-of-project-components_planning": [
-      "supported-usage-of-project-components_planning",
-      "Supported-Client-Architectures-for-Content-Management_planning",
-      "Supported-Client-Architectures-for-Host-Provisioning_planning",
-      "Supported-Client-Architectures-for-Configuration-Management_planning",
-      "supported-usage-and-versions-of-foreman-components-additional-resources_planning"
-    ],
-    "deployment-path_planning": [
-      "installing-a-satellite-server_planning",
-      "configuring-external-authentication-in-satellite",
-      "planning-organization-and-location-context_planning",
-      "installing-capsule-servers_planning",
-      "adding-a-red-hat-subscription-to-project-planning",
-      "defining-your-content-library_planning",
-      "defining-content-access-strategies-for-hosts-planning",
-      "defining-role-based-access-control-policies",
-      "configuring-provisioning_planning",
-      "overview-of-recommended-disaster-recovery-plans",
-      "additional-deployment-tasks_planning"
-    ],
-    "common-deployment-scenarios": [
-      "single-locations-with-segregated-subnets",
-      "multiple-locations",
-      "content-view-scenarios",
-      "satellite-server-with-multiple-manifests",
-      "host-group-structures",
-      "iss-scenarios_planning"
-    ],
-    "provisioning-requirements": [
-      "pxe-booting",
-      "http-booting"
+    "satellite-deployment-planning": [
+      "deployment-path_planning",
+      "common-deployment-scenarios",
+      "provisioning-requirements"
     ],
     "technical-users-provided-and-required-by-satellite": [
 
@@ -1633,8 +1579,6 @@
       "working-with-hosts",
       "working-with-lifecycle-environments",
       "uploading-content-to-satellite-server",
-      "applying-errata-to-hosts",
-      "applying-errata-to-a-host-collection",
       "using-extended-searches",
       "using-searches-with-pagination-control",
       "overriding-smart-class-parameters",
@@ -1654,8 +1598,6 @@
       "api-deleting-a-lifecycle-environment",
       "api-uploading-content-larger-than-2-mb",
       "api-uploading-duplicate-content",
-      "api-applying-errata-to-hosts",
-      "api-applying-errata-to-a-host-collection",
       "api-using-searches-with-pagination-control",
       "api-modifying-a-smart-class-parameter-by-using-an-external-file",
       "api-deleting-openscap-reports",
