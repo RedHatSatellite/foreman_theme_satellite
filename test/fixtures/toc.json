@@ -309,17 +309,9 @@
     "providing-feedback-on-red-hat-documentation_deploying-on-aws": [
 
     ],
-    "scenarios-for-satellite-on-aws": [
-
-    ],
     "use-case-considerations-for-satellite-on-aws": [
       "supported-use-cases-for-satellite-on-aws",
-      "unsupported-use-cases-for-satellite-on-aws"
-    ],
-    "prerequisites-for-satellite-on-aws": [
-
-    ],
-    "deploying-satellite-on-aws": [
+      "unsupported-use-cases-for-satellite-on-aws",
       "installing-satellite-server-on-aws",
       "installing-capsule-server-on-aws",
       "registering-hosts-on-aws-to-satellite"
@@ -390,6 +382,7 @@
       "supported-operating-systems_satellite",
       "supported-browsers_satellite",
       "Port_and_firewall_requirements_satellite",
+      "aws-requirements",
       "Enabling_Connections_from_a_Client_to_Server_satellite",
       "verifying-dns-resolution_satellite",
       "tuning-with-predefined-profiles_satellite",
@@ -451,6 +444,7 @@
       "supported-operating-systems_satellite",
       "supported-browsers_satellite",
       "Port_and_firewall_requirements_satellite",
+      "aws-requirements",
       "Enabling_Connections_from_a_Client_to_Server_satellite",
       "verifying-dns-resolution_satellite",
       "tuning-with-predefined-profiles_satellite"
