@@ -426,9 +426,6 @@
       "configuring-external-idm-dns_satellite",
       "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite"
     ],
-    "applying-custom-configuration_satellite": [
-
-    ],
     "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
 
     ]
@@ -476,9 +473,6 @@
       "configuring-external-tftp_satellite",
       "configuring-external-idm-dns_satellite",
       "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite"
-    ],
-    "applying-custom-configuration_satellite": [
-
     ],
     "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
 
