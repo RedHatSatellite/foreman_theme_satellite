@@ -305,18 +305,6 @@
 
     ]
   },
-  "deploying_red_hat_satellite_on_amazon_web_services": {
-    "providing-feedback-on-red-hat-documentation_deploying-on-aws": [
-
-    ],
-    "use-case-considerations-for-satellite-on-aws": [
-      "supported-use-cases-for-satellite-on-aws",
-      "unsupported-use-cases-for-satellite-on-aws",
-      "installing-satellite-server-on-aws",
-      "installing-capsule-server-on-aws",
-      "registering-hosts-on-aws-to-satellite"
-    ]
-  },
   "installing_capsule_server": {
     "providing-feedback-on-red-hat-documentation_capsule": [
 
@@ -344,28 +332,7 @@
       "configuring-pull-based-transport-for-remote-execution_capsule",
       "Enabling_OpenSCAP_on_capsule_Servers_capsule",
       "Adding_Lifecycle_Environments_capsule",
-      "enabling-power-management-on-hosts_capsule",
-      "configuring-dns-dhcp-and-tftp-on-productname_capsule"
-    ],
-    "configuring-external-services": [
-      "configuring-external-dns_capsule",
-      "configuring-external-dhcp_capsule",
-      "configuring-external-tftp_capsule",
-      "configuring-external-idm-dns_capsule",
-      "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_capsule"
-    ],
-    "managing-dhcp-by-using-capsule": [
-      "Securing_the_dhcpd_API_capsule"
-    ],
-    "managing-dns-by-using-capsule": [
-      "configuring_dns_nsupdate_capsule"
-    ],
-    "using_infoblox_as_dhcp_and_dns_providers_capsule": [
-      "Infoblox_Limitations_capsule",
-      "Infoblox_Prerequisites_capsule",
-      "Installing_the_Infoblox_CA_Certificate_capsule",
-      "Installing_the_DHCP_Infoblox_Module_capsule",
-      "Installing_the_DNS_Infoblox_Module_capsule"
+      "enabling-power-management-on-hosts_capsule"
     ],
     "capsule-server-scalability-considerations_capsule": [
 
@@ -410,21 +377,13 @@
       "configuring-for-uefi-http-boot-provisioning-in-an-ipv6-network_satellite",
       "Configuring_Server_with_an_HTTP_Proxy_satellite",
       "enabling-power-management-on-hosts_satellite",
-      "configuring-dns-dhcp-and-tftp_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
+      "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite",
       "configuring-an-alternate-cname_satellite",
       "configuring-satellite-server-with-a-custom-ssl-certificate",
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite_satellite",
       "using-external-databases",
       "cli-adding-a-default-http-proxy_satellite"
-    ],
-    "configuring-external-services": [
-      "configuring-external-dns_satellite",
-      "configuring-external-dhcp_satellite",
-      "Using_Infoblox_as_DHCP_and_DNS_Providers_satellite",
-      "configuring-external-tftp_satellite",
-      "configuring-external-idm-dns_satellite",
-      "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite"
     ],
     "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
 
@@ -449,6 +408,7 @@
     "installing_server_disconnected_satellite": [
       "downloading-the-binary-dvd-images_satellite",
       "configuring-the-base-operating-system-with-offline-repositories_satellite",
+      "installing-and-configuring-advisor-engine",
       "using-fapolicyd-on-server_satellite",
       "installing-from-the-offline-repositories_satellite",
       "resolving-package-dependency-errors_satellite",
@@ -461,18 +421,10 @@
       "Configuring-ISS_satellite",
       "configuring-pull-based-transport-for-remote-execution_satellite",
       "enabling-power-management-on-hosts_satellite",
-      "configuring-dns-dhcp-and-tftp_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
+      "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite",
       "configuring-satellite-server-with-a-custom-ssl-certificate",
       "using-external-databases"
-    ],
-    "configuring-external-services": [
-      "configuring-external-dns_satellite",
-      "configuring-external-dhcp_satellite",
-      "Using_Infoblox_as_DHCP_and_DNS_Providers_satellite",
-      "configuring-external-tftp_satellite",
-      "configuring-external-idm-dns_satellite",
-      "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite"
     ],
     "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
 
@@ -1241,10 +1193,7 @@
       "facts-and-nic-filtering_provisioning",
       "optimizing-performance-by-removing-nics-from-database_provisioning",
       "Network_Resources_provisioning",
-      "satellite-and-dhcp-configuration",
-      "Troubleshooting_DHCP_Problems_provisioning",
       "Prerequisites_for_Image_Based_Provisioning_provisioning",
-      "Configuring_Network_Services_provisioning",
       "Adding_a_Domain_to_Server_provisioning",
       "Adding_a_Subnet_to_Server_provisioning",
       "cli-adding-a-domain_provisioning",
