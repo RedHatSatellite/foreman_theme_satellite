@@ -562,6 +562,7 @@
       "Content_Types_in_Satellite_content-management"
     ],
     "managing_red_hat_subscriptions_content-management": [
+      "tracking-subscription-usage-by-using-the-subscriptions-service",
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_content-management",
       "Locating_a_Red_Hat_Subscription_content-management",
       "Adding_Red_Hat_Subscriptions_to_Subscription_Manifests_content-management",
