@@ -20,9 +20,12 @@
       "installing-postgresql_admin",
       "migrating-to-external-databases_admin"
     ],
-    "managing-satellite-with-ansible": [
+    "automating-satellite-management-with-satellite-ansible-collection": [
       "Installing_the_Project_Ansible_Modules_admin",
-      "Viewing_the_Ansible_Modules_admin"
+      "creating-a-playbook-with-modules-from-satellite-ansible-collection",
+      "example-playbooks-based-on-modules-from-satellite-ansible-collection",
+      "example-ansible-playbook-enable-repositories-and-create-a-content-view",
+      "example-ansible-playbook-synchronize-repositories-and-publish-a-content-view"
     ],
     "preparing-for-disaster-recovery-and-recovering-from-data-loss": [
       "overview-of-recommended-disaster-recovery-plans",
@@ -1340,7 +1343,6 @@
       "registering-a-host_provisioning",
       "Installing_and_Configuring_Puppet_Agent_Manually_provisioning",
       "Completing_the_RHEL7_Image_provisioning",
-      "Completing_the_RHEL6_Image_provisioning",
       "Next_Steps_provisioning"
     ],
     "host_parameter_hierarchy_provisioning": [
