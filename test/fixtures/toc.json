@@ -396,6 +396,9 @@
     "providing-feedback-on-red-hat-documentation_satellite": [
 
     ],
+    "red-hat-offline-knowledge-portal_satellite": [
+
+    ],
     "preparing_your_environment_for_installation_satellite": [
       "system-requirements_satellite",
       "storage-requirements_satellite",
@@ -1459,6 +1462,9 @@
   },
   "upgrading_red_hat_satellite_disconnected": {
     "providing-feedback-on-red-hat-documentation_upgrading-disconnected": [
+
+    ],
+    "red-hat-offline-knowledge-portal_upgrading-disconnected": [
 
     ],
     "upgrading_overview_upgrading-disconnected": [
