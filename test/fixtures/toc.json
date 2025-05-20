@@ -34,6 +34,12 @@
       "disaster-recovery-for-active-and-passive-satellite-server-with-backup-and-restore",
       "disaster-recovery-with-two-active-satellite-servers"
     ],
+    "usage-metrics-collection-in-satellite": [
+      "overview-of-usage-metrics-collection-in-satellite",
+      "reviewing-usage-metrics-collected-from-your-satellite",
+      "disabling-the-collection-of-usage-metrics",
+      "usage-metrics-collected-by-satellite"
+    ],
     "managing_organizations_admin": [
       "examples-of-using-organizations-in-satellite_admin",
       "Creating_an_Organization_admin",
