@@ -1394,14 +1394,12 @@
     "providing-feedback-on-red-hat-documentation_upgrading-connected": [
 
     ],
-    "upgrading_overview_upgrading-connected": [
-      "upgrade_paths_upgrading-connected",
-      "upgrading_prerequisites_upgrading-connected",
-      "Upgrading_Proxies_Separately_from_Server_upgrading-connected",
+    "preparing-for-satellite-upgrade": [
+      "upgrade-path-overview",
+      "planning-satellite-upgrade",
       "following_the_progress_of_the_upgrade_upgrading-connected"
     ],
     "upgrading_satellite_upgrading-connected": [
-      "Project_Upgrade_Considerations_upgrading-connected",
       "upgrading_a_connected_satellite_server_upgrading-connected",
       "synchronizing_the_new_repositories_upgrading-connected",
       "performing-post-upgrade-tasks_upgrading-connected",
@@ -1420,14 +1418,12 @@
     "red-hat-offline-knowledge-portal_upgrading-disconnected": [
 
     ],
-    "upgrading_overview_upgrading-disconnected": [
-      "upgrade_paths_upgrading-disconnected",
-      "upgrading_prerequisites_upgrading-disconnected",
-      "Upgrading_Proxies_Separately_from_Server_upgrading-disconnected",
+    "preparing-for-satellite-upgrade": [
+      "upgrade-path-overview",
+      "planning-satellite-upgrade",
       "following_the_progress_of_the_upgrade_upgrading-disconnected"
     ],
     "upgrading_satellite_upgrading-disconnected": [
-      "Project_Upgrade_Considerations_upgrading-disconnected",
       "upgrading_a_disconnected_satellite_server_upgrading-disconnected",
       "synchronizing_the_new_repositories_upgrading-disconnected",
       "performing-post-upgrade-tasks_upgrading-disconnected",
