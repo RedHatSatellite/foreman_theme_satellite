@@ -318,6 +318,9 @@
     "providing-feedback-on-red-hat-documentation_capsule": [
 
     ],
+    "_redhat_satellite_installation_helper_app": [
+
+    ],
     "preparing-environment-for-capsule-installation": [
       "system-requirements_capsule",
       "capsule-storage-requirements_capsule",
@@ -349,6 +352,9 @@
   },
   "installing_satellite_server_in_a_connected_network_environment": {
     "providing-feedback-on-red-hat-documentation_satellite": [
+
+    ],
+    "_redhat_satellite_installation_helper_app": [
 
     ],
     "preparing_your_environment_for_installation_satellite": [
@@ -403,6 +409,9 @@
 
     ],
     "red-hat-offline-knowledge-portal_satellite": [
+
+    ],
+    "_redhat_satellite_installation_helper_app": [
 
     ],
     "preparing_your_environment_for_installation_satellite": [
@@ -1394,6 +1403,9 @@
     "providing-feedback-on-red-hat-documentation_upgrading-connected": [
 
     ],
+    "_redhat_satellite_upgrade_helper_app": [
+
+    ],
     "preparing-for-satellite-upgrade": [
       "upgrade-path-overview",
       "planning-satellite-upgrade",
@@ -1416,6 +1428,9 @@
 
     ],
     "red-hat-offline-knowledge-portal_upgrading-disconnected": [
+
+    ],
+    "_redhat_satellite_upgrade_helper_app": [
 
     ],
     "preparing-for-satellite-upgrade": [
