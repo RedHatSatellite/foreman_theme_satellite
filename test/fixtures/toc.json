@@ -1412,11 +1412,10 @@
       "following_the_progress_of_the_upgrade_upgrading-connected"
     ],
     "upgrading_satellite_upgrading-connected": [
-      "upgrading_a_connected_satellite_server_upgrading-connected",
+      "upgrading-your-satellite-server",
       "synchronizing_the_new_repositories_upgrading-connected",
       "performing-post-upgrade-tasks_upgrading-connected",
       "upgrading_capsule_server_upgrading-connected",
-      "Upgrading_the_External_Database_upgrading-connected",
       "upgrading-the-external-database-operating-system"
     ],
     "troubleshooting-permission-issues": [
@@ -1443,7 +1442,6 @@
       "synchronizing_the_new_repositories_upgrading-disconnected",
       "performing-post-upgrade-tasks_upgrading-disconnected",
       "upgrading_capsule_server_upgrading-disconnected",
-      "Upgrading_the_External_Database_upgrading-disconnected",
       "upgrading-the-external-database-operating-system"
     ],
     "troubleshooting-permission-issues": [
