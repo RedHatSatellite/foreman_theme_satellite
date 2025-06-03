@@ -25,6 +25,13 @@
       "Installing_the_Project_Ansible_Modules_admin",
       "Viewing_the_Ansible_Modules_admin"
     ],
+    "preparing-for-disaster-recovery-and-recovering-from-data-loss": [
+      "overview-of-recommended-disaster-recovery-plans",
+      "disaster-recovery-by-virtualizing-your-satellite-server",
+      "disaster-recovery-for-active-and-passive-satellite-server-with-external-storage",
+      "disaster-recovery-for-active-and-passive-satellite-server-with-backup-and-restore",
+      "disaster-recovery-with-two-active-satellite-servers"
+    ],
     "managing_organizations_admin": [
       "examples-of-using-organizations-in-satellite_admin",
       "Creating_an_Organization_admin",
@@ -449,9 +456,6 @@
       "Troubleshooting_Ruby_satellite",
       "Troubleshooting_Postgresql_satellite"
     ],
-    "applying-custom-configuration_satellite": [
-
-    ],
     "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
 
     ]
@@ -498,9 +502,6 @@
       "configuring-external-tftp_satellite",
       "configuring-external-idm-dns_satellite",
       "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite"
-    ],
-    "applying-custom-configuration_satellite": [
-
     ],
     "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
 
@@ -1446,7 +1447,6 @@
       "registering-a-host_provisioning",
       "Installing_and_Configuring_Puppet_Agent_Manually_provisioning",
       "Completing_the_RHEL7_Image_provisioning",
-      "Completing_the_RHEL6_Image_provisioning",
       "Next_Steps_provisioning"
     ],
     "host_parameter_hierarchy_provisioning": [
@@ -1728,8 +1728,6 @@
       "proc-API_Guide-Uploading_Content_to_the_Satellite_Server",
       "exam-API_Guide-Uploading_Content_Larger_than_2_MB",
       "exam-API_Guide-Uploading_Duplicate_Content",
-      "exam-API_Guide-Applying_Errata_to_a_Host",
-      "exam-API_Guide-Applying_Errata_to_a_Host_Collection",
       "listing-content-views",
       "listing-activation-keys",
       "ex-Returning_Multiple_Pages",
