@@ -512,8 +512,8 @@
       "cli-creating-a-job-template_ansible",
       "cli-executing-a-remote-job_ansible"
     ],
-    "integrating_satellite_and_ansible_automation_controller_ansible": [
-      "Adding_satellite_Server_to_Ansible_Automation_Controller_as_a_Dynamic_Inventory_Item_ansible",
+    "integrating_satellite_and_ansible_automation_platform_ansible": [
+      "Adding_satellite_Server_to_Ansible_Automation_Platform_as_a_Dynamic_Inventory_Item_ansible",
       "Configuring_Provisioning_Callback_for_a_Host_ansible"
     ],
     "job_template_examples_and_extensions_ansible": [
