@@ -22,7 +22,6 @@ module ForemanThemeSatellite
       'ComputeResources' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/",
       'NoVNC' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/configuring_provisioning_resources_provisioning#using-novnc-to-access-virtual-machines_provisioning",
       'VMwareNotes' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_virtual_machines_in_vmware_vmware-provisioning",
-      'RHEVNotes' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_virtual_machines_on_ovirt_rhv-provisioning",
       'OpenStackNotes' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_cloud_instances_openstack_openstack-provisioning",
       'LibvirtNote' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_virtual_machines_on_kvm_kvm-provisioning",
       'EC2' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_cloud_instances_in_amazon_ec2_ec2-provisioning",

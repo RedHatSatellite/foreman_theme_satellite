@@ -33,7 +33,6 @@ module ForemanThemeSatellite
     /\b[Ss]mart[- ]?[pP]roxies\b(?!-)/ => 'Capsules',
     /\b[Pp]roxy\b(?!-)/              => 'Capsule',
     /\b[Pp]roxies\b(?!-)/              => 'Capsules',
-    /\b[Oo][Vv]irt\b(?!-)/           => 'RHV',
     /\bFreeIPA\b(?!-)/               => 'Red Hat Identity Management',
     /\b[Oo]pen[Ss]tack\b(?!-)/       => 'Red Hat OpenStack Platform',
     /\b[Kk]atello 4.0\b(?!-)/        => 'Satellite 6.11',
