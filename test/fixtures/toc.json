@@ -357,22 +357,23 @@
     "_redhat_satellite_installation_helper_app": [
 
     ],
-    "preparing_your_environment_for_installation_satellite": [
+    "planning-satellite-server-installation_satellite": [
       "system-requirements_satellite",
       "storage-requirements_satellite",
       "storage-guidelines_satellite",
       "supported-operating-systems_satellite",
       "supported-browsers_satellite",
       "Port_and_firewall_requirements_satellite",
-      "aws-requirements",
+      "aws-requirements"
+    ],
+    "preparing-environment-for-satellite-server-installation_satellite": [
       "Enabling_Connections_from_a_Client_to_Server_satellite",
       "verifying-dns-resolution_satellite",
-      "tuning-with-predefined-profiles_satellite",
-      "requirements-for-installation-in-an-ipv4-network"
+      "requirements-for-installation-in-an-ipv4-network",
+      "preparing-environment-for-installation-in-ipv6-network_satellite"
     ],
-    "preparing-environment-for-installation-in-ipv6-network_satellite": [
-      "limitations-of-installation-in-an-ipv6-network_satellite",
-      "requirements-for-installation-in-an-ipv6-network_satellite"
+    "tuning-with-predefined-profiles_satellite": [
+
     ],
     "installing_server_connected_satellite": [
       "configuring-http-proxy-to-connect-to-cdn_satellite",
@@ -414,17 +415,21 @@
     "_redhat_satellite_installation_helper_app": [
 
     ],
-    "preparing_your_environment_for_installation_satellite": [
+    "planning-satellite-server-installation_satellite": [
       "system-requirements_satellite",
       "storage-requirements_satellite",
       "storage-guidelines_satellite",
       "supported-operating-systems_satellite",
       "supported-browsers_satellite",
       "Port_and_firewall_requirements_satellite",
-      "aws-requirements",
+      "aws-requirements"
+    ],
+    "preparing-environment-for-satellite-server-installation_satellite": [
       "Enabling_Connections_from_a_Client_to_Server_satellite",
-      "verifying-dns-resolution_satellite",
-      "tuning-with-predefined-profiles_satellite"
+      "verifying-dns-resolution_satellite"
+    ],
+    "tuning-with-predefined-profiles_satellite": [
+
     ],
     "installing_server_disconnected_satellite": [
       "downloading-the-binary-dvd-images_satellite",
