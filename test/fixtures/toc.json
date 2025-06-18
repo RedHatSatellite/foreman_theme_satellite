@@ -140,17 +140,6 @@
       "monitoring-satellite-server_admin",
       "monitoring-capsule-server_admin"
     ],
-    "limiting-host-resources": [
-      "installing-the-resource-quota-plugin",
-      "managing-resource-quotas",
-      "assigning-resource-quotas-to-users",
-      "resource-quota-settings",
-      "cli-creating-a-resource-quota",
-      "cli-editing-a-resource-quota",
-      "cli-deleting-a-resource-quota",
-      "cli-assigning-resource-quotas-to-a-user",
-      "cli-assigning-resource-quotas-to-a-user-group"
-    ],
     "using_webhooks_admin": [
       "creating-a-webhook-template_admin",
       "creating-a-webhook_admin",
@@ -1408,7 +1397,6 @@
     "upgrading_satellite_upgrading-connected": [
       "upgrading-your-satellite-server",
       "synchronizing_the_new_repositories_upgrading-connected",
-      "performing-post-upgrade-tasks_upgrading-connected",
       "upgrading_capsule_server_upgrading-connected",
       "upgrading-the-external-database-operating-system"
     ],
@@ -1434,7 +1422,6 @@
     "upgrading_satellite_upgrading-disconnected": [
       "upgrading_a_disconnected_satellite_server_upgrading-disconnected",
       "synchronizing_the_new_repositories_upgrading-disconnected",
-      "performing-post-upgrade-tasks_upgrading-disconnected",
       "upgrading_capsule_server_upgrading-disconnected",
       "upgrading-the-external-database-operating-system"
     ],
