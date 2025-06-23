@@ -1194,17 +1194,16 @@
       "cloning-provisioning-templates",
       "Creating_Custom_Provisioning_Snippets_provisioning",
       "Custom_Provisioning_Snippet_Example_for_Enterprise_Linux_provisioning",
-      "Associating_Templates_with_Operating_Systems_provisioning",
+      "associating-templates-with-operating-systems",
       "creating-compute-profiles_provisioning",
       "setting-a-default-encrypted-root-password_provisioning",
       "using-novnc-to-access-virtual-machines_provisioning",
-      "removing-a-virtual-machine-upon-host-deletion_provisioning",
       "cli-creating-operating-systems_provisioning",
       "cli-adding-installation-media_provisioning",
       "cli-creating-partition-tables_provisioning",
       "cli-Creating_Custom_Provisioning_Snippets_provisioning",
-      "cli-creating-compute-profiles_provisioning",
-      "cli-removing-a-virtual-machine-upon-host-deletion_provisioning"
+      "cli-associating-templates-with-operating-systems",
+      "cli-creating-compute-profiles_provisioning"
     ],
     "preparing-networking": [
       "facts-and-nic-filtering_provisioning",
@@ -1349,7 +1348,7 @@
     "host_parameter_hierarchy_provisioning": [
 
     ],
-    "permissions-required-to-provision-hosts_provisioning": [
+    "permissions-required-to-provision-hosts": [
 
     ]
   },
