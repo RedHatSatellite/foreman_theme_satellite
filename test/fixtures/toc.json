@@ -1497,11 +1497,11 @@
     ],
     "upgrading_satellite_upgrading-connected": [
       "Project_Upgrade_Considerations_upgrading-connected",
+      "Upgrading_the_External_Database_upgrading-connected",
       "upgrading_a_connected_satellite_server_upgrading-connected",
       "synchronizing_the_new_repositories_upgrading-connected",
       "performing-post-upgrade-tasks_upgrading-connected",
-      "upgrading_capsule_server_upgrading-connected",
-      "Upgrading_the_External_Database_upgrading-connected"
+      "upgrading_capsule_server_upgrading-connected"
     ],
     "upgrading_el_on_satellite_or_proxy_upgrading-connected": [
       "upgrading-satellite-or-capsule-in-place-using-leapp_upgrading-connected",
@@ -1524,11 +1524,11 @@
     ],
     "upgrading_satellite_upgrading-disconnected": [
       "Project_Upgrade_Considerations_upgrading-disconnected",
+      "Upgrading_the_External_Database_upgrading-disconnected",
       "upgrading_a_disconnected_satellite_server_upgrading-disconnected",
       "synchronizing_the_new_repositories_upgrading-disconnected",
       "performing-post-upgrade-tasks_upgrading-disconnected",
-      "upgrading_capsule_server_upgrading-disconnected",
-      "Upgrading_the_External_Database_upgrading-disconnected"
+      "upgrading_capsule_server_upgrading-disconnected"
     ],
     "upgrading_el_on_satellite_or_proxy_upgrading-disconnected": [
       "upgrading-satellite-or-capsule-in-place-using-leapp_upgrading-disconnected",
