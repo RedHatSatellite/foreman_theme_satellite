@@ -134,17 +134,6 @@
       "monitoring-satellite-server_admin",
       "monitoring-capsule-server_admin"
     ],
-    "limiting-host-resources": [
-      "installing-the-resource-quota-plugin",
-      "managing-resource-quotas",
-      "assigning-resource-quotas-to-users",
-      "resource-quota-settings",
-      "cli-creating-a-resource-quota",
-      "cli-editing-a-resource-quota",
-      "cli-deleting-a-resource-quota",
-      "cli-assigning-resource-quotas-to-a-user",
-      "cli-assigning-resource-quotas-to-a-user-group"
-    ],
     "using_webhooks_admin": [
       "creating-a-webhook-template_admin",
       "creating-a-webhook_admin",
@@ -375,6 +364,7 @@
     "performing-additional-configuration-on-server_satellite": [
       "using-insights-with-satellite-server_satellite",
       "disabling-red-hat-insights-registration_satellite",
+      "installing-and-configuring-advisorengine",
       "importing-the-project-client-name-repository_satellite",
       "configuring-pull-based-transport-for-remote-execution_satellite",
       "configuring-for-uefi-http-boot-provisioning-in-an-ipv6-network_satellite",
@@ -414,7 +404,6 @@
     "installing_server_disconnected_satellite": [
       "downloading-the-binary-dvd-images_satellite",
       "configuring-the-base-operating-system-with-offline-repositories_satellite",
-      "installing-and-configuring-advisor-engine",
       "using-fapolicyd-on-server_satellite",
       "installing-from-the-offline-repositories_satellite",
       "resolving-package-dependency-errors_satellite",
@@ -423,6 +412,7 @@
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite"
     ],
     "performing-additional-configuration": [
+      "installing-and-configuring-advisorengine",
       "configuring-satellite-server-to-consume-content-from-a-custom-cdn_satellite",
       "Configuring-ISS_satellite",
       "configuring-pull-based-transport-for-remote-execution_satellite",
