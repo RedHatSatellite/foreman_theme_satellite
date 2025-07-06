@@ -377,6 +377,7 @@
     "performing-additional-configuration-on-server_satellite": [
       "using-insights-with-satellite-server_satellite",
       "disabling-red-hat-insights-registration_satellite",
+      "installing-and-configuring-advisorengine",
       "importing-the-project-client-name-repository_satellite",
       "configuring-pull-based-transport-for-remote-execution_satellite",
       "configuring-for-uefi-http-boot-provisioning-in-an-ipv6-network_satellite",
@@ -423,7 +424,6 @@
     "installing_server_disconnected_satellite": [
       "downloading-the-binary-dvd-images_satellite",
       "configuring-the-base-operating-system-with-offline-repositories_satellite",
-      "installing-and-configuring-advisor-engine",
       "using-fapolicyd-on-server_satellite",
       "installing-from-the-offline-repositories_satellite",
       "resolving-package-dependency-errors_satellite",
@@ -432,6 +432,7 @@
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite"
     ],
     "performing-additional-configuration": [
+      "installing-and-configuring-advisorengine",
       "configuring-satellite-server-to-consume-content-from-a-custom-cdn_satellite",
       "Configuring-ISS_satellite",
       "configuring-pull-based-transport-for-remote-execution_satellite",
