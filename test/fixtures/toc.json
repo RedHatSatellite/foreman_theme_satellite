@@ -245,7 +245,7 @@
       "cli-importing-the-katello-root-ca-certificate"
     ],
     "configuring-kerberos-sso-with-identity_management-in-satellite": [
-      "enrolling-projectserver-in-freeipa-domain_authentication",
+      "enrolling-satellite-server-in-freeipa-domain",
       "configuring-the-freeipa-authentication-source-on-projectserver_authentication",
       "configuring-host-based-access-control-for-Identity_Management-users-logging-in-to-project_authentication",
       "configuring-hammer-cli-to-accept-Identity_Management-credentials_authentication",
@@ -516,7 +516,7 @@
     ],
     "managing-puppet-modules_managing-configurations-puppet": [
       "installing_a_puppet_module_managing-configurations-puppet",
-      "puppet_guide_updating_a_puppet_module_managing-configurations-puppet"
+      "updating-a-puppet-module"
     ],
     "importing_puppet_classes_and_environments_managing-configurations-puppet": [
 
@@ -678,7 +678,7 @@
       "Exporting_a_Content_View_Version_Incrementally_content-management",
       "Exporting_a_Repository_content-management",
       "Exporting_a_Repository_in_a_Syncable_Format_content-management",
-      "Exporting_Repository_Incrementally_content-management",
+      "exporting-a-repository-incrementally",
       "Exporting_a_Repository_Incrementally_in_a_Syncable_Format_content-management",
       "Keeping_Track_of_Your_Exports_content-management",
       "Importing_into_the_Library_Environment_content-management",
@@ -1045,7 +1045,7 @@
       "Capsule-Overview_planning",
       "Overview-of-Hosts-in-Satellite_planning",
       "List-of-Key-System-Components-of-Satellite-Server_planning",
-      "Capsule-Features_planning",
+      "capsule-features",
       "capsule-networking_planning",
       "major-project-components-additional-resources_planning"
     ],
@@ -1056,7 +1056,7 @@
       "additional-resources-project-infrastructure-organization-concepts_planning"
     ],
     "tools-for-administration-of-satellite_planning": [
-      "Web-UI-Overview_planning",
+      "satellite_web_UI-overview",
       "Hammer-CLI-Overview_planning",
       "API-Overview_planning",
       "Remote-Execution-in-Satellite_planning",
