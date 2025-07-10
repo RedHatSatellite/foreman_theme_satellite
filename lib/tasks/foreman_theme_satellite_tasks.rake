@@ -31,7 +31,7 @@ namespace :foreman_theme_satellite do
                 .merge(ForemanThemeSatellite::Documentation::PLUGINS_DOCUMENTATION)
                 .merge(ForemanThemeSatellite::Documentation.flat_docs_guides_links)
 
-    failed = all_links.filter { |_key, doc_address| doc_address.include?('/html/') && !checker.test_link(doc_address) }
+    failed = all_links.filter { |_key, doc_address| doc_address.include?('/html-single/') && !checker.test_link(doc_address) }
 
     abort((failed.map { |key, doc_address| "FAILED: Cannot find #{doc_address} in TOC for entry: #{key}" } + ["Total failed: #{failed.count} entries"]).join("\n")) unless failed.empty?
 
