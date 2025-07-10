@@ -137,7 +137,7 @@ module ForemanThemeSatellite
 
   def self.documentation_root
     @documentation_root ||= begin
-      "#{unversioned_documentation_root}/#{documentation_version}/html"
+      "#{unversioned_documentation_root}/#{documentation_version}/html-single"
     end
   end
 
