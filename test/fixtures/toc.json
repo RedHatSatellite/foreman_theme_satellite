@@ -913,7 +913,8 @@
     ],
     "package-mode-and-image-mode-hosts": [
       "viewing-booted-container-images",
-      "remote-execution-jobs-for-image-mode-hosts"
+      "remote-execution-jobs-for-image-mode-hosts",
+      "cli-viewing-booted-container-images"
     ],
     "troubleshooting-remote-jobs-timing-out-after-yggdrasil-update": [
 
