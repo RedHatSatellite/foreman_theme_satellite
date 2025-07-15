@@ -321,7 +321,6 @@
     "installing-capsule-server": [
       "Registering_Proxy_to_Server_capsule",
       "configuring-repositories-proxy_capsule",
-      "using-fapolicyd-on-server_capsule",
       "Installing_Proxy_Packages_capsule",
       "configuring-capsule-server-with-ssl-certificates",
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-capsule_capsule",
@@ -368,7 +367,6 @@
       "configuring-http-proxy-to-connect-to-cdn_satellite",
       "registering-to-red-hat-subscription-management_satellite",
       "configuring-repositories_satellite",
-      "using-fapolicyd-on-server_satellite",
       "Installing_Server_Packages_satellite",
       "configuring-server_satellite",
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite",
@@ -424,7 +422,6 @@
     "installing_server_disconnected_satellite": [
       "downloading-the-binary-dvd-images_satellite",
       "configuring-the-base-operating-system-with-offline-repositories_satellite",
-      "using-fapolicyd-on-server_satellite",
       "installing-from-the-offline-repositories_satellite",
       "resolving-package-dependency-errors_satellite",
       "configuring-server_satellite",
@@ -937,7 +934,8 @@
     ],
     "package-mode-and-image-mode-hosts": [
       "viewing-booted-container-images",
-      "remote-execution-jobs-for-image-mode-hosts"
+      "remote-execution-jobs-for-image-mode-hosts",
+      "cli-viewing-booted-container-images"
     ],
     "troubleshooting-remote-jobs-timing-out-after-yggdrasil-update": [
 
@@ -1063,6 +1061,7 @@
     "satellite-deployment-planning": [
       "deployment-path_planning",
       "common-deployment-scenarios",
+      "security-considerations",
       "provisioning-requirements"
     ],
     "technical-users-provided-and-required-by-satellite": [
