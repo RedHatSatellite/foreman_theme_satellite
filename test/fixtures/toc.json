@@ -358,7 +358,8 @@
       "Enabling_Connections_from_a_Client_to_Server_satellite",
       "verifying-dns-resolution_satellite",
       "requirements-for-installation-in-an-ipv4-network",
-      "preparing-environment-for-installation-in-ipv6-network_satellite"
+      "preparing-environment-for-installation-in-ipv6-network_satellite",
+      "preparing-for-using-external-databases_satellite"
     ],
     "tuning-with-predefined-profiles_satellite": [
 
@@ -386,7 +387,6 @@
       "configuring-an-alternate-cname_satellite",
       "configuring-satellite-server-with-a-custom-ssl-certificate",
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite_satellite",
-      "using-external-databases",
       "cli-adding-a-default-http-proxy_satellite"
     ],
     "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
@@ -414,7 +414,8 @@
     ],
     "preparing-environment-for-satellite-server-installation_satellite": [
       "Enabling_Connections_from_a_Client_to_Server_satellite",
-      "verifying-dns-resolution_satellite"
+      "verifying-dns-resolution_satellite",
+      "preparing-for-using-external-databases_satellite"
     ],
     "tuning-with-predefined-profiles_satellite": [
 
@@ -436,8 +437,7 @@
       "enabling-power-management-on-hosts_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
       "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite",
-      "configuring-satellite-server-with-a-custom-ssl-certificate",
-      "using-external-databases"
+      "configuring-satellite-server-with-a-custom-ssl-certificate"
     ],
     "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
 
