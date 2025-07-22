@@ -31,16 +31,3 @@ jobs:
     with:
       plugin: foreman_theme_satellite
       foreman_version: ${{ matrix.foreman }}
-
-  enable-auto-merge-for-toc-update:
-    name: Enable auto-merge for TOC file update
-    if: github.event_name == 'pull_request' && github.actor == 'theforeman-bot' && github.event.pull_request.title == 'Update TOC file from downstream'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-    steps:
-      - name: Auto-merge PR
-        run: gh pr merge ${{ github.event.pull_request.number }} --rebase --auto --delete-branch
-        env:
-          GH_TOKEN: ${{ github.token }}
