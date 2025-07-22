@@ -752,7 +752,11 @@
       "cli-importing-container-images"
     ],
     "managing-flatpak-repositories-in-project": [
-      "enabling-the-flatpak-remote",
+      "creating-a-flatpak-remote",
+      "scanning-a-flatpak-remote",
+      "viewing-flatpak-remote-details",
+      "mirroring-remote-flatpak-repositories-to-Satellite-products",
+      "enabling-the-flatpak-remote-by-using-hammer-cli",
       "installing-flatpak-applications-on-satellite-hosts",
       "setting-up-flatpak-remote-for-capsule",
       "importing-and-exporting-content-to-satellite-server-for-flatpak"
