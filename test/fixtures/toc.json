@@ -123,7 +123,7 @@
       "api_Exporting_Templates_admin"
     ],
     "logging_and_reporting_problems_admin": [
-      "Increasing_Logging_Levels_to_Help_with_Debugging_admin",
+      "logging-levels-of-satellite-components",
       "Configuring-Logging-Levels-with-Hammer-CLI_admin",
       "configuring-logging-type-and-layout_admin",
       "Selective_Debugging_with_Individual_Loggers_admin",
