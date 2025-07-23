@@ -374,8 +374,7 @@
       "configuring-foreman-repositories-el-dnf_el8"
     ],
     "performing-additional-configuration-on-server_satellite": [
-      "using-insights-with-satellite-server_satellite",
-      "disabling-insights-registration",
+      "configuring-satellite-server-as-insights-client",
       "installing-and-configuring-advisorengine",
       "importing-the-project-client-name-repository_satellite",
       "configuring-pull-based-transport-for-remote-execution_satellite",
