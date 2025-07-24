@@ -20,13 +20,6 @@
       "installing-postgresql_admin",
       "migrating-to-external-databases_admin"
     ],
-    "automating-satellite-management-with-satellite-ansible-collection": [
-      "Installing_the_Project_Ansible_Modules_admin",
-      "creating-a-playbook-with-modules-from-satellite-ansible-collection",
-      "example-playbooks-based-on-modules-from-satellite-ansible-collection",
-      "example-ansible-playbook-enable-repositories-and-create-a-content-view",
-      "example-ansible-playbook-synchronize-repositories-and-publish-a-content-view"
-    ],
     "preparing-for-disaster-recovery-and-recovering-from-data-loss": [
       "overview-of-recommended-disaster-recovery-plans",
       "disaster-recovery-by-virtualizing-your-satellite-server",
@@ -1441,7 +1434,7 @@
     "introduction-to-hammer": [
       "hammer-compared-to-satellite_web_UI",
       "hammer-compared-to-satellite-api",
-      "getting-help"
+      "getting-help-with-hammer-cli"
     ],
     "installing-standalone-hammer": [
 
@@ -1491,10 +1484,8 @@
     ],
     "introduction-to-satellite-api": [
       "overview-of-the-satellite-api_rest-api",
-      "satellite-api-compared-to-hammer-cli_rest-api"
-    ],
-    "accessing-the-built-in-api-reference": [
-
+      "satellite-api-compared-to-hammer-cli_rest-api",
+      "getting-help-with-satellite-api"
     ],
     "api-syntax": [
       "api-request-composition",
