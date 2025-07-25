@@ -24,7 +24,7 @@ module ForemanThemeSatellite
       'VMwareNotes' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_virtual_machines_in_vmware_vmware-provisioning",
       'OpenStackNotes' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_cloud_instances_openstack_openstack-provisioning",
       'LibvirtNote' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_virtual_machines_on_kvm_kvm-provisioning",
-      'EC2' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_cloud_instances_in_amazon_ec2_ec2-provisioning",
+      'EC2' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning-cloud-instances-on-amazon-ec2",
       'GoogleComputeEngineNotes' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_cloud_instances_on_google_compute_engine_gce-provisioning",
       'Networking' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-networking#Adding_a_Subnet_to_Server_provisioning",
 
