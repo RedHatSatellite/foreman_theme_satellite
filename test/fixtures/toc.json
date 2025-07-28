@@ -323,7 +323,6 @@
     "performing-additional-configuration-on-capsule-server_capsule": [
       "configuring-capsule-for-host-registration-and-provisioning_capsule",
       "configuring-pull-based-transport-for-remote-execution_capsule",
-      "Enabling_OpenSCAP_on_capsule_Servers_capsule",
       "Adding_Lifecycle_Environments_capsule",
       "enabling-power-management-on-hosts_capsule"
     ],
@@ -975,6 +974,9 @@
     "compliance-policy-deployment-options_security-compliance": [
 
     ],
+    "enabling-openscap": [
+
+    ],
     "configuring-compliance-policy-deployment-methods_security-compliance": [
 
     ],
@@ -1293,11 +1295,11 @@
       "cli-adding-images-to-server_openstack-provisioning",
       "cli-creating-image-only-hosts_openstack-provisioning"
     ],
-    "provisioning_cloud_instances_in_amazon_ec2_ec2-provisioning": [
+    "provisioning-cloud-instances-on-amazon-ec2": [
       "Prerequisites_for_Amazon_EC2_Provisioning_ec2-provisioning",
       "Installing_Amazon_EC2_plugin_ec2-provisioning",
+      "using-an-http-proxy-to-communicate-with-amazon-ec2",
       "Adding_an_Amazon_EC2_Connection_to_Server_ec2-provisioning",
-      "Using_an_HTTP_Proxy_with_Compute_Resources_Amazon_EC2_ec2-provisioning",
       "Creating_an_Image_for_Amazon_EC2_ec2-provisioning",
       "Adding_Amazon_EC2_Images_to_Server_ec2-provisioning",
       "Adding_Amazon_EC2_Details_to_a_Compute_Profile_ec2-provisioning",
@@ -1476,6 +1478,22 @@
     ],
     "hammer-reference": [
 
+    ]
+  },
+  "using_the_satellite_ansible_collection": {
+    "providing-feedback-on-red-hat-documentation_ansible-collection": [
+
+    ],
+    "introduction-to-satellite-ansible-collection": [
+      "Installing_the_Project_Ansible_Modules_ansible-collection",
+      "getting-help-with-satellite-ansible-collection"
+    ],
+    "creating-a-playbook-with-modules-from-satellite-ansible-collection": [
+
+    ],
+    "example-playbooks-based-on-modules-from-satellite-ansible-collection": [
+      "playbook-example-enable-repositories-and-create-a-content-view",
+      "playbook-example-synchronize-repositories-and-publish-a-content-view"
     ]
   },
   "using_the_satellite_rest_api": {
