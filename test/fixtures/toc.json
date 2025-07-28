@@ -322,7 +322,6 @@
     "performing-additional-configuration-on-capsule-server_capsule": [
       "configuring-capsule-for-host-registration-and-provisioning_capsule",
       "configuring-pull-based-transport-for-remote-execution_capsule",
-      "Enabling_OpenSCAP_on_capsule_Servers_capsule",
       "Adding_Lifecycle_Environments_capsule",
       "enabling-power-management-on-hosts_capsule"
     ],
@@ -955,6 +954,9 @@
       "supported-scap-versions_security-compliance"
     ],
     "compliance-policy-deployment-options_security-compliance": [
+
+    ],
+    "enabling-openscap": [
 
     ],
     "configuring-compliance-policy-deployment-methods_security-compliance": [
