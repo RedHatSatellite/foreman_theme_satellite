@@ -342,7 +342,6 @@
       "storage-requirements_satellite",
       "storage-guidelines_satellite",
       "supported-operating-systems_satellite",
-      "supported-browsers_satellite",
       "Port_and_firewall_requirements_satellite",
       "aws-requirements"
     ],
@@ -399,7 +398,6 @@
       "storage-requirements_satellite",
       "storage-guidelines_satellite",
       "supported-operating-systems_satellite",
-      "supported-browsers_satellite",
       "Port_and_firewall_requirements_satellite",
       "aws-requirements"
     ],
