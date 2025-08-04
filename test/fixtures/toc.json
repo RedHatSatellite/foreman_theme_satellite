@@ -6,11 +6,12 @@
     "starting_and_stopping_server_admin": [
 
     ],
-    "cloning_satellite_server": [
-      "sec-Cloning_Workflow_Overview",
-      "sec-Cloning_Prerequisites",
-      "sec-Pulp_Data_Considerations",
-      "sec_Cloning_Satellite_Server"
+    "cloning-satellite-server": [
+      "cloning-process-overview",
+      "prerequisites-for-cloning",
+      "pulp-data-considerations",
+      "preparing-the-source-server-for-cloning",
+      "cloning-to-the-target-server"
     ],
     "tuning-with-predefined-profiles_admin": [
 
@@ -366,7 +367,7 @@
     ],
     "performing-additional-configuration-on-server_satellite": [
       "configuring-satellite-server-as-insights-client",
-      "installing-and-configuring-advisorengine",
+      "installing-and-configuring-red-hat-lightspeed-in-satellite",
       "importing-the-project-client-name-repository_satellite",
       "configuring-pull-based-transport-for-remote-execution_satellite",
       "configuring-for-uefi-http-boot-provisioning-in-an-ipv6-network_satellite",
@@ -419,7 +420,7 @@
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite"
     ],
     "performing-additional-configuration": [
-      "installing-and-configuring-advisorengine",
+      "installing-and-configuring-red-hat-lightspeed-in-satellite",
       "configuring-satellite-server-to-consume-content-from-a-custom-cdn_satellite",
       "Configuring-ISS_satellite",
       "configuring-pull-based-transport-for-remote-execution_satellite",
