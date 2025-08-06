@@ -863,7 +863,8 @@
       "configuring_synchronization_of_insights_recommendations_for_hosts_managing-hosts",
       "configuring-automatic-removal-of-hosts-from-the-insights-inventory",
       "setting-minimal-data-collection",
-      "creating-an-insights-remediation-plan-for-hosts"
+      "creating-an-insights-remediation-plan-for-hosts",
+      "examining-vulnerability-of-systems"
     ],
     "using_report_templates_to_monitor_hosts_managing-hosts": [
       "Generating_Host_Monitoring_Reports_managing-hosts",
