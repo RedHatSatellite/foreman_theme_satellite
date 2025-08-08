@@ -183,9 +183,8 @@
     "preparing-capsule-servers-for-load-balancing_load-balancing": [
       "Registering_Proxy_to_Server_load-balancing",
       "configuring-repositories-proxy_load-balancing",
-      "Installing_Proxy_Packages_load-balancing",
-      "preparing-capsule-servers-for-load-balancing-additional-resources_load-balancing",
-      "installing-foreman-proxy-packages-dnf_load-balancing"
+      "installing-capsule-server-packages",
+      "preparing-capsule-servers-for-load-balancing-additional-resources_load-balancing"
     ],
     "configuring-capsule-servers-with-default-ssl-certificates-for-load-balancing-without-puppet_load-balancing": [
       "prerequisites-configuring-capsule-servers-for-load-balancing_LB-default-ssl-without-puppet",
@@ -315,11 +314,10 @@
     "installing-capsule-server": [
       "Registering_Proxy_to_Server_capsule",
       "configuring-repositories-proxy_capsule",
-      "Installing_Proxy_Packages_capsule",
+      "installing-capsule-server-packages",
       "configuring-capsule-server-with-ssl-certificates",
       "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-capsule_capsule",
-      "assigning-organization-location-capsule-server_capsule",
-      "installing-foreman-proxy-packages-dnf_capsule"
+      "assigning-organization-location-capsule-server_capsule"
     ],
     "performing-additional-configuration-on-capsule-server_capsule": [
       "configuring-capsule-for-host-registration-and-provisioning_capsule",
@@ -362,8 +360,7 @@
       "configuring-repositories_satellite",
       "Installing_Server_Packages_satellite",
       "configuring-server_satellite",
-      "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite",
-      "configuring-foreman-repositories-el-dnf_el8"
+      "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite"
     ],
     "performing-additional-configuration-on-server_satellite": [
       "configuring-satellite-server-as-insights-client",
