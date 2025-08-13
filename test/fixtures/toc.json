@@ -864,6 +864,10 @@
       "creating-an-insights-remediation-plan-for-hosts",
       "examining-vulnerability-of-systems"
     ],
+    "using-the-mcp-server-for-satellite": [
+      "overview-of-satellite-mcp-integration",
+      "generating-reports-by-using-the-mcp-server-for-satellite"
+    ],
     "using_report_templates_to_monitor_hosts_managing-hosts": [
       "Generating_Host_Monitoring_Reports_managing-hosts",
       "Creating_a_Report_Template_managing-hosts",
@@ -1047,19 +1051,78 @@
     "providing-feedback-on-red-hat-documentation_planning": [
 
     ],
-    "satellite-overview-and-concepts": [
-      "content-and-patch-management-with-satellite",
-      "Provisioning-Management-with-Satellite_planning",
-      "Major-Satellite-Components_planning",
-      "project-infrastructure-organization-concepts_planning",
-      "Tools-for-Administration-of-Satellite_planning",
-      "Supported-Usage-and-Versions-of-Project-Components_planning"
+    "satellite-overview": [
+
     ],
-    "satellite-deployment-planning": [
-      "deployment-path_planning",
-      "common-deployment-scenarios",
-      "security-considerations",
-      "provisioning-requirements"
+    "content-and-patch-management-with-satellite": [
+      "Content-Flow-in-Satellite_planning",
+      "Content-Views-in-Satellite_planning",
+      "lifecycle-environments-and-environment-paths_planning",
+      "Content_Types_in_Satellite_planning",
+      "content-and-patch-management-with-project-additional-resources_planning"
+    ],
+    "provisioning-management-with-satellite_planning": [
+      "Provisioning-Methods-in-Satellite_planning",
+      "provisioning-management-with-project-additional-resources_planning"
+    ],
+    "major-satellite-components_planning": [
+      "Satellite-Server-Overview_planning",
+      "capsule-Overview_planning",
+      "Overview-of-Hosts-in-Satellite_planning",
+      "list-of-key-open-source-components-of-satellite",
+      "capsule-features",
+      "capsule-networking_planning",
+      "major-project-components-additional-resources_planning"
+    ],
+    "project-infrastructure-organization-concepts_planning": [
+      "Organizations-and-Locations-in-Satellite_planning",
+      "host-groups-overview_planning",
+      "host-collections-overview_planning",
+      "additional-resources-project-infrastructure-organization-concepts_planning"
+    ],
+    "tools-for-administration-of-satellite_planning": [
+      "satellite_web_UI-overview",
+      "Hammer-CLI-Overview_planning",
+      "API-Overview_planning",
+      "Remote-Execution-in-Satellite_planning",
+      "automating-satellite-management-with-satellite-ansible-collection",
+      "Kickstart-Workflow_planning"
+    ],
+    "supported-usage-and-versions-of-project-components_planning": [
+      "supported-usage-of-project-components_planning",
+      "Supported-Client-Architectures-for-Content-Management_planning",
+      "Supported-Client-Architectures-for-Host-Provisioning_planning",
+      "Supported-Client-Architectures-for-Configuration-Management_planning",
+      "supported-usage-and-versions-of-foreman-components-additional-resources_planning"
+    ],
+    "deployment-path_planning": [
+      "installing-a-satellite-server_planning",
+      "deploying-satellite-on-aws",
+      "configuring-external-authentication-in-satellite",
+      "planning-organization-and-location-context_planning",
+      "installing-capsule-servers_planning",
+      "adding-a-red-hat-subscription-to-project-planning",
+      "defining-your-content-library_planning",
+      "defining-content-access-strategies-for-hosts-planning",
+      "defining-role-based-access-control-policies",
+      "configuring-provisioning_planning",
+      "overview-of-recommended-disaster-recovery-plans",
+      "additional-deployment-tasks_planning"
+    ],
+    "common-deployment-scenarios": [
+      "single-locations-with-segregated-subnets",
+      "multiple-locations",
+      "content-view-scenarios",
+      "satellite-server-with-multiple-manifests",
+      "host-group-structures",
+      "iss-scenarios_planning"
+    ],
+    "security-considerations": [
+
+    ],
+    "provisioning-requirements": [
+      "pxe-booting",
+      "http-booting"
     ],
     "technical-users-provided-and-required-by-satellite": [
 
