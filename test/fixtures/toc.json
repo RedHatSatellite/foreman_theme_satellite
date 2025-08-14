@@ -109,10 +109,10 @@
       "synchronizing-templates-with-an-existing-repository_admin",
       "Synchronizing_Templates_with_a_Local_Directory_admin",
       "Importing_Templates_admin",
+      "importing-templates-using-ansible",
       "Exporting_Templates_admin",
       "cli_Importing_Templates_admin",
       "api_Importing_Templates_admin",
-      "ansible_Importing_Templates_admin",
       "cli_Exporting_Templates_admin",
       "api_Exporting_Templates_admin"
     ],
@@ -1403,6 +1403,7 @@
       "supported-clients-in-registration_provisioning",
       "Configuring_a_Host_for_Registration_provisioning",
       "registering-a-host_provisioning",
+      "registering-a-host-using-ansible",
       "Installing_and_Configuring_Puppet_Agent_Manually_provisioning",
       "Completing_the_RHEL7_Image_provisioning",
       "Next_Steps_provisioning"
