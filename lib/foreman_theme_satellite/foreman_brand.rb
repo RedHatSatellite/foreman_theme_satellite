@@ -29,6 +29,7 @@ module ForemanThemeSatellite
     ## END
     /\b[Ff]oreman\b(?!-)/            => 'Satellite',
     /\b[Ss]mart[- ]?[Pp]roxy\(ies\)(?!-)/ => 'Capsule(s)',
+    /\b[Ss]mart[- ]?[pP]roxy\s*\|\s*/ => 'Capsule ',
     /\b[Ss]mart[- ]?[pP]roxy\b(?!-)/ => 'Capsule',
     /\b[Ss]mart[- ]?[pP]roxies\b(?!-)/ => 'Capsules',
     /\b[Pp]roxy\b(?!-)/              => 'Capsule',
