@@ -109,10 +109,10 @@
       "synchronizing-templates-with-an-existing-repository_admin",
       "Synchronizing_Templates_with_a_Local_Directory_admin",
       "Importing_Templates_admin",
-      "importing-templates-using-ansible",
       "Exporting_Templates_admin",
       "cli_Importing_Templates_admin",
       "api_Importing_Templates_admin",
+      "ansible_Importing_Templates_admin",
       "cli_Exporting_Templates_admin",
       "api_Exporting_Templates_admin"
     ],
@@ -238,10 +238,10 @@
     ],
     "accessing_server_authentication": [
       "logging-in-to-the-satellite_web_UI_authentication",
-      "importing-the-katello-root-ca-certificate",
+      "importing-the-katello-root-ca-certificate-using-satellite-web-ui",
+      "importing-the-katello-root-ca-certificate-using-cli",
       "Resetting_the_Administrative_User_Password_authentication",
-      "setting-a-custom-message-on-the-satellite_web_UI-login-page_authentication",
-      "cli-importing-the-katello-root-ca-certificate"
+      "setting-a-custom-message-on-the-satellite_web_UI-login-page_authentication"
     ],
     "configuring-kerberos-sso-with-identity_management-in-satellite": [
       "enrolling-satellite-server-in-freeipa-domain",
@@ -280,8 +280,7 @@
       "Configuring_TLS_for_Secure_LDAP_authentication",
       "Configuring_Project_to_Use_LDAP_authentication",
       "Example_Settings_for_LDAP_Connections_authentication",
-      "Example_LDAP_Filters_authentication",
-      "Using_LDAP_satellite"
+      "Example_LDAP_Filters_authentication"
     ],
     "important-user-and-group-account-information-for-active-directory-accounts_authentication": [
 
@@ -289,7 +288,10 @@
     "configuring_external_user_groups_authentication": [
 
     ],
-    "refreshing_external_user_groups_for_ldap_authentication": [
+    "refreshing-external-user-groups-for-ldap-using-cli": [
+
+    ],
+    "refreshing-external-user-groups-for-ldap-using-web-ui": [
 
     ],
     "refreshing_external_user_groups_for_freeipa_or_ad_authentication": [
@@ -1264,13 +1266,13 @@
       "kinds-of-provisioning-templates",
       "creating-provisioning-templates",
       "cloning-provisioning-templates",
-      "Creating_Custom_Provisioning_Snippets_provisioning",
+      "running-custom-code-during-host-provisioning",
       "Custom_Provisioning_Snippet_Example_for_Enterprise_Linux_provisioning",
       "associating-templates-with-operating-systems",
       "creating-partition-tables_provisioning",
       "associating-partition-tables-with-disk-encryption_provisioning",
       "dynamic-partition-example_provisioning",
-      "cli-Creating_Custom_Provisioning_Snippets_provisioning",
+      "cli-running-custom-code-during-host-provisioning",
       "cli-associating-templates-with-operating-systems",
       "cli-creating-partition-tables_provisioning"
     ],
@@ -1403,7 +1405,6 @@
       "supported-clients-in-registration_provisioning",
       "Configuring_a_Host_for_Registration_provisioning",
       "registering-a-host_provisioning",
-      "registering-a-host-using-ansible",
       "Installing_and_Configuring_Puppet_Agent_Manually_provisioning",
       "Completing_the_RHEL7_Image_provisioning",
       "Next_Steps_provisioning"
@@ -1540,22 +1541,6 @@
     ],
     "hammer-reference": [
 
-    ]
-  },
-  "using_the_satellite_ansible_collection": {
-    "providing-feedback-on-red-hat-documentation_ansible-collection": [
-
-    ],
-    "introduction-to-satellite-ansible-collection": [
-      "Installing_the_Project_Ansible_Modules_ansible-collection",
-      "getting-help-with-satellite-ansible-collection"
-    ],
-    "creating-a-playbook-with-modules-from-satellite-ansible-collection": [
-
-    ],
-    "example-playbooks-based-on-modules-from-satellite-ansible-collection": [
-      "playbook-example-enable-repositories-and-create-a-content-view",
-      "playbook-example-synchronize-repositories-and-publish-a-content-view"
     ]
   },
   "using_the_satellite_rest_api": {
