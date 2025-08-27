@@ -1401,7 +1401,6 @@
     ],
     "provisioning_cloud_instances_in_amazon_ec2_ec2-provisioning": [
       "Prerequisites_for_Amazon_EC2_Provisioning_ec2-provisioning",
-      "Installing_Amazon_EC2_plugin_ec2-provisioning",
       "Adding_an_Amazon_EC2_Connection_to_Server_ec2-provisioning",
       "Using_an_HTTP_Proxy_with_Compute_Resources_Amazon_EC2_ec2-provisioning",
       "Creating_an_Image_for_Amazon_EC2_ec2-provisioning",
