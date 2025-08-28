@@ -1231,7 +1231,7 @@
       "kinds-of-provisioning-templates",
       "creating-provisioning-templates",
       "cloning-provisioning-templates",
-      "Creating_Custom_Provisioning_Snippets_provisioning",
+      "running-custom-code-during-host-provisioning",
       "Custom_Provisioning_Snippet_Example_for_Enterprise_Linux_provisioning",
       "Associating_Templates_with_Operating_Systems_provisioning",
       "creating-compute-profiles_provisioning",
@@ -1241,7 +1241,7 @@
       "cli-creating-operating-systems_provisioning",
       "cli-adding-installation-media_provisioning",
       "cli-creating-partition-tables_provisioning",
-      "cli-Creating_Custom_Provisioning_Snippets_provisioning",
+      "cli-running-custom-code-during-host-provisioning",
       "cli-creating-compute-profiles_provisioning",
       "cli-removing-a-virtual-machine-upon-host-deletion_provisioning"
     ],
@@ -1343,7 +1343,6 @@
     ],
     "provisioning-cloud-instances-on-amazon-ec2": [
       "Prerequisites_for_Amazon_EC2_Provisioning_ec2-provisioning",
-      "Installing_Amazon_EC2_plugin_ec2-provisioning",
       "using-an-http-proxy-to-communicate-with-amazon-ec2",
       "Adding_an_Amazon_EC2_Connection_to_Server_ec2-provisioning",
       "Creating_an_Image_for_Amazon_EC2_ec2-provisioning",
