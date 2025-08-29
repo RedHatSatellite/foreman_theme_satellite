@@ -211,17 +211,18 @@
     "upgrading-smartproxyservers-in-a-load-balancing-setup_load-balancing": [
 
     ],
-    "setting_the_load_balancer_for_host_registration_load-balancing": [
-
-    ],
-    "installing_the_load_balancer_load-balancing": [
-
+    "installing-and-configuring-the-load-balancer": [
+      "installing-the-load-balancer",
+      "ports-configuration-for-the-load-balancer"
     ],
     "verifying_the_load_balancing_configuration_load-balancing": [
 
     ],
     "registering_clients_to_the_load_balancer_load-balancing": [
-      "Registering_Clients_Using_Host_Registration_load-balancing",
+      "Setting_the_Load_Balancer_for_Host_Registration_load-balancing",
+      "registering-a-host-to-the-load-balancer-using-web-ui",
+      "registering-a-host-to-the-load-balancer-using-cli",
+      "registering-a-host-to-the-load-balancer-using-api",
       "Registering_Clients_Using_the_Bootstrap_Script_load-balancing"
     ],
     "propagating-scap-content-through-the-load-balancer_load-balancing": [
@@ -308,7 +309,7 @@
     "preparing-environment-for-capsule-installation": [
       "system-requirements_capsule",
       "capsule-storage-requirements_capsule",
-      "storage-guidelines_capsule",
+      "best-practices-for-optimizing-storage",
       "supported-operating-systems_capsule",
       "capsule-port-and-firewall-requirements_capsule",
       "enabling-connections-to-capsule_capsule"
@@ -341,7 +342,7 @@
     "planning-satellite-server-installation_satellite": [
       "system-requirements_satellite",
       "storage-requirements_satellite",
-      "storage-guidelines_satellite",
+      "best-practices-for-optimizing-storage",
       "supported-operating-systems_satellite",
       "Port_and_firewall_requirements_satellite",
       "aws-requirements"
@@ -350,7 +351,7 @@
       "Enabling_Connections_from_a_Client_to_Server_satellite",
       "verifying-dns-resolution_satellite",
       "requirements-for-installation-in-an-ipv4-network",
-      "preparing-environment-for-installation-in-ipv6-network_satellite",
+      "preparing-your-environment-for-satellite-installation-in-a-ipv6-network",
       "preparing-for-using-external-databases_satellite"
     ],
     "tuning-with-predefined-profiles_satellite": [
@@ -360,8 +361,8 @@
       "configuring-http-proxy-to-connect-to-cdn_satellite",
       "registering-to-red-hat-subscription-management_satellite",
       "configuring-repositories_satellite",
-      "Installing_Server_Packages_satellite",
-      "configuring-server_satellite",
+      "installing-satellite-server-packages",
+      "configuring-satellite-server",
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite"
     ],
     "performing-additional-configuration-on-server_satellite": [
@@ -396,7 +397,7 @@
     "planning-satellite-server-installation_satellite": [
       "system-requirements_satellite",
       "storage-requirements_satellite",
-      "storage-guidelines_satellite",
+      "best-practices-for-optimizing-storage",
       "supported-operating-systems_satellite",
       "Port_and_firewall_requirements_satellite",
       "aws-requirements"
@@ -1360,7 +1361,6 @@
     ],
     "provisioning-cloud-instances-on-amazon-ec2": [
       "Prerequisites_for_Amazon_EC2_Provisioning_ec2-provisioning",
-      "Installing_Amazon_EC2_plugin_ec2-provisioning",
       "using-an-http-proxy-to-communicate-with-amazon-ec2",
       "Adding_an_Amazon_EC2_Connection_to_Server_ec2-provisioning",
       "Creating_an_Image_for_Amazon_EC2_ec2-provisioning",
