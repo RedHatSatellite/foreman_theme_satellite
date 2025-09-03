@@ -109,10 +109,10 @@
       "synchronizing-templates-with-an-existing-repository_admin",
       "Synchronizing_Templates_with_a_Local_Directory_admin",
       "Importing_Templates_admin",
-      "importing-templates-using-ansible",
       "Exporting_Templates_admin",
       "cli_Importing_Templates_admin",
       "api_Importing_Templates_admin",
+      "ansible_Importing_Templates_admin",
       "cli_Exporting_Templates_admin",
       "api_Exporting_Templates_admin"
     ],
@@ -307,10 +307,10 @@
 
     ],
     "preparing-environment-for-capsule-installation": [
+      "operating-system-requirements",
       "system-requirements_capsule",
       "capsule-storage-requirements_capsule",
       "best-practices-for-optimizing-storage",
-      "supported-operating-systems_capsule",
       "capsule-port-and-firewall-requirements_capsule",
       "enabling-connections-to-capsule_capsule"
     ],
@@ -340,10 +340,10 @@
 
     ],
     "planning-satellite-server-installation_satellite": [
+      "operating-system-requirements",
       "system-requirements_satellite",
       "storage-requirements_satellite",
       "best-practices-for-optimizing-storage",
-      "supported-operating-systems_satellite",
       "Port_and_firewall_requirements_satellite",
       "aws-requirements"
     ],
@@ -395,10 +395,10 @@
 
     ],
     "planning-satellite-server-installation_satellite": [
+      "operating-system-requirements",
       "system-requirements_satellite",
       "storage-requirements_satellite",
       "best-practices-for-optimizing-storage",
-      "supported-operating-systems_satellite",
       "Port_and_firewall_requirements_satellite",
       "aws-requirements"
     ],
@@ -647,7 +647,6 @@
       "Promoting_a_Content_View_content-management",
       "rolling-content-views",
       "creating-a-rolling-content-view",
-      "assigning-a-rolling-content-view-to-lifecycle-environments",
       "Composite_Content_Views_Overview_content-management",
       "Creating_a_Composite_Content_View_content-management",
       "Content_Filter_Overview_content-management",
@@ -665,7 +664,6 @@
       "cli-Viewing_Module_Streams_content-management",
       "cli-promoting-a-content-view_content-management",
       "cli-creating-a-rolling-content-view",
-      "cli-assigning-a-rolling-content-view-to-lifecycle-environments",
       "cli-creating-a-composite-content-view_content-management",
       "Combining_exclusion_filters_with_dependency_solving_content-management",
       "Excluding_packages_and_dependency_solving_with_DNF_content-management",
@@ -1407,7 +1405,6 @@
       "supported-clients-in-registration_provisioning",
       "Configuring_a_Host_for_Registration_provisioning",
       "registering-a-host_provisioning",
-      "registering-a-host-using-ansible",
       "Installing_and_Configuring_Puppet_Agent_Manually_provisioning",
       "Completing_the_RHEL7_Image_provisioning",
       "Next_Steps_provisioning"
@@ -1544,22 +1541,6 @@
     ],
     "hammer-reference": [
 
-    ]
-  },
-  "using_the_satellite_ansible_collection": {
-    "providing-feedback-on-red-hat-documentation_ansible-collection": [
-
-    ],
-    "introduction-to-satellite-ansible-collection": [
-      "Installing_the_Project_Ansible_Modules_ansible-collection",
-      "getting-help-with-satellite-ansible-collection"
-    ],
-    "creating-a-playbook-with-modules-from-satellite-ansible-collection": [
-
-    ],
-    "example-playbooks-based-on-modules-from-satellite-ansible-collection": [
-      "playbook-example-enable-repositories-and-create-a-content-view",
-      "playbook-example-synchronize-repositories-and-publish-a-content-view"
     ]
   },
   "using_the_satellite_rest_api": {
