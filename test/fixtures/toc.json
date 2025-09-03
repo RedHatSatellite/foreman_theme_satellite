@@ -307,10 +307,10 @@
 
     ],
     "preparing-environment-for-capsule-installation": [
+      "operating-system-requirements",
       "system-requirements_capsule",
       "capsule-storage-requirements_capsule",
       "best-practices-for-optimizing-storage",
-      "supported-operating-systems_capsule",
       "capsule-port-and-firewall-requirements_capsule",
       "enabling-connections-to-capsule_capsule"
     ],
@@ -340,10 +340,10 @@
 
     ],
     "planning-satellite-server-installation_satellite": [
+      "operating-system-requirements",
       "system-requirements_satellite",
       "storage-requirements_satellite",
       "best-practices-for-optimizing-storage",
-      "supported-operating-systems_satellite",
       "Port_and_firewall_requirements_satellite",
       "aws-requirements"
     ],
@@ -395,10 +395,10 @@
 
     ],
     "planning-satellite-server-installation_satellite": [
+      "operating-system-requirements",
       "system-requirements_satellite",
       "storage-requirements_satellite",
       "best-practices-for-optimizing-storage",
-      "supported-operating-systems_satellite",
       "Port_and_firewall_requirements_satellite",
       "aws-requirements"
     ],
