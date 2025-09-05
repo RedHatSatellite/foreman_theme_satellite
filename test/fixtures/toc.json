@@ -1102,7 +1102,6 @@
     ],
     "deployment-path_planning": [
       "installing-a-satellite-server_planning",
-      "deploying-satellite-on-aws",
       "configuring-external-authentication-in-satellite",
       "planning-organization-and-location-context_planning",
       "installing-capsule-servers_planning",
@@ -1120,7 +1119,8 @@
       "content-view-scenarios",
       "satellite-server-with-multiple-manifests",
       "host-group-structures",
-      "iss-scenarios_planning"
+      "iss-scenarios_planning",
+      "deploying-satellite-on-aws"
     ],
     "security-considerations": [
 
