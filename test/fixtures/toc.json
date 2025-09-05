@@ -1078,7 +1078,6 @@
     ],
     "deployment-path_planning": [
       "installing-a-satellite-server_planning",
-      "scenarios-for-satellite-on-aws",
       "overview-of-authentication-methods-in-satellite_planning",
       "planning-organization-and-location-context_planning",
       "installing-capsule-servers_planning",
@@ -1097,6 +1096,7 @@
       "projectserver-with-multiple-manifests",
       "host-group-structures",
       "iss-scenarios_planning",
+      "scenarios-for-satellite-on-aws",
       "figu-Life_Cycle_Environment_Based_Structure"
     ],
     "provisioning-requirements": [
