@@ -345,13 +345,12 @@
       "storage-requirements_satellite",
       "best-practices-for-optimizing-storage",
       "Port_and_firewall_requirements_satellite",
+      "ipv6-and-ipv4-requirements",
       "aws-requirements"
     ],
     "preparing-environment-for-satellite-server-installation_satellite": [
       "Enabling_Connections_from_a_Client_to_Server_satellite",
       "verifying-dns-resolution_satellite",
-      "requirements-for-installation-in-an-ipv4-network",
-      "preparing-your-environment-for-satellite-installation-in-a-ipv6-network",
       "preparing-for-using-external-databases_satellite"
     ],
     "tuning-with-predefined-profiles_satellite": [
@@ -654,7 +653,8 @@
       "Resolving_Package_Dependencies_content-management",
       "enabling-dependency-solving-for-a-content-view_content-management",
       "Content_Filter_Examples_content-management",
-      "Creating_a_Content_Filter_for_Yum_Content_content-management",
+      "creating-a-content-view-filter-by-using-web-ui",
+      "creating-a-content-view-filter-by-using-cli",
       "Deleting_Multiple_Content_View_Versions_content-management",
       "Clearing_the_Search_Filter_content-management",
       "Standardizing_Content_View_Empty_States_content-management",
@@ -668,8 +668,7 @@
       "cli-assigning-a-rolling-content-view-to-lifecycle-environments",
       "cli-creating-a-composite-content-view_content-management",
       "Combining_exclusion_filters_with_dependency_solving_content-management",
-      "Excluding_packages_and_dependency_solving_with_DNF_content-management",
-      "cli-creating-a-content-filter-yum_content-management"
+      "Excluding_packages_and_dependency_solving_with_DNF_content-management"
     ],
     "managing-content-view-environments": [
       "content-view-environments-overview",
@@ -717,24 +716,18 @@
       "best-practices-for-errata_content-management",
       "Inspecting_Available_Errata_content-management",
       "Parameters_Available_for_Errata_Search_content-management",
-      "Applying_installable_errata_content-management",
       "running-custom-code-while-applying-errata_content-management",
       "Subscribing_to_Errata_Notifications_content-management",
       "Limitations_to_Repository_Dependency_Resolution_content-management",
-      "Creating_a_Content_View_Filter_for_Errata_content-management",
+      "creating-a-content-view-filter-for-errata-by-using-web-ui",
+      "creating-a-content-view-filter-for-errata-by-using-cli",
       "Adding_Errata_To_An_Incremental_Content_View_content-management",
-      "Applying_Errata_to_Hosts_content-management",
-      "Applying_Errata_to_Multiple_Hosts_content-management",
-      "applying-errata-to-a-host-collection",
+      "applying-errata-to-hosts",
+      "applying-errata-to-hosts-by-using-web-ui",
+      "applying-errata-to-hosts-by-using-cli",
       "cli-inspecting-available-errata",
       "cli-running-custom-code-while-applying-errata_content-management",
-      "cli-creating-a-content-view-filter-for-errata",
-      "cli-adding-errata-to-an-incremental-content-view",
-      "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_10_content-management",
-      "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_9_content-management",
-      "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_8_content-management",
-      "cli-Applying_Errata_to_Hosts_Running_Red_Hat_Enterprise_Linux_7_content-management",
-      "cli-applying-errata-to-a-host-collection"
+      "cli-adding-errata-to-an-incremental-content-view"
     ],
     "managing_container_images_content-management": [
       "Importing_Container_Images_content-management",
@@ -985,18 +978,23 @@
 
     ],
     "configuring-compliance-policy-deployment-methods_security-compliance": [
+      "configuring-satellite-for-ansible-compliance-policy-deployment",
+      "configuring-satellite-for-puppet-compliance-policy-deployment",
+      "configuring-satellite-for-manual-compliance-policy-deployment"
+    ],
+    "listing-available-scap-contents-using-web-ui": [
 
     ],
-    "listing-available-scap-contents_security-compliance": [
-      "cli-listing-available-scap-contents_security-compliance"
+    "listing-available-scap-contents-using-cli": [
+
     ],
     "configuring_scap_contents_security-compliance": [
       "Loading_the_Default_SCAP_Contents_security-compliance",
       "getting-supported-scap-contents-for-rhel_security-compliance",
-      "Uploading_Additional_SCAP_Content_security-compliance",
+      "uploading-additional-scap-content-using-web-ui",
+      "uploading-additional-scap-content-using-cli",
       "tailoring-xccdf-profiles_security-compliance",
-      "Uploading_a_Tailoring_File_security-compliance",
-      "cli-Uploading_Additional_SCAP_Content_security-compliance"
+      "Uploading_a_Tailoring_File_security-compliance"
     ],
     "managing_compliance_policies_security-compliance": [
       "Creating_a_Compliance_Policy_security-compliance",
@@ -1078,12 +1076,6 @@
       "capsule-features",
       "capsule-networking_planning",
       "major-project-components-additional-resources_planning"
-    ],
-    "project-infrastructure-organization-concepts_planning": [
-      "Organizations-and-Locations-in-Satellite_planning",
-      "host-groups-overview_planning",
-      "host-collections-overview_planning",
-      "additional-resources-project-infrastructure-organization-concepts_planning"
     ],
     "tools-for-administration-of-satellite_planning": [
       "satellite_web_UI-overview",
@@ -1235,7 +1227,8 @@
     ],
     "introduction_to_provisioning_provisioning": [
       "Provisioning-Methods-in-Satellite_provisioning",
-      "supported-host-platforms-in-provisioning",
+      "provisioning-hardware-types",
+      "supported-client-platforms-in-provisioning",
       "supported-cloud-providers",
       "supported-virtualization-infrastructures"
     ],
@@ -1288,16 +1281,18 @@
       "setting-the-provisioning-context_provisioning"
     ],
     "using-network-boot-to-provision-hosts": [
-      "Network_Boot_Provisioning_Workflow_using-netboot",
+      "Network_Boot_Provisioning_Workflow_using-network-boot",
       "prerequisites-for-network-boot-provisioning",
-      "required-boot-order-for-network-boot_using-netboot",
+      "required-boot-order-for-network-boot_using-network-boot",
       "configuring-capsule-to-provision-rhel-on-Secure-Boot-enabled-hosts",
       "creating-hosts-with-pxe-boot-provisioning",
+      "configuring-capsule-for-uefi-http-booting",
       "creating-hosts-with-uefi-http-boot-provisioning",
-      "Deploying_SSH_Keys_During_Provisioning_using-netboot",
-      "using-ipxe-to-reduce-provisioning-times_using-netboot",
+      "Deploying_SSH_Keys_During_Provisioning_using-network-boot",
+      "using-ipxe-to-reduce-provisioning-times_using-network-boot",
+      "pxe-loaders",
       "cli-creating-hosts-with-pxe-boot-provisioning",
-      "cli-creating-hosts-with-uefi-http-boot-provisioning_using-netboot"
+      "cli-creating-hosts-with-uefi-http-boot-provisioning_using-network-boot"
     ],
     "using-boot-disks-to-provision-hosts": [
       "boot-disk-workflow",
@@ -1541,9 +1536,6 @@
       "errata",
       "hosts",
       "tasks"
-    ],
-    "hammer-reference": [
-
     ]
   },
   "using_the_satellite_ansible_collection": {
