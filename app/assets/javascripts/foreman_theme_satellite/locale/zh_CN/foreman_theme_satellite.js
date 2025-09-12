@@ -3,7 +3,7 @@
   "locale_data": {
     "foreman_theme_satellite": {
       "": {
-        "Project-Id-Version": "foreman_theme_satellite 14.3.0",
+        "Project-Id-Version": "foreman_theme_satellite 15.3.1",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
         "Last-Translator": "Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024",
@@ -29,6 +29,9 @@
       "Blog": [
         "部落格"
       ],
+      "Contact support": [
+        ""
+      ],
       "Customer portal": [
         "客户门户"
       ],
@@ -53,14 +56,11 @@
       "If you feel this is an error with Satellite 6 itself, please open a new issue with": [
         "若您認為這是 Satellite 6 本身的錯誤，請提交錯誤"
       ],
+      "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting.": [
+        ""
+      ],
       "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy": [
         "包括 %{system} © 2009-%{year} Paul Kelly 和 Ohad Levy"
-      ],
-      "More information": [
-        "更多信息"
-      ],
-      "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026.": [
-        "2022 年 8 月 31 日，Red Hat Virtualization 进入维护支持阶段。维护支持阶段持续到 2024 年 8 月 31 日，然后进入延长生命周期阶段，它会持续到 2026 年 8 月 31 日。"
       ],
       "Operating System": [
         "操作系统"
@@ -68,14 +68,14 @@
       "Operating system default": [
         "作業系統預設值"
       ],
-      "RHEV integration is deprecated.": [
-        "RHEV 集成已弃用。"
-      ],
       "Red Hat Satellite Blog": [
         "Red Hat Satellite 部落格"
       ],
       "Satellite ticketing system": [
         "Satellite 的票證系統"
+      ],
+      "Satellite upgrade helper": [
+        ""
       ],
       "Show unsupported provisioning templates": [
         "显示不被支持的置备模板"
@@ -97,6 +97,9 @@
       ],
       "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6": [
         "从 Red Hat Satellite 5 转换到 Red Hat Satellite 6"
+      ],
+      "Try the Satellite upgrade helper": [
+        ""
       ],
       "Version %{version}": [
         "版本 %{version}"

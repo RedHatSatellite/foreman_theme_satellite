@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: foreman_theme_satellite 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-20 11:50+0100\n"
-"PO-Revision-Date: 2025-02-20 11:50+0100\n"
+"POT-Creation-Date: 2025-09-12 13:21+0200\n"
+"PO-Revision-Date: 2025-09-12 13:21+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -20,21 +20,6 @@ msgstr ""
 
 #: ../app/helpers/provisioning_templates_helper_branding.rb:9
 msgid "Supported by Red Hat"
-msgstr ""
-
-#: ../app/helpers/rhev_helper.rb:3
-msgid "RHEV integration is deprecated."
-msgstr ""
-
-#: ../app/helpers/rhev_helper.rb:4
-msgid ""
-"On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Pha"
-"se. The Maintenance Support Phase runs until August 31, 2024, followed by the "
-"Extended Life Phase, which runs until August 31, 2026."
-msgstr ""
-
-#: ../app/helpers/rhev_helper.rb:5
-msgid "More information"
 msgstr ""
 
 #: ../app/helpers/theme_application_helper.rb:7
@@ -162,6 +147,24 @@ msgstr ""
 
 #: ../lib/foreman_theme_satellite/engine.rb:25
 msgid "Show unsupported provisioning templates"
+msgstr ""
+
+#: ../webpack/components/fills/UpgradePage/SatelliteUpgradeHelperCard.js:11
+msgid "Satellite upgrade helper"
+msgstr ""
+
+#: ../webpack/components/fills/UpgradePage/SatelliteUpgradeHelperCard.js:13
+msgid "Try the Satellite upgrade helper"
+msgstr ""
+
+#: ../webpack/index.js:23
+msgid ""
+"If you require assistance or encounter issues, reach out to Red Hat Support or"
+" explore the resources available in the Customer Portal for troubleshooting."
+msgstr ""
+
+#: ../webpack/index.js:24
+msgid "Contact support"
 msgstr ""
 
 #: gemspec.rb:2

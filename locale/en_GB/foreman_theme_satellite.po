@@ -8,7 +8,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_theme_satellite 14.3.0\n"
+"Project-Id-Version: foreman_theme_satellite 15.3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-11-21 10:43+0000\n"
 "Last-Translator: Andi Chandler <andi@gowling.com>, 2024\n"
@@ -31,6 +31,9 @@ msgstr "Administering Red Hat Satellite"
 
 msgid "Blog"
 msgstr "Blog"
+
+msgid "Contact support"
+msgstr ""
 
 msgid "Customer portal"
 msgstr "Customer portal"
@@ -56,14 +59,11 @@ msgstr "IRC"
 msgid "If you feel this is an error with Satellite 6 itself, please open a new issue with"
 msgstr "If you feel this is an error with Satellite 6 itself, please open a new issue with"
 
+msgid "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting."
+msgstr ""
+
 msgid "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy"
 msgstr "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy"
-
-msgid "More information"
-msgstr "More information"
-
-msgid "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026."
-msgstr "On 31st August 2022, Red Hat Virtualisation entered the Maintenance Support Phase. The Maintenance Support Phase runs until 31st August  2024, followed by the Extended Life Phase, which runs until 31st August  2026."
 
 msgid "Operating System"
 msgstr "Operating System"
@@ -71,14 +71,14 @@ msgstr "Operating System"
 msgid "Operating system default"
 msgstr "Operating system default"
 
-msgid "RHEV integration is deprecated."
-msgstr "RHEV integration is deprecated."
-
 msgid "Red Hat Satellite Blog"
 msgstr "Red Hat Satellite Blog"
 
 msgid "Satellite ticketing system"
 msgstr "Satellite ticketing system"
+
+msgid "Satellite upgrade helper"
+msgstr ""
 
 msgid "Show unsupported provisioning templates"
 msgstr "Show unsupported provisioning templates"
@@ -100,6 +100,9 @@ msgstr "Theme changes for Satellite 6."
 
 msgid "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6"
 msgstr "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6"
+
+msgid "Try the Satellite upgrade helper"
+msgstr ""
 
 msgid "Version %{version}"
 msgstr "Version %{version}"

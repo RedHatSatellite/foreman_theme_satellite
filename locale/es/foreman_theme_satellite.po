@@ -10,7 +10,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_theme_satellite 14.3.0\n"
+"Project-Id-Version: foreman_theme_satellite 15.3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-11-21 10:43+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarde"
@@ -34,6 +34,9 @@ msgstr ""
 
 msgid "Blog"
 msgstr "Diario web"
+
+msgid "Contact support"
+msgstr ""
 
 msgid "Customer portal"
 msgstr "Portal del cliente"
@@ -59,13 +62,10 @@ msgstr "IRC"
 msgid "If you feel this is an error with Satellite 6 itself, please open a new issue with"
 msgstr "Si cree que esto es un error de Satellite 6, por favor, reporte una incidencia con"
 
+msgid "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting."
+msgstr ""
+
 msgid "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy"
-msgstr ""
-
-msgid "More information"
-msgstr ""
-
-msgid "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026."
 msgstr ""
 
 msgid "Operating System"
@@ -74,14 +74,14 @@ msgstr "Sistema operativo"
 msgid "Operating system default"
 msgstr "Sistema operativo predeterminado"
 
-msgid "RHEV integration is deprecated."
-msgstr ""
-
 msgid "Red Hat Satellite Blog"
 msgstr "Red Hat Satellite Blog"
 
 msgid "Satellite ticketing system"
 msgstr "Sistema de tiquetes Satellite "
+
+msgid "Satellite upgrade helper"
+msgstr ""
 
 msgid "Show unsupported provisioning templates"
 msgstr ""
@@ -102,6 +102,9 @@ msgid "Theme changes for Satellite 6."
 msgstr "Cambios de tema para Satellite 6."
 
 msgid "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6"
+msgstr ""
+
+msgid "Try the Satellite upgrade helper"
 msgstr ""
 
 msgid "Version %{version}"

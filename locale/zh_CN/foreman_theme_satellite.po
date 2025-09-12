@@ -10,7 +10,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_theme_satellite 14.3.0\n"
+"Project-Id-Version: foreman_theme_satellite 15.3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-11-21 10:43+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarde"
@@ -34,6 +34,9 @@ msgstr "管理 Red Hat Satellite"
 
 msgid "Blog"
 msgstr "部落格"
+
+msgid "Contact support"
+msgstr ""
 
 msgid "Customer portal"
 msgstr "客户门户"
@@ -59,14 +62,11 @@ msgstr "IRC"
 msgid "If you feel this is an error with Satellite 6 itself, please open a new issue with"
 msgstr "若您認為這是 Satellite 6 本身的錯誤，請提交錯誤"
 
+msgid "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting."
+msgstr ""
+
 msgid "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy"
 msgstr "包括 %{system} © 2009-%{year} Paul Kelly 和 Ohad Levy"
-
-msgid "More information"
-msgstr "更多信息"
-
-msgid "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026."
-msgstr "2022 年 8 月 31 日，Red Hat Virtualization 进入维护支持阶段。维护支持阶段持续到 2024 年 8 月 31 日，然后进入延长生命周期阶段，它会持续到 2026 年 8 月 31 日。"
 
 msgid "Operating System"
 msgstr "操作系统"
@@ -74,14 +74,14 @@ msgstr "操作系统"
 msgid "Operating system default"
 msgstr "作業系統預設值"
 
-msgid "RHEV integration is deprecated."
-msgstr "RHEV 集成已弃用。"
-
 msgid "Red Hat Satellite Blog"
 msgstr "Red Hat Satellite 部落格"
 
 msgid "Satellite ticketing system"
 msgstr "Satellite 的票證系統"
+
+msgid "Satellite upgrade helper"
+msgstr ""
 
 msgid "Show unsupported provisioning templates"
 msgstr "显示不被支持的置备模板"
@@ -103,6 +103,9 @@ msgstr "Satellite 6 的主题更改。"
 
 msgid "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6"
 msgstr "从 Red Hat Satellite 5 转换到 Red Hat Satellite 6"
+
+msgid "Try the Satellite upgrade helper"
+msgstr ""
 
 msgid "Version %{version}"
 msgstr "版本 %{version}"
