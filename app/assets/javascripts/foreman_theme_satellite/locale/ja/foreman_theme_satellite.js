@@ -3,7 +3,7 @@
   "locale_data": {
     "foreman_theme_satellite": {
       "": {
-        "Project-Id-Version": "foreman_theme_satellite 14.3.0",
+        "Project-Id-Version": "foreman_theme_satellite 15.3.1",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
         "Last-Translator": "Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024",
@@ -29,6 +29,9 @@
       "Blog": [
         "ブログ"
       ],
+      "Contact support": [
+        ""
+      ],
       "Customer portal": [
         "カスタマーポータル"
       ],
@@ -53,14 +56,11 @@
       "If you feel this is an error with Satellite 6 itself, please open a new issue with": [
         "これが Satellite 6 自体のエラーであると思われる場合は、新規の問題として以下に提出してください:"
       ],
+      "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting.": [
+        ""
+      ],
       "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy": [
         "%{system} (© 2009-%{year} Paul Kelly and Ohad Levy) を含む"
-      ],
-      "More information": [
-        "詳細"
-      ],
-      "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026.": [
-        "2022 年 8 月 31 日、Red Hat Virtualization はメンテナンスサポートフェーズに入りました。メンテナンスサポートフェーズは 2024 年 8 月 31 日まで続きます。その後、延長ライフフェーズが 2026 年 8 月 31 日まで続きます。"
       ],
       "Operating System": [
         "オペレーティングシステム"
@@ -68,14 +68,14 @@
       "Operating system default": [
         "オペレーティングシステムのデフォルト"
       ],
-      "RHEV integration is deprecated.": [
-        "RHEV 統合は非推奨です。"
-      ],
       "Red Hat Satellite Blog": [
         "Red Hat Satellite ブログ"
       ],
       "Satellite ticketing system": [
         "Satellite チケットシステム"
+      ],
+      "Satellite upgrade helper": [
+        ""
       ],
       "Show unsupported provisioning templates": [
         "サポートされていないプロビジョニングテンプレートの表示"
@@ -97,6 +97,9 @@
       ],
       "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6": [
         "Red Hat Satellite 5 から Red Hat Satellite 6 への移行"
+      ],
+      "Try the Satellite upgrade helper": [
+        ""
       ],
       "Version %{version}": [
         "バージョン %{version}"

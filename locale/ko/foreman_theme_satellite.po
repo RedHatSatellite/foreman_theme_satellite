@@ -9,7 +9,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_theme_satellite 14.3.0\n"
+"Project-Id-Version: foreman_theme_satellite 15.3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-11-21 10:43+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarde"
@@ -32,6 +32,9 @@ msgstr "Red Hat Satellite 관리"
 
 msgid "Blog"
 msgstr "블로그"
+
+msgid "Contact support"
+msgstr ""
 
 msgid "Customer portal"
 msgstr "고객 포털"
@@ -57,14 +60,11 @@ msgstr "IRC"
 msgid "If you feel this is an error with Satellite 6 itself, please open a new issue with"
 msgstr "Satellite 6 자체의 오류라고 생각되면 새 문제로 아래에 제출해 주세요."
 
+msgid "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting."
+msgstr ""
+
 msgid "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy"
 msgstr "%{system} © 2009-%{year} Paul Kelly and Ohad Levy 포함"
-
-msgid "More information"
-msgstr "자세한 정보"
-
-msgid "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026."
-msgstr "2022년 8월 31일, Red Hat Virtualization은 유지 관리 지원 단계에 들어갔습니다. 유지 관리(Maintenance Support) 지원 단계는 2024년 8월 31일까지 진행되며, 그 다음에는 2026년 8월 31일까지 진행되는 연장 라이프 단계(Extended Life Phase)가 이어집니다."
 
 msgid "Operating System"
 msgstr "운영체제"
@@ -72,14 +72,14 @@ msgstr "운영체제"
 msgid "Operating system default"
 msgstr "기본값 운영 체제 "
 
-msgid "RHEV integration is deprecated."
-msgstr "RHEV 통합은 더 이상 지원되지 않습니다."
-
 msgid "Red Hat Satellite Blog"
 msgstr "Red Hat Satellite 블로그"
 
 msgid "Satellite ticketing system"
 msgstr "Satellite 티켓팅 시스템"
+
+msgid "Satellite upgrade helper"
+msgstr ""
 
 msgid "Show unsupported provisioning templates"
 msgstr "지원되지 않는 프로비저닝 템플릿 표시"
@@ -101,6 +101,9 @@ msgstr "Satellite 6의 테마가 변경되었습니다."
 
 msgid "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6"
 msgstr "Red Hat Satellite 5에서 Red Hat Satellite 6으로 전환"
+
+msgid "Try the Satellite upgrade helper"
+msgstr ""
 
 msgid "Version %{version}"
 msgstr "버전 %{version}"

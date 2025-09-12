@@ -3,7 +3,7 @@
   "locale_data": {
     "foreman_theme_satellite": {
       "": {
-        "Project-Id-Version": "foreman_theme_satellite 14.3.0",
+        "Project-Id-Version": "foreman_theme_satellite 15.3.1",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
         "Last-Translator": "Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023",
@@ -29,6 +29,9 @@
       "Blog": [
         "ბლოგი"
       ],
+      "Contact support": [
+        ""
+      ],
       "Customer portal": [
         "მომხმარებლის პორტალი"
       ],
@@ -53,14 +56,11 @@
       "If you feel this is an error with Satellite 6 itself, please open a new issue with": [
         "თუ გგონიათ, რომ ეს შეცდომა Satellite 6-ის შეცდომაა, გახსენით ახალი ბილეთი"
       ],
+      "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting.": [
+        ""
+      ],
       "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy": [
         "შეიცავს %{system} © 2009-%{year} პოლ კელი და ოჰედ ლევი"
-      ],
-      "More information": [
-        "მეტი ინფორმაცია"
-      ],
-      "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026.": [
-        "2022 წლის 31 აგვისტოს RHEV რემონტის მხარდაჭერის ფაზაზე გადავიდა. ის 2024 წლის 31 აგვისტომდე გაგრძელდება, რომელიც გაფართოებული სიცოცხლის ფაზით გაგრძელდება, 2026 წლის 31 აგვისტომდე."
       ],
       "Operating System": [
         "ოპერაციული სისტემა"
@@ -68,14 +68,14 @@
       "Operating system default": [
         "ოპერაციული სისტემის ნაგულისხმები მნიშვნელობა"
       ],
-      "RHEV integration is deprecated.": [
-        "RHEV-ის ჩაშენება მოძველებულია."
-      ],
       "Red Hat Satellite Blog": [
         "Red Hat Satellite-ის ბლოგი"
       ],
       "Satellite ticketing system": [
         "Satellite-ის ბილეთებს სისტემა"
+      ],
+      "Satellite upgrade helper": [
+        ""
       ],
       "Show unsupported provisioning templates": [
         "მხარდაუჭერელი გაშლის ნიმუშების ჩვენება"
@@ -97,6 +97,9 @@
       ],
       "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6": [
         "გადასვლა Red Hat Satellite 5-დან to Red Hat Satellite 6-ზე"
+      ],
+      "Try the Satellite upgrade helper": [
+        ""
       ],
       "Version %{version}": [
         "ვერსია %{version}"

@@ -8,7 +8,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_theme_satellite 14.3.0\n"
+"Project-Id-Version: foreman_theme_satellite 15.3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-11-21 10:43+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023\n"
@@ -30,6 +30,9 @@ msgstr "Red Hat Satellite-ის ადმინისტრირება"
 
 msgid "Blog"
 msgstr "ბლოგი"
+
+msgid "Contact support"
+msgstr ""
 
 msgid "Customer portal"
 msgstr "მომხმარებლის პორტალი"
@@ -55,14 +58,11 @@ msgstr "IRC"
 msgid "If you feel this is an error with Satellite 6 itself, please open a new issue with"
 msgstr "თუ გგონიათ, რომ ეს შეცდომა Satellite 6-ის შეცდომაა, გახსენით ახალი ბილეთი"
 
+msgid "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting."
+msgstr ""
+
 msgid "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy"
 msgstr "შეიცავს %{system} © 2009-%{year} პოლ კელი და ოჰედ ლევი"
-
-msgid "More information"
-msgstr "მეტი ინფორმაცია"
-
-msgid "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026."
-msgstr "2022 წლის 31 აგვისტოს RHEV რემონტის მხარდაჭერის ფაზაზე გადავიდა. ის 2024 წლის 31 აგვისტომდე გაგრძელდება, რომელიც გაფართოებული სიცოცხლის ფაზით გაგრძელდება, 2026 წლის 31 აგვისტომდე."
 
 msgid "Operating System"
 msgstr "ოპერაციული სისტემა"
@@ -70,14 +70,14 @@ msgstr "ოპერაციული სისტემა"
 msgid "Operating system default"
 msgstr "ოპერაციული სისტემის ნაგულისხმები მნიშვნელობა"
 
-msgid "RHEV integration is deprecated."
-msgstr "RHEV-ის ჩაშენება მოძველებულია."
-
 msgid "Red Hat Satellite Blog"
 msgstr "Red Hat Satellite-ის ბლოგი"
 
 msgid "Satellite ticketing system"
 msgstr "Satellite-ის ბილეთებს სისტემა"
+
+msgid "Satellite upgrade helper"
+msgstr ""
 
 msgid "Show unsupported provisioning templates"
 msgstr "მხარდაუჭერელი გაშლის ნიმუშების ჩვენება"
@@ -99,6 +99,9 @@ msgstr "თემის ცვლილებები Satellite 6-სთვი�
 
 msgid "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6"
 msgstr "გადასვლა Red Hat Satellite 5-დან to Red Hat Satellite 6-ზე"
+
+msgid "Try the Satellite upgrade helper"
+msgstr ""
 
 msgid "Version %{version}"
 msgstr "ვერსია %{version}"

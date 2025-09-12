@@ -3,7 +3,7 @@
   "locale_data": {
     "foreman_theme_satellite": {
       "": {
-        "Project-Id-Version": "foreman_theme_satellite 14.3.0",
+        "Project-Id-Version": "foreman_theme_satellite 15.3.1",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
         "Last-Translator": "Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2025",
@@ -29,6 +29,9 @@
       "Blog": [
         "블로그"
       ],
+      "Contact support": [
+        ""
+      ],
       "Customer portal": [
         "고객 포털"
       ],
@@ -53,14 +56,11 @@
       "If you feel this is an error with Satellite 6 itself, please open a new issue with": [
         "Satellite 6 자체의 오류라고 생각되면 새 문제로 아래에 제출해 주세요."
       ],
+      "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting.": [
+        ""
+      ],
       "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy": [
         "%{system} © 2009-%{year} Paul Kelly and Ohad Levy 포함"
-      ],
-      "More information": [
-        "자세한 정보"
-      ],
-      "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026.": [
-        "2022년 8월 31일, Red Hat Virtualization은 유지 관리 지원 단계에 들어갔습니다. 유지 관리(Maintenance Support) 지원 단계는 2024년 8월 31일까지 진행되며, 그 다음에는 2026년 8월 31일까지 진행되는 연장 라이프 단계(Extended Life Phase)가 이어집니다."
       ],
       "Operating System": [
         "운영체제"
@@ -68,14 +68,14 @@
       "Operating system default": [
         "기본값 운영 체제 "
       ],
-      "RHEV integration is deprecated.": [
-        "RHEV 통합은 더 이상 지원되지 않습니다."
-      ],
       "Red Hat Satellite Blog": [
         "Red Hat Satellite 블로그"
       ],
       "Satellite ticketing system": [
         "Satellite 티켓팅 시스템"
+      ],
+      "Satellite upgrade helper": [
+        ""
       ],
       "Show unsupported provisioning templates": [
         "지원되지 않는 프로비저닝 템플릿 표시"
@@ -97,6 +97,9 @@
       ],
       "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6": [
         "Red Hat Satellite 5에서 Red Hat Satellite 6으로 전환"
+      ],
+      "Try the Satellite upgrade helper": [
+        ""
       ],
       "Version %{version}": [
         "버전 %{version}"

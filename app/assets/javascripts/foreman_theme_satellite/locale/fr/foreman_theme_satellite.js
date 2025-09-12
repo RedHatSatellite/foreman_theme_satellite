@@ -3,7 +3,7 @@
   "locale_data": {
     "foreman_theme_satellite": {
       "": {
-        "Project-Id-Version": "foreman_theme_satellite 14.3.0",
+        "Project-Id-Version": "foreman_theme_satellite 15.3.1",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
         "Last-Translator": "Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024",
@@ -29,6 +29,9 @@
       "Blog": [
         "Blog"
       ],
+      "Contact support": [
+        ""
+      ],
       "Customer portal": [
         "Portail clients"
       ],
@@ -53,14 +56,11 @@
       "If you feel this is an error with Satellite 6 itself, please open a new issue with": [
         "Si vous pensez qu'il s'agisse d'une erreur de Satellite 6, merci d'ouvrir un ticket avec"
       ],
+      "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting.": [
+        ""
+      ],
       "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy": [
         "Comprend%{system} © 2009-%{year} Paul Kelly et Ohad Levy"
-      ],
-      "More information": [
-        "Plus d'information"
-      ],
-      "On August 31, 2022, Red Hat Virtualization entered the Maintenance Support Phase. The Maintenance Support Phase runs until August 31, 2024, followed by the Extended Life Phase, which runs until August 31, 2026.": [
-        "Le 31 août 2022, Red Hat Virtualization est entré dans la phase de support de maintenance. La phase de support de maintenance s'étend jusqu'au 31 août 2024, suivie de la phase de durée de vie prolongée, qui s'étend jusqu'au 31 août 2026."
       ],
       "Operating System": [
         "Système d'exploitation"
@@ -68,14 +68,14 @@
       "Operating system default": [
         "Système d'Exploitation par défaut"
       ],
-      "RHEV integration is deprecated.": [
-        "L’intégration RHEV est obsolète."
-      ],
       "Red Hat Satellite Blog": [
         "Blog Red Hat Satellite"
       ],
       "Satellite ticketing system": [
         "Gestionnaire de tickets Satellite"
+      ],
+      "Satellite upgrade helper": [
+        ""
       ],
       "Show unsupported provisioning templates": [
         "Afficher les modèles de provisionnement non pris en charge"
@@ -97,6 +97,9 @@
       ],
       "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6": [
         "Transition de Red Hat Satellite 5 vers Red Hat Satellite 6"
+      ],
+      "Try the Satellite upgrade helper": [
+        ""
       ],
       "Version %{version}": [
         "Version %{version}"
