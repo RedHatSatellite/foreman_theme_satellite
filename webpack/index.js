@@ -11,7 +11,7 @@ import SatelliteUpgradeHelperCard from './components/fills/UpgradePage/Satellite
 componentRegistry.register({ name: 'Helmet', type: Helmet });
 
 addGlobalFill(
-  'upgrade-page-additional-docs',
+  'upgrade-page-upgrade-docs',
   'Satellite upgrade helper card',
   <SatelliteUpgradeHelperCard key="satellite-upgrade-helper-card" />,
   1000,
