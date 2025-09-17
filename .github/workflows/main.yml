@@ -26,7 +26,7 @@ jobs:
       fail-fast: false
       matrix:
         foreman:
-          - develop
+          - 3.16-stable
     uses: theforeman/actions/.github/workflows/foreman_plugin.yml@v0
     with:
       plugin: foreman_theme_satellite
