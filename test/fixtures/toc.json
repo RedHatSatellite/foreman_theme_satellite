@@ -311,8 +311,7 @@
       "system-requirements_capsule",
       "capsule-storage-requirements_capsule",
       "best-practices-for-optimizing-storage",
-      "capsule-port-and-firewall-requirements_capsule",
-      "enabling-connections-to-capsule_capsule"
+      "opening-required-ports"
     ],
     "installing-capsule-server": [
       "Registering_Proxy_to_Server_capsule",
@@ -344,12 +343,11 @@
       "system-requirements_satellite",
       "storage-requirements_satellite",
       "best-practices-for-optimizing-storage",
-      "Port_and_firewall_requirements_satellite",
       "ipv6-and-ipv4-requirements",
       "aws-requirements"
     ],
     "preparing-environment-for-satellite-server-installation_satellite": [
-      "Enabling_Connections_from_a_Client_to_Server_satellite",
+      "opening-required-ports",
       "verifying-dns-resolution_satellite",
       "preparing-for-using-external-databases_satellite"
     ],
@@ -398,11 +396,10 @@
       "system-requirements_satellite",
       "storage-requirements_satellite",
       "best-practices-for-optimizing-storage",
-      "Port_and_firewall_requirements_satellite",
       "aws-requirements"
     ],
     "preparing-environment-for-satellite-server-installation_satellite": [
-      "Enabling_Connections_from_a_Client_to_Server_satellite",
+      "opening-required-ports",
       "verifying-dns-resolution_satellite",
       "preparing-for-using-external-databases_satellite"
     ],
@@ -1072,7 +1069,6 @@
       "Overview-of-Hosts-in-Satellite_planning",
       "list-of-key-open-source-components-of-satellite",
       "capsule-features",
-      "capsule-networking_planning",
       "major-project-components-additional-resources_planning"
     ],
     "tools-for-administration-of-satellite_planning": [
@@ -1089,6 +1085,16 @@
       "Supported-Client-Architectures-for-Host-Provisioning_planning",
       "Supported-Client-Architectures-for-Configuration-Management_planning",
       "supported-usage-and-versions-of-foreman-components-additional-resources_planning"
+    ],
+    "security-considerations": [
+
+    ],
+    "networking-considerations-in-satellite": [
+      "capsule-networking",
+      "satellite-port-and-firewall-requirements",
+      "capsule-port-and-firewall-requirements",
+      "satellite-topology-with-hosts-connecting-to-a-capsule",
+      "satellite-topology-with-hosts-connecting-directly-to-satellite-server"
     ],
     "deployment-path_planning": [
       "installing-a-satellite-server_planning",
@@ -1111,9 +1117,6 @@
       "host-group-structures",
       "iss-scenarios_planning",
       "deploying-satellite-on-aws"
-    ],
-    "security-considerations": [
-
     ],
     "provisioning-requirements": [
       "pxe-booting",
