@@ -183,33 +183,25 @@
     "preparing-capsule-servers-for-load-balancing_load-balancing": [
       "Registering_Proxy_to_Server_load-balancing",
       "configuring-repositories-proxy_load-balancing",
-      "installing-capsule-server-packages",
-      "preparing-capsule-servers-for-load-balancing-additional-resources_load-balancing"
+      "installing-capsule-server-packages"
     ],
     "configuring-capsule-servers-with-default-ssl-certificates-for-load-balancing-without-puppet_load-balancing": [
-      "prerequisites-configuring-capsule-servers-for-load-balancing_LB-default-ssl-without-puppet",
       "Configuring_capsule_Server_with_Default_SSL_Certificates_for_Load_Balancing_without_Puppet_load-balancing"
     ],
     "configuring-capsule-servers-with-custom-ssl-certificates-for-load-balancing-without-puppet_load-balancing": [
-      "prerequisites-configuring-capsule-servers-for-load-balancing_LB-custom-ssl-without-puppet",
       "creating-a-custom-ssl-certificate_load-balancing",
       "Configuring_capsule_Server_with_Custom_SSL_Certificates_for_Load_Balancing_without_Puppet_load-balancing"
     ],
     "configuring-capsule-servers-with-default-ssl-certificates-for-load-balancing-with-puppet_load-balancing": [
-      "prerequisites-configuring-capsule-servers-for-load-balancing_LB-default-ssl-with-puppet",
       "Configuring_capsule_Server_with_Default_SSL_Certificates_to_Generate_and_Sign_Puppet_Certificates_load-balancing",
       "Configuring_Remaining_capsule_Servers_with_Default_SSL_Certificates_for_Load_Balancing_load-balancing",
       "managing-puppet-limitations-with-load-balancing-in-project_LB-default-ssl-with-puppet"
     ],
     "configuring-capsule-servers-with-custom-ssl-certificates-for-load-balancing-with-puppet_load-balancing": [
-      "prerequisites-configuring-capsule-servers-for-load-balancing_LB-custom-ssl-with-puppet",
       "creating-a-custom-ssl-certificate_load-balancing-with-custom-ssl-certificates-with-puppet",
       "Configuring_capsule_Server_with_Custom_SSL_Certificates_to_Generate_and_Sign_Puppet_Certificates_load-balancing",
       "Configuring_Remaining_capsule_Servers_with_Custom_SSL_Certificates_for_Load_Balancing_load-balancing",
       "managing-puppet-limitations-with-load-balancing-in-project_LB-custom-ssl-with-puppet"
-    ],
-    "upgrading-smartproxyservers-in-a-load-balancing-setup_load-balancing": [
-
     ],
     "installing-and-configuring-the-load-balancer": [
       "installing-the-load-balancer",
@@ -501,6 +493,9 @@
       "Rendering_a_restorecon_Template_ansible",
       "Executing_a_restorecon_Template_on_Multiple_Hosts_ansible",
       "Including_Power_Actions_in_Templates_ansible"
+    ],
+    "host_parameter_hierarchy_ansible": [
+
     ]
   },
   "managing_configurations_by_using_puppet_integration": {
@@ -551,6 +546,9 @@
       "setting-the-puppet-out-of-sync-interval_managing-configurations-puppet",
       "overriding-out-of-sync-interval-for-a-host-group_managing-configurations-puppet",
       "overriding-out-of-sync-interval-for-an-individual-host_managing-configurations-puppet"
+    ],
+    "host_parameter_hierarchy_managing-configurations-puppet": [
+
     ]
   },
   "managing_content": {
@@ -954,6 +952,9 @@
       "Rendering_a_restorecon_Template_managing-hosts",
       "Executing_a_restorecon_Template_on_Multiple_Hosts_managing-hosts",
       "Including_Power_Actions_in_Templates_managing-hosts"
+    ],
+    "host_parameter_hierarchy_managing-hosts": [
+
     ]
   },
   "managing_security_compliance": {
