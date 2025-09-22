@@ -128,7 +128,7 @@
       "Log_File_Directories_admin",
       "system-journal-metadata_admin"
     ],
-    "monitoring_resources_admin": [
+    "monitoring-satellite-resources": [
       "Using_the_Project_Content_Dashboard_admin",
       "Configuring_RSS_Notifications_admin",
       "monitoring-satellite-server_admin",
