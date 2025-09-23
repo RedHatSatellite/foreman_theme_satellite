@@ -31,8 +31,7 @@
     "usage-metrics-collection-in-satellite": [
       "overview-of-usage-metrics-collection-in-satellite",
       "reviewing-usage-metrics-collected-from-your-satellite",
-      "disabling-the-collection-of-usage-metrics",
-      "usage-metrics-collected-by-satellite"
+      "disabling-the-collection-of-usage-metrics"
     ],
     "managing_organizations_admin": [
       "examples-of-using-organizations-in-satellite_admin",
@@ -169,6 +168,9 @@
       "config_management_settings_admin",
       "remote_execution_settings_admin",
       "ansible_settings_admin"
+    ],
+    "usage-metrics-collected-by-satellite": [
+
     ]
   },
   "configuring_capsules_with_a_load_balancer": {
