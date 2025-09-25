@@ -597,7 +597,7 @@
       "configuring-selinux-to-permit-content-synchronization-on-custom-ports_content-management",
       "Recovering_a_Corrupted_Repository_content-management",
       "recovering-corrupted-content-on-a-capsule-server-by-using-web-ui",
-      "recovering-corrupted-content-on-capsule-by-using-cli",
+      "recovering-corrupted-content-on-a-capsule-server-by-using-cli",
       "Republishing_Repository_Metadata_content-management",
       "Republishing_Content_View_Metadata_content-management",
       "Adding_an_HTTP_Proxy_content-management",
