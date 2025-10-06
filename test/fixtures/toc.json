@@ -1345,8 +1345,10 @@
       "cli-creating-hosts-from-discovered-hosts_provisioning",
       "cli-creating-discovery-rules_provisioning"
     ],
-    "using_an_image_builder_image_for_provisioning_provisioning": [
-
+    "configuring-satellite-to-provision-from-a-builder-image": [
+      "provisioning-from-a-builder-image-on-capsule",
+      "provisioning-from-a-builder-image-on-an-http-server",
+      "packages-required-in-a-builder-image"
     ],
     "provisioning_virtual_machines_on_kvm_kvm-provisioning": [
       "configuring-server-for-kvm-connections_kvm-provisioning",
