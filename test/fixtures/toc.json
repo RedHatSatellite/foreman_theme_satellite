@@ -960,25 +960,17 @@
     "providing-feedback-on-red-hat-documentation_security-compliance": [
 
     ],
-    "security-compliance-management_security-compliance": [
-
-    ],
-    "security_content_automation_protocol_security-compliance": [
-
-    ],
-    "scap_content_in_satellite_security-compliance": [
-      "supported-scap-versions_security-compliance"
-    ],
-    "compliance-policy-deployment-options_security-compliance": [
-
+    "security-compliance-management-in-project": [
+      "Security_Content_Automation_Protocol_security-compliance",
+      "SCAP_Content_in_satellite_security-compliance"
     ],
     "enabling-openscap": [
 
     ],
     "configuring-compliance-policy-deployment-methods_security-compliance": [
+      "compliance-policy-deployment-options_security-compliance",
       "configuring-satellite-for-ansible-compliance-policy-deployment",
-      "configuring-satellite-for-puppet-compliance-policy-deployment",
-      "configuring-satellite-for-manual-compliance-policy-deployment"
+      "configuring-satellite-for-puppet-compliance-policy-deployment"
     ],
     "listing-available-scap-contents-using-web-ui": [
 
@@ -1248,8 +1240,8 @@
     ],
     "preparing-provisioning-content": [
       "preparing-a-synchronized-kickstart-repository",
-      "configuring-satellite-to-provision-from-a-builder-image",
       "adding-installation-media_provisioning",
+      "configuring-satellite-to-provision-from-a-builder-image",
       "cli-adding-installation-media_provisioning"
     ],
     "preparing-client-platforms": [
@@ -1431,7 +1423,6 @@
 
     ],
     "determining_hardware_and_operating_system_configuration_performance-tuning": [
-      "Benchmarking_Disk_Performance_performance-tuning",
       "Enabling_Tuned_Profiles_performance-tuning",
       "Disable_Transparent_Hugepage_performance-tuning"
     ],
