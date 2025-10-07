@@ -8,14 +8,14 @@
 # Amit Upadhye <aupadhye@redhat.com>, 2023
 # Claer <transiblu@claer.hammock.fr>, 2023
 # Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
+# Ondřej Gajdušek, 2025
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: foreman_theme_satellite 15.3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-11-21 10:43+0000\n"
-"Last-Translator: Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarde"
-"n.nl>, 2024\n"
+"Last-Translator: Ondřej Gajdušek, 2025\n"
 "Language-Team: French (https://app.transifex.com/foreman/teams/114/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,7 +37,7 @@ msgid "Blog"
 msgstr "Blog"
 
 msgid "Contact support"
-msgstr ""
+msgstr "Contacter le support"
 
 msgid "Customer portal"
 msgstr "Portail clients"
@@ -64,7 +64,7 @@ msgid "If you feel this is an error with Satellite 6 itself, please open a new i
 msgstr "Si vous pensez qu'il s'agisse d'une erreur de Satellite 6, merci d'ouvrir un ticket avec"
 
 msgid "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting."
-msgstr ""
+msgstr "Si vous avez besoin d'aide ou rencontrez des problèmes, contactez le support Red Hat ou explorez les ressources disponibles dans le portail client pour le dépannage."
 
 msgid "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy"
 msgstr "Comprend%{system} © 2009-%{year} Paul Kelly et Ohad Levy"
@@ -82,7 +82,7 @@ msgid "Satellite ticketing system"
 msgstr "Gestionnaire de tickets Satellite"
 
 msgid "Satellite upgrade helper"
-msgstr ""
+msgstr "Aide à la mise à niveau des satellites"
 
 msgid "Show unsupported provisioning templates"
 msgstr "Afficher les modèles de provisionnement non pris en charge"
@@ -106,7 +106,7 @@ msgid "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6"
 msgstr "Transition de Red Hat Satellite 5 vers Red Hat Satellite 6"
 
 msgid "Try the Satellite upgrade helper"
-msgstr ""
+msgstr "Essayez l'assistant de mise à niveau Satellite"
 
 msgid "Version %{version}"
 msgstr "Version %{version}"

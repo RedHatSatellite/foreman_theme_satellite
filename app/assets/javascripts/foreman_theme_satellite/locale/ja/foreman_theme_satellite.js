@@ -6,7 +6,7 @@
         "Project-Id-Version": "foreman_theme_satellite 15.3.1",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
-        "Last-Translator": "Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024",
+        "Last-Translator": "Ondřej Gajdušek, 2025",
         "Language-Team": "Japanese (https://app.transifex.com/foreman/teams/114/ja/)",
         "MIME-Version": "1.0",
         "Content-Type": "text/plain; charset=UTF-8",
@@ -30,7 +30,7 @@
         "ブログ"
       ],
       "Contact support": [
-        ""
+        "サポートへのお問い合わせ"
       ],
       "Customer portal": [
         "カスタマーポータル"
@@ -57,7 +57,7 @@
         "これが Satellite 6 自体のエラーであると思われる場合は、新規の問題として以下に提出してください:"
       ],
       "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting.": [
-        ""
+        "サポートが必要な場合や問題が発生した場合は、Red Hat サポートに問い合わせるか、カスタマーポータルで利用可能なリソースを参照してトラブルシューティングしてください。"
       ],
       "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy": [
         "%{system} (© 2009-%{year} Paul Kelly and Ohad Levy) を含む"
@@ -75,7 +75,7 @@
         "Satellite チケットシステム"
       ],
       "Satellite upgrade helper": [
-        ""
+        "Satellite アップグレードヘルパー"
       ],
       "Show unsupported provisioning templates": [
         "サポートされていないプロビジョニングテンプレートの表示"
@@ -99,7 +99,7 @@
         "Red Hat Satellite 5 から Red Hat Satellite 6 への移行"
       ],
       "Try the Satellite upgrade helper": [
-        ""
+        "Satellite アップグレードヘルパーを試す"
       ],
       "Version %{version}": [
         "バージョン %{version}"

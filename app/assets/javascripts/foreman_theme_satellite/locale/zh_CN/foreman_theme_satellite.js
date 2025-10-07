@@ -6,7 +6,7 @@
         "Project-Id-Version": "foreman_theme_satellite 15.3.1",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
-        "Last-Translator": "Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024",
+        "Last-Translator": "Ondřej Gajdušek, 2025",
         "Language-Team": "Chinese (China) (https://app.transifex.com/foreman/teams/114/zh_CN/)",
         "MIME-Version": "1.0",
         "Content-Type": "text/plain; charset=UTF-8",
@@ -30,7 +30,7 @@
         "部落格"
       ],
       "Contact support": [
-        ""
+        "联系支持"
       ],
       "Customer portal": [
         "客户门户"
@@ -57,7 +57,7 @@
         "若您認為這是 Satellite 6 本身的錯誤，請提交錯誤"
       ],
       "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting.": [
-        ""
+        "如果您需要帮助或遇到问题，请联络红帽支持或在客户门户网站中搜素相关的可用资源进行故障排除。"
       ],
       "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy": [
         "包括 %{system} © 2009-%{year} Paul Kelly 和 Ohad Levy"
@@ -75,7 +75,7 @@
         "Satellite 的票證系統"
       ],
       "Satellite upgrade helper": [
-        ""
+        "Satellite 升级帮助程序"
       ],
       "Show unsupported provisioning templates": [
         "显示不被支持的置备模板"
@@ -99,7 +99,7 @@
         "从 Red Hat Satellite 5 转换到 Red Hat Satellite 6"
       ],
       "Try the Satellite upgrade helper": [
-        ""
+        "尝试 Satellite 升级帮助程序"
       ],
       "Version %{version}": [
         "版本 %{version}"
