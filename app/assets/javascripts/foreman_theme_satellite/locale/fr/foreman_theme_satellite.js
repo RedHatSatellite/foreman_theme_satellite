@@ -6,7 +6,7 @@
         "Project-Id-Version": "foreman_theme_satellite 15.3.1",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
-        "Last-Translator": "Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024",
+        "Last-Translator": "Ondřej Gajdušek, 2025",
         "Language-Team": "French (https://app.transifex.com/foreman/teams/114/fr/)",
         "MIME-Version": "1.0",
         "Content-Type": "text/plain; charset=UTF-8",
@@ -30,7 +30,7 @@
         "Blog"
       ],
       "Contact support": [
-        ""
+        "Contacter le support"
       ],
       "Customer portal": [
         "Portail clients"
@@ -57,7 +57,7 @@
         "Si vous pensez qu'il s'agisse d'une erreur de Satellite 6, merci d'ouvrir un ticket avec"
       ],
       "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting.": [
-        ""
+        "Si vous avez besoin d'aide ou rencontrez des problèmes, contactez le support Red Hat ou explorez les ressources disponibles dans le portail client pour le dépannage."
       ],
       "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy": [
         "Comprend%{system} © 2009-%{year} Paul Kelly et Ohad Levy"
@@ -75,7 +75,7 @@
         "Gestionnaire de tickets Satellite"
       ],
       "Satellite upgrade helper": [
-        ""
+        "Aide à la mise à niveau des satellites"
       ],
       "Show unsupported provisioning templates": [
         "Afficher les modèles de provisionnement non pris en charge"
@@ -99,7 +99,7 @@
         "Transition de Red Hat Satellite 5 vers Red Hat Satellite 6"
       ],
       "Try the Satellite upgrade helper": [
-        ""
+        "Essayez l'assistant de mise à niveau Satellite"
       ],
       "Version %{version}": [
         "Version %{version}"

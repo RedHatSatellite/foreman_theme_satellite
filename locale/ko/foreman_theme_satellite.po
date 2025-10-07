@@ -6,14 +6,14 @@
 # Translators:
 # 0868a4d1af5275b3f70b0a6dac4c99a4, 2023
 # Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2025
+# Ondřej Gajdušek, 2025
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: foreman_theme_satellite 15.3.1\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-11-21 10:43+0000\n"
-"Last-Translator: Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarde"
-"n.nl>, 2025\n"
+"Last-Translator: Ondřej Gajdušek, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/foreman/teams/114/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,7 +34,7 @@ msgid "Blog"
 msgstr "블로그"
 
 msgid "Contact support"
-msgstr ""
+msgstr "고객 지원 문의"
 
 msgid "Customer portal"
 msgstr "고객 포털"
@@ -61,7 +61,7 @@ msgid "If you feel this is an error with Satellite 6 itself, please open a new i
 msgstr "Satellite 6 자체의 오류라고 생각되면 새 문제로 아래에 제출해 주세요."
 
 msgid "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting."
-msgstr ""
+msgstr "도움이 필요하거나 문제가 발생하면 Red Hat 지원팀에 문의하거나 고객 포털에서 문제 해결을 위한 리소스를 살펴보세요."
 
 msgid "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy"
 msgstr "%{system} © 2009-%{year} Paul Kelly and Ohad Levy 포함"
@@ -79,7 +79,7 @@ msgid "Satellite ticketing system"
 msgstr "Satellite 티켓팅 시스템"
 
 msgid "Satellite upgrade helper"
-msgstr ""
+msgstr "Satellite 업그레이드 지원 도구"
 
 msgid "Show unsupported provisioning templates"
 msgstr "지원되지 않는 프로비저닝 템플릿 표시"
@@ -103,7 +103,7 @@ msgid "Transitioning from Red Hat Satellite 5 to Red Hat Satellite 6"
 msgstr "Red Hat Satellite 5에서 Red Hat Satellite 6으로 전환"
 
 msgid "Try the Satellite upgrade helper"
-msgstr ""
+msgstr "Satellite 업그레이드 지원 도구를 사용해 보세요"
 
 msgid "Version %{version}"
 msgstr "버전 %{version}"

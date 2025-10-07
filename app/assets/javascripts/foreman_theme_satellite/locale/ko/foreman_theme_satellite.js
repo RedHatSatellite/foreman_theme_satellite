@@ -6,7 +6,7 @@
         "Project-Id-Version": "foreman_theme_satellite 15.3.1",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
-        "Last-Translator": "Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2025",
+        "Last-Translator": "Ondřej Gajdušek, 2025",
         "Language-Team": "Korean (https://app.transifex.com/foreman/teams/114/ko/)",
         "MIME-Version": "1.0",
         "Content-Type": "text/plain; charset=UTF-8",
@@ -30,7 +30,7 @@
         "블로그"
       ],
       "Contact support": [
-        ""
+        "고객 지원 문의"
       ],
       "Customer portal": [
         "고객 포털"
@@ -57,7 +57,7 @@
         "Satellite 6 자체의 오류라고 생각되면 새 문제로 아래에 제출해 주세요."
       ],
       "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting.": [
-        ""
+        "도움이 필요하거나 문제가 발생하면 Red Hat 지원팀에 문의하거나 고객 포털에서 문제 해결을 위한 리소스를 살펴보세요."
       ],
       "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy": [
         "%{system} © 2009-%{year} Paul Kelly and Ohad Levy 포함"
@@ -75,7 +75,7 @@
         "Satellite 티켓팅 시스템"
       ],
       "Satellite upgrade helper": [
-        ""
+        "Satellite 업그레이드 지원 도구"
       ],
       "Show unsupported provisioning templates": [
         "지원되지 않는 프로비저닝 템플릿 표시"
@@ -99,7 +99,7 @@
         "Red Hat Satellite 5에서 Red Hat Satellite 6으로 전환"
       ],
       "Try the Satellite upgrade helper": [
-        ""
+        "Satellite 업그레이드 지원 도구를 사용해 보세요"
       ],
       "Version %{version}": [
         "버전 %{version}"
