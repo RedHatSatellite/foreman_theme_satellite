@@ -855,7 +855,6 @@
       "Exporting_Report_Templates_Using_the_API_managing-hosts",
       "Importing_Report_Templates_managing-hosts",
       "Importing_Report_Templates_Using_the_API_managing-hosts",
-      "Generating_a_List_of_Installed_Packages_managing-hosts",
       "Report_Template_Safe_Mode_managing-hosts"
     ],
     "configuring_host_collections_managing-hosts": [
