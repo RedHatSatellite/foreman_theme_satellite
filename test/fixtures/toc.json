@@ -231,12 +231,12 @@
     "overview-of-authentication-methods-in-satellite": [
 
     ],
-    "accessing_server_authentication": [
-      "logging-in-to-the-satellite_web_UI_authentication",
+    "accessing-satellite-from-web-ui": [
+      "logging-in-to-the-web-ui",
       "importing-the-katello-root-ca-certificate-using-satellite-web-ui",
       "importing-the-katello-root-ca-certificate-using-cli",
       "Resetting_the_Administrative_User_Password_authentication",
-      "setting-a-custom-message-on-the-satellite_web_UI-login-page_authentication"
+      "setting-a-custom-message-on-the-web-ui-login-page"
     ],
     "configuring-kerberos-sso-with-identity_management-in-satellite": [
       "enrolling-satellite-server-in-freeipa-domain",
@@ -244,15 +244,15 @@
       "configuring-host-based-access-control-for-Identity_Management-users-logging-in-to-project_authentication",
       "configuring-hammer-cli-to-accept-Identity_Management-credentials_authentication",
       "logging-in-to-hammer-cli-with-Identity_Management-credentials",
-      "logging-in-to-the-webui-with-Identity_Management-credentials-in-mozilla-firefox",
-      "logging-in-to-the-webui-with-Identity_Management-credentials-in-chrome",
+      "logging-in-to-the-web-ui-with-Identity_Management-credentials-in-mozilla-firefox",
+      "logging-in-to-the-web-ui-with-Identity_Management-credentials-in-chrome",
       "Configuring-a-cross-forest-trust-between-Identity_Management-and-Active-Directory-for-Satellite_authentication"
     ],
     "configuring-sso-and-2fa-with-keycloak-wildfly-in-project_keycloak-wildfly": [
       "prerequisites-for-configuring-satellite-with-keycloak-authentication_keycloak-wildfly",
       "registering-satellite-as-a-client-of-keycloak_keycloak-wildfly",
       "configuring-the-satellite-client-in-keycloak_keycloak-wildfly",
-      "configuring-a-satellite-client-to-provide-satellite_web_UI-authentication-with-keycloak_keycloak-wildfly",
+      "configuring-a-satellite-client-to-provide-web-ui-authentication-with-keycloak_keycloak-wildfly",
       "configuring-a-satellite-client-to-provide-hammer-cli-authentication-with-keycloak_keycloak-wildfly",
       "configuring-satellite-with-keycloak-for-totp-authentication_keycloak-wildfly",
       "configuring-group-mapping-for-keycloak-authentication_keycloak-wildfly",
@@ -262,7 +262,7 @@
       "prerequisites-for-configuring-satellite-with-keycloak-authentication_keycloak-quarkus",
       "registering-satellite-as-a-client-of-keycloak_keycloak-quarkus",
       "configuring-the-satellite-client-in-keycloak_keycloak-quarkus",
-      "configuring-a-satellite-client-to-provide-satellite_web_UI-authentication-with-keycloak_keycloak-quarkus",
+      "configuring-a-satellite-client-to-provide-web-ui-authentication-with-keycloak_keycloak-quarkus",
       "configuring-a-satellite-client-to-provide-hammer-cli-authentication-with-keycloak_keycloak-quarkus",
       "configuring-satellite-with-keycloak-for-totp-authentication_keycloak-quarkus",
       "configuring-group-mapping-for-keycloak-authentication_keycloak-quarkus",
@@ -276,9 +276,6 @@
       "Configuring_Project_to_Use_LDAP_authentication",
       "Example_Settings_for_LDAP_Connections_authentication",
       "Example_LDAP_Filters_authentication"
-    ],
-    "important-user-and-group-account-information-for-active-directory-accounts_authentication": [
-
     ],
     "configuring_external_user_groups_authentication": [
 
@@ -297,7 +294,7 @@
     "providing-feedback-on-red-hat-documentation_capsule": [
 
     ],
-    "_redhat_satellite_installation_helper_app": [
+    "red-hat-satellite-helper-app": [
 
     ],
     "preparing-environment-for-capsule-installation": [
@@ -329,7 +326,7 @@
     "providing-feedback-on-red-hat-documentation_satellite": [
 
     ],
-    "_redhat_satellite_installation_helper_app": [
+    "red-hat-satellite-helper-app": [
 
     ],
     "planning-satellite-server-installation_satellite": [
@@ -382,7 +379,7 @@
     "red-hat-offline-knowledge-portal_satellite": [
 
     ],
-    "_redhat_satellite_installation_helper_app": [
+    "red-hat-satellite-helper-app": [
 
     ],
     "planning-satellite-server-installation_satellite": [
@@ -459,11 +456,14 @@
       "permissions-for-remote-execution_ansible",
       "transport-modes-for-remote-execution_ansible",
       "Configuring_a_Host_to_Use_the_Pull_Client_ansible",
-      "creating-a-job-template_ansible",
+      "creating-a-job-template-by-using-web-ui",
+      "creating-a-job-template-by-using-cli",
       "importing-an-ansible-playbook-by-name_ansible",
       "importing-all-available-ansible-playbooks_ansible",
-      "Configuring_the_Fallback_to_any_capsule_Remote_Execution_Setting_in_satellite_ansible",
-      "Configuring_the_Global_capsule_Remote_Execution_Setting_in_satellite_ansible",
+      "configuring-the-fallback-to-any-capsule-remote-execution-setting-by-using-web-ui",
+      "configuring-the-fallback-to-any-capsule-remote-execution-setting-by-using-cli",
+      "configuring-the-global-capsule-remote-execution-setting-by-using-web-ui",
+      "configuring-the-global-capsule-remote-execution-setting-by-using-cli",
       "setting-an-alternative-directory-for-remote-execution-jobs-in-push-mode_ansible",
       "altering-the-privilege-elevation-method_ansible",
       "Distributing_SSH_Keys_for_Remote_Execution_ansible",
@@ -473,16 +473,15 @@
       "Configuring_a_Kickstart_Template_to_Distribute_SSH_Keys_During_Provisioning_ansible",
       "configuring-a-keytab-for-kerberos-ticket-granting-tickets_ansible",
       "configuring-kerberos-authentication-for-remote-execution_ansible",
-      "setting-up-job-templates_ansible",
-      "executing-a-remote-job_ansible",
+      "customizing-job-templates",
+      "executing-a-remote-job-by-using-web-ui",
+      "executing-a-remote-job-by-using-cli",
       "advanced-settings-in-the-job-wizard_ansible",
       "using-extended-cron-lines_ansible",
       "scheduling-a-recurring-ansible-job-for-a-host_ansible",
       "Scheduling_a_Recurring_Ansible_Job_for_a_Host_Group_ansible",
       "Using_Ansible_Provider_for_Package_and_Errata_Actions_ansible",
-      "setting-the-job-rate-limit-on-capsule_ansible",
-      "cli-creating-a-job-template_ansible",
-      "cli-executing-a-remote-job_ansible"
+      "setting-the-job-rate-limit-on-capsule_ansible"
     ],
     "integrating_satellite_and_ansible_automation_platform_ansible": [
       "Adding_satellite_Server_to_Ansible_Automation_Platform_as_a_Dynamic_Inventory_Item_ansible",
@@ -490,8 +489,7 @@
     ],
     "job_template_examples_and_extensions_ansible": [
       "Customizing_Job_Templates_ansible",
-      "default-job-template-categories_ansible",
-      "Example_restorecon_Template_ansible",
+      "creating-a-job-template-to-restore-selinux-context",
       "Rendering_a_restorecon_Template_ansible",
       "Executing_a_restorecon_Template_on_Multiple_Hosts_ansible",
       "Including_Power_Actions_in_Templates_ansible"
@@ -598,8 +596,10 @@
       "Recovering_a_Corrupted_Repository_content-management",
       "recovering-corrupted-content-on-a-capsule-server-by-using-web-ui",
       "recovering-corrupted-content-on-a-capsule-server-by-using-cli",
-      "Republishing_Repository_Metadata_content-management",
-      "Republishing_Content_View_Metadata_content-management",
+      "republishing-repository-metadata-by-using-web-ui",
+      "republishing-repository-metadata-by-using-cli",
+      "republishing-content-view-metadata-by-using-web-ui",
+      "republishing-content-view-metadata-by-using-cli",
       "Adding_an_HTTP_Proxy_content-management",
       "Changing_the_HTTP_Proxy_Policy_for_a_Product_content-management",
       "Changing_the_HTTP_Proxy_Policy_for_a_Repository_content-management",
@@ -736,11 +736,15 @@
       "cli-importing-container-images"
     ],
     "managing-flatpak-repositories-in-project": [
-      "creating-a-flatpak-remote",
-      "scanning-a-flatpak-remote",
-      "viewing-flatpak-remote-details",
-      "mirroring-remote-flatpak-repositories-to-Satellite-products",
-      "enabling-the-flatpak-remote-by-using-hammer-cli",
+      "creating-a-flatpak-remote-by-using-web-ui",
+      "creating-a-flatpak-remote-by-using-cli",
+      "scanning-a-flatpak-remote-by-using-web-ui",
+      "scanning-a-flatpak-remote-by-using-cli",
+      "viewing-flatpak-remote-details-by-using-web-ui",
+      "viewing-flatpak-remote-details-by-using-cli",
+      "mirroring-remote-flatpak-repositories-to-satellite-products-by-using-web-ui",
+      "mirroring-remote-flatpak-repositories-to-satellite-products-by-using-cli",
+      "enabling-the-flatpak-remote-by-using-cli",
       "installing-flatpak-applications-on-satellite-hosts",
       "setting-up-flatpak-remote-for-capsule",
       "importing-and-exporting-content-to-satellite-server-for-flatpak"
@@ -773,14 +777,12 @@
     "providing-feedback-on-red-hat-documentation_managing-hosts": [
 
     ],
-    "overview-of-hosts-in-satellite_managing-hosts": [
-      "Browsing-Hosts-in-satellite_web_UI_managing-hosts"
-    ],
     "administering_hosts_managing-hosts": [
-      "Creating_a_Host_managing-hosts",
+      "browsing-hosts-in-web-ui",
       "Cloning_Hosts_managing-hosts",
       "Associating_a_Virtual_Machine_from_a_Hypervisor_managing-hosts",
-      "Editing_the_System_Purpose_of_a_Host_managing-hosts",
+      "editing-the-system-purpose-of-a-host-by-using-web-ui",
+      "editing-the-system-purpose-of-a-host-by-using-cli",
       "Editing_the_System_Purpose_of_Multiple_Hosts_managing-hosts",
       "Changing_a_Module_Stream_for_a_Host_managing-hosts",
       "Enabling_Custom_Repositories_on_Content_Hosts_managing-hosts",
@@ -791,47 +793,43 @@
       "restarting-applications-on-a-host_managing-hosts",
       "Assigning_a_Host_to_a_Specific_Organization_managing-hosts",
       "Assigning_a_Host_to_a_Specific_Location_managing-hosts",
-      "switching-between-hosts_managing-hosts",
       "Viewing_Host_Details_from_a_Content_Host_managing-hosts",
       "selecting-host-columns_managing-hosts",
-      "Removing_a_Host_from_Server_managing-hosts",
-      "lifecycle_status_of_rhel_hosts_managing-hosts",
-      "cli-Removing_a_Host_from_Server_managing-hosts"
+      "removing-a-host-from-satellite-by-using-web-ui",
+      "removing-a-host-from-satellite-by-using-cli",
+      "Disassociating_a_Virtual_Machine_without_Removing_It_from_a_Hypervisor_managing-hosts",
+      "lifecycle_status_of_rhel_hosts_managing-hosts"
     ],
     "working_with_host_groups_managing-hosts": [
       "host-groups-overview_managing-hosts",
       "nested-host-groups_managing-hosts",
-      "Creating_a_Host_Group_managing-hosts",
+      "creating-a-host-group-by-using-web-ui",
+      "creating-a-host-group-by-using-cli",
       "Creating_a_Host_Group_for_each_Lifecycle_Environment_managing-hosts",
       "adding-a-host-to-a-host-group_managing-hosts",
-      "Changing_the_Host_Group_of_a_Host_managing-hosts",
-      "cli-creating-a-host-group_managing-hosts"
+      "Changing_the_Host_Group_of_a_Host_managing-hosts"
     ],
     "registering-hosts-and-setting-up-host-integration_managing-hosts": [
       "supported-clients-in-registration_managing-hosts",
       "registration-methods_managing-hosts",
       "Registering_Hosts_by_Using_Global_Registration_managing-hosts",
       "Registering_Hosts_by_Using_the_Bootstrap_Script_managing-hosts",
+      "creating-a-puppet-environment-for-bootstrap-registration",
       "installing-and-configuring-puppet-agent-during-host-registration_managing-hosts",
       "Installing_and_Configuring_Puppet_Agent_Manually_managing-hosts",
       "running-ansible-roles-during-host-registration",
       "using-custom-ssl-certificate-for-hosts_managing-hosts",
-      "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-hosts_managing-hosts",
-      "cli-invalidating-your-own-jwts",
-      "api-invalidating-your-own-jwts",
-      "cli-invalidating-jwts-of-other-users",
-      "api-invalidating-jwts-of-other-users",
-      "CLI_Setting_Permissions_for_the_Bootstrap_Script_managing-hosts"
+      "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-hosts_managing-hosts"
     ],
     "configuring-network-interfaces": [
       "configuring-a-physical-interface",
       "configuring-a-virtual-interface",
-      "configuring-a-bonded-interface",
+      "configuring-a-bonded-interface-by-using-web-ui",
+      "configuring-a-bonded-interface-by-using-cli",
       "configuring-a-bridge-interface",
       "bonding-modes-available_managing-hosts",
       "configuring-a-baseboard-management-controller-interface",
-      "network-interface-configuration-options",
-      "cli-configuring-a-bonded-interface"
+      "network-interface-configuration-options"
     ],
     "refreshing-the-self-signed-ca-certificate-on-hosts": [
       "deploying-the-ca-certificate-on-a-host-by-using-script-rex",
@@ -841,7 +839,9 @@
     "upgrading_hosts_to_next_major_release_managing-hosts": [
 
     ],
-    "converting-a-host-to-rhel_managing-hosts": [
+    "converting-hosts-to-rhel": [
+      "overview-of-the-conversion-process",
+      "converting-a-host-to-rhel",
       "ansible-variables-for-conversion_managing-hosts"
     ],
     "host-management-and-monitoring-by-using-cockpit": [
@@ -865,22 +865,25 @@
       "generating-reports-by-using-the-mcp-server-for-satellite"
     ],
     "using_report_templates_to_monitor_hosts_managing-hosts": [
-      "Generating_Host_Monitoring_Reports_managing-hosts",
+      "generating-host-monitoring-reports-by-using-web-ui",
+      "generating-host-monitoring-reports-by-using-cli",
       "Creating_a_Report_Template_managing-hosts",
-      "Exporting_Report_Templates_managing-hosts",
+      "exporting-report-templates-by-using-web-ui",
+      "exporting-report-templates-by-using-cli",
       "Exporting_Report_Templates_Using_the_API_managing-hosts",
       "Importing_Report_Templates_managing-hosts",
       "Importing_Report_Templates_Using_the_API_managing-hosts",
-      "Generating_a_List_of_Installed_Packages_managing-hosts",
       "Report_Template_Safe_Mode_managing-hosts"
     ],
     "configuring_host_collections_managing-hosts": [
-      "host-collections-overview_managing-hosts",
-      "Creating_a_Host_Collection_managing-hosts",
+      "creating-a-host-collection-by-using-web-ui",
+      "creating-a-host-collection-by-using-cli",
       "Cloning_a_Host_Collection_managing-hosts",
       "Removing_a_Host_Collection_managing-hosts",
-      "adding-a-host-to-a-host-collection_managing-hosts",
-      "adding-hosts-to-a-host-collection-in-bulk_managing-hosts",
+      "adding-a-host-to-a-host-collection-by-using-web-ui",
+      "adding-a-host-to-a-host-collection-by-using-cli",
+      "adding-hosts-to-a-host-collection-in-bulk-by-using-web-ui",
+      "adding-hosts-to-a-host-collection-in-bulk-by-using-cli",
       "Removing_a_Host_From_a_Host_Collection_managing-hosts",
       "Adding_Content_to_a_Host_Collection_managing-hosts"
     ],
@@ -890,11 +893,14 @@
       "permissions-for-remote-execution_managing-hosts",
       "transport-modes-for-remote-execution_managing-hosts",
       "Configuring_a_Host_to_Use_the_Pull_Client_managing-hosts",
-      "creating-a-job-template_managing-hosts",
+      "creating-a-job-template-by-using-web-ui",
+      "creating-a-job-template-by-using-cli",
       "importing-an-ansible-playbook-by-name_managing-hosts",
       "importing-all-available-ansible-playbooks_managing-hosts",
-      "Configuring_the_Fallback_to_any_capsule_Remote_Execution_Setting_in_satellite_managing-hosts",
-      "Configuring_the_Global_capsule_Remote_Execution_Setting_in_satellite_managing-hosts",
+      "configuring-the-fallback-to-any-capsule-remote-execution-setting-by-using-web-ui",
+      "configuring-the-fallback-to-any-capsule-remote-execution-setting-by-using-cli",
+      "configuring-the-global-capsule-remote-execution-setting-by-using-web-ui",
+      "configuring-the-global-capsule-remote-execution-setting-by-using-cli",
       "setting-an-alternative-directory-for-remote-execution-jobs-in-push-mode_managing-hosts",
       "setting-an-alternative-directory-for-remote-execution-jobs-in-pull-mode_managing-hosts",
       "altering-the-privilege-elevation-method_managing-hosts",
@@ -905,16 +911,15 @@
       "Configuring_a_Kickstart_Template_to_Distribute_SSH_Keys_During_Provisioning_managing-hosts",
       "configuring-a-keytab-for-kerberos-ticket-granting-tickets_managing-hosts",
       "configuring-kerberos-authentication-for-remote-execution_managing-hosts",
-      "setting-up-job-templates_managing-hosts",
-      "executing-a-remote-job_managing-hosts",
+      "customizing-job-templates",
+      "executing-a-remote-job-by-using-web-ui",
+      "executing-a-remote-job-by-using-cli",
       "advanced-settings-in-the-job-wizard_managing-hosts",
       "using-extended-cron-lines_managing-hosts",
       "scheduling-a-recurring-ansible-job-for-a-host_managing-hosts",
       "Scheduling_a_Recurring_Ansible_Job_for_a_Host_Group_managing-hosts",
       "Using_Ansible_Provider_for_Package_and_Errata_Actions_managing-hosts",
-      "setting-the-job-rate-limit-on-capsule_managing-hosts",
-      "cli-creating-a-job-template_managing-hosts",
-      "cli-executing-a-remote-job_managing-hosts"
+      "setting-the-job-rate-limit-on-capsule_managing-hosts"
     ],
     "host_status_managing-hosts": [
       "host-global-status-overview_managing-hosts",
@@ -924,12 +929,14 @@
       "Enabling_and_Disabling_Repositories_on_Hosts_managing-hosts",
       "Installing_Packages_on_a_Host_managing-hosts",
       "upgrading-packages-on-a-host_managing-hosts",
-      "removing-packages-from-a-host_managing-hosts"
+      "removing-packages-from-a-host_managing-hosts",
+      "managing-packages-on-a-host-by-using-api"
     ],
     "package-mode-and-image-mode-hosts": [
-      "viewing-booted-container-images",
-      "remote-execution-jobs-for-image-mode-hosts",
-      "cli-viewing-booted-container-images"
+      "overview-of-image-mode-for-hosts",
+      "viewing-booted-container-images-by-using-web-ui",
+      "viewing-booted-container-images-by-using-cli",
+      "remote-execution-jobs-for-image-mode-hosts"
     ],
     "troubleshooting-remote-jobs-timing-out-after-yggdrasil-update": [
 
@@ -949,8 +956,7 @@
     ],
     "job_template_examples_and_extensions_managing-hosts": [
       "Customizing_Job_Templates_managing-hosts",
-      "default-job-template-categories_managing-hosts",
-      "Example_restorecon_Template_managing-hosts",
+      "creating-a-job-template-to-restore-selinux-context",
       "Rendering_a_restorecon_Template_managing-hosts",
       "Executing_a_restorecon_Template_on_Multiple_Hosts_managing-hosts",
       "Including_Power_Actions_in_Templates_managing-hosts"
@@ -1070,7 +1076,7 @@
       "major-project-components-additional-resources_planning"
     ],
     "tools-for-administration-of-satellite_planning": [
-      "satellite_web_UI-overview",
+      "web-ui-overview",
       "Hammer-CLI-Overview_planning",
       "API-Overview_planning",
       "Remote-Execution-in-Satellite_planning",
@@ -1084,7 +1090,7 @@
       "Supported-Client-Architectures-for-Configuration-Management_planning",
       "supported-usage-and-versions-of-foreman-components-additional-resources_planning"
     ],
-    "security-considerations": [
+    "security-considerations-in-project": [
 
     ],
     "networking-considerations-in-satellite": [
@@ -1400,8 +1406,10 @@
       "Creating_Custom_RHEL_Images_provisioning",
       "supported-clients-in-registration_provisioning",
       "Configuring_a_Host_for_Registration_provisioning",
-      "registering-a-host_provisioning",
-      "registering-a-host-using-ansible",
+      "registering-a-host-by-using-web-ui",
+      "registering-a-host-by-using-cli",
+      "registering-a-host-by-using-api",
+      "registering-a-host-by-using-ansible",
       "Installing_and_Configuring_Puppet_Agent_Manually_provisioning",
       "Completing_the_RHEL7_Image_provisioning",
       "Next_Steps_provisioning"
@@ -1445,7 +1453,7 @@
     "providing-feedback-on-red-hat-documentation_upgrading-connected": [
 
     ],
-    "_redhat_satellite_upgrade_helper_app": [
+    "red-hat-satellite-helper-app": [
 
     ],
     "preparing-for-satellite-upgrade": [
@@ -1457,7 +1465,8 @@
       "upgrading-your-satellite-server",
       "synchronizing_the_new_repositories_upgrading-connected",
       "upgrading_capsule_server_upgrading-connected",
-      "upgrading-the-external-database-operating-system"
+      "upgrading-the-external-database-operating-system",
+      "refreshing-clients-of-red-hat-lightspeed-in-satellite"
     ],
     "troubleshooting-permission-issues": [
 
@@ -1470,7 +1479,7 @@
     "red-hat-offline-knowledge-portal_upgrading-disconnected": [
 
     ],
-    "_redhat_satellite_upgrade_helper_app": [
+    "red-hat-satellite-helper-app": [
 
     ],
     "preparing-for-satellite-upgrade": [
@@ -1482,7 +1491,8 @@
       "upgrading_a_disconnected_satellite_server_upgrading-disconnected",
       "synchronizing_the_new_repositories_upgrading-disconnected",
       "upgrading_capsule_server_upgrading-disconnected",
-      "upgrading-the-external-database-operating-system"
+      "upgrading-the-external-database-operating-system",
+      "refreshing-clients-of-red-hat-lightspeed-in-satellite"
     ],
     "troubleshooting-permission-issues": [
 
@@ -1493,7 +1503,7 @@
 
     ],
     "introduction-to-hammer": [
-      "hammer-compared-to-satellite_web_UI",
+      "hammer-compared-to-web-ui",
       "hammer-compared-to-satellite-api",
       "getting-help-with-hammer-cli"
     ],
@@ -1575,9 +1585,7 @@
     "api-call-authentication": [
       "ssl-authentication-overview",
       "http-authentication-overview",
-      "token-authentication-overview",
-      "oauth-authentication-overview",
-      "api-oauth-request-format"
+      "token-authentication-overview"
     ],
     "api-requests-in-various-languages": [
       "calling-the-api-in-curl",
