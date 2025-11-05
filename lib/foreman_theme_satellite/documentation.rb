@@ -6,8 +6,8 @@ module ForemanThemeSatellite
     USER_GUIDE_DICTIONARY = {
       # Managing Hosts
       'ForemanRemoteExecution' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts",
-      'ExecutingaJob' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#Configuring_the_Global_capsule_Remote_Execution_Setting_in_satellite_managing-hosts",
-      'JobTemplates' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#setting-up-job-templates_managing-hosts",
+      'ExecutingaJob' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#configuring-the-global-capsule-remote-execution-setting-by-using-web-ui",
+      'JobTemplates' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#customizing-job-templates",
       'ReportTemplates' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/using_report_templates_to_monitor_hosts_managing-hosts",
       'Reports' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/using_report_templates_to_monitor_hosts_managing-hosts",
 
@@ -77,7 +77,7 @@ module ForemanThemeSatellite
         'Products_and_Repositories_content-management' => "#{ForemanThemeSatellite.documentation_root}/managing_content/importing_content_content-management#Products_and_Repositories_content-management",
       },
       'Managing_Hosts' => {
-        'creating-a-job-template_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#creating-a-job-template_managing-hosts",
+        'creating-a-job-template_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#creating-a-job-template-by-using-web-ui",
         'executing-a-remote-job_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#Remote-Execution-in-Satellite_managing-hosts",
         'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering-hosts-and-setting-up-host-integration_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts",
         'setting-minimal-data-collection' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/monitoring-hosts-by-using-insights#setting-minimal-data-collection",
