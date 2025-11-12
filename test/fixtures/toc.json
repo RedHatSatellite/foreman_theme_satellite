@@ -1585,9 +1585,7 @@
     "api-call-authentication": [
       "ssl-authentication-overview",
       "http-authentication-overview",
-      "token-authentication-overview",
-      "oauth-authentication-overview",
-      "api-oauth-request-format"
+      "token-authentication-overview"
     ],
     "api-requests-in-various-languages": [
       "calling-the-api-in-curl",
