@@ -21,7 +21,7 @@ end %>
     <% end %>
     <div class="eol-banner-content">
     <%= _("For up to date information about Satellite's lifecycle see ") %><a href="https://access.redhat.com/support/policy/updates/satellite"><%= _("Red Hat Satellite Product Life Cycle") %></a>.
-    <%= _("Kindly plan to upgrade Satellite to the supported version, for upgrade guidance see ") %><a href="https://access.redhat.com/labsinfo/satelliteupgradehelper "><%= _("Red Hat Satellite Upgrade Helper") %>.
+    <%= _("Kindly plan to upgrade Satellite to the supported version, for upgrade guidance see ") %><a href="https://access.redhat.com/labsinfo/satelliteupgradehelper"><%= _("Red Hat Satellite Upgrade Helper") %>.
     </div>
   </div>
   <span id="satellite-oel-banner-dismiss-button" style="position: absolute; font-size: 20px; top: 0px; right: 5px; cursor: pointer;">&times;</span>
