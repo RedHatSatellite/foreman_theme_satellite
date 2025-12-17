@@ -35,33 +35,38 @@
     ],
     "managing_organizations_admin": [
       "examples-of-using-organizations-in-satellite_admin",
-      "Creating_an_Organization_admin",
+      "creating-an-organization-by-using-web-ui",
+      "creating-an-organization-by-using-cli",
       "Creating_an_Organization_Debug_Certificate_admin",
       "Browsing_Repository_Content_Using_an_Organization_Debug_Certificate_admin",
-      "Deleting_an_Organization_admin",
-      "cli-creating-an-organization"
+      "deleting-an-organization-by-using-web-ui",
+      "deleting-an-organization-by-using-cli"
     ],
     "managing_locations_admin": [
-      "Creating_a_Location_admin",
-      "Creating_Multiple_Locations_admin",
-      "Setting_the_Location_Context_admin",
-      "Deleting_a_Location_admin",
-      "cli-creating-a-location"
+      "creating-a-location-by-using-web-ui",
+      "creating-a-location-by-using-cli",
+      "setting-the-location-context-by-using-web-ui",
+      "setting-the-location-context-by-using-cli",
+      "deleting-a-location-by-using-web-ui",
+      "deleting-a-location-by-using-cli"
     ],
     "managing_users_and_roles_admin": [
       "Managing_Users_admin",
       "Managing_SSH_Keys_admin",
       "managing-personal-access-tokens_admin",
-      "Creating_and_Managing_User_Groups_admin",
-      "creating-and-managing-roles",
+      "Creating_and_Managing_User_Groups_admin"
+    ],
+    "creating-and-managing-roles": [
+      "creating-a-role-by-using-web-ui",
+      "creating-a-role-by-using-cli",
+      "Cloning_a_Role_admin",
+      "adding-permissions-to-a-role-by-using-web-ui",
+      "adding-permissions-to-a-role-by-using-cli",
+      "Viewing_Permissions_of_a_Role_admin",
+      "Creating_a_Complete_Permission_Table_admin",
+      "Removing_a_Role_admin",
       "predefined-roles-available-in-satellite",
-      "Granular_Permission_Filtering_admin",
-      "cli-creating-a-user_admin",
-      "api-creating-a-user",
-      "cli-assigning-roles-to-a-user_admin",
-      "cli-managing-ssh-keys-for-a-user_admin",
-      "cli-adding-permissions-to-a-role_admin",
-      "cli-creating-a-granular-permission-filter_admin"
+      "Granular_Permission_Filtering_admin"
     ],
     "configuring_email_notifications_admin": [
       "Email_Notification_Types_admin",
@@ -72,11 +77,14 @@
     ],
     "backing-up-satellite-server-and-capsule_admin": [
       "Estimating_the_Size_of_a_Backup_admin",
+      "offline-backup-and-online-backup",
+      "directories-created-during-backups",
       "Performing_a_Full_Backup_admin",
       "Performing_a_Backup_Without_Pulp_Content_admin",
       "Performing_an_Incremental_Backup_admin",
       "Example_of_a_Weekly_Full_Backup_Followed_by_Daily_Incremental_Backups_admin",
-      "Performing_an_Online_Backup_admin"
+      "Performing_an_Online_Backup_admin",
+      "creating-a-conventional-backup"
     ],
     "restoring-satellite-server-or-capsule-from-a-backup_admin": [
       "Restoring_from_a_Full_Backup_admin",
@@ -107,28 +115,17 @@
     "synchronizing-template-repositories": [
       "synchronizing-templates-with-an-existing-repository_admin",
       "Synchronizing_Templates_with_a_Local_Directory_admin",
-      "Importing_Templates_admin",
+      "importing-templates-by-using-web-ui",
+      "importing-templates-by-using-cli",
+      "importing-templates-by-using-api",
       "importing-templates-using-ansible",
-      "Exporting_Templates_admin",
-      "cli_Importing_Templates_admin",
-      "api_Importing_Templates_admin",
-      "cli_Exporting_Templates_admin",
-      "api_Exporting_Templates_admin"
-    ],
-    "logging_and_reporting_problems_admin": [
-      "logging-levels-of-satellite-components",
-      "Configuring-Logging-Levels-with-Hammer-CLI_admin",
-      "configuring-logging-type-and-layout_admin",
-      "Selective_Debugging_with_Individual_Loggers_admin",
-      "Overview_of_Individual_Loggers_admin",
-      "Retrieving_the_Status_of_Services_admin",
-      "Restarting_Services_admin",
-      "Utilities_for_Processing_Log_Information_admin",
-      "Log_File_Directories_admin",
-      "system-journal-metadata_admin"
+      "exporting-templates-by-using-web-ui",
+      "exporting-templates-by-using-cli",
+      "exporting-templates-by-using-api"
     ],
     "monitoring-satellite-resources": [
       "Using_the_Project_Content_Dashboard_admin",
+      "managing-tasks",
       "Configuring_RSS_Notifications_admin",
       "monitoring-satellite-server_admin",
       "monitoring-capsule-server_admin"
@@ -144,17 +141,42 @@
       "creating-a-shellhook-to-print-arguments_admin"
     ],
     "searching_and_bookmarking_admin": [
-      "Building_Search_Queries_admin",
+      "Query_Syntax_admin",
+      "Query_Operators_admin",
+      "Query_Values_admin",
       "Using_Free_Text_Search_admin",
-      "Managing_Bookmarks_admin",
-      "using-keyboard-shortcuts_admin"
+      "Creating_Bookmarks_admin",
+      "Deleting_Bookmarks_admin",
+      "keyboard-shortcuts"
+    ],
+    "logging_and_reporting_problems_admin": [
+      "Configuring-Logging-Levels-with-Hammer-CLI_admin",
+      "configuring-logging-type-and-layout_admin",
+      "Selective_Debugging_with_Individual_Loggers_admin",
+      "Overview_of_Individual_Loggers_admin",
+      "retrieving-the-status-of-services-by-using-cli_admin",
+      "Restarting_Services_admin",
+      "Utilities_for_Processing_Log_Information_admin",
+      "Log_File_Directories_admin",
+      "system-journal-metadata_admin"
+    ],
+    "increasing-logging-levels-of-satellite-components": [
+      "increasing-the-logging-level-for-foreman",
+      "increasing-the-logging-level-for-hammer",
+      "increasing-the-logging-level-for-capsule",
+      "increasing-the-logging-level-for-candlepin",
+      "increasing-the-logging-level-for-redis",
+      "increasing-the-logging-level-for-satellite-installer",
+      "increasing-the-logging-level-for-pulp",
+      "increasing-the-logging-level-for-puppet-agent",
+      "increasing-the-logging-level-for-puppet-server"
     ],
     "managing_packages_on_the_base_operating_system_admin": [
 
     ],
     "administration_settings_admin": [
       "general_settings_information_admin",
-      "satellite_tasks_admin",
+      "tasks-settings",
       "template_sync_settings_admin",
       "discovery-settings",
       "boot_disk_settings_admin",
@@ -342,9 +364,6 @@
       "verifying-dns-resolution_satellite",
       "preparing-for-using-external-databases_satellite"
     ],
-    "tuning-with-predefined-profiles_satellite": [
-
-    ],
     "installing_server_connected_satellite": [
       "configuring-http-proxy-to-connect-to-cdn_satellite",
       "registering-to-red-hat-subscription-management_satellite",
@@ -352,6 +371,9 @@
       "installing-satellite-server-packages",
       "configuring-satellite-server",
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite"
+    ],
+    "tuning-with-predefined-profiles_satellite": [
+
     ],
     "performing-additional-configuration-on-server_satellite": [
       "configuring-satellite-server-as-insights-client",
@@ -394,9 +416,6 @@
       "verifying-dns-resolution_satellite",
       "preparing-for-using-external-databases_satellite"
     ],
-    "tuning-with-predefined-profiles_satellite": [
-
-    ],
     "installing_server_disconnected_satellite": [
       "downloading-the-binary-dvd-images_satellite",
       "configuring-the-base-operating-system-with-offline-repositories_satellite",
@@ -405,6 +424,9 @@
       "configuring-server_satellite",
       "disabling-subscription-connection_satellite",
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite"
+    ],
+    "tuning-with-predefined-profiles_satellite": [
+
     ],
     "performing-additional-configuration": [
       "installing-and-configuring-red-hat-lightspeed-in-satellite",
@@ -428,17 +450,16 @@
 
     ],
     "getting_started_with_ansible_in_satellite_ansible": [
-      "supported-ansible-versions_ansible",
+      "ansible-role-and-collection-paths-in-satellite",
       "Configuring_Your_satellite_to_Run_Ansible_Roles_ansible",
       "Importing_Ansible_Roles_and_Variables_ansible",
       "Overriding_Ansible_Variables_in_satellite_ansible",
       "adding-rhel-system-roles_ansible",
       "synchronizing-ansible-collections_ansible",
       "customizing-ansible-configuration_ansible",
-      "using-ansible-vault-with-satellite_ansible",
-      "Ansible-paths_ansible"
+      "using-ansible-vault-with-satellite_ansible"
     ],
-    "using_ansible_roles_to_automate_repetitive_tasks_on_clients_ansible": [
+    "using-ansible-roles-to-automate-repetitive-tasks-on-hosts": [
       "Assigning_Ansible_Roles_to_an_Existing_Host_ansible",
       "removing-ansible-roles-from-a-host_ansible",
       "changing-the-order-of-ansible-roles_ansible",
@@ -448,7 +469,7 @@
       "running-ansible-roles-in-check-mode_ansible"
     ],
     "running-an-ansible-playbook-from-satellite_ansible": [
-      "host-parameters-in-ansible-playbooks"
+
     ],
     "configuring_and_setting_up_remote_jobs_ansible": [
       "Remote-Execution-in-Satellite_ansible",
@@ -567,58 +588,64 @@
       "Updating_and_Refreshing_Red_Hat_Subscription_Manifests_content-management",
       "Content_Delivery_Network_Structure_content-management"
     ],
-    "managing_alternate_content_sources_content-management": [
-      "Configuring_Custom_Alternate_Content_Sources_content-management",
-      "Configuring_Simplified_Alternate_Content_Sources_content-management",
-      "Configuring_RHUI_Alternate_Content_Sources_content-management",
-      "cli-configuring-custom-alternate-content-sources_content-management",
-      "cli-configuring-simplified-alternate-content-sources_content-management",
-      "cli-configuring-rhui-alternate-content-sources_content-management"
+    "managing-alternate-content-sources": [
+      "creating-custom-alternate-content-sources-by-using-web-ui",
+      "creating-custom-alternate-content-sources-by-using-cli",
+      "creating-simplified-alternate-content-sources-by-using-web-ui",
+      "creating-simplified-alternate-content-sources-by-using-cli",
+      "synchronizing-capsule-directly-from-red-hat-cdn-by-using-web-ui",
+      "creating-rhui-alternate-content-sources-by-using-web-ui",
+      "creating-rhui-alternate-content-sources-by-using-cli",
+      "permissions-required-to-manage-alternate-content-sources"
     ],
     "importing_content_content-management": [
       "Products_and_Repositories_content-management",
       "best-practices-for-products-and-repositories_content-management",
-      "Importing_Custom_SSL_Certificates_content-management",
-      "Creating_a_Custom_Product_content-management",
-      "Adding_Custom_RPM_Repositories_content-management",
-      "Enabling_Red_Hat_Repositories_content-management",
-      "Synchronizing_Repositories_content-management",
-      "Synchronizing_All_Repositories_in_an_Organization_content-management",
+      "importing-custom-ssl-certificates-by-using-web-ui",
+      "importing-custom-ssl-certificates-by-using-cli",
+      "creating-a-custom-product-by-using-web-ui",
+      "creating-a-custom-product-by-using-cli",
+      "adding-custom-rpm-repositories-by-using-web-ui",
+      "adding-custom-rpm-repositories-by-using-cli",
+      "enabling-red-hat-repositories-by-using-web-ui",
+      "enabling-red-hat-repositories-by-using-cli",
+      "repository-synchronization",
       "Download_Policies_Overview_content-management",
-      "changing-the-default-download-policy",
-      "changing_the_download_policy_for_a_repository_content-management",
+      "changing-the-default-download-policy-by-using-web-ui",
+      "changing-the-default-download-policy-by-using-cli",
+      "changing-the-download-policy-for-a-repository-by-using-web-ui",
+      "changing-the-download-policy-for-a-repository-by-using-cli",
       "Mirroring_Policies_Overview_content-management",
-      "changing-the-default-mirroring-policy",
-      "Changing_the_Mirroring_Policy_for_a_Repository_content-management",
-      "Uploading_Content_to_custom_rpm_Repositories_content-management",
+      "changing-the-default-mirroring-policy-by-using-web-ui",
+      "changing-the-default-mirroring-policy-by-using-cli",
+      "changing-the-mirroring-policy-for-a-repository-by-using-web-ui",
+      "changing-the-mirroring-policy-for-a-repository-by-using-cli",
+      "uploading-content-to-custom-rpm-repositories-by-using-web-ui",
+      "uploading-content-to-custom-rpm-repositories-by-using-cli",
       "Refreshing_Content_Counts_on_Capsule_content-management",
       "configuring-selinux-to-permit-content-synchronization-on-custom-ports_content-management",
-      "Recovering_a_Corrupted_Repository_content-management",
+      "advanced-synchronization-for-repository-recovery",
       "recovering-corrupted-content-on-a-capsule-server-by-using-web-ui",
       "recovering-corrupted-content-on-a-capsule-server-by-using-cli",
       "republishing-repository-metadata-by-using-web-ui",
       "republishing-repository-metadata-by-using-cli",
       "republishing-content-view-metadata-by-using-web-ui",
       "republishing-content-view-metadata-by-using-cli",
-      "Adding_an_HTTP_Proxy_content-management",
+      "adding-an-http-proxy-by-using-web-ui",
+      "adding-an-http-proxy-by-using-cli",
       "Changing_the_HTTP_Proxy_Policy_for_a_Product_content-management",
-      "Changing_the_HTTP_Proxy_Policy_for_a_Repository_content-management",
-      "Creating_a_Sync_Plan_content-management",
-      "Assigning_a_Sync_Plan_to_a_Product_content-management",
+      "changing-the-http-proxy-policy-for-a-repository-by-using-web-ui",
+      "changing-the-http-proxy-policy-for-a-repository-by-using-cli",
+      "creating-a-sync-plan-by-using-web-ui",
+      "creating-a-sync-plan-by-using-cli",
+      "assigning-a-sync-plan-to-a-product-by-using-web-ui",
+      "assigning-a-sync-plan-to-a-product-by-using-cli",
       "Assigning_a_Sync_Plan_to_Multiple_Products_content-management",
       "best-practices-for-sync-plans_content-management",
       "Limiting_Synchronization_Concurrency_content-management",
-      "Importing_a_Custom_GPG_Key_content-management",
-      "Restricting_a_Custom_Repository_to_a_Specific_operating_system_Version_or_Architecture_in_Project_content-management",
-      "cli-importing-custom-ssl-certificates_content-management",
-      "cli-creating-a-custom-product",
-      "cli-adding-custom-rpm-repositories",
-      "cli-Changing_the_Mirroring_Policy_for_a_Repository_content-management",
-      "cli-adding-an-http-proxy",
-      "cli-Changing_the_HTTP_Proxy_Policy_for_a_Repository_content-management",
-      "cli-creating-a-sync-plan",
-      "cli-assigning-a-sync-plan-to-a-product",
-      "cli-importing-a-gpg-key"
+      "importing-a-custom-gpg-key-by-using-web-ui",
+      "importing-a-custom-gpg-key-by-using-cli",
+      "Restricting_a_Custom_Repository_to_a_Specific_operating_system_Version_or_Architecture_in_Project_content-management"
     ],
     "restricting_hosts_access_to_content_content-management": [
 
@@ -850,19 +877,21 @@
       "disabling-cockpit-on-project_managing-hosts"
     ],
     "monitoring-hosts-by-using-insights": [
-      "access_to_information_from_insights_in_Satellite_managing-hosts",
+      "access-to-information-from-red-hat-lightspeed-in-satellite-in-satellite",
       "excluding-hosts-from-rh-cloud-and-insights-client-reports_managing-hosts",
       "obfuscating-hostnames-and-ip-addresses",
       "deploying-insights-by-using-the-ansible-role",
-      "configuring_synchronization_of_insights_recommendations_for_hosts_managing-hosts",
+      "configuring-synchronization-of-red-hat-lightspeed-in-satellite-recommendations-for-hosts",
       "configuring-automatic-removal-of-hosts-from-the-insights-inventory",
       "setting-minimal-data-collection",
       "creating-an-insights-remediation-plan-for-hosts",
       "examining-vulnerability-of-systems"
     ],
-    "using-the-mcp-server-for-satellite": [
-      "overview-of-satellite-mcp-integration",
-      "generating-reports-by-using-the-mcp-server-for-satellite"
+    "connecting-ai-applications-to-the-mcp-server-for-satellite": [
+      "satellite-mcp-integration-overview",
+      "deploying-the-mcp-server-for-Satellite",
+      "connecting-the-mcp-client-to-the-mcp-server",
+      "querying-the-mcp-server-for-satellite"
     ],
     "using_report_templates_to_monitor_hosts_managing-hosts": [
       "generating-host-monitoring-reports-by-using-web-ui",
@@ -1242,40 +1271,43 @@
       "optimizing-performance-by-removing-nics-from-database_provisioning",
       "Network_Resources_provisioning",
       "Prerequisites_for_Image_Based_Provisioning_provisioning",
-      "Adding_a_Domain_to_Server_provisioning",
-      "Adding_a_Subnet_to_Server_provisioning",
-      "cli-adding-a-domain_provisioning",
-      "cli-adding-a-subnet_provisioning"
+      "adding-a-domain-to-server-by-using-web-ui",
+      "adding-a-domain-to-server-by-using-cli",
+      "adding-a-subnet-to-server-by-using-web-ui",
+      "adding-a-subnet-to-server-by-using-cli",
+      "troubleshooting-dns-problems"
     ],
     "preparing-provisioning-content": [
       "preparing-a-synchronized-kickstart-repository",
-      "adding-installation-media_provisioning",
-      "configuring-satellite-to-provision-from-a-builder-image",
-      "cli-adding-installation-media_provisioning"
+      "adding-installation-media-by-using-web-ui",
+      "adding-installation-media-by-using-cli"
     ],
     "preparing-client-platforms": [
-      "creating-operating-systems_provisioning",
+      "creating-operating-systems-by-using-web-ui",
+      "creating-operating-systems-by-using-cli",
       "updating-the-details-of-multiple-operating-systems_provisioning",
-      "creating-architectures_provisioning",
-      "creating-hardware-models_provisioning",
-      "creating-compute-profiles_provisioning",
-      "cli-creating-operating-systems_provisioning",
-      "cli-creating-compute-profiles_provisioning"
+      "creating-architectures-by-using-web-ui",
+      "creating-architectures-by-using-cli",
+      "creating-hardware-models-by-using-web-ui",
+      "creating-hardware-models-by-using-cli",
+      "creating-compute-profiles-by-using-web-ui",
+      "creating-compute-profiles-by-using-cli"
     ],
     "preparing-templates-for-provisioning": [
       "provisioning-templates",
       "kinds-of-provisioning-templates",
-      "creating-provisioning-templates",
+      "creating-provisioning-templates-by-using-web-ui",
+      "creating-provisioning-templates-by-using-cli",
       "cloning-provisioning-templates",
-      "running-custom-code-during-host-provisioning",
+      "running-custom-code-during-host-provisioning-by-using-web-ui",
+      "running-custom-code-during-host-provisioning-by-using-cli",
       "Custom_Provisioning_Snippet_Example_for_Enterprise_Linux_provisioning",
-      "associating-templates-with-operating-systems",
-      "creating-partition-tables_provisioning",
+      "associating-templates-with-operating-systems-by-using-web-ui",
+      "associating-templates-with-operating-systems-by-using-cli",
+      "creating-partition-tables-by-using-web-ui",
+      "creating-partition-tables-by-using-cli",
       "associating-partition-tables-with-disk-encryption_provisioning",
-      "dynamic-partition-example_provisioning",
-      "cli-running-custom-code-during-host-provisioning",
-      "cli-associating-templates-with-operating-systems",
-      "cli-creating-partition-tables_provisioning"
+      "dynamic-partition-example_provisioning"
     ],
     "security-settings": [
       "configuring-the-security-token-validity-duration",
@@ -1283,30 +1315,31 @@
       "Provisioning_FIPS_Compliant_Hosts_provisioning"
     ],
     "provisioning-contexts_provisioning": [
-      "setting-the-provisioning-context_provisioning"
+      "setting-the-provisioning-context-by-using-web-ui",
+      "setting-the-provisioning-context-by-using-cli"
     ],
     "using-network-boot-to-provision-hosts": [
       "Network_Boot_Provisioning_Workflow_using-network-boot",
       "prerequisites-for-network-boot-provisioning",
       "required-boot-order-for-network-boot_using-network-boot",
       "configuring-capsule-to-provision-rhel-on-Secure-Boot-enabled-hosts",
-      "creating-hosts-with-pxe-boot-provisioning",
+      "creating-hosts-with-pxe-boot-provisioning-by-using-web-ui",
+      "creating-hosts-with-pxe-boot-provisioning-by-using-cli",
       "configuring-capsule-for-uefi-http-booting",
-      "creating-hosts-with-uefi-http-boot-provisioning",
+      "creating-hosts-with-uefi-http-boot-provisioning-by-using-web-ui",
+      "creating-hosts-with-uefi-http-boot-provisioning-by-using-cli",
       "Deploying_SSH_Keys_During_Provisioning_using-network-boot",
       "using-ipxe-to-reduce-provisioning-times_using-network-boot",
-      "pxe-loaders",
-      "cli-creating-hosts-with-pxe-boot-provisioning",
-      "cli-creating-hosts-with-uefi-http-boot-provisioning_using-network-boot"
+      "pxe-loaders"
     ],
     "using-boot-disks-to-provision-hosts": [
       "boot-disk-workflow",
       "boot-disk-types",
-      "generating-a-full-host-boot-disk",
-      "generating-a-subnet-boot-disk",
-      "Deploying_SSH_Keys_During_Provisioning_using-bootdisks",
-      "cli-generating-a-full-host-boot-disk",
-      "cli-generating-a-subnet-boot-disk"
+      "generating-a-full-host-boot-disk-by-using-web-ui",
+      "generating-a-full-host-boot-disk-by-using-cli",
+      "generating-a-subnet-boot-disk-by-using-web-ui",
+      "generating-a-subnet-boot-disk-by-using-cli",
+      "Deploying_SSH_Keys_During_Provisioning_using-bootdisks"
     ],
     "discovering-hosts-on-a-network": [
       "prerequisites-for-using-discovery_provisioning",
@@ -1314,96 +1347,100 @@
       "discovery-in-pxe-mode",
       "discovery-in-pxeless-mode",
       "Automatic_Contexts_for_Discovered_Hosts_provisioning",
-      "Creating_Hosts_from_Discovered_Hosts_provisioning",
-      "Creating_Discovery_Rules_provisioning",
+      "creating-hosts-from-discovered-hosts-by-using-web-ui",
+      "creating-hosts-from-discovered-hosts-by-using-cli",
+      "creating-discovery-rules-by-using-web-ui",
+      "creating-discovery-rules-by-using-cli",
       "Extending_the_Discovery_Image_provisioning",
       "kernel-parameters-for-discovery-customization_provisioning",
-      "Troubleshooting_Discovery_provisioning",
-      "cli-creating-hosts-from-discovered-hosts_provisioning",
-      "cli-creating-discovery-rules_provisioning"
+      "Troubleshooting_Discovery_provisioning"
     ],
     "provisioning_virtual_machines_on_kvm_kvm-provisioning": [
       "configuring-server-for-kvm-connections_kvm-provisioning",
-      "adding-kvm-connection_kvm-provisioning",
-      "adding-images-to-server_kvm-provisioning",
-      "adding-kvm-details-to-a-compute-profile_kvm-provisioning",
-      "creating-network-or-image-based-hosts_kvm-provisioning",
-      "cli-adding-kvm-connection_kvm-provisioning",
-      "cli-adding-images-to-server_kvm-provisioning",
-      "cli-adding-kvm-details-to-a-compute-profile_kvm-provisioning",
-      "cli-creating-network-or-image-based-hosts_kvm-provisioning"
+      "adding-a-kvm-connection-by-using-web-ui",
+      "adding-a-kvm-connection-by-using-cli",
+      "adding-images-to-server-by-using-web-ui_kvm-provisioning",
+      "adding-images-to-server-by-using-cli_kvm-provisioning",
+      "adding-kvm-details-to-a-compute-profile-by-using-web-ui",
+      "adding-kvm-details-to-a-compute-profile-by-using-cli",
+      "creating-network-or-image-based-hosts-by-using-web-ui",
+      "creating-network-or-image-based-hosts-by-using-cli"
     ],
     "provisioning_virtual_machines_in_vmware_vmware-provisioning": [
       "Prerequisites_for_VMware_Provisioning_vmware-provisioning",
-      "Creating_a_VMware_User_vmware-provisioning",
-      "Adding_a_VMware_Connection_to_Server_vmware-provisioning",
-      "Adding_VMware_Images_to_Server_vmware-provisioning",
-      "Adding_VMware_Details_to_a_Compute_Profile_vmware-provisioning",
-      "Creating_Hosts_on_VMware_vmware-provisioning",
+      "vmware-user-privileges",
+      "adding-a-vmware-connection-to-server-by-using-web-ui",
+      "adding-a-vmware-connection-to-server-by-using-cli",
+      "adding-vmware-images-to-server-by-using-web-ui",
+      "adding-vmware-images-to-server-by-using-cli_vmware-provisioning",
+      "adding-vmware-details-to-a-compute-profile-by-using-web-ui",
+      "adding-vmware-details-to-a-compute-profile-by-using-cli",
+      "creating-hosts-on-vmware-by-using-web-ui",
+      "creating-hosts-on-vmware-by-using-cli",
+      "vmware-cloud-init-provisioning-overview",
+      "associating-the-userdata-and-cloud-init-templates-with-the-operating-system",
+      "preparing-an-image-to-use-the-cloud-init-template_vmware-provisioning",
       "Using_VMware_Cloud_Init_and_Userdata_Templates_for_Provisioning_vmware-provisioning",
       "Deleting_a_VM_on_VMware_vmware-provisioning",
       "Importing-a_virtual-machine-from-VMware-into-satellite_vmware-provisioning",
-      "Caching_of_Compute_Resources_vmware-provisioning",
-      "cli-adding-vmware-vsphere-connection_vmware-provisioning",
-      "cli-adding-vmware-vsphere-images-to-server_vmware-provisioning",
-      "cli-Adding_VMware_Details_to_a_Compute_Profile_vmware-provisioning",
-      "cli-creating-hosts-on-vmware-vsphere_vmware-provisioning"
+      "Caching_of_Compute_Resources_vmware-provisioning"
     ],
     "provisioning_virtual_machines_kubevirt_kubevirt-provisioning": [
       "adding-kubevirt-connection_kubevirt-provisioning"
     ],
     "provisioning_cloud_instances_openstack_openstack-provisioning": [
-      "adding-openstack-connection_openstack-provisioning",
-      "adding-images-to-server_openstack-provisioning",
-      "adding-openstack-details-to-a-compute-profile_openstack-provisioning",
-      "creating-image-only-hosts_openstack-provisioning",
-      "cli-adding-openstack-connection_openstack-provisioning",
-      "cli-adding-images-to-server_openstack-provisioning",
-      "cli-creating-image-only-hosts_openstack-provisioning"
+      "adding-openstack-connection-by-using-web-ui",
+      "adding-openstack-connection-by-using-cli",
+      "adding-images-to-server-by-using-web-ui_openstack-provisioning",
+      "adding-images-to-server-by-using-cli_openstack-provisioning",
+      "adding-openstack-details-to-a-compute-profile-by-using-web-ui",
+      "adding-openstack-details-to-a-compute-profile-by-using-cli",
+      "creating-image-only-hosts-by-using-web-ui_openstack-provisioning",
+      "creating-image-only-hosts-by-using-cli_openstack-provisioning"
     ],
     "provisioning-cloud-instances-on-amazon-ec2": [
-      "Prerequisites_for_Amazon_EC2_Provisioning_ec2-provisioning",
       "using-an-http-proxy-to-communicate-with-amazon-ec2",
-      "Adding_an_Amazon_EC2_Connection_to_Server_ec2-provisioning",
+      "adding-an-amazon-ec2-connection-to-server-by-using-web-ui",
+      "adding-an-amazon-ec2-connection-to-server-by-using-cli",
       "Creating_an_Image_for_Amazon_EC2_ec2-provisioning",
-      "Adding_Amazon_EC2_Images_to_Server_ec2-provisioning",
-      "Adding_Amazon_EC2_Details_to_a_Compute_Profile_ec2-provisioning",
-      "Creating_Image_Based_Hosts_on_Amazon_EC2_ec2-provisioning",
+      "adding-amazon-ec2-images-to-server-by-using-web-ui",
+      "adding-amazon-ec2-images-to-server-by-using-cli",
+      "adding-amazon-ec2-details-to-a-compute-profile-by-using-web-ui",
+      "adding-amazon-ec2-details-to-a-compute-profile-by-using-cli",
+      "creating-image-based-hosts-on-amazon-ec2-by-using-web-ui",
+      "creating-image-based-hosts-on-amazon-ec2-by-using-cli",
       "Connecting_to_an_Amazon_EC2_Instance_Using_SSH_ec2-provisioning",
       "Configuring_a_Finish_Template_for_Amazon_EC2_ec2-provisioning",
       "Deleting_a_Virtual_Machine_on_Amazon_EC2_ec2-provisioning",
-      "More_Information_About_Amazon_Web_Services_ec2-provisioning",
-      "cli-adding-amazon-ec2-connection_ec2-provisioning",
-      "cli-adding-amazon-ec2-images_ec2-provisioning",
-      "cli-creating-hosts-on-amazon-ec2_ec2-provisioning"
+      "More_Information_About_Amazon_Web_Services_ec2-provisioning"
     ],
     "provisioning_cloud_instances_on_google_compute_engine_gce-provisioning": [
-      "Adding_a_Google_GCE_Connection_gce-provisioning",
-      "adding-images-to-server_gce-provisioning",
-      "Adding_Google_GCE_Details_to_a_Compute_Profile_gce-provisioning",
-      "creating-image-only-hosts_gce-provisioning",
-      "Deleting_a_VM_on_Google_GCE_gce-provisioning",
-      "cli-Adding_a_Google_GCE_Connection_gce-provisioning",
-      "cli-adding-images-to-server_gce-provisioning",
-      "cli-Adding_Google_GCE_Details_to_a_Compute_Profile_gce-provisioning",
-      "cli-creating-image-only-hosts_gce-provisioning"
+      "adding-a-gce-connection-by-using-web-ui",
+      "adding-a-gce-connection-by-using-cli",
+      "adding-images-to-server-by-using-web-ui_gce-provisioning",
+      "adding-images-to-server-by-using-cli_gce-provisioning",
+      "adding-gce-details-to-a-compute-profile-by-using-web-ui",
+      "adding-gce-details-to-a-compute-profile-by-using-cli",
+      "creating-image-only-hosts-by-using-web-ui_gce-provisioning",
+      "creating-image-only-hosts-by-using-cli_gce-provisioning",
+      "Deleting_a_VM_on_GCE_gce-provisioning"
     ],
     "provisioning_cloud_instances_on_microsoft_azure_resource_manager_azure-provisioning": [
-      "Adding_a_Microsoft_Azure_Resource_Manager_Connection_azure-provisioning",
-      "adding-images-to-server_azure-provisioning",
-      "Adding_Microsoft_Azure_Resource_Manager_Details_to_a_Compute_Profile_azure-provisioning",
-      "creating-image-only-hosts_azure-provisioning",
-      "Deleting_a_VM_on_Microsoft_Azure_azure-provisioning",
-      "cli-Adding_a_Microsoft_Azure_Resource_Manager_Connection_azure-provisioning",
-      "cli-adding-images-to-server_azure-provisioning",
-      "cli-Adding_Microsoft_Azure_Resource_Manager_Details_to_a_Compute_Profile_azure-provisioning",
-      "cli-creating-image-only-hosts_azure-provisioning"
+      "adding-a-microsoft-azure-connection-by-using-web-ui",
+      "adding-a-microsoft-azure-connection-by-using-cli",
+      "adding-images-to-server-by-using-web-ui_azure-provisioning",
+      "adding-images-to-server-by-using-cli_azure-provisioning",
+      "adding-microsoft-azure-resource-manager-details-to-a-compute-profile-by-using-web-ui",
+      "adding-microsoft-azure-resource-manager-details-to-a-compute-profile-by-using-cli",
+      "creating-image-only-hosts-by-using-web-ui_azure-provisioning",
+      "creating-image-only-hosts-by-using-cli_azure-provisioning",
+      "Deleting_a_VM_on_Microsoft_Azure_azure-provisioning"
     ],
     "using-novnc-to-access-virtual-machines_provisioning": [
 
     ],
     "building_cloud_images_provisioning": [
-      "Creating_Custom_RHEL_Images_provisioning",
+      "host-requirements-for-custom-images_provisioning",
       "supported-clients-in-registration_provisioning",
       "Configuring_a_Host_for_Registration_provisioning",
       "registering-a-host-by-using-web-ui",
@@ -1411,14 +1448,19 @@
       "registering-a-host-by-using-api",
       "registering-a-host-by-using-ansible",
       "Installing_and_Configuring_Puppet_Agent_Manually_provisioning",
-      "Completing_the_RHEL7_Image_provisioning",
-      "Next_Steps_provisioning"
+      "Completing_the_RHEL7_Image_provisioning"
     ],
     "host_parameter_hierarchy_provisioning": [
 
     ],
     "permissions-required-to-provision-hosts": [
 
+    ],
+    "con_bootloader-binary-location-overview_provisioning": [
+      "ref_bootloader-types_provisioning",
+      "ref_pxelinux-bootloaders_provisioning",
+      "ref_grub2-uefi-bootloaders_provisioning",
+      "ref_ipxe-bootloaders_provisioning"
     ]
   },
   "tuning_performance_of_red_hat_satellite": {
@@ -1504,7 +1546,7 @@
     ],
     "introduction-to-hammer": [
       "hammer-compared-to-web-ui",
-      "hammer-compared-to-satellite-api",
+      "satellite-api-compared-to-hammer-cli",
       "getting-help-with-hammer-cli"
     ],
     "installing-standalone-hammer": [
@@ -1515,7 +1557,7 @@
       "authenticating-hammer-using-cli-options",
       "authenticating-hammer-using-sessions"
     ],
-    "configuring-hammer": [
+    "hammer-configuration": [
       "setting-a-default-organization-and-location-context",
       "increasing-the-logging-level-for-hammer"
     ],
@@ -1568,19 +1610,13 @@
     ],
     "introduction-to-satellite-api": [
       "overview-of-the-satellite-api_rest-api",
-      "satellite-api-compared-to-hammer-cli_rest-api",
+      "satellite-api-compared-to-hammer-cli",
       "getting-help-with-satellite-api"
     ],
     "api-syntax": [
       "api-request-composition",
       "json-response-format",
-      "relating-api-error-messages-to-the-api-reference",
-      "api-using-the-get-http-method",
-      "api-using-the-post-http-method",
-      "api-using-the-put-http-method",
-      "api-using-the-delete-http-method",
-      "api-json-response-format-for-single-objects",
-      "api-json-response-format-for-collections"
+      "relating-api-error-messages-to-the-api-reference"
     ],
     "api-call-authentication": [
       "ssl-authentication-overview",
@@ -1590,10 +1626,7 @@
     "api-requests-in-various-languages": [
       "calling-the-api-in-curl",
       "calling-the-api-in-ruby",
-      "calling-the-api-in-python",
-      "api-listing-users",
-      "api-creating-a-user",
-      "api-modifying-a-user"
+      "calling-the-api-in-python"
     ],
     "api-cheat-sheet": [
       "working-with-hosts",
@@ -1603,25 +1636,7 @@
       "using-searches-with-pagination-control",
       "overriding-smart-class-parameters",
       "modifying-a-smart-class-parameter-by-using-an-external-file",
-      "deleting-openscap-reports",
-      "api-listing-hosts",
-      "api-requesting-information-for-a-host",
-      "api-listing-host-facts",
-      "api-searching-for-hosts-with-matching-patterns",
-      "api-searching-for-hosts-in-an-environment",
-      "api-searching-for-hosts-with-a-specific-fact-value",
-      "api-deleting-a-host",
-      "api-downloading-a-full-host-boot-disk-image",
-      "api-listing-lifecycle-environments",
-      "api-creating-linked-lifecycle-environments",
-      "api-updating-a-lifecycle-environment",
-      "api-deleting-a-lifecycle-environment",
-      "api-uploading-content-larger-than-2-mb",
-      "api-uploading-duplicate-content",
-      "api-using-searches-with-pagination-control",
-      "api-modifying-a-smart-class-parameter-by-using-an-external-file",
-      "api-deleting-openscap-reports",
-      "shell-deleting-openscap-reports"
+      "deleting-openscap-reports"
     ],
     "api-response_codes": [
 
