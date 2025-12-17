@@ -12,13 +12,13 @@ module ForemanThemeSatellite
       'Reports' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/using_report_templates_to_monitor_hosts_managing-hosts",
 
       # Provisioning Hosts
-      'Architectures' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-client-platforms#creating-architectures_provisioning",
+      'Architectures' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-client-platforms#creating-architectures-by-using-web-ui",
       'Provisioning' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/",
-      'InstallationMedia' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-provisioning-content#adding-installation-media_provisioning",
-      'PartitionTables' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-templates-for-provisioning#creating-partition-tables_provisioning",
+      'InstallationMedia' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-provisioning-content#adding-installation-media-by-using-web-ui",
+      'PartitionTables' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-templates-for-provisioning#creating-partition-tables-by-using-web-ui",
       'ProvisioningTemplates' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-templates-for-provisioning#provisioning-templates",
-      'OperatingSystems' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-client-platforms#creating-operating-systems_provisioning",
-      'UsingComputeProfiles' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-client-platforms#creating-compute-profiles_provisioning",
+      'OperatingSystems' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-client-platforms#creating-operating-systems-by-using-web-ui",
+      'UsingComputeProfiles' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-client-platforms#creating-compute-profiles-by-using-web-ui",
       'ComputeResources' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/",
       'NoVNC' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/using-novnc-to-access-virtual-machines_provisioning",
       'VMwareNotes' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_virtual_machines_in_vmware_vmware-provisioning",
@@ -26,7 +26,7 @@ module ForemanThemeSatellite
       'LibvirtNote' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_virtual_machines_on_kvm_kvm-provisioning",
       'EC2' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning-cloud-instances-on-amazon-ec2",
       'GoogleComputeEngineNotes' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_cloud_instances_on_google_compute_engine_gce-provisioning",
-      'Networking' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-networking#Adding_a_Subnet_to_Server_provisioning",
+      'Networking' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-networking#adding-a-subnet-to-server-by-using-web-ui",
 
       # Puppet Guide
       'FactsandtheENC' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/introducing-configuration-management-by-using-puppet#performing-configuration-management_managing-configurations-puppet",
