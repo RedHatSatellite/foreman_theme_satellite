@@ -80,7 +80,7 @@ module ForemanThemeSatellite
         'creating-a-job-template_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#creating-a-job-template-by-using-web-ui",
         'executing-a-remote-job_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#Remote-Execution-in-Satellite_managing-hosts",
         'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering-hosts-and-setting-up-host-integration_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts",
-        'setting-minimal-data-collection' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/monitoring-hosts-by-using-insights#setting-minimal-data-collection",
+        'setting-minimal-data-collection' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/monitoring-hosts-by-using-red-hat-lightspeed-in-cloud#data-control-settings",
       },
       'Managing_Configurations_Ansible' => {
         'Importing_Ansible_Roles_and_Variables_ansible' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_ansible_integration/getting_started_with_ansible_in_satellite_ansible#Importing_Ansible_Roles_and_Variables_ansible",
