@@ -337,7 +337,8 @@
     "performing-additional-configuration-on-capsule-server_capsule": [
       "configuring-capsule-for-host-registration-and-provisioning_capsule",
       "configuring-pull-based-transport-for-remote-execution_capsule",
-      "Adding_Lifecycle_Environments_capsule",
+      "adding-lifecycle-environments-by-using-web-ui",
+      "adding-lifecycle-environments-by-using-cli",
       "enabling-power-management-on-hosts_capsule"
     ],
     "capsule-server-scalability-considerations_capsule": [
@@ -488,6 +489,7 @@
       "setting-an-alternative-directory-for-remote-execution-jobs-in-push-mode_ansible",
       "altering-the-privilege-elevation-method_ansible",
       "Distributing_SSH_Keys_for_Remote_Execution_ansible",
+      "adding-satellite-server-ssh-key-to-authorized-keys",
       "distributing-ssh-keys-for-remote-execution-manually_ansible",
       "adding-a-passphrase-to-ssh-key-used-for-remote-execution_ansible",
       "Using_the_satellite_API_to_Obtain_SSH_Keys_for_Remote_Execution_ansible",
@@ -499,8 +501,8 @@
       "executing-a-remote-job-by-using-cli",
       "advanced-settings-in-the-job-wizard_ansible",
       "using-extended-cron-lines_ansible",
-      "scheduling-a-recurring-ansible-job-for-a-host_ansible",
-      "Scheduling_a_Recurring_Ansible_Job_for_a_Host_Group_ansible",
+      "scheduling-a-recurring-ansible-job-for-a-host",
+      "scheduling-a-recurring-ansible-job-for-a-host-group",
       "Using_Ansible_Provider_for_Package_and_Errata_Actions_ansible",
       "setting-the-job-rate-limit-on-capsule_ansible"
     ],
@@ -647,18 +649,23 @@
       "importing-a-custom-gpg-key-by-using-cli",
       "Restricting_a_Custom_Repository_to_a_Specific_operating_system_Version_or_Architecture_in_Project_content-management"
     ],
-    "restricting_hosts_access_to_content_content-management": [
-
+    "content-access-control-for-hosts": [
+      "content-access-strategies",
+      "conditions-for-content-availability",
+      "activation-keys-and-content-access"
     ],
     "managing_application_lifecycles_content-management": [
       "introduction_to_application_lifecycle_content-management",
       "Content_Promotion_across_the_Application_Lifecycle_content-management",
       "best-practices-for-lifecycle-environments_content-management",
-      "Creating_a_Lifecycle_Environment_Path_content-management",
-      "Adding_Lifecycle_Environments_content-management",
-      "Removing_Lifecycle_Environments_from_Server_content-management",
-      "Removing_Lifecycle_Environments_from_Capsule_content-management",
-      "cli-Removing_Lifecycle_Environments_from_Server_content-management"
+      "creating-a-lifecycle-environment-path-by-using-web-ui",
+      "creating-a-lifecycle-environment-path-by-using-cli",
+      "adding-lifecycle-environments-by-using-web-ui",
+      "adding-lifecycle-environments-by-using-cli",
+      "removing-lifecycle-environments-from-server-by-using-web-ui",
+      "removing-lifecycle-environments-from-server-by-using-cli",
+      "removing-lifecycle-environments-from-capsule-by-using-web-ui",
+      "removing-lifecycle-environments-from-capsule-by-using-cli"
     ],
     "managing_content_views_content-management": [
       "Content-Views-in-Satellite_content-management",
@@ -876,16 +883,21 @@
       "Managing_and_Monitoring_Hosts_Using_Cockpit_managing-hosts",
       "disabling-cockpit-on-project_managing-hosts"
     ],
-    "monitoring-hosts-by-using-insights": [
-      "access-to-information-from-red-hat-lightspeed-in-satellite-in-satellite",
-      "excluding-hosts-from-rh-cloud-and-insights-client-reports_managing-hosts",
-      "obfuscating-hostnames-and-ip-addresses",
-      "deploying-insights-by-using-the-ansible-role",
-      "configuring-synchronization-of-red-hat-lightspeed-in-satellite-recommendations-for-hosts",
-      "configuring-automatic-removal-of-hosts-from-the-insights-inventory",
-      "setting-minimal-data-collection",
-      "creating-an-insights-remediation-plan-for-hosts",
-      "examining-vulnerability-of-systems"
+    "monitoring-hosts-by-using-red-hat-lightspeed-in-cloud": [
+      "configuring-satellite-server-for-cloud-connection",
+      "data-control-settings",
+      "deploying-insights-client-on-registered-hosts_insights-in-cloud",
+      "synchronizing-red-hat-lightspeed-recommendations-for-hosts",
+      "examining-recommendations-for-hosts_insights-in-cloud",
+      "remediating-issues-based-on-red-hat-lightspeed-recommendations_insights-in-cloud",
+      "exclusion-of-hosts-from-red-hat-lightspeed-analytics_insights-in-cloud"
+    ],
+    "monitoring-hosts-by-using-red-hat-lightspeed-in-satellite": [
+      "deploying-insights-client-on-registered-hosts_insights-in-satellite",
+      "examining-recommendations-for-hosts_insights-in-satellite",
+      "remediating-issues-based-on-red-hat-lightspeed-recommendations_insights-in-satellite",
+      "examining-vulnerability-of-hosts",
+      "exclusion-of-hosts-from-red-hat-lightspeed-analytics_insights-in-satellite"
     ],
     "connecting-ai-applications-to-the-mcp-server-for-satellite": [
       "satellite-mcp-integration-overview",
@@ -934,6 +946,7 @@
       "setting-an-alternative-directory-for-remote-execution-jobs-in-pull-mode_managing-hosts",
       "altering-the-privilege-elevation-method_managing-hosts",
       "Distributing_SSH_Keys_for_Remote_Execution_managing-hosts",
+      "adding-satellite-server-ssh-key-to-authorized-keys",
       "distributing-ssh-keys-for-remote-execution-manually_managing-hosts",
       "adding-a-passphrase-to-ssh-key-used-for-remote-execution_managing-hosts",
       "Using_the_satellite_API_to_Obtain_SSH_Keys_for_Remote_Execution_managing-hosts",
@@ -945,8 +958,8 @@
       "executing-a-remote-job-by-using-cli",
       "advanced-settings-in-the-job-wizard_managing-hosts",
       "using-extended-cron-lines_managing-hosts",
-      "scheduling-a-recurring-ansible-job-for-a-host_managing-hosts",
-      "Scheduling_a_Recurring_Ansible_Job_for_a_Host_Group_managing-hosts",
+      "scheduling-a-recurring-ansible-job-for-a-host",
+      "scheduling-a-recurring-ansible-job-for-a-host-group",
       "Using_Ansible_Provider_for_Package_and_Errata_Actions_managing-hosts",
       "setting-the-job-rate-limit-on-capsule_managing-hosts"
     ],
