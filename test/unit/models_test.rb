@@ -12,4 +12,8 @@ class ModelsTest < ActiveSupport::TestCase
   test "check Setting.replace_keywords uses Satellite version" do
     assert_equal ForemanThemeSatellite::SATELLITE_VERSION, Setting.replace_keywords('$VERSION')
   end
+
+  test "check kubevirt friendly name" do
+    assert_equal ::ForemanKubevirt::Kubevirt::provider_friendly_name, "OpenShift Virtualization", "Friendly name override was unsuccessful"
+  end
 end
