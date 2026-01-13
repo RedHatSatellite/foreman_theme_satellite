@@ -36,6 +36,7 @@ module ForemanThemeSatellite
     /\b[Pp]roxies\b(?!-)/              => 'Capsules',
     /\bFreeIPA\b(?!-)/               => 'Red Hat Identity Management',
     /\b[Oo]pen[Ss]tack\b(?!-)/       => 'Red Hat OpenStack Platform',
+    /\b[Kk]ube[Vv]irt\b(?!-)/         => 'OpenShift Virtualization',
     /\b[Rr]ed [Hh]at [Ii]nsights\b(?!-)/ => 'Red Hat Lightspeed',
     /\b[Ii]nsights\b(?!-)/           => 'Red Hat Lightspeed',
     /\b[Kk]atello 4.0\b(?!-)/        => 'Satellite 6.11',

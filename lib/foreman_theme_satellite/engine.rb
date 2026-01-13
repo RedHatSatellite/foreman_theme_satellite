@@ -67,6 +67,7 @@ module ForemanThemeSatellite
         SettingRegistry.prepend SettingRegistryBranding
         # Include your monkey-patches over here
         ::ForemanGoogle::GCE.send(:prepend, GCE::ClassMethods) if Foreman::Plugin.installed?("foreman_google")
+        ::ForemanKubevirt::Kubevirt.send(:prepend, Kubevirt) if Foreman::Plugin.installed?("foreman_kubevirt")
         UINotifications::RssNotificationsChecker.send :prepend, RssCheckerBranding
         Foreman::Model::Openstack.send :include, Openstack
         Realm.send :include, RealmTheme

@@ -70,6 +70,7 @@ module ForemanThemeSatellite
     PLUGINS_DOCUMENTATION = {
       'foreman_azure' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_cloud_instances_on_microsoft_azure_resource_manager_azure-provisioning",
       'foreman_discovery' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/discovering-hosts-on-a-network",
+      'foreman_kubevirt' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_virtual_machines_kubevirt_kubevirt-provisioning",
     }.freeze
 
     DOCS_GUIDES_LINKS = {
