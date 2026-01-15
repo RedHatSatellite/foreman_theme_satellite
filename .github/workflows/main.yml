@@ -31,3 +31,4 @@ jobs:
     with:
       plugin: foreman_theme_satellite
       foreman_version: ${{ matrix.foreman }}
+      matrix_exclude: '[{"ruby": "2.7", "node": "18"}, {"ruby": "3.0", "node": "14"}]'
