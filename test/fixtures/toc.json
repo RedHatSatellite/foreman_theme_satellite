@@ -310,13 +310,16 @@
     ],
     "refreshing_external_user_groups_for_freeipa_or_ad_authentication": [
 
+    ],
+    "resetting-external-authentication-configuration-for-kerberos-sso": [
+
     ]
   },
   "installing_capsule_server": {
     "providing-feedback-on-red-hat-documentation_capsule": [
 
     ],
-    "red-hat-satellite-helper-app": [
+    "satellite-installation-helper-app": [
 
     ],
     "preparing-environment-for-capsule-installation": [
@@ -349,7 +352,7 @@
     "providing-feedback-on-red-hat-documentation_satellite": [
 
     ],
-    "red-hat-satellite-helper-app": [
+    "satellite-installation-helper-app": [
 
     ],
     "planning-satellite-server-installation_satellite": [
@@ -402,7 +405,7 @@
     "red-hat-offline-knowledge-portal_satellite": [
 
     ],
-    "red-hat-satellite-helper-app": [
+    "satellite-installation-helper-app": [
 
     ],
     "planning-satellite-server-installation_satellite": [
@@ -472,7 +475,7 @@
     "running-an-ansible-playbook-from-satellite_ansible": [
 
     ],
-    "configuring_and_setting_up_remote_jobs_ansible": [
+    "configuring-and-setting-up-remote-jobs": [
       "Remote-Execution-in-Satellite_ansible",
       "remote-execution-workflow_ansible",
       "permissions-for-remote-execution_ansible",
@@ -671,16 +674,24 @@
       "Content-Views-in-Satellite_content-management",
       "best-practices-for-content-views_content-management",
       "best-practices-for-patching-content-hosts_content-management",
-      "Creating_a_Content_View_content-management",
-      "Copying_a_Content_View_content-management",
+      "creating-a-content-view-by-using-web-ui",
+      "creating-a-content-view-by-using-cli",
+      "copying-a-content-view-by-using-web-ui",
+      "copying-a-content-view-by-using-cli",
       "synchronizing-a-content-view-to-a-capsule-server",
-      "Viewing_Module_Streams_content-management",
-      "Promoting_a_Content_View_content-management",
+      "viewing-module-streams-by-using-web-ui",
+      "viewing-module-streams-by-using-cli",
+      "promoting-a-content-view-by-using-web-ui",
+      "promoting-a-content-view-by-using-cli",
+      "promoting-a-content-view-to-all-environments-in-an-organization",
       "rolling-content-views",
-      "creating-a-rolling-content-view",
-      "assigning-a-rolling-content-view-to-lifecycle-environments",
+      "creating-a-rolling-content-view-by-using-web-ui",
+      "creating-a-rolling-content-view-by-using-cli",
+      "assigning-a-rolling-content-view-to-lifecycle-environments-by-using-web-ui",
+      "assigning-a-rolling-content-view-to-lifecycle-environments-by-using-cli",
       "Composite_Content_Views_Overview_content-management",
-      "Creating_a_Composite_Content_View_content-management",
+      "creating-a-composite-content-view-by-using-web-ui",
+      "creating-a-composite-content-view-by-using-cli",
       "Content_Filter_Overview_content-management",
       "Resolving_Package_Dependencies_content-management",
       "enabling-dependency-solving-for-a-content-view_content-management",
@@ -692,13 +703,6 @@
       "Standardizing_Content_View_Empty_States_content-management",
       "Comparing_Content_View_Versions_content-management",
       "Distributing_Archived_Content_View_Versions_content-management",
-      "cli-creating-a-content-view_content-management",
-      "cli-copying-a-content-view_content-management",
-      "cli-Viewing_Module_Streams_content-management",
-      "cli-promoting-a-content-view_content-management",
-      "cli-creating-a-rolling-content-view",
-      "cli-assigning-a-rolling-content-view-to-lifecycle-environments",
-      "cli-creating-a-composite-content-view_content-management",
       "Combining_exclusion_filters_with_dependency_solving_content-management",
       "Excluding_packages_and_dependency_solving_with_DNF_content-management"
     ],
@@ -792,13 +796,15 @@
     "managing_ansible_content_content-management": [
       "synchronizing-ansible-collections_content-management"
     ],
-    "managing_custom_file_type_content_content-management": [
-      "Creating_a_Local_Source_for_a_Custom_File_Type_Repository_content-management",
-      "Creating_a_Remote_Source_for_a_Custom_File_Type_Repository_content-management",
-      "Creating_a_Custom_File_Type_Repository_content-management",
-      "Uploading_Files_To_a_Custom_File_Type_Repository_content-management",
-      "Downloading_Files_to_a_Host_from_a_Custom_File_Type_Repository_content-management",
-      "cli-creating-a-custom-file-type-repository_content-management"
+    "managing-custom-file-type-content": [
+      "creating-a-local-source-for-a-custom-file-type-repository",
+      "creating-a-remote-source-for-a-custom-file-type-repository",
+      "creating-a-custom-file-type-repository-by-using-web-ui",
+      "creating-a-custom-file-type-repository-by-using-cli",
+      "uploading-files-to-a-custom-file-type-repository-by-using-web-ui",
+      "uploading-files-to-a-custom-file-type-repository-by-using-cli",
+      "downloading-files-to-a-host-from-a-custom-file-type-repository-by-using-web-ui",
+      "downloading-files-to-a-host-from-a-custom-file-type-repository-by-using-cli"
     ],
     "required-red-hat-repositories": [
 
@@ -928,7 +934,7 @@
       "Removing_a_Host_From_a_Host_Collection_managing-hosts",
       "Adding_Content_to_a_Host_Collection_managing-hosts"
     ],
-    "configuring_and_setting_up_remote_jobs_managing-hosts": [
+    "configuring-and-setting-up-remote-jobs": [
       "Remote-Execution-in-Satellite_managing-hosts",
       "remote-execution-workflow_managing-hosts",
       "permissions-for-remote-execution_managing-hosts",
@@ -1011,7 +1017,7 @@
     "providing-feedback-on-red-hat-documentation_security-compliance": [
 
     ],
-    "security-compliance-management-in-project": [
+    "security-compliance-management-in-satellite": [
       "Security_Content_Automation_Protocol_security-compliance",
       "SCAP_Content_in_satellite_security-compliance"
     ],
@@ -1508,7 +1514,7 @@
     "providing-feedback-on-red-hat-documentation_upgrading-connected": [
 
     ],
-    "red-hat-satellite-helper-app": [
+    "satellite-upgrade-helper-app": [
 
     ],
     "preparing-for-satellite-upgrade": [
@@ -1534,7 +1540,7 @@
     "red-hat-offline-knowledge-portal_upgrading-disconnected": [
 
     ],
-    "red-hat-satellite-helper-app": [
+    "satellite-upgrade-helper-app": [
 
     ],
     "preparing-for-satellite-upgrade": [
