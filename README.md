@@ -90,16 +90,10 @@ to change that, we need to add a downstream documentation link to [`documentatio
 ``` ruby
 USER_GUIDE_DICTIONARY = {
   # ...
-  'LDAPAuthentication' => "#{ForemanThemeSatellite.documentation_root}/administering_red_hat_satellite/chap-red_hat_satellite-administering_red_hat_satellite-configuring_external_authentication",
+  'LDAPAuthentication' => "configuring_authentication_for_red_hat_satellite_users/index#configuring-an-ldap-server-as-an-external-identity-provider-for-project_authentication",
   # ...
 }
 ```
-notice the use of
-```  ruby
-ForemanThemeSatellite.documentation_root
-```
-this constant is maintained by the theme and always point to the correct
-documentation version.
 
 ### Fixing links checker failures
 
@@ -314,7 +308,7 @@ Deface::Override.new(:virtual_path  => "about/index",
                      :text          =>  "    <div class=\"stats-well\"><h4><%= _(\"Support\") %></h4> <p>Visit the <%= link_to _('Customer Portal'), \"https://access.redhat.com/\",
                                        :rel => \"external\" %> to get support, find solutions to common questions, and more.</p><h6><%= _(\"Documentation\") %></h6>
                                         <ul>
-                                        <li><%= link_to _('Complete Product Documentation for Red Hat Satellite'),\"#{ForemanThemeSatellite.documentation_server}/documentation/en/red_hat_satellite/#{ForemanThemeSatellite::SATELLITE_SHORT_VERSION}\", :rel => \"external\" %></li>
+                                        <li><%= link_to _('Complete Product Documentation for Red Hat Satellite'), documentation_url, :rel => \"external\" %></li>
                                         <li><%= link_to _('API Resources'), apipie_apipie_path, :title => _('Automate Satellite via a simple and powerful API') %></li>
                                         </ul>
                                         <h6><%= _(\"Blog\") %></h6>
@@ -420,13 +414,11 @@ a specialized yaml file.
 Setting up ENV variables:
 ``` bash
 SATELLITE_VERSION='6.8.000'
-SATELLITE_DOCUMENTATION_SERVER=http://access.redhat.com
 SATELLITE_DOCUMENTATION_VERSION=6.6
 ```
 Setting up the metadata file:
 ``` yaml
 version: '6.8.000'
-documentation_server: "http://access.redhat.com"
 documentation_version: "6.6"
 ```
 the metadata file should be called `/usr/share/satellite/metadata.yml` for
@@ -445,14 +437,12 @@ need to test the links against different documentation version or instance.
 These parameters are cofigurable by either setting `ENV` variables:
 
 ``` sh
-SATELLITE_DOCUMENTATION_SERVER=http://access.redhat.com
 SATELLITE_DOCUMENTATION_VERSION=6.6
 ```
 
 Another option is to add or change keys in `/usr/share/satellite/metadata.yml`:
 
 ``` yaml
-documentation_server: "http://access.redhat.com"
 documentation_version: "6.6"
 ```
 
