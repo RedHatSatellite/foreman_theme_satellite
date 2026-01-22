@@ -25,6 +25,16 @@ module ForemanThemeSatellite
                 full_name: N_('Show unsupported provisioning templates')
               )
             end
+            category(:general) do
+              setting('satellite_documentation_url',
+                type: :string,
+                default: "https://docs.redhat.com",
+                description: N_('Defaults to Red Hat online documentation. '\
+                                'Override this setting to your Red Hat Offline Knowledge Portal instance URL for offline documentation support. '\
+                                'Supports only HTTP and HTTPS schemes.'),
+                full_name: N_('Red Hat documentation server URL'),
+                validate: :http_url)
+            end
           end
 
           tests_to_skip ({
@@ -127,24 +137,8 @@ module ForemanThemeSatellite
     Foreman::Version.new(SATELLITE_VERSION).short
   end
 
-  def self.documentation_server
-    @documentation_server ||= metadata_field('documentation_server', 'https://docs.redhat.com')
-  end
-
   def self.documentation_version
     @documentation_version ||= metadata_field('documentation_version', ForemanThemeSatellite::SATELLITE_SHORT_VERSION)
-  end
-
-  def self.documentation_root
-    @documentation_root ||= begin
-      "#{unversioned_documentation_root}/#{documentation_version}/html-single"
-    end
-  end
-
-  def self.unversioned_documentation_root
-    @unversioned_documentation_root ||= begin
-      "#{documentation_server}/documentation/en-us/red_hat_satellite"
-    end
   end
 
   # this file indicates the satellite version that will be represented on the login page.
