@@ -316,7 +316,7 @@
     "providing-feedback-on-red-hat-documentation_capsule": [
 
     ],
-    "red-hat-satellite-helper-app": [
+    "satellite-installation-helper-app": [
 
     ],
     "preparing-environment-for-capsule-installation": [
@@ -349,7 +349,7 @@
     "providing-feedback-on-red-hat-documentation_satellite": [
 
     ],
-    "red-hat-satellite-helper-app": [
+    "satellite-installation-helper-app": [
 
     ],
     "planning-satellite-server-installation_satellite": [
@@ -365,10 +365,11 @@
       "verifying-dns-resolution_satellite",
       "preparing-for-using-external-databases_satellite"
     ],
-    "installing_server_connected_satellite": [
+    "installing-satellite-server": [
       "configuring-http-proxy-to-connect-to-cdn_satellite",
       "registering-to-red-hat-subscription-management_satellite",
       "configuring-repositories_satellite",
+      "overview-of-the-satellite-installer-utility",
       "installing-satellite-server-packages",
       "configuring-satellite-server",
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite"
@@ -382,14 +383,13 @@
       "importing-the-project-client-name-repository_satellite",
       "configuring-pull-based-transport-for-remote-execution_satellite",
       "configuring-for-uefi-http-boot-provisioning-in-an-ipv6-network_satellite",
-      "Configuring_Server_with_an_HTTP_Proxy_satellite",
+      "configuring-satellite-server-to-use-an-http-proxy",
       "enabling-power-management-on-hosts_satellite",
       "Configuring_Server_for_Outgoing_Emails_satellite",
       "configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite",
       "configuring-an-alternate-cname_satellite",
       "configuring-satellite-server-with-a-custom-ssl-certificate",
-      "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite_satellite",
-      "cli-adding-a-default-http-proxy_satellite"
+      "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite_satellite"
     ],
     "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
 
@@ -402,7 +402,7 @@
     "red-hat-offline-knowledge-portal_satellite": [
 
     ],
-    "red-hat-satellite-helper-app": [
+    "satellite-installation-helper-app": [
 
     ],
     "planning-satellite-server-installation_satellite": [
@@ -417,13 +417,15 @@
       "verifying-dns-resolution_satellite",
       "preparing-for-using-external-databases_satellite"
     ],
-    "installing_server_disconnected_satellite": [
+    "installing-satellite-server": [
       "downloading-the-binary-dvd-images_satellite",
       "configuring-the-base-operating-system-with-offline-repositories_satellite",
       "installing-from-the-offline-repositories_satellite",
       "resolving-package-dependency-errors_satellite",
-      "configuring-server_satellite",
-      "disabling-subscription-connection_satellite",
+      "overview-of-the-satellite-installer-utility",
+      "configuring-satellite-server",
+      "disabling-subscription-connection-by-using-web-ui",
+      "disabling-subscription-connection-by-using-cli",
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite"
     ],
     "tuning-with-predefined-profiles_satellite": [
@@ -431,7 +433,8 @@
     ],
     "performing-additional-configuration": [
       "installing-and-configuring-red-hat-lightspeed-in-satellite",
-      "configuring-satellite-server-to-consume-content-from-a-custom-cdn_satellite",
+      "configuring-satellite-server-to-consume-content-from-a-custom-cdn-by-using-web-ui",
+      "configuring-satellite-server-to-consume-content-from-a-custom-cdn-by-using-cli",
       "Configuring-ISS_satellite",
       "configuring-pull-based-transport-for-remote-execution_satellite",
       "enabling-power-management-on-hosts_satellite",
@@ -442,7 +445,10 @@
     "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
 
     ],
-    "reverting_server_to_download_content_from_red_hat_cdn_satellite": [
+    "reverting-server-to-download-content-from-red-hat-cdn-by-using-web-ui": [
+
+    ],
+    "reverting-server-to-download-content-from-red-hat-cdn-by-using-cli": [
 
     ]
   },
@@ -734,39 +740,38 @@
     ],
     "managing_activation_keys_content-management": [
       "best-practices-for-activation-keys_content-management",
-      "Creating_an_Activation_Key_content-management",
+      "creating-an-activation-key-by-using-web-ui",
+      "creating-an-activation-key-by-using-cli",
       "Using_Activation_Keys_for_Host_Registration_content-management",
-      "Setting_the_Service_Level_content-management",
+      "setting-the-service-level-by-using-web-ui",
+      "setting-the-service-level-by-using-cli",
       "enabling-and-disabling-repositories-on-activation-key_content-management",
       "multiple-activation-keys-and-content-view-environments",
       "assigning-content-view-environments-to-activation-keys",
-      "removing-all-content-view-environments-from-an-activation-key",
-      "cli-creating-an-activation-key_content-management"
+      "removing-all-content-view-environments-from-an-activation-key"
     ],
     "managing_errata_content-management": [
       "best-practices-for-errata_content-management",
-      "Inspecting_Available_Errata_content-management",
+      "inspecting-available-errata-by-using-web-ui",
+      "inspecting-available-errata-by-using-cli",
       "Parameters_Available_for_Errata_Search_content-management",
-      "running-custom-code-while-applying-errata_content-management",
+      "running-custom-code-while-applying-errata-by-using-web-ui",
+      "running-custom-code-while-applying-errata-by-using-cli",
       "Subscribing_to_Errata_Notifications_content-management",
       "Limitations_to_Repository_Dependency_Resolution_content-management",
       "creating-a-content-view-filter-for-errata-by-using-web-ui",
       "creating-a-content-view-filter-for-errata-by-using-cli",
-      "Adding_Errata_To_An_Incremental_Content_View_content-management",
-      "applying-errata-to-hosts",
-      "applying-errata-to-hosts-by-using-web-ui",
-      "applying-errata-to-hosts-by-using-cli",
-      "cli-inspecting-available-errata",
-      "cli-running-custom-code-while-applying-errata_content-management",
-      "cli-adding-errata-to-an-incremental-content-view"
+      "adding-errata-to-an-incremental-content-view-by-using-web-ui",
+      "adding-errata-to-an-incremental-content-view-by-using-cli",
+      "applying-errata-to-hosts"
     ],
     "managing_container_images_content-management": [
-      "Importing_Container_Images_content-management",
+      "importing-container-images",
       "Managing_Container_Name_Patterns_content-management",
       "Managing_Container_Registry_Authentication_content-management",
-      "Configuring_podman_to_trust_the_CA_content-management",
-      "Using_Container_Registries_content-management",
-      "cli-importing-container-images"
+      "configuring-podman-to-trust-the-certificate-authority",
+      "configuring-docker-to-trust-the-certificate-authority",
+      "Using_Container_Registries_content-management"
     ],
     "managing-flatpak-repositories-in-project": [
       "creating-a-flatpak-remote-by-using-web-ui",
@@ -783,10 +788,10 @@
       "importing-and-exporting-content-to-satellite-server-for-flatpak"
     ],
     "managing_iso_images_content-management": [
-      "Importing_ISO_Images_from_Red_Hat_content-management",
-      "Importing_Individual_ISO_Images_and_Files_content-management",
-      "cli-importing-iso-images-from-red-hat",
-      "cli-importing-individual-iso-images-and-files"
+      "importing-iso-images-from-red-hat-by-using-web-ui",
+      "importing-iso-images-from-red-hat-by-using-cli",
+      "importing-an-iso-image-by-using-web-ui",
+      "importing-an-iso-image-by-using-cli"
     ],
     "managing_ansible_content_content-management": [
       "synchronizing-ansible-collections_content-management"
@@ -1103,20 +1108,17 @@
       "Content-Flow-in-Satellite_planning",
       "Content-Views-in-Satellite_planning",
       "lifecycle-environments-and-environment-paths_planning",
-      "Content_Types_in_Satellite_planning",
-      "content-and-patch-management-with-project-additional-resources_planning"
+      "Content_Types_in_Satellite_planning"
     ],
     "provisioning-management-with-satellite_planning": [
-      "Provisioning-Methods-in-Satellite_planning",
-      "provisioning-management-with-project-additional-resources_planning"
+      "Provisioning-Methods-in-Satellite_planning"
     ],
     "major-satellite-components_planning": [
       "Satellite-Server-Overview_planning",
       "capsule-Overview_planning",
       "Overview-of-Hosts-in-Satellite_planning",
       "list-of-key-open-source-components-of-satellite",
-      "capsule-features",
-      "major-project-components-additional-resources_planning"
+      "capsule-features"
     ],
     "tools-for-administration-of-satellite_planning": [
       "web-ui-overview",
@@ -1130,8 +1132,7 @@
       "supported-usage-of-project-components_planning",
       "Supported-Client-Architectures-for-Content-Management_planning",
       "Supported-Client-Architectures-for-Host-Provisioning_planning",
-      "Supported-Client-Architectures-for-Configuration-Management_planning",
-      "supported-usage-and-versions-of-foreman-components-additional-resources_planning"
+      "Supported-Client-Architectures-for-Configuration-Management_planning"
     ],
     "security-considerations-in-project": [
 
@@ -1504,7 +1505,7 @@
     "providing-feedback-on-red-hat-documentation_upgrading-connected": [
 
     ],
-    "red-hat-satellite-helper-app": [
+    "satellite-upgrade-helper-app": [
 
     ],
     "preparing-for-satellite-upgrade": [
@@ -1530,7 +1531,7 @@
     "red-hat-offline-knowledge-portal_upgrading-disconnected": [
 
     ],
-    "red-hat-satellite-helper-app": [
+    "satellite-upgrade-helper-app": [
 
     ],
     "preparing-for-satellite-upgrade": [
