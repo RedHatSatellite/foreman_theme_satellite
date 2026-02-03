@@ -31,7 +31,10 @@ namespace :foreman_theme_satellite do
                 .merge(ForemanThemeSatellite::Documentation::PLUGINS_DOCUMENTATION)
                 .merge(ForemanThemeSatellite::Documentation.flat_docs_guides_links)
 
-    failed = all_links.filter { |_key, doc_address| doc_address.include?('/html-single/') && !checker.test_link(doc_address) }
+    # The links are either
+    # - path fragments - managing_hosts/index#data-control-settings
+    # - full URLs - https://access.redhat.com/products/red-hat-satellite/#support
+    failed = all_links.filter { |_key, doc_address| !doc_address.start_with?('http') && !checker.test_link(doc_address) }
 
     abort((failed.map { |key, doc_address| "FAILED: Cannot find #{doc_address} in TOC for entry: #{key}" } + ["Total failed: #{failed.count} entries"]).join("\n")) unless failed.empty?
 
