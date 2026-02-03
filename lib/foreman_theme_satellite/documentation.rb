@@ -54,7 +54,7 @@ module ForemanThemeSatellite
       'Auditing' => "overview_concepts_and_deployment_considerations/index#glossary-of-terms-used-in-satellite_planning",
 
       # Install
-      'HTTP(S)Proxy' => "installing_satellite_server_in_a_connected_network_environment/index#Configuring_Server_with_an_HTTP_Proxy_satellite",
+      'HTTP(S)Proxy' => "installing_satellite_server_in_a_connected_network_environment/index#configuring-satellite-server-to-use-an-http-proxy",
 
       # Misc
       'GettingHelp' => "https://access.redhat.com/products/red-hat-satellite/#support",
