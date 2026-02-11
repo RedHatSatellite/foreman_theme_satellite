@@ -38,9 +38,9 @@ end %>
   } else {
     window.onload = function(e) {
       // We have to do it from a callback because the element may not exist yet
-      const railsContainer = document.getElementById('rails-app-content');
-      if (railsContainer) {
-        railsContainer.classList.add('eol-banner');
+      const body = document.body;
+      if (body) {
+        body.classList.add('eol-banner-present');
       }
     }
   }
@@ -48,9 +48,9 @@ end %>
   const dismissButton = document.getElementById('satellite-oel-banner-dismiss-button');
   dismissButton.addEventListener('click', () => {
       element.style.display = 'none';
-      const railsContainer = document.getElementById('rails-app-content');
-      if (railsContainer) {
-        railsContainer.classList.remove('eol-banner');
+      const body = document.body
+      if (body) {
+        body.classList.remove('eol-banner-present');
       }
       localStorage.setItem('satellite-eol-banner-dismissed', level);
       const now = new Date();
