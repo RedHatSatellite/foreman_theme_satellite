@@ -22,7 +22,8 @@ module DocumentationControllerBranding
   end
 
   def plugin_documentation_url
-    ForemanThemeSatellite::Documentation::PLUGINS_DOCUMENTATION[plugin_documentation_params[:name]] || super
+    branded_url = ForemanThemeSatellite::Documentation::PLUGINS_DOCUMENTATION[plugin_documentation_params[:name]]
+    branded_url ? "#{documentation_root}/#{branded_url}" : super
   end
 
   def wiki_url(section: '')
