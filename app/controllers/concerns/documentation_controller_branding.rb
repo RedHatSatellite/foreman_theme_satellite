@@ -13,7 +13,7 @@ module DocumentationControllerBranding
     if url.empty?
       upstream_url = super(section, options)
       url = if (upstream_url =~ /redhat.com/)
-              upstream_url
+              redirect_root_url(upstream_url)
             else
               documentation_root_url
             end
@@ -61,6 +61,21 @@ module DocumentationControllerBranding
 
   def unversioned_documentation_root
     "#{Setting[:satellite_documentation_url]}/documentation/en-us/red_hat_satellite"
+  end
+
+  private
+
+  def redirect_root_url(upstream_url)
+    docs_url_setting = Foreman.settings.find(:satellite_documentation_url)
+    return upstream_url if docs_url_setting.value == docs_url_setting.default
+
+    upstream_uri = URI.parse(upstream_url)
+    default_host = URI.parse(docs_url_setting.default).host
+    return upstream_url unless upstream_uri.host == default_host
+
+    downstream_uri = URI.parse(Setting[:satellite_documentation_url])
+    downstream_uri.path += upstream_uri.path
+    downstream_uri.to_s
   end
   # rubocop:enable Lint/UnusedMethodArgument
 end
