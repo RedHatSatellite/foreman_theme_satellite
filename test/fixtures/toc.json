@@ -162,6 +162,7 @@
     ],
     "increasing-logging-levels-of-satellite-components": [
       "increasing-the-logging-level-for-foreman",
+      "increasing-the-logging-level-for-red-hat-lightspeed-in-satellite",
       "increasing-the-logging-level-for-hammer",
       "increasing-the-logging-level-for-capsule",
       "increasing-the-logging-level-for-candlepin",
@@ -304,9 +305,6 @@
       "associating-external-users-with-user-groups",
       "refreshing-external-user-groups-for-ldap-using-cli",
       "refreshing-external-user-groups-for-ldap-using-web-ui"
-    ],
-    "resetting-external-authentication-configuration-for-kerberos-sso": [
-
     ],
     "resetting-external-authentication-configuration-for-kerberos-sso": [
 
@@ -460,6 +458,7 @@
       "Overriding_Ansible_Variables_in_satellite_ansible",
       "adding-rhel-system-roles_ansible",
       "synchronizing-ansible-collections_ansible",
+      "consuming-content-from-an-ansible-collection-repository",
       "customizing-ansible-configuration_ansible",
       "using-ansible-vault-with-satellite_ansible"
     ],
@@ -529,19 +528,24 @@
     "providing-feedback-on-red-hat-documentation_managing-configurations-puppet": [
 
     ],
-    "introducing-configuration-management-by-using-puppet": [
+    "configuration-management-with-puppet-in-satellite": [
       "How_Puppet_Integrates_With_Project_managing-configurations-puppet",
-      "supported-puppet-versions-and-system-requirements_managing-configurations-puppet",
-      "Enabling_Puppet_Integration_managing-configurations-puppet",
+      "high-level-steps-for-puppet-integration-with-satellite",
+      "high-level-steps-for-configuration-management-with-puppet",
+      "supported-puppet-versions-and-system-requirements_managing-configurations-puppet"
+    ],
+    "enabling-puppet-integration-with-satellite": [
+      "installing-puppet-server-on-satellite-server-and-capsule-servers",
       "Installing_and_Configuring_Puppet_Agent_during_Host_Provisioning_managing-configurations-puppet",
       "installing-and-configuring-puppet-agent-during-host-registration_managing-configurations-puppet",
-      "Installing_and_Configuring_Puppet_Agent_Manually_managing-configurations-puppet",
-      "performing-configuration-management_managing-configurations-puppet",
-      "Disabling_Puppet_Integration_managing-configurations-puppet"
+      "Installing_and_Configuring_Puppet_Agent_Manually_managing-configurations-puppet"
+    ],
+    "disabling-puppet-integration-with-satellite": [
+
     ],
     "managing-puppet-modules_managing-configurations-puppet": [
       "installing_a_puppet_module_managing-configurations-puppet",
-      "updating-a-puppet-module"
+      "updating-a-puppet-module-on-your-satellite-server"
     ],
     "importing_puppet_classes_and_environments_managing-configurations-puppet": [
 
@@ -567,10 +571,7 @@
     ],
     "enforcing-puppet-configuration-on-hosts_managing-configurations-puppet": [
       "running-puppet-once-using-ssh_managing-configurations-puppet",
-      "understanding-intervals-of-automatic-enforcement_managing-configurations-puppet",
-      "setting-the-puppet-agent-run-interval_managing-configurations-puppet",
-      "setting-the-global-out-of-sync-interval_managing-configurations-puppet",
-      "setting-the-puppet-out-of-sync-interval_managing-configurations-puppet",
+      "configuring-puppet-intervals-of-automatic-enforcement",
       "overriding-out-of-sync-interval-for-a-host-group_managing-configurations-puppet",
       "overriding-out-of-sync-interval-for-an-individual-host_managing-configurations-puppet"
     ],
@@ -711,8 +712,10 @@
       "content-view-environments-overview",
       "content-view-environment-categories",
       "content-view-environment-ordering-and-priority",
-      "assigning-content-view-environments-to-hosts",
-      "assigning-content-view-environments-to-hosts-by-using-subscription-manager",
+      "assigning-content-view-environments-to-hosts-in-bulk",
+      "assigning-content-view-environments-to-a-host-by-using-web-ui",
+      "assigning-content-view-environments-to-a-host-by-using-cli",
+      "assigning-content-view-environments-to-a-host-by-using-subscription-manager",
       "comparison-of-content-view-environments-and-composite-content-views"
     ],
     "synchronizing_content_between_servers_content-management": [
@@ -747,7 +750,8 @@
       "setting-the-service-level-by-using-cli",
       "enabling-and-disabling-repositories-on-activation-key_content-management",
       "multiple-activation-keys-and-content-view-environments",
-      "assigning-content-view-environments-to-activation-keys",
+      "assigning-content-view-environments-to-an-activation-key-by-using-web-ui",
+      "assigning-content-view-environments-to-an-activation-key-by-using-cli",
       "removing-all-content-view-environments-from-an-activation-key"
     ],
     "managing_errata_content-management": [
@@ -794,7 +798,8 @@
       "importing-an-iso-image-by-using-cli"
     ],
     "managing_ansible_content_content-management": [
-      "synchronizing-ansible-collections_content-management"
+      "synchronizing-ansible-collections_content-management",
+      "consuming-content-from-an-ansible-collection-repository"
     ],
     "managing-custom-file-type-content": [
       "creating-a-local-source-for-a-custom-file-type-repository",
@@ -901,7 +906,11 @@
       "deploying-insights-client-on-registered-hosts_insights-in-satellite",
       "examining-recommendations-for-hosts_insights-in-satellite",
       "remediating-issues-based-on-red-hat-lightspeed-recommendations_insights-in-satellite",
+      "disabling-recommendations",
+      "enabling-recommendations",
       "examining-vulnerability-of-hosts",
+      "disabling-vulnerability-analysis-on-hosts",
+      "enabling-vulnerability-analysis-on-hosts",
       "exclusion-of-hosts-from-red-hat-lightspeed-analytics_insights-in-satellite"
     ],
     "connecting-ai-applications-to-the-mcp-server-for-satellite": [
@@ -1026,26 +1035,17 @@
     "enabling-openscap": [
 
     ],
-    "configuring-compliance-policy-deployment-methods_security-compliance": [
-      "compliance-policy-deployment-options_security-compliance",
-      "configuring-satellite-for-ansible-compliance-policy-deployment",
-      "configuring-satellite-for-puppet-compliance-policy-deployment"
-    ],
-    "listing-available-scap-contents-using-web-ui": [
-
-    ],
-    "listing-available-scap-contents-using-cli": [
-
-    ],
-    "configuring_scap_contents_security-compliance": [
+    "configuring-scap-contents-for-compliance-policies-in-satellite": [
+      "listing-available-scap-contents-using-web-ui",
+      "listing-available-scap-contents-using-cli",
       "Loading_the_Default_SCAP_Contents_security-compliance",
       "getting-supported-scap-contents-for-rhel_security-compliance",
       "uploading-additional-scap-content-using-web-ui",
       "uploading-additional-scap-content-using-cli",
-      "tailoring-xccdf-profiles_security-compliance",
-      "Uploading_a_Tailoring_File_security-compliance"
+      "customizing-xccdf-profiles-with-tailoring-files"
     ],
     "managing_compliance_policies_security-compliance": [
+      "configuring-compliance-policy-deployment-methods_security-compliance",
       "Creating_a_Compliance_Policy_security-compliance",
       "Viewing_a_Compliance_Policy_security-compliance",
       "Editing_a_Compliance_Policy_security-compliance",
@@ -1067,8 +1067,7 @@
       "Compliance_Email_Notifications_security-compliance",
       "Viewing_Compliance_Policy_Statistics_security-compliance",
       "remediating-compliance-failures_security-compliance",
-      "Deleting_a_Compliance_Report_security-compliance",
-      "Deleting_Multiple_Compliance_Reports_security-compliance"
+      "Deleting_a_Compliance_Report_security-compliance"
     ]
   },
   "monitoring_satellite_performance": {
@@ -1103,7 +1102,7 @@
     "providing-feedback-on-red-hat-documentation_planning": [
 
     ],
-    "satellite-overview": [
+    "introduction-to-satellite": [
 
     ],
     "content-and-patch-management-with-satellite": [
@@ -1178,9 +1177,9 @@
       "iss-scenarios_planning",
       "deploying-satellite-on-aws"
     ],
-    "provisioning-requirements": [
-      "pxe-booting",
-      "http-booting"
+    "provisioning-requirements-in-satellite": [
+      "pxe-booting-in-satellite",
+      "http-booting-in-satellite"
     ],
     "technical-users-provided-and-required-by-satellite": [
 
@@ -1276,7 +1275,7 @@
       "virt-who",
       "XCCDF_profiles"
     ],
-    "cli-help_planning": [
+    "help-resources-for-using-cli-in-satellite": [
       "Services",
       "Plugins",
       "Hammer_CLI"
@@ -1497,23 +1496,23 @@
     "introduction_to_performance_tuning_performance-tuning": [
 
     ],
-    "performance-tuning-quick-start": [
+    "selecting-an-installation-size": [
 
     ],
     "system_requirements_for_tuning_performance-tuning": [
 
     ],
-    "determining_hardware_and_operating_system_configuration_performance-tuning": [
+    "hardware-and-operating-system-configuration": [
       "Enabling_Tuned_Profiles_performance-tuning",
       "Disable_Transparent_Hugepage_performance-tuning"
     ],
     "configuring_project_for_performance_performance-tuning": [
-      "Applying_configurations_performance-tuning",
-      "Puma_Tunings_performance-tuning",
+      "considerations-for-performance-tuning",
+      "puma-tunings",
       "Apache_HTTPD_Performance_Tuning_performance-tuning",
-      "Dynflow_Tuning_performance-tuning",
+      "tuning-dynflow",
       "Pull_based_REX_transport_tuning_performance-tuning",
-      "PostgreSQL_Tuning_performance-tuning",
+      "tuning-postgresql",
       "Redis_Tuning_performance-tuning",
       "Smart_Proxy_Configuration_Tuning_performance-tuning"
     ]
