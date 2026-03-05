@@ -46,8 +46,6 @@ module ForemanThemeSatellite
       'LDAPAuthentication' => "configuring_authentication_for_red_hat_satellite_users/index#configuring-an-ldap-server-as-an-external-identity-provider-for-project_authentication",
       'ExternalAuthentication' => "configuring_authentication_for_red_hat_satellite_users/index",
       'Bookmarks' => "administering_red_hat_satellite/index#Searching_and_Bookmarking_admin",
-      'Policydeploymentoptions' => "managing_security_compliance/index#configuring-compliance-policy-deployment-methods_security-compliance",
-      'CreatingSCAPcontent' => "managing_security_compliance/index#configuring-scap-contents-for-compliance-policies-in-satellite",
 
       # Planning
       'SmartProxies' => "overview_concepts_and_deployment_considerations/index#Major-Satellite-Components_planning",
