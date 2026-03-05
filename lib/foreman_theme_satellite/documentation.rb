@@ -61,7 +61,7 @@ module ForemanThemeSatellite
       'Monitoring_Compliance_security-compliance' => "managing_security_compliance/index#Monitoring_Compliance_security-compliance",
       'Managing_Compliance_Policies_security-compliance' => "managing_security_compliance/index#Managing_Compliance_Policies_security-compliance",
       'configuring-scap-contents-for-compliance-policies-in-foreman' => "managing_security_compliance/index#configuring-scap-contents-for-compliance-policies-in-satellite",
-      'customizing-xccdf-profiles-with-tailoring-files' => "managing_security_compliance/index#tailoring-xccdf-profiles_security-compliance",
+      'customizing-xccdf-profiles-with-tailoring-files' => "managing_security_compliance/index#customizing-xccdf-profiles-with-tailoring-files",
       'deploying-compliance-policies_security-compliance' => "managing_security_compliance/index#deploying-compliance-policies_security-compliance",
     }.freeze
 
