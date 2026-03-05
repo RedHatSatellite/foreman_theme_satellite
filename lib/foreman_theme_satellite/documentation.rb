@@ -29,7 +29,7 @@ module ForemanThemeSatellite
       'Networking' => "provisioning_hosts/index#adding-a-subnet-to-server-by-using-web-ui",
 
       # Puppet Guide
-      'FactsandtheENC' => "managing_configurations_by_using_puppet_integration/index#performing-configuration-management_managing-configurations-puppet",
+      'FactsandtheENC' => "managing_configurations_by_using_puppet_integration/index#high-level-steps-for-configuration-management-with-puppet",
       'using-config-groups' => "managing_configurations_by_using_puppet_integration/index#creating-a-puppet-config-group_managing-configurations-puppet",
       'SmartMatchers' => "managing_configurations_by_using_puppet_integration/index#Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet",
       'Parameters' => "managing_configurations_by_using_puppet_integration/index#Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet",
