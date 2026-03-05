@@ -60,8 +60,8 @@ module ForemanThemeSatellite
       # Managing Security Compliance
       'Monitoring_Compliance_security-compliance' => "managing_security_compliance/index#Monitoring_Compliance_security-compliance",
       'Managing_Compliance_Policies_security-compliance' => "managing_security_compliance/index#Managing_Compliance_Policies_security-compliance",
-      'Configuring_SCAP_Contents_security-compliance' => "managing_security_compliance/index#configuring-scap-contents-for-compliance-policies-in-satellite",
-      'tailoring-xccdf-profiles_security-compliance' => "managing_security_compliance/index#customizing-xccdf-profiles-with-tailoring-files",
+      'configuring-scap-contents-for-compliance-policies-in-foreman' => "managing_security_compliance/index#configuring-scap-contents-for-compliance-policies-in-satellite",
+      'customizing-xccdf-profiles-with-tailoring-files' => "managing_security_compliance/index#tailoring-xccdf-profiles_security-compliance",
       'deploying-compliance-policies_security-compliance' => "managing_security_compliance/index#deploying-compliance-policies_security-compliance",
     }.freeze
 
