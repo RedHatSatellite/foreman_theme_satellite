@@ -29,10 +29,8 @@ module ForemanThemeSatellite
       'Networking' => "provisioning_hosts/index#adding-a-subnet-to-server-by-using-web-ui",
 
       # Puppet Guide
-      'FactsandtheENC' => "managing_configurations_by_using_puppet_integration/index#high-level-steps-for-configuration-management-with-puppet",
       'using-config-groups' => "managing_configurations_by_using_puppet_integration/index#creating-a-puppet-config-group_managing-configurations-puppet",
       'SmartMatchers' => "managing_configurations_by_using_puppet_integration/index#Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet",
-      'Parameters' => "managing_configurations_by_using_puppet_integration/index#Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet",
       'Classes' => "managing_configurations_by_using_puppet_integration/index#Importing_Puppet_Classes_and_Environments_managing-configurations-puppet",
       'Environments' => "managing_configurations_by_using_puppet_integration/index#Creating_a_Custom_Puppet_Environment_managing-configurations-puppet",
 
@@ -84,6 +82,10 @@ module ForemanThemeSatellite
       'Managing_Configurations_Ansible' => {
         'Importing_Ansible_Roles_and_Variables_ansible' => "managing_configurations_by_using_ansible_integration/index#Importing_Ansible_Roles_and_Variables_ansible",
         'Overriding_Ansible_Variables_in_foreman_ansible' => "managing_configurations_by_using_ansible_integration/index#Overriding_Ansible_Variables_in_satellite_ansible",
+      },
+      'Managing_Configurations_Puppet' => {
+        'high-level-steps-for-configuration-management-with-puppet' => "managing_configurations_by_using_puppet_integration/index#performing-configuration-management_managing-configurations-puppet",
+        'Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet' => "managing_configurations_by_using_puppet_integration/index#Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet"
       }
     }.freeze
 
