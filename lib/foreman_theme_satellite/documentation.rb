@@ -56,13 +56,6 @@ module ForemanThemeSatellite
 
       # Misc
       'GettingHelp' => "https://access.redhat.com/products/red-hat-satellite/#support",
-
-      # Managing Security Compliance
-      'Monitoring_Compliance_security-compliance' => "managing_security_compliance/index#Monitoring_Compliance_security-compliance",
-      'Managing_Compliance_Policies_security-compliance' => "managing_security_compliance/index#Managing_Compliance_Policies_security-compliance",
-      'configuring-scap-contents-for-compliance-policies-in-foreman' => "managing_security_compliance/index#configuring-scap-contents-for-compliance-policies-in-satellite",
-      'customizing-xccdf-profiles-with-tailoring-files' => "managing_security_compliance/index#customizing-xccdf-profiles-with-tailoring-files",
-      'deploying-compliance-policies_security-compliance' => "managing_security_compliance/index#deploying-compliance-policies_security-compliance",
     }.freeze
 
     PLUGINS_DOCUMENTATION = {
@@ -84,6 +77,13 @@ module ForemanThemeSatellite
       'Managing_Configurations_Ansible' => {
         'Importing_Ansible_Roles_and_Variables_ansible' => "managing_configurations_by_using_ansible_integration/index#Importing_Ansible_Roles_and_Variables_ansible",
         'Overriding_Ansible_Variables_in_foreman_ansible' => "managing_configurations_by_using_ansible_integration/index#Overriding_Ansible_Variables_in_satellite_ansible",
+      },
+      'Managing_Security_Compliance' => {
+        'Monitoring_Compliance_security-compliance' => "managing_security_compliance/index#Monitoring_Compliance_security-compliance",
+        'Managing_Compliance_Policies_security-compliance' => "managing_security_compliance/index#Managing_Compliance_Policies_security-compliance",
+        'configuring-scap-contents-for-compliance-policies-in-foreman' => "managing_security_compliance/index#configuring-scap-contents-for-compliance-policies-in-satellite",
+        'customizing-xccdf-profiles-with-tailoring-files' => "managing_security_compliance/index#customizing-xccdf-profiles-with-tailoring-files",
+        'deploying-compliance-policies_security-compliance' => "managing_security_compliance/index#deploying-compliance-policies_security-compliance",
       }
     }.freeze
 
