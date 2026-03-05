@@ -4,6 +4,7 @@ require 'uri'
 class LinksChecker
   def initialize(toc:)
     @toc = JSON.parse(File.read(toc))
+    @aliases = (@toc['aliases'] || {}).transform_keys(&:downcase)
   end
 
   def test_link(url)
@@ -15,7 +16,7 @@ class LinksChecker
 
     return anchors unless anchor
 
-    anchors&.include?(anchor)
+    anchors&.include?(anchor) || anchors&.include?(@aliases[anchor.downcase])
   end
 
   private
@@ -47,18 +48,8 @@ class LinksChecker
 
     inner_hash = hash[first]
 
-    # The structure looks like this:
-    # { "guide1": { "chapter1": ["anchor1", "anchor2", "auxid1"] } }
-    # In this case, auxid1 is an auxiliary ID for chapter1
-    #
-    # If we haven't found a direct match, we need to look into the values to
-    # see if we can get a match by the auxiliary id. The auxiliary IDs are
-    # case-insensitive, hence the downcases
-    # The auxiliary ID lookup is only available at the chapter-anchor level
-    if inner_hash.nil? && hash.values.all? { |v| v.kind_of? Array }
-      key, _ = hash.find { |_k, v| v.map(&:downcase).include? first.downcase }
-      inner_hash = hash[key]
-    end
+    # If not found, try looking up by an auxiliary ID
+    inner_hash = hash[@aliases[first.downcase]] if inner_hash.nil?
 
     # rubocop:disable Rails/Blank
     return inner_hash if rest.nil? || rest.empty?
