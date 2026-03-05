@@ -29,12 +29,8 @@ module ForemanThemeSatellite
       'Networking' => "provisioning_hosts/index#adding-a-subnet-to-server-by-using-web-ui",
 
       # Puppet Guide
-      'FactsandtheENC' => "managing_configurations_by_using_puppet_integration/index#performing-configuration-management_managing-configurations-puppet",
-      'using-config-groups' => "managing_configurations_by_using_puppet_integration/index#creating-a-puppet-config-group_managing-configurations-puppet",
-      'SmartMatchers' => "managing_configurations_by_using_puppet_integration/index#Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet",
+      'FactsandtheENC' => "managing_configurations_by_using_puppet_integration/index#high-level-steps-for-configuration-management-with-puppet",
       'Parameters' => "managing_configurations_by_using_puppet_integration/index#Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet",
-      'Classes' => "managing_configurations_by_using_puppet_integration/index#Importing_Puppet_Classes_and_Environments_managing-configurations-puppet",
-      'Environments' => "managing_configurations_by_using_puppet_integration/index#Creating_a_Custom_Puppet_Environment_managing-configurations-puppet",
 
       # Administering
       'ConfigurationOptions' => "administering_red_hat_satellite/index",
@@ -46,8 +42,6 @@ module ForemanThemeSatellite
       'LDAPAuthentication' => "configuring_authentication_for_red_hat_satellite_users/index#configuring-an-ldap-server-as-an-external-identity-provider-for-project_authentication",
       'ExternalAuthentication' => "configuring_authentication_for_red_hat_satellite_users/index",
       'Bookmarks' => "administering_red_hat_satellite/index#Searching_and_Bookmarking_admin",
-      'Policydeploymentoptions' => "managing_security_compliance/index#compliance-policy-deployment-options_security-compliance",
-      'CreatingSCAPcontent' => "managing_security_compliance/index#Configuring_SCAP_Contents_security-compliance",
 
       # Planning
       'SmartProxies' => "overview_concepts_and_deployment_considerations/index#Major-Satellite-Components_planning",
@@ -62,8 +56,8 @@ module ForemanThemeSatellite
       # Managing Security Compliance
       'Monitoring_Compliance_security-compliance' => "managing_security_compliance/index#Monitoring_Compliance_security-compliance",
       'Managing_Compliance_Policies_security-compliance' => "managing_security_compliance/index#Managing_Compliance_Policies_security-compliance",
-      'Configuring_SCAP_Contents_security-compliance' => "managing_security_compliance/index#Configuring_SCAP_Contents_security-compliance",
-      'tailoring-xccdf-profiles_security-compliance' => "managing_security_compliance/index#tailoring-xccdf-profiles_security-compliance",
+      'Configuring_SCAP_Contents_security-compliance' => "managing_security_compliance/index#configuring-scap-contents-for-compliance-policies-in-satellite",
+      'tailoring-xccdf-profiles_security-compliance' => "managing_security_compliance/index#customizing-xccdf-profiles-with-tailoring-files",
       'deploying-compliance-policies_security-compliance' => "managing_security_compliance/index#deploying-compliance-policies_security-compliance",
     }.freeze
 
@@ -86,6 +80,12 @@ module ForemanThemeSatellite
       'Managing_Configurations_Ansible' => {
         'Importing_Ansible_Roles_and_Variables_ansible' => "managing_configurations_by_using_ansible_integration/index#Importing_Ansible_Roles_and_Variables_ansible",
         'Overriding_Ansible_Variables_in_foreman_ansible' => "managing_configurations_by_using_ansible_integration/index#Overriding_Ansible_Variables_in_satellite_ansible",
+      },
+      'Managing_Configurations_Puppet' => {
+        'Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet' => "managing_configurations_by_using_puppet_integration/index#Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet",
+        'Creating_a_Custom_Puppet_Environment_managing-configurations-puppet' => "managing_configurations_by_using_puppet_integration/index#Creating_a_Custom_Puppet_Environment_managing-configurations-puppet",
+        'Importing_Puppet_Classes_and_Environments_managing-configurations-puppet' => "managing_configurations_by_using_puppet_integration/index#Importing_Puppet_Classes_and_Environments_managing-configurations-puppet",
+        'creating-a-puppet-config-group_managing-configurations-puppet' => "managing_configurations_by_using_puppet_integration/index#creating-a-puppet-config-group_managing-configurations-puppet",
       }
     }.freeze
 
