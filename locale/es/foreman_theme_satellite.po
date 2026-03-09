@@ -10,7 +10,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_theme_satellite 15.3.1\n"
+"Project-Id-Version: foreman_theme_satellite 16.2.3\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-11-21 10:43+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarde"
@@ -40,6 +40,9 @@ msgstr ""
 
 msgid "Customer portal"
 msgstr "Portal del cliente"
+
+msgid "Defaults to Red Hat online documentation. Override this setting to your Red Hat Offline Knowledge Portal instance URL for offline documentation support. Supports only HTTP and HTTPS schemes."
+msgstr ""
 
 msgid "Documentation"
 msgstr "Documentación"
@@ -76,6 +79,9 @@ msgstr "Sistema operativo predeterminado"
 
 msgid "Red Hat Satellite Blog"
 msgstr "Red Hat Satellite Blog"
+
+msgid "Red Hat documentation server URL"
+msgstr ""
 
 msgid "Satellite ticketing system"
 msgstr "Sistema de tiquetes Satellite "

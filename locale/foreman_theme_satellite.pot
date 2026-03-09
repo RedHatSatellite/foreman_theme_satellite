@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: foreman_theme_satellite 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-07 14:52+0200\n"
-"PO-Revision-Date: 2025-10-07 14:52+0200\n"
+"POT-Creation-Date: 2026-03-09 13:10+0000\n"
+"PO-Revision-Date: 2026-03-09 13:10+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -147,6 +147,17 @@ msgstr ""
 
 #: ../lib/foreman_theme_satellite/engine.rb:25
 msgid "Show unsupported provisioning templates"
+msgstr ""
+
+#: ../lib/foreman_theme_satellite/engine.rb:32
+msgid ""
+"Defaults to Red Hat online documentation. Override this setting to your Red Ha"
+"t Offline Knowledge Portal instance URL for offline documentation support. Sup"
+"ports only HTTP and HTTPS schemes."
+msgstr ""
+
+#: ../lib/foreman_theme_satellite/engine.rb:35
+msgid "Red Hat documentation server URL"
 msgstr ""
 
 #: ../webpack/components/fills/UpgradePage/SatelliteUpgradeHelperCard.js:11
