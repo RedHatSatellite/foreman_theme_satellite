@@ -3,7 +3,7 @@
   "locale_data": {
     "foreman_theme_satellite": {
       "": {
-        "Project-Id-Version": "foreman_theme_satellite 15.3.1",
+        "Project-Id-Version": "foreman_theme_satellite 16.2.3",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
         "Last-Translator": "Andi Chandler <andi@gowling.com>, 2024",
@@ -34,6 +34,9 @@
       ],
       "Customer portal": [
         "Customer portal"
+      ],
+      "Defaults to Red Hat online documentation. Override this setting to your Red Hat Offline Knowledge Portal instance URL for offline documentation support. Supports only HTTP and HTTPS schemes.": [
+        ""
       ],
       "Documentation": [
         "Documentation"
@@ -70,6 +73,9 @@
       ],
       "Red Hat Satellite Blog": [
         "Red Hat Satellite Blog"
+      ],
+      "Red Hat documentation server URL": [
+        ""
       ],
       "Satellite ticketing system": [
         "Satellite ticketing system"
