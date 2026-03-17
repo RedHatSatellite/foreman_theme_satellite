@@ -42,15 +42,13 @@ class LinksChecker
   def navigate_path(path, hash = @toc, path_so_far = [])
     return nil unless hash
 
-    first = path[0]
-    rest = path[1..]
+    first, *rest = path
 
-    if hash.is_a? Hash
+    case hash
+    when Hash
       inner_hash = hash[first]
-    elsif hash.is_a? Array
-      return nil unless rest.empty?
-      return hash.include?(first) ||
-             hash.include?(aliased_anchor_key(path_so_far, first))
+    when Array
+      return rest.empty? && (hash.include?(first) || hash.include?(aliased_anchor_key(path_so_far, first)))
     else
       raise "Not supposed to happen"
     end
@@ -58,17 +56,14 @@ class LinksChecker
     # If not found, try looking up by an auxiliary ID
     if inner_hash.nil?
       first = aliased_key(path_so_far, first)
-
       inner_hash = hash[first]
     end
-
-    path_so_far << first
 
     # rubocop:disable Rails/Blank
     return inner_hash if rest.nil? || rest.empty?
     # rubocop:enable Rails/Blank
 
-    navigate_path(rest, inner_hash, path_so_far)
+    navigate_path(rest, inner_hash, path_so_far << first)
   end
 
   def path_elements(path)
@@ -78,12 +73,12 @@ class LinksChecker
   end
 
   def aliased_anchor_key(path_so_far, key)
-    aliased_key(path_so_far, key, false)
+    aliased_key(path_so_far, key, path_fragment: false)
   end
 
-  def aliased_key(path_so_far, key, path_fragment = true)
+  def aliased_key(path_so_far, key, path_fragment: true)
     key = if path_fragment
-      (path_so_far + [key]).join('/')
+            (path_so_far + [key]).join('/')
           else
             path_so_far.join('/') + "##{key}"
           end
