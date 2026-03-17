@@ -43,7 +43,7 @@ class LinksChecker
     path.split('/html/', 2)[1]
   end
 
-  def navigate_path(path, hash = @toc, path_so_far = [])
+  def navigate_path(path, hash = @toc, path_so_far = nil)
     return nil unless hash
 
     first, *rest = path
@@ -52,7 +52,7 @@ class LinksChecker
     when Hash
       inner_hash = case_insensitive_lookup(hash, first)
     when Array
-      return rest.empty? && (hash.include?(first) || hash.include?(aliased_anchor_key(path_so_far, first)))
+      return rest.empty? && (hash.include?(first) || hash.include?(aliased_key(path_so_far, first, separator: '#')))
     else
       raise "Not supposed to happen"
     end
@@ -68,7 +68,7 @@ class LinksChecker
     return inner_hash if rest.nil? || rest.empty?
     # rubocop:enable Rails/Blank
 
-    navigate_path(rest, inner_hash, path_so_far << first)
+    navigate_path(rest, inner_hash, path_join(path_so_far, first))
   end
 
   def path_elements(path)
@@ -77,16 +77,8 @@ class LinksChecker
     (path_parts + [anchor]).compact
   end
 
-  def aliased_anchor_key(path_so_far, key)
-    aliased_key(path_so_far, key, path_fragment: false)
-  end
-
-  def aliased_key(path_so_far, key, path_fragment: true)
-    key = if path_fragment
-            (path_so_far + [key]).join('/')
-          else
-            path_so_far.join('/') + "##{key}"
-          end
+  def aliased_key(path_so_far, key, separator: '/')
+    key = path_join(path_so_far, key, separator)
     k, _v = @aliases.find { |_k, vs| vs.include? key.downcase }
 
     return nil if k.nil?
@@ -105,5 +97,9 @@ class LinksChecker
 
     _, v = hash.find { |k, _| k.casecmp(key).zero? }
     v
+  end
+
+  def path_join(path_so_far, fragment, separator = '/')
+    [path_so_far, fragment].compact.join(separator)
   end
 end
