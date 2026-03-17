@@ -46,7 +46,7 @@ class LinksChecker
 
     case hash
     when Hash
-      inner_hash = hash[first]
+      inner_hash = case_insensitive_lookup(hash, first)
     when Array
       return rest.empty? && (hash.include?(first) || hash.include?(aliased_anchor_key(path_so_far, first)))
     else
@@ -56,7 +56,8 @@ class LinksChecker
     # If not found, try looking up by an auxiliary ID
     if inner_hash.nil?
       first = aliased_key(path_so_far, first)
-      inner_hash = hash[first]
+      return if first.nil?
+      inner_hash = case_insensitive_lookup(hash, first)
     end
 
     # rubocop:disable Rails/Blank
@@ -86,5 +87,12 @@ class LinksChecker
     return nil if k.nil?
 
     path_elements(k).last
+  end
+
+  def case_insensitive_lookup(hash, key)
+    return hash[key] if hash[key]
+
+    _, v = hash.find { |k, _| k.casecmp(key).zero? }
+    v
   end
 end
