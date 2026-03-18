@@ -12,10 +12,11 @@ class LinksChecker
 
     return false unless doc_path
 
-    chapters = @toc[doc_path]
+    chapters = case_insensitive_lookup(@toc, doc_path)
     if chapters.nil?
       doc_path = guide_alias(doc_path)
-      chapters = @toc[doc_path]
+      return false if doc_path.nil?
+      chapters = case_insensitive_lookup(@toc, doc_path)
     end
 
     return false if chapters.nil? # no such page
@@ -71,5 +72,12 @@ class LinksChecker
     end
 
     k&.split('#')&.last
+  end
+
+  def case_insensitive_lookup(hash, key)
+    return hash[key] if hash[key]
+
+    _, v = hash.find { |k, _| k.casecmp(key).zero? }
+    v
   end
 end

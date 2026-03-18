@@ -55,14 +55,13 @@ class LinkCheckerTest < ActiveSupport::TestCase
     assert_not @checker.test_link("some_guide/index#nonexistent-anchor")
   end
 
-  test "guide matching is case sensitive" do
+  test "guide and anchor matching is case-insensitive" do
     assert @checker.test_link("some_guide/index")
-    assert_not @checker.test_link("SoMe_gUIDE/index")
-  end
-
-  test "anchor matching is case-insensitive" do
+    assert @checker.test_link("SoMe_gUIDE/index")
     assert @checker.test_link("some_guide/index#sub_anchor_mixed_case")
     assert @checker.test_link("some_guide/index#SUB_ANCHOR_MIXED_CASE")
+    assert @checker.test_link("SoMe_gUIDE/index#sub_anchor_mixed_case")
+    assert @checker.test_link("SoMe_gUIDE/index#SUB_ANCHOR_MIXED_CASE")
   end
 
   test "old anchor resolves to new anchor via alias" do
