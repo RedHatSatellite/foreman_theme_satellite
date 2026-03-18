@@ -2,6 +2,8 @@ require 'test_plugin_helper'
 require 'tempfile'
 require_relative '../link_checker'
 
+BASE_URL = 'https://something.somewhere.com/not/really/important/html/'.freeze
+
 # Structure mirrors the real toc.json
 MINIMAL_TOC = {
   "some_guide" => {
@@ -40,61 +42,56 @@ class LinkCheckerTest < ActiveSupport::TestCase
   end
 
   test "valid guide without anchor is valid" do
-    assert @checker.test_link("some_guide/index")
+    assert @checker.test_link("#{BASE_URL}some_guide/new-chapter")
   end
 
   test "non-existent guide is invalid" do
-    assert_not @checker.test_link("nonexistent_guide/index")
+    assert_not @checker.test_link("#{BASE_URL}nonexistent_guide/new-chapter")
   end
 
   test "valid guide with valid top-level chapter anchor is valid" do
-    assert @checker.test_link("some_guide/index#new-chapter")
+    assert @checker.test_link("#{BASE_URL}some_guide/new-chapter#new-anchor")
   end
 
   test "valid guide with invalid anchor is invalid" do
-    assert_not @checker.test_link("some_guide/index#nonexistent-anchor")
+    assert_not @checker.test_link("#{BASE_URL}some_guide/new-chapter#nonexistent-anchor")
   end
 
-  test "guide matching is case sensitive" do
-    assert @checker.test_link("some_guide/index")
-    assert_not @checker.test_link("SoMe_gUIDE/index")
-  end
-
-  test "anchor matching is case-insensitive" do
-    assert @checker.test_link("some_guide/index#sub_anchor_mixed_case")
-    assert @checker.test_link("some_guide/index#SUB_ANCHOR_MIXED_CASE")
+  test "guide, chapter and anchor matching is case-insensitive" do
+    assert @checker.test_link("#{BASE_URL}some_guide/new-chapter")
+    assert @checker.test_link("#{BASE_URL}SoMe_gUIDE/new-chapter")
+    assert @checker.test_link("#{BASE_URL}some_guide/chapter-with-subs#Sub_Anchor_Mixed_Case")
+    assert_not @checker.test_link("#{BASE_URL}some_guide/chapter-with-subs#sub_anchor_mixed_case")
+    assert_not @checker.test_link("#{BASE_URL}some_guide/chapter-with-subs#SUB_ANCHOR_MIXED_CASE")
+    assert @checker.test_link("#{BASE_URL}some_guide/New-Chapter")
   end
 
   test "old anchor resolves to new anchor via alias" do
-    # The alias maps: some_guide/new-chapter#new-anchor <- some_guide/old-chapter#old-anchor
+    # The alias maps: some_guide/new-chapter#new-anchor <- some_guide/new-chapter#old-anchor
     # A link pointing to the old anchor should be accepted because the checker
     # resolves it to the canonical new-anchor, which exists in the TOC.
-    assert @checker.test_link("some_guide/index#old-anchor")
+    assert @checker.test_link("#{BASE_URL}some_guide/new-chapter#old-anchor")
   end
 
   test "aliases are transitive" do
-    @checker.expects(:configured_redirects).returns({
-      "old_guide_name" => "some_guide",
-    })
-    assert @checker.test_link("old_guide_name/index#old-anchor")
+    @checker.expects(:configured_redirects).returns({ "old_guide_name" => "some_guide", "some_guide/old-chapter" => "some_guide/new-chapter" }).twice
+    assert @checker.test_link("#{BASE_URL}old_guide_name/old-chapter#old-anchor")
   end
 
   test "non-aliased unknown anchor is invalid" do
-    assert_not @checker.test_link("some_guide/index#completely-unknown-anchor")
+    assert_not @checker.test_link("#{BASE_URL}some_guide/new-chapter#completely-unknown-anchor")
   end
 
   test "old guide name with no configured redirect is considered invalid and emits a warning" do
     # old_guide_name is listed as an alias for some_guide, but CONFIGURED_REDIRECTS
     # is empty, so guide-level aliases must not be followed silently.
     _out, err = capture_io do
-      assert_not @checker.test_link("old_guide_name/index")
+      assert_not @checker.test_link("#{BASE_URL}old_guide_name/new-chapter")
     end
     assert_match(/old_guide_name/, err)
 
-    @checker.expects(:configured_redirects).returns({
-      "old_guide_name" => "some_guide",
-    })
-    assert @checker.test_link("old_guide_name/index")
+    @checker.expects(:configured_redirects).returns({ "old_guide_name" => "some_guide" })
+    assert @checker.test_link("#{BASE_URL}old_guide_name/new-chapter")
   end
 
   test "TOC without aliases key does not crash" do
@@ -103,9 +100,9 @@ class LinkCheckerTest < ActiveSupport::TestCase
     toc_without_aliases.close
 
     checker = LinksChecker.new(toc: toc_without_aliases.path)
-    assert checker.test_link("some_guide/index")
-    assert checker.test_link("some_guide/index#a-chapter")
-    assert_not checker.test_link("some_guide/index#missing")
+    assert checker.test_link("#{BASE_URL}some_guide/a-chapter")
+    assert_not checker.test_link("#{BASE_URL}some_guide/a-chapter#any-anchor")
+    assert_not checker.test_link("#{BASE_URL}some_guide/missing-chapter")
   ensure
     toc_without_aliases.unlink
   end
