@@ -4,6 +4,7 @@ require 'uri'
 class LinksChecker
   def initialize(toc:)
     @toc = JSON.parse(File.read(toc))
+    @aliases = (@toc['aliases'] || {}).to_h { |k, vs| [k.downcase, vs.map(&:downcase)] }
   end
 
   def test_link(url)
@@ -12,6 +13,10 @@ class LinksChecker
     return false unless doc_path
 
     chapters = @toc[doc_path]
+    if chapters.nil?
+      doc_path = guide_alias(doc_path)
+      chapters = @toc[doc_path]
+    end
 
     return false if chapters.nil? # no such page
     return true if anchor.nil? # the page exists, no particular anchor means we want just the page
@@ -19,12 +24,18 @@ class LinksChecker
     # Even though the ToC generated with html-multi in mind,
     # we can't properly dig due to html-single using anchors on index page for the whole section
     # dropping the intermediate path
-    page = chapters.keys.map(&:downcase) + chapters.values.flatten.map(&:downcase)
+    pages = chapters.keys.map(&:downcase) + chapters.values.flatten.map(&:downcase)
 
-    page.include?(anchor.downcase)
+    pages.include?(anchor.downcase) || pages.include?(guide_anchor_aliases(doc_path, anchor))
   end
 
   private
+
+  CONFIGURED_REDIRECTS = {}.freeze
+
+  def configured_redirects
+    CONFIGURED_REDIRECTS
+  end
 
   # Will decompose URL from managing_configurations_using_ansible_integration_in_red_hat_satellite/index#Importing_Ansible_Roles_and_Variables_ansible
   # to two parts:
@@ -37,5 +48,28 @@ class LinksChecker
     anchor = uri.fragment
 
     [doc_path, anchor]
+  end
+
+  def guide_alias(guide)
+    k, _v = @aliases.find { |_k, vs| vs.include? guide.downcase }
+
+    return if k.nil?
+
+    # If there's no anchor, there needs to be a redirect configured on the downstream documentation site
+    unless configured_redirects.include?(guide)
+      warn("Found an unknown alias from #{guide} to #{k}, considering this link as broken.")
+      return nil
+    end
+
+    k
+  end
+
+  def guide_anchor_aliases(guide, anchor)
+    k, _v = @aliases.find do |_k, aliases|
+      re = %r{^#{guide}/.*##{anchor}$}
+      aliases.any? { |a| a =~ re }
+    end
+
+    k&.split('#')&.last
   end
 end
