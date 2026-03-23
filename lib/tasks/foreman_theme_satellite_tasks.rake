@@ -21,9 +21,14 @@ namespace :foreman_theme_satellite do
       toc_file = File.expand_path('../../test/fixtures/toc.json', __dir__)
       puts "Using default TOC: #{toc_file}, to override please specify TOC=<toc_file>"
     end
+    aliases_file = ENV['ALIASES']
+    unless aliases_file
+      aliases_file = File.expand_path('../../test/fixtures/aliases.json', __dir__)
+      puts "Using default ALIASES: #{aliases_file}, to override please specify ALIASES=<aliases_file>"
+    end
 
     require_relative '../../test/link_checker'
-    checker = LinksChecker.new(toc: toc_file)
+    checker = LinksChecker.new(toc: toc_file, aliases: aliases_file)
 
     require_relative '../foreman_theme_satellite/documentation'
 

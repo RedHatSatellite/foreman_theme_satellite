@@ -2,9 +2,12 @@ require 'json'
 require 'uri'
 
 class LinksChecker
-  def initialize(toc:)
+  def initialize(toc:, aliases:)
     @toc = JSON.parse(File.read(toc))
-    @aliases = (@toc['aliases'] || {}).to_h { |k, vs| [k.downcase, vs.map(&:downcase)] }
+    @aliases = {}
+
+    return unless aliases && File.exist?(aliases)
+    @aliases = JSON.parse(File.read(aliases)).to_h { |k, vs| [k.downcase, vs.map(&:downcase)] }
   end
 
   def test_link(url)
