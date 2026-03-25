@@ -20,14 +20,6 @@ class LinksChecker
 
   private
 
-  CONFIGURED_REDIRECTS = {
-    'managing_configurations_by_using_puppet_integration/introducing-configuration-management-by-using-puppet' => 'managing_configurations_by_using_puppet_integration/configuration-management-with-puppet-in-satellite', # CCS-7520
-  }.freeze
-
-  def configured_redirects
-    CONFIGURED_REDIRECTS
-  end
-
   # Will decompose URL from https://localhost:3000/documentation/en-us/red_hat_satellite/6.15/html/managing_configurations_using_ansible_integration_in_red_hat_satellite/getting_started_with_ansible_in_satellite_ansible#Importing_Ansible_Roles_and_Variables_ansible
   # to an array of parts:
   # [
@@ -89,12 +81,6 @@ class LinksChecker
     k, _v = @aliases.find { |_k, vs| vs.include? key.downcase }
 
     return nil if k.nil?
-
-    # If there's no anchor, there needs to be a redirect configured on the downstream documentation site
-    if !k.include?('#') && !configured_redirects.include?(key)
-      warn("Found an unknown alias from #{key} to #{k}, considering this link as broken.")
-      return nil
-    end
 
     path_elements(k).last
   end

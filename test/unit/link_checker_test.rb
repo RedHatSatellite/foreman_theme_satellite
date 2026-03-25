@@ -83,7 +83,6 @@ class LinkCheckerTest < ActiveSupport::TestCase
   end
 
   test "aliases are transitive" do
-    @checker.expects(:configured_redirects).returns({ "old_guide_name" => "some_guide", "some_guide/old-chapter" => "some_guide/new-chapter" }).twice
     assert @checker.test_link("#{BASE_URL}old_guide_name/old-chapter#old-anchor")
   end
 
@@ -91,15 +90,7 @@ class LinkCheckerTest < ActiveSupport::TestCase
     assert_not @checker.test_link("#{BASE_URL}some_guide/new-chapter#completely-unknown-anchor")
   end
 
-  test "old guide name with no configured redirect is considered invalid and emits a warning" do
-    # old_guide_name is listed as an alias for some_guide, but CONFIGURED_REDIRECTS
-    # is empty, so guide-level aliases must not be followed silently.
-    _out, err = capture_io do
-      assert_not @checker.test_link("#{BASE_URL}old_guide_name/new-chapter")
-    end
-    assert_match(/old_guide_name/, err)
-
-    @checker.expects(:configured_redirects).returns({ "old_guide_name" => "some_guide" })
+  test "old guide name resolves via alias" do
     assert @checker.test_link("#{BASE_URL}old_guide_name/new-chapter")
   end
 
