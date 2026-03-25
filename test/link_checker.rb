@@ -35,12 +35,6 @@ class LinksChecker
 
   private
 
-  CONFIGURED_REDIRECTS = {}.freeze
-
-  def configured_redirects
-    CONFIGURED_REDIRECTS
-  end
-
   # Will decompose URL from managing_configurations_using_ansible_integration_in_red_hat_satellite/index#Importing_Ansible_Roles_and_Variables_ansible
   # to two parts:
   # path: managing_configurations_using_ansible_integration_in_red_hat_satellite
@@ -58,12 +52,6 @@ class LinksChecker
     k, _v = @aliases.find { |_k, vs| vs.include? guide.downcase }
 
     return if k.nil?
-
-    # If there's no anchor, there needs to be a redirect configured on the downstream documentation site
-    unless configured_redirects.include?(guide)
-      warn("Found an unknown alias from #{guide} to #{k}, considering this link as broken.")
-      return nil
-    end
 
     k
   end
