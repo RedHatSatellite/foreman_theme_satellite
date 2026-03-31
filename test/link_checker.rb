@@ -2,7 +2,7 @@ require 'json'
 require 'uri'
 
 class LinksChecker
-  def initialize(toc:, aliases:)
+  def initialize(toc:, aliases: nil)
     @toc = JSON.parse(File.read(toc))
     @aliases = {}
 
@@ -58,7 +58,7 @@ class LinksChecker
 
   def guide_anchor_aliases(guide, anchor)
     k, _v = @aliases.find do |_k, aliases|
-      re = %r{^#{guide}/.*##{anchor}$}
+      re = %r{^#{Regexp.escape(guide)}/.*##{Regexp.escape(anchor)}$}
       aliases.any? { |a| a =~ re }
     end
 
