@@ -5,20 +5,20 @@ module ForemanThemeSatellite
   module Documentation
     USER_GUIDE_DICTIONARY = {
       # Managing Hosts
-      'ForemanRemoteExecution' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring-and-setting-up-remote-jobs",
-      'ExecutingaJob' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring-and-setting-up-remote-jobs#configuring-the-global-capsule-remote-execution-setting-by-using-web-ui",
-      'JobTemplates' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring-and-setting-up-remote-jobs#customizing-job-templates",
+      'ForemanRemoteExecution' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts",
+      'ExecutingaJob' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#configuring-the-global-capsule-remote-execution-setting-by-using-web-ui",
+      'JobTemplates' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts#customizing-job-templates",
       'ReportTemplates' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/using_report_templates_to_monitor_hosts_managing-hosts",
       'Reports' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/using_report_templates_to_monitor_hosts_managing-hosts",
 
       # Provisioning Hosts
-      'Architectures' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-client-platforms#creating-architectures-by-using-web-ui",
+      'Architectures' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-client-platforms#creating-architectures_provisioning",
       'Provisioning' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/",
-      'InstallationMedia' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-provisioning-content#adding-installation-media-by-using-web-ui",
-      'PartitionTables' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-templates-for-provisioning#creating-partition-tables-by-using-web-ui",
+      'InstallationMedia' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-provisioning-content#adding-installation-media_provisioning",
+      'PartitionTables' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-templates-for-provisioning#creating-partition-tables_provisioning",
       'ProvisioningTemplates' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-templates-for-provisioning#provisioning-templates",
-      'OperatingSystems' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-client-platforms#creating-operating-systems-by-using-web-ui",
-      'UsingComputeProfiles' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-client-platforms#creating-compute-profiles-by-using-web-ui",
+      'OperatingSystems' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-client-platforms#creating-operating-systems_provisioning",
+      'UsingComputeProfiles' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-client-platforms#creating-compute-profiles_provisioning",
       'ComputeResources' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/",
       'NoVNC' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/using-novnc-to-access-virtual-machines_provisioning",
       'VMwareNotes' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_virtual_machines_in_vmware_vmware-provisioning",
@@ -26,7 +26,7 @@ module ForemanThemeSatellite
       'LibvirtNote' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_virtual_machines_on_kvm_kvm-provisioning",
       'EC2' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning-cloud-instances-on-amazon-ec2",
       'GoogleComputeEngineNotes' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/provisioning_cloud_instances_on_google_compute_engine_gce-provisioning",
-      'Networking' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-networking#adding-a-subnet-to-server-by-using-web-ui",
+      'Networking' => "#{ForemanThemeSatellite.documentation_root}/provisioning_hosts/preparing-networking#Adding_a_Subnet_to_Server_provisioning",
 
       # Puppet Guide
       'FactsandtheENC' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_puppet_integration/introducing-configuration-management-by-using-puppet#performing-configuration-management_managing-configurations-puppet",
@@ -76,7 +76,7 @@ module ForemanThemeSatellite
       },
       'Managing_Hosts' => {
         'registering-a-host_managing-hosts' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/registering-hosts-and-setting-up-host-integration_managing-hosts#Registering_Hosts_by_Using_Global_Registration_managing-hosts",
-        'setting-minimal-data-collection' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/monitoring-hosts-by-using-red-hat-lightspeed-in-cloud#data-control-settings",
+        'setting-minimal-data-collection' => "#{ForemanThemeSatellite.documentation_root}/managing_hosts/monitoring-hosts-by-using-insights#setting-minimal-data-collection",
       },
       'Managing_Configurations_Ansible' => {
         'Importing_Ansible_Roles_and_Variables_ansible' => "#{ForemanThemeSatellite.documentation_root}/managing_configurations_by_using_ansible_integration/getting_started_with_ansible_in_satellite_ansible#Importing_Ansible_Roles_and_Variables_ansible",
