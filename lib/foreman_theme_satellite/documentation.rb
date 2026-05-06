@@ -71,7 +71,7 @@ module ForemanThemeSatellite
       'Managing_Hosts' => {
         'creating-a-job-template_managing-hosts' => "managing_hosts/index#creating-a-job-template-by-using-web-ui",
         'executing-a-remote-job_managing-hosts' => "managing_hosts/index#Remote-Execution-in-Satellite_managing-hosts",
-        'registering-a-host_managing-hosts' => "managing_hosts/index#Registering_Hosts_by_Using_Global_Registration_managing-hosts",
+        'registering-hosts-by-using-global-registration' => "managing_hosts/index#registering-hosts-by-using-global-registration",
         'setting-minimal-data-collection' => "managing_hosts/index#data-control-settings",
       },
       'Managing_Configurations_Ansible' => {
