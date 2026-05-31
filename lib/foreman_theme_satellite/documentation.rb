@@ -73,6 +73,7 @@ module ForemanThemeSatellite
         'dependency-solving-for-content-views' => "managing_content/index#dependency-solving-for-content-views",
       },
       'Managing_Hosts' => {
+        'configuring-foreman-server-for-cloud-connection' => "administering_red_hat_satellite/index#configuring-satellite-server-for-cloud-connection",
         'creating-a-job-template_managing-hosts' => "managing_hosts/index#creating-a-job-template-by-using-web-ui",
         'executing-a-remote-job_managing-hosts' => "managing_hosts/index#Remote-Execution-in-Satellite_managing-hosts",
         'registering-a-host_managing-hosts' => "managing_hosts/index#registering-hosts-by-using-global-registration",
