@@ -69,11 +69,11 @@ module ForemanThemeSatellite
         'Products_and_Repositories_content-management' => "managing_content/index#Products_and_Repositories_content-management",
       },
       'Managing_Hosts' => {
+        'configuring-foreman-server-for-cloud-connection' => "administering_red_hat_satellite/index#configuring-satellite-server-for-cloud-connection",
         'creating-a-job-template_managing-hosts' => "managing_hosts/index#creating-a-job-template-by-using-web-ui",
         'executing-a-remote-job_managing-hosts' => "managing_hosts/index#Remote-Execution-in-Satellite_managing-hosts",
         'registering-a-host_managing-hosts' => "managing_hosts/index#registering-hosts-by-using-global-registration",
         'setting-minimal-data-collection' => "administering_red_hat_satellite/index#data-control-settings-for-hosted-red-hat-lightspeed",
-        'configuring-foreman-server-for-cloud-connection' => "managing_hosts/index#configuring-satellite-server-for-cloud-connection",
       },
       'Managing_Configurations_Ansible' => {
         'Importing_Ansible_Roles_and_Variables_ansible' => "managing_configurations_by_using_ansible_integration/index#Importing_Ansible_Roles_and_Variables_ansible",

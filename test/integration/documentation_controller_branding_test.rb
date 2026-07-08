@@ -10,7 +10,7 @@ class DocumentationControllerBrandingTest < ActionDispatch::IntegrationTest
   def test_docs_redirect_inventory_upload_documentation
     get "/links/docs/Managing_Hosts?chapter=configuring-foreman-server-for-cloud-connection"
 
-    assert_redirected_to "https://docs.redhat.com/documentation/en-us/red_hat_satellite/#{ForemanThemeSatellite.documentation_version}/html-single/managing_hosts/index#configuring-satellite-server-for-cloud-connection"
+    assert_redirected_to "https://docs.redhat.com/documentation/en-us/red_hat_satellite/#{ForemanThemeSatellite.documentation_version}/html-single/administering_red_hat_satellite/index#configuring-satellite-server-for-cloud-connection"
   end
 
   def test_docs_redirect_unknown_chapter
