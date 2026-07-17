@@ -411,7 +411,6 @@
       "Port_and_firewall_requirements_satellite",
       "Enabling_Connections_from_a_Client_to_Server_satellite",
       "verifying-dns-resolution_satellite",
-      "tuning-with-predefined-profiles_satellite",
       "requirements-for-installation-in-an-ipv4-network"
     ],
     "preparing-environment-for-installation-in-ipv6-network_satellite": [
@@ -427,6 +426,9 @@
       "configuring-server_satellite",
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite",
       "configuring-foreman-repositories-el-dnf_el8"
+    ],
+    "tuning-with-predefined-profiles_satellite": [
+
     ],
     "performing-additional-configuration-on-server_satellite": [
       "using-insights-with-satellite-server_satellite",
@@ -472,8 +474,7 @@
       "supported-browsers_satellite",
       "Port_and_firewall_requirements_satellite",
       "Enabling_Connections_from_a_Client_to_Server_satellite",
-      "verifying-dns-resolution_satellite",
-      "tuning-with-predefined-profiles_satellite"
+      "verifying-dns-resolution_satellite"
     ],
     "installing_server_disconnected_satellite": [
       "downloading-the-binary-dvd-images_satellite",
@@ -484,6 +485,9 @@
       "configuring-server_satellite",
       "disabling-subscription-connection_satellite",
       "Importing_a_Red_Hat_Subscription_Manifest_into_Server_satellite"
+    ],
+    "tuning-with-predefined-profiles_satellite": [
+
     ],
     "performing-additional-configuration": [
       "configuring-satellite-server-to-consume-content-from-a-custom-cdn_satellite",
@@ -521,6 +525,7 @@
       "Overriding_Ansible_Variables_in_satellite_ansible",
       "adding-rhel-system-roles_ansible",
       "synchronizing-ansible-collections_ansible",
+      "consuming-content-from-an-ansible-collection-repository",
       "customizing-ansible-configuration_ansible",
       "using-ansible-vault-with-satellite_ansible",
       "Ansible-paths_ansible"
@@ -805,7 +810,8 @@
       "cli-importing-individual-iso-images-and-files"
     ],
     "managing_ansible_content_content-management": [
-      "synchronizing-ansible-collections_content-management"
+      "synchronizing-ansible-collections_content-management",
+      "consuming-content-from-an-ansible-collection-repository"
     ],
     "managing_custom_file_type_content_content-management": [
       "Creating_a_Local_Source_for_a_Custom_File_Type_Repository_content-management",
@@ -1116,9 +1122,6 @@
       "Supported-Client-Architectures-for-Host-Provisioning_planning",
       "Supported-Client-Architectures-for-Configuration-Management_planning",
       "supported-usage-and-versions-of-foreman-components-additional-resources_planning"
-    ],
-    "part-deployment_planning": [
-
     ],
     "chap-architecture_guide-deployment_scenarios": [
       "sect-Architecture_Guide-Single_Location",
