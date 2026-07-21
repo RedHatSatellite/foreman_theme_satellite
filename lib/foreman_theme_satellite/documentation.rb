@@ -14,19 +14,19 @@ module ForemanThemeSatellite
       # Provisioning Hosts
       'Architectures' => "provisioning_hosts/index#creating-architectures-by-using-web-ui",
       'Provisioning' => "provisioning_hosts/index",
-      'InstallationMedia' => "provisioning_hosts/index#adding-installation-media-by-using-web-ui",
+      'InstallationMedia' => "provisioning_hosts/index#adding-installation-media-to-satellite-by-using-web-ui",
       'PartitionTables' => "provisioning_hosts/index#creating-partition-tables-by-using-web-ui",
       'ProvisioningTemplates' => "provisioning_hosts/index#provisioning-templates",
       'OperatingSystems' => "provisioning_hosts/index#creating-operating-systems-by-using-web-ui",
       'UsingComputeProfiles' => "provisioning_hosts/index#creating-compute-profiles-by-using-web-ui",
       'ComputeResources' => "provisioning_hosts/index",
-      'NoVNC' => "provisioning_hosts/index#using-novnc-to-access-virtual-machines_provisioning",
-      'VMwareNotes' => "provisioning_hosts/index#Provisioning_Virtual_Machines_in_VMware_vmware-provisioning",
-      'OpenStackNotes' => "provisioning_hosts/index#Provisioning_Cloud_Instances_OpenStack_openstack-provisioning",
-      'LibvirtNote' => "provisioning_hosts/index#Provisioning_Virtual_Machines_on_KVM_kvm-provisioning",
+      'NoVNC' => "provisioning_hosts/index#using-novnc-to-access-virtual-machines",
+      'VMwareNotes' => "provisioning_hosts/index#provisioning-virtual-machines-in-vmware",
+      'OpenStackNotes' => "provisioning_hosts/index#provisioning-cloud-instances-on-red-hat-openstack-services-on-openshift",
+      'LibvirtNote' => "provisioning_hosts/index#provisioning-virtual-machines-on-kvm",
       'EC2' => "provisioning_hosts/index#provisioning-cloud-instances-on-amazon-ec2",
-      'GoogleComputeEngineNotes' => "provisioning_hosts/index#Provisioning_Cloud_Instances_on_Google_Compute_Engine_gce-provisioning",
-      'Networking' => "provisioning_hosts/index#adding-a-subnet-to-server-by-using-web-ui",
+      'GoogleComputeEngineNotes' => "provisioning_hosts/index#provisioning-cloud-instances-on-google-compute-engine",
+      'Networking' => "provisioning_hosts/index#adding-a-subnet-to-satellite-server-by-using-web-ui",
 
       # Puppet Guide
       'FactsandtheENC' => "managing_configurations_by_using_puppet_integration/index#high-level-steps-for-configuration-management-with-puppet",
@@ -40,12 +40,12 @@ module ForemanThemeSatellite
       'ConfigurationOptions' => "administering_red_hat_satellite/index",
       'PuppetReports' => "administering_red_hat_satellite/index#Using_the_Project_Content_Dashboard_admin",
       'Mail_Notifications' => "administering_red_hat_satellite/index#Configuring_Email_Notifications_admin",
-      'Realm' => "installing_satellite_server_in_a_connected_network_environment/index#configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_satellite",
-      'Searching' => "administering_red_hat_satellite/index#Searching_and_Bookmarking_admin",
+      'Realm' => "integrating_provisioning_infrastructure_services/index#configuring-satellite-to-manage-the-lifecycle-of-a-host-registered-to-a-identity-management-realm",
+      'Searching' => "administering_red_hat_satellite/index#working-efficiently-with-web-ui",
       'RolesandPermissions' => "administering_red_hat_satellite/index#Managing_Users_and_Roles_admin",
       'LDAPAuthentication' => "configuring_authentication_for_red_hat_satellite_users/index#configuring-an-ldap-server-as-an-external-identity-provider-for-project_authentication",
       'ExternalAuthentication' => "configuring_authentication_for_red_hat_satellite_users/index",
-      'Bookmarks' => "administering_red_hat_satellite/index#Searching_and_Bookmarking_admin",
+      'Bookmarks' => "administering_red_hat_satellite/index#working-efficiently-with-web-ui",
 
       # Planning
       'SmartProxies' => "overview_concepts_and_deployment_considerations/index#Major-Satellite-Components_planning",
@@ -59,9 +59,9 @@ module ForemanThemeSatellite
     }.freeze
 
     PLUGINS_DOCUMENTATION = {
-      'foreman_azure' => "provisioning_hosts/index#Provisioning_Cloud_Instances_on_Microsoft_Azure_Resource_Manager_azure-provisioning",
+      'foreman_azure' => "provisioning_hosts/index#provisioning-cloud-instances-on-microsoft-azure",
       'foreman_discovery' => "provisioning_hosts/index#discovering-hosts-on-a-network",
-      'foreman_kubevirt' => "provisioning_hosts/index#Provisioning_Virtual_Machines_Kubevirt_kubevirt-provisioning",
+      'foreman_kubevirt' => "provisioning_hosts/index#provisioning-virtual-machines-on-openshift-virtualization",
     }.freeze
 
     DOCS_GUIDES_LINKS = {
@@ -71,8 +71,8 @@ module ForemanThemeSatellite
       'Managing_Hosts' => {
         'creating-a-job-template_managing-hosts' => "managing_hosts/index#creating-a-job-template-by-using-web-ui",
         'executing-a-remote-job_managing-hosts' => "managing_hosts/index#Remote-Execution-in-Satellite_managing-hosts",
-        'registering-a-host_managing-hosts' => "managing_hosts/index#Registering_Hosts_by_Using_Global_Registration_managing-hosts",
-        'setting-minimal-data-collection' => "managing_hosts/index#data-control-settings",
+        'registering-a-host_managing-hosts' => "managing_hosts/index#registering-hosts-by-using-global-registration",
+        'setting-minimal-data-collection' => "administering_red_hat_satellite/index#data-control-settings-for-hosted-red-hat-lightspeed",
       },
       'Managing_Configurations_Ansible' => {
         'Importing_Ansible_Roles_and_Variables_ansible' => "managing_configurations_by_using_ansible_integration/index#Importing_Ansible_Roles_and_Variables_ansible",
