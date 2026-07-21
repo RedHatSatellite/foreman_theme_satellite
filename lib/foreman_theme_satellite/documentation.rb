@@ -40,7 +40,7 @@ module ForemanThemeSatellite
       'ConfigurationOptions' => "administering_red_hat_satellite/index",
       'PuppetReports' => "administering_red_hat_satellite/index#Using_the_Project_Content_Dashboard_admin",
       'Mail_Notifications' => "administering_red_hat_satellite/index#Configuring_Email_Notifications_admin",
-      'Realm' => "integrating_provisioning_infrastructure_services/index#configuring-project-to-manage-the-lifecycle-of-a-host-registered-to-a-freeipa-realm_admin-network",
+      'Realm' => "integrating_provisioning_infrastructure_services/index#configuring-satellite-to-manage-the-lifecycle-of-a-host-registered-to-a-identity-management-realm",
       'Searching' => "administering_red_hat_satellite/index#working-efficiently-with-web-ui",
       'RolesandPermissions' => "administering_red_hat_satellite/index#Managing_Users_and_Roles_admin",
       'LDAPAuthentication' => "configuring_authentication_for_red_hat_satellite_users/index#configuring-an-ldap-server-as-an-external-identity-provider-for-project_authentication",
