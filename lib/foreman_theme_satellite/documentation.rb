@@ -65,6 +65,9 @@ module ForemanThemeSatellite
     }.freeze
 
     DOCS_GUIDES_LINKS = {
+      'Administering_Project' => {
+        'configuring-foreman-server-for-cloud-connection' => "administering_red_hat_satellite/index#configuring-satellite-server-for-cloud-connection",
+      },
       'Managing_Content' => {
         'Products_and_Repositories_content-management' => "managing_content/index#Products_and_Repositories_content-management",
       },
