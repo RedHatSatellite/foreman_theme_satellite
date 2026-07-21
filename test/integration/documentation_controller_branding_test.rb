@@ -4,7 +4,7 @@ class DocumentationControllerBrandingTest < ActionDispatch::IntegrationTest
   def test_docs_redirect_branded
     get "/links/docs/Managing_Hosts?chapter=registering-a-host_managing-hosts"
 
-    assert_redirected_to "https://docs.redhat.com/documentation/en-us/red_hat_satellite/#{ForemanThemeSatellite.documentation_version}/html-single/managing_hosts/index#Registering_Hosts_by_Using_Global_Registration_managing-hosts"
+    assert_redirected_to "https://docs.redhat.com/documentation/en-us/red_hat_satellite/#{ForemanThemeSatellite.documentation_version}/html-single/managing_hosts/index#registering-hosts-by-using-global-registration"
   end
 
   def test_docs_redirect_unknown_chapter
