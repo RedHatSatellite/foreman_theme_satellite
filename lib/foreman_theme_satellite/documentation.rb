@@ -70,6 +70,7 @@ module ForemanThemeSatellite
       },
       'Managing_Content' => {
         'Products_and_Repositories_content-management' => "managing_content/index#Products_and_Repositories_content-management",
+        'dependency-solving-for-content-views' => "managing_content/index#dependency-solving-for-content-views",
       },
       'Managing_Hosts' => {
         'creating-a-job-template_managing-hosts' => "managing_hosts/index#creating-a-job-template-by-using-web-ui",
