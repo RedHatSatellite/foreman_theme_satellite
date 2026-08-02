@@ -1,0 +1,44 @@
+{
+  "administering_red_hat_satellite/configuring-satellite-for-red-hat-lightspeed-analytics#data-control-settings-for-hosted-red-hat-lightspeed": [
+    "administering_red_hat_satellite/configuring-satellite-for-red-hat-lightspeed-analytics#setting-minimal-data-collection"
+  ],
+  "managing_configurations_by_using_puppet_integration/configuration-management-with-puppet-in-satellite": [
+    "managing_configurations_by_using_puppet_integration/introducing-configuration-management-by-using-puppet"
+  ],
+  "managing_configurations_by_using_puppet_integration/configuration-management-with-puppet-in-satellite#high-level-steps-for-configuration-management-with-puppet": [
+    "managing_configurations_by_using_puppet_integration/configuration-management-with-puppet-in-satellite#performing-configuration-management_managing-configurations-puppet"
+  ],
+  "managing_hosts/monitoring-hosts-by-using-red-hat-lightspeed-in-cloud": [
+    "managing_hosts/monitoring-hosts-by-using-insights"
+  ],
+  "managing_hosts/configuring-and-setting-up-remote-jobs": [
+    "managing_hosts/configuring_and_setting_up_remote_jobs_managing-hosts"
+  ],
+  "managing_security_compliance/configuring-scap-contents-for-compliance-policies-in-satellite": [
+    "managing_security_compliance/Configuring_SCAP_Contents_security-compliance"
+  ],
+  "managing_security_compliance/configuring-scap-contents-for-compliance-policies-in-satellite#customizing-xccdf-profiles-with-tailoring-files": [
+    "managing_security_compliance/configuring-scap-contents-for-compliance-policies-in-satellite#tailoring-xccdf-profiles_security-compliance"
+  ],
+  "managing_security_compliance/Managing_Compliance_Policies_security-compliance": [
+    "managing_security_compliance/compliance-policy-deployment-options_security-compliance"
+  ],
+  "provisioning_hosts/preparing-networking-for-host-management#adding-a-subnet-to-satellite-server-by-using-web-ui": [
+    "provisioning_hosts/preparing-networking-for-host-management#Adding_a_Subnet_to_Server_provisioning"
+  ],
+  "provisioning_hosts/preparing-provisioning-content#adding-installation-media-to-satellite-by-using-web-ui": [
+    "provisioning_hosts/preparing-provisioning-content#adding-installation-media_provisioning"
+  ],
+  "provisioning_hosts/preparing-client-platforms#creating-operating-systems-by-using-web-ui": [
+    "provisioning_hosts/preparing-client-platforms#creating-operating-systems_provisioning"
+  ],
+  "provisioning_hosts/preparing-client-platforms#creating-architectures-by-using-web-ui": [
+    "provisioning_hosts/preparing-client-platforms#creating-architectures_provisioning"
+  ],
+  "provisioning_hosts/preparing-client-platforms#creating-compute-profiles-by-using-web-ui": [
+    "provisioning_hosts/preparing-client-platforms#creating-compute-profiles_provisioning"
+  ],
+  "provisioning_hosts/preparing-templates-for-provisioning#creating-partition-tables-by-using-web-ui": [
+    "provisioning_hosts/preparing-templates-for-provisioning#creating-partition-tables_provisioning"
+  ]
+}
