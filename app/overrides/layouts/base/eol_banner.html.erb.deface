@@ -24,7 +24,7 @@ end %>
     <%= _("Kindly plan to upgrade Satellite to the supported version, for upgrade guidance see ") %><a href="https://access.redhat.com/labsinfo/satelliteupgradehelper"><%= _("Red Hat Satellite Upgrade Helper") %>.
     </div>
   </div>
-  <span id="satellite-oel-banner-dismiss-button" style="position: absolute; font-size: 20px; top: 0px; right: 5px; cursor: pointer;">&times;</span>
+  <span id="satellite-eol-banner-dismiss-button" style="position: absolute; font-size: 20px; top: 0px; right: 5px; cursor: pointer;">&times;</span>
 </div>
 
 <script>
@@ -45,7 +45,7 @@ end %>
     }
   }
 
-  const dismissButton = document.getElementById('satellite-oel-banner-dismiss-button');
+  const dismissButton = document.getElementById('satellite-eol-banner-dismiss-button');
   dismissButton.addEventListener('click', () => {
       element.style.display = 'none';
       const body = document.body
