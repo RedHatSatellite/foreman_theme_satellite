@@ -1,0 +1,11 @@
+// Hide identified standalone controls only. Do not match hrefs: welcome
+// pages use those same /links destinations inside sentences.
+.satellite-documentation-hidden,
+[data-ouia-component-id="doc-url-dropdown"],
+[data-ouia-component-id="action-buttons-documentation"],
+[data-ouia-component-id="register-host-documentation-button"],
+[data-ouia-component-id="audits-documentation-button"],
+[data-ouia-component-id="inventory-documentation-button"],
+[data-ouia-component-id="upgrade-docs-button"] {
+  display: none !important;
+}

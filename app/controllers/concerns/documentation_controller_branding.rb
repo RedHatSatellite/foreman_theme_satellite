@@ -3,6 +3,17 @@ require_relative '../../../lib/foreman_theme_satellite/documentation'
 module DocumentationControllerBranding
   extend ActiveSupport::Concern
 
+  # Keep the detailed mappings below for future restoration. All public
+  # documentation redirects currently land on the configured version's index.
+  def external_url(type:, options: {})
+    if %w[manual docs plugin_manual wiki].include?(type.to_s) ||
+        (type.to_s == 'upgrade' && options[:section] == 'documentation')
+      documentation_root_url
+    else
+      super
+    end
+  end
+
   def documentation_url(section = nil, options = {})
     url = ''
     unless section.nil?
@@ -55,12 +66,10 @@ module DocumentationControllerBranding
     "#{unversioned_documentation_root}/#{ForemanThemeSatellite.documentation_version}"
   end
 
-  def documentation_root
-    "#{unversioned_documentation_root}/#{ForemanThemeSatellite.documentation_version}/html-single"
-  end
+  alias documentation_root documentation_root_url
 
   def unversioned_documentation_root
-    "#{Setting[:satellite_documentation_url]}/documentation/en-us/red_hat_satellite"
+    "#{Setting[:satellite_documentation_url]}/en/documentation/red_hat_satellite"
   end
 
   private
