@@ -1,4 +1,4 @@
-require_relative '../../../lib/foreman_theme_satellite/documentation'
+require_relative '../../../lib/foreman_theme_satellite/documentation_link_resolver'
 
 module DocumentationControllerBranding
   extend ActiveSupport::Concern
@@ -8,7 +8,7 @@ module DocumentationControllerBranding
     unless section.nil?
       dictionary = ForemanThemeSatellite::Documentation::USER_GUIDE_DICTIONARY
       matched_key = dictionary.keys.sort_by(&:length).reverse.find {|key| section.include? key}
-      url = "#{documentation_root}/#{dictionary[matched_key]}" if matched_key
+      url = mapped_documentation_url(dictionary[matched_key]) if matched_key
     end
     if url.empty?
       upstream_url = super(section, options)
@@ -23,7 +23,7 @@ module DocumentationControllerBranding
 
   def plugin_documentation_url
     branded_url = ForemanThemeSatellite::Documentation::PLUGINS_DOCUMENTATION[plugin_documentation_params[:name]]
-    branded_url ? "#{documentation_root}/#{branded_url}" : super
+    branded_url ? mapped_documentation_url(branded_url) : super
   end
 
   def wiki_url(section: '')
@@ -39,7 +39,7 @@ module DocumentationControllerBranding
   # rubocop:disable Lint/UnusedMethodArgument
   def docs_url(guide:, flavor:, chapter: nil)
     url = ForemanThemeSatellite::Documentation::DOCS_GUIDES_LINKS.dig(guide, chapter)
-    url ? "#{documentation_root}/#{url}" : "#{documentation_root}/#{guide.downcase}/#{chapter}"
+    url ? mapped_documentation_url(url) : "#{documentation_root}/#{guide.downcase}/#{chapter}"
   end
 
   def upgrade_url(section)
@@ -56,14 +56,18 @@ module DocumentationControllerBranding
   end
 
   def documentation_root
-    "#{unversioned_documentation_root}/#{ForemanThemeSatellite.documentation_version}/html-single"
+    "#{documentation_root_url}/html-single"
   end
 
   def unversioned_documentation_root
-    "#{Setting[:satellite_documentation_url]}/documentation/en-us/red_hat_satellite"
+    "#{Setting[:satellite_documentation_url]}/en/documentation/red_hat_satellite"
   end
 
   private
+
+  def mapped_documentation_url(path)
+    ForemanThemeSatellite::DocumentationLinkResolver.resolve_url(root: documentation_root_url, path: path)
+  end
 
   def redirect_root_url(upstream_url)
     docs_url_setting = Foreman.settings.find(:satellite_documentation_url)

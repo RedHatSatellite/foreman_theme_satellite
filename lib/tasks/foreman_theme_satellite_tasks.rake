@@ -35,7 +35,9 @@ namespace :foreman_theme_satellite do
     all_links = ForemanThemeSatellite::Documentation::USER_GUIDE_DICTIONARY
                 .merge(ForemanThemeSatellite::Documentation::PLUGINS_DOCUMENTATION)
                 .merge(ForemanThemeSatellite::Documentation.flat_docs_guides_links)
+                .transform_values { |paths| Array(paths).first }
 
+    # The TOC describes the old documentation; validate the old path of each pair.
     # The links are either
     # - path fragments - managing_hosts/index#data-control-settings
     # - full URLs - https://access.redhat.com/products/red-hat-satellite/#support

@@ -77,7 +77,20 @@ All links to documentation in Foreman are local and redirected to
 `links_controller`. This controller is prepended with
 `documentation_controller_branding` concern that uses dictionary stored in
 `lib/foreman_theme_satellite/documentation.rb` to redirect documentation to
-downstream URLs.
+downstream URLs. Dictionary values are explicit `[old_path, new_path]` pairs, for example
+`["managing_hosts/index#customizing-job-templates", "administer-customizing-job-templates"]`.
+Edit the second value to change a category or topic ID; new paths are never derived
+from old paths. A single string represents a link with no fallback.
+The old URL is `{base}/en/documentation/red_hat_satellite/{version}/html-single/guide/index#anchor`;
+`{base}` comes from the `satellite_documentation_url` setting.
+For mappings with a fallback, Satellite checks the old page with an HTTP HEAD request.
+A 404 or 410 selects `{base}/en/documentation/red_hat_satellite/{version}/{new_path}`
+instead, without `html-single`. Results are cached per page for five minutes.
+Checks have two-second connection and read timeouts; network errors and other
+statuses retain the old URL. The Satellite server needs access to the documentation
+server for these checks. Page content and anchor existence are not checked.
+Mappings without a fallback retain their old URLs, and absolute URLs are used directly.
+The TOC validation task checks the old paths in these pairs.
 
 In foreman:
 ``` ruby

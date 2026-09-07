@@ -3,91 +3,94 @@
 # rubocop:disable Layout/LineLength
 module ForemanThemeSatellite
   module Documentation
+    # Values are [old_path, new_path] pairs, or a single URL/path when there
+    # is no fallback. New paths are explicit so categories and topic IDs can
+    # be edited independently of the old URLs.
     USER_GUIDE_DICTIONARY = {
       # Managing Hosts
-      'ForemanRemoteExecution' => "managing_hosts/index#configuring-and-setting-up-remote-jobs",
-      'ExecutingaJob' => "managing_hosts/index#configuring-the-global-capsule-remote-execution-setting-by-using-web-ui",
-      'JobTemplates' => "managing_hosts/index#customizing-job-templates",
-      'ReportTemplates' => "managing_hosts/index#Using_Report_Templates_to_Monitor_Hosts_managing-hosts",
-      'Reports' => "managing_hosts/index#Using_Report_Templates_to_Monitor_Hosts_managing-hosts",
+      'ForemanRemoteExecution' => ["managing_hosts/index#configuring-and-setting-up-remote-jobs", "administer-configuring-and-setting-up-remote-jobs"],
+      'ExecutingaJob' => ["managing_hosts/index#configuring-the-global-capsule-remote-execution-setting-by-using-web-ui", "administer-configuring-the-global-capsule-remote-execution-setting-by-using-web-ui"],
+      'JobTemplates' => ["managing_hosts/index#customizing-job-templates", "administer-customizing-job-templates"],
+      'ReportTemplates' => ["managing_hosts/index#Using_Report_Templates_to_Monitor_Hosts_managing-hosts", "administer-Using_Report_Templates_to_Monitor_Hosts_managing-hosts"],
+      'Reports' => ["managing_hosts/index#Using_Report_Templates_to_Monitor_Hosts_managing-hosts", "administer-Using_Report_Templates_to_Monitor_Hosts_managing-hosts"],
 
       # Provisioning Hosts
-      'Architectures' => "provisioning_hosts/index#creating-architectures-by-using-web-ui",
+      'Architectures' => ["provisioning_hosts/index#creating-architectures-by-using-web-ui", "administer-creating-architectures-by-using-web-ui"],
       'Provisioning' => "provisioning_hosts/index",
-      'InstallationMedia' => "provisioning_hosts/index#adding-installation-media-to-satellite-by-using-web-ui",
-      'PartitionTables' => "provisioning_hosts/index#creating-partition-tables-by-using-web-ui",
-      'ProvisioningTemplates' => "provisioning_hosts/index#provisioning-templates",
-      'OperatingSystems' => "provisioning_hosts/index#creating-operating-systems-by-using-web-ui",
-      'UsingComputeProfiles' => "provisioning_hosts/index#creating-compute-profiles-by-using-web-ui",
+      'InstallationMedia' => ["provisioning_hosts/index#adding-installation-media-to-satellite-by-using-web-ui", "administer-adding-installation-media-to-satellite-by-using-web-ui"],
+      'PartitionTables' => ["provisioning_hosts/index#creating-partition-tables-by-using-web-ui", "administer-creating-partition-tables-by-using-web-ui"],
+      'ProvisioningTemplates' => ["provisioning_hosts/index#provisioning-templates", "administer-provisioning-templates"],
+      'OperatingSystems' => ["provisioning_hosts/index#creating-operating-systems-by-using-web-ui", "administer-creating-operating-systems-by-using-web-ui"],
+      'UsingComputeProfiles' => ["provisioning_hosts/index#creating-compute-profiles-by-using-web-ui", "administer-creating-compute-profiles-by-using-web-ui"],
       'ComputeResources' => "provisioning_hosts/index",
-      'NoVNC' => "provisioning_hosts/index#using-novnc-to-access-virtual-machines",
-      'VMwareNotes' => "provisioning_hosts/index#provisioning-virtual-machines-in-vmware",
-      'OpenStackNotes' => "provisioning_hosts/index#provisioning-cloud-instances-on-red-hat-openstack-services-on-openshift",
-      'LibvirtNote' => "provisioning_hosts/index#provisioning-virtual-machines-on-kvm",
-      'EC2' => "provisioning_hosts/index#provisioning-cloud-instances-on-amazon-ec2",
-      'GoogleComputeEngineNotes' => "provisioning_hosts/index#provisioning-cloud-instances-on-google-compute-engine",
-      'Networking' => "provisioning_hosts/index#adding-a-subnet-to-satellite-server-by-using-web-ui",
+      'NoVNC' => ["provisioning_hosts/index#using-novnc-to-access-virtual-machines", "administer-using-novnc-to-access-virtual-machines"],
+      'VMwareNotes' => ["provisioning_hosts/index#provisioning-virtual-machines-in-vmware", "administer-provisioning-virtual-machines-in-vmware"],
+      'OpenStackNotes' => ["provisioning_hosts/index#provisioning-cloud-instances-on-red-hat-openstack-services-on-openshift", "administer-provisioning-cloud-instances-on-red-hat-openstack-services-on-openshift"],
+      'LibvirtNote' => ["provisioning_hosts/index#provisioning-virtual-machines-on-kvm", "administer-provisioning-virtual-machines-on-kvm"],
+      'EC2' => ["provisioning_hosts/index#provisioning-cloud-instances-on-amazon-ec2", "administer-provisioning-cloud-instances-on-amazon-ec2"],
+      'GoogleComputeEngineNotes' => ["provisioning_hosts/index#provisioning-cloud-instances-on-google-compute-engine", "administer-provisioning-cloud-instances-on-google-compute-engine"],
+      'Networking' => ["provisioning_hosts/index#adding-a-subnet-to-satellite-server-by-using-web-ui", "administer-adding-a-subnet-to-satellite-server-by-using-web-ui"],
 
       # Puppet Guide
-      'FactsandtheENC' => "managing_configurations_by_using_puppet_integration/index#high-level-steps-for-configuration-management-with-puppet",
-      'using-config-groups' => "managing_configurations_by_using_puppet_integration/index#creating-a-puppet-config-group_managing-configurations-puppet",
-      'SmartMatchers' => "managing_configurations_by_using_puppet_integration/index#Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet",
-      'Parameters' => "managing_configurations_by_using_puppet_integration/index#Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet",
-      'Classes' => "managing_configurations_by_using_puppet_integration/index#Importing_Puppet_Classes_and_Environments_managing-configurations-puppet",
-      'Environments' => "managing_configurations_by_using_puppet_integration/index#Creating_a_Custom_Puppet_Environment_managing-configurations-puppet",
+      'FactsandtheENC' => ["managing_configurations_by_using_puppet_integration/index#high-level-steps-for-configuration-management-with-puppet", "administer-high-level-steps-for-configuration-management-with-puppet"],
+      'using-config-groups' => ["managing_configurations_by_using_puppet_integration/index#creating-a-puppet-config-group_managing-configurations-puppet", "administer-creating-a-puppet-config-group_managing-configurations-puppet"],
+      'SmartMatchers' => ["managing_configurations_by_using_puppet_integration/index#Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet", "administer-Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet"],
+      'Parameters' => ["managing_configurations_by_using_puppet_integration/index#Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet", "administer-Configuring_Puppet_Smart_Class_Parameters_managing-configurations-puppet"],
+      'Classes' => ["managing_configurations_by_using_puppet_integration/index#Importing_Puppet_Classes_and_Environments_managing-configurations-puppet", "administer-Importing_Puppet_Classes_and_Environments_managing-configurations-puppet"],
+      'Environments' => ["managing_configurations_by_using_puppet_integration/index#Creating_a_Custom_Puppet_Environment_managing-configurations-puppet", "administer-Creating_a_Custom_Puppet_Environment_managing-configurations-puppet"],
 
       # Administering
       'ConfigurationOptions' => "administering_red_hat_satellite/index",
-      'PuppetReports' => "administering_red_hat_satellite/index#Using_the_Project_Content_Dashboard_admin",
-      'Mail_Notifications' => "administering_red_hat_satellite/index#Configuring_Email_Notifications_admin",
-      'Realm' => "integrating_provisioning_infrastructure_services/index#configuring-satellite-to-manage-the-lifecycle-of-a-host-registered-to-a-identity-management-realm",
-      'Searching' => "administering_red_hat_satellite/index#working-efficiently-with-web-ui",
-      'RolesandPermissions' => "administering_red_hat_satellite/index#Managing_Users_and_Roles_admin",
-      'LDAPAuthentication' => "configuring_authentication_for_red_hat_satellite_users/index#configuring-an-ldap-server-as-an-external-identity-provider-for-project_authentication",
+      'PuppetReports' => ["administering_red_hat_satellite/index#Using_the_Project_Content_Dashboard_admin", "administer-Using_the_Project_Content_Dashboard_admin"],
+      'Mail_Notifications' => ["administering_red_hat_satellite/index#Configuring_Email_Notifications_admin", "administer-Configuring_Email_Notifications_admin"],
+      'Realm' => ["integrating_provisioning_infrastructure_services/index#configuring-satellite-to-manage-the-lifecycle-of-a-host-registered-to-a-identity-management-realm", "administer-configuring-satellite-to-manage-the-lifecycle-of-a-host-registered-to-a-identity-management-realm"],
+      'Searching' => ["administering_red_hat_satellite/index#working-efficiently-with-web-ui", "administer-working-efficiently-with-web-ui"],
+      'RolesandPermissions' => ["administering_red_hat_satellite/index#Managing_Users_and_Roles_admin", "administer-Managing_Users_and_Roles_admin"],
+      'LDAPAuthentication' => ["configuring_authentication_for_red_hat_satellite_users/index#configuring-an-ldap-server-as-an-external-identity-provider-for-project_authentication", "administer-configuring-an-ldap-server-as-an-external-identity-provider-for-project_authentication"],
       'ExternalAuthentication' => "configuring_authentication_for_red_hat_satellite_users/index",
-      'Bookmarks' => "administering_red_hat_satellite/index#working-efficiently-with-web-ui",
+      'Bookmarks' => ["administering_red_hat_satellite/index#working-efficiently-with-web-ui", "administer-working-efficiently-with-web-ui"],
 
       # Planning
-      'SmartProxies' => "overview_concepts_and_deployment_considerations/index#Major-Satellite-Components_planning",
-      'Auditing' => "overview_concepts_and_deployment_considerations/index#glossary-of-terms-used-in-satellite_planning",
+      'SmartProxies' => ["overview_concepts_and_deployment_considerations/index#Major-Satellite-Components_planning", "administer-Major-Satellite-Components_planning"],
+      'Auditing' => ["overview_concepts_and_deployment_considerations/index#glossary-of-terms-used-in-satellite_planning", "administer-glossary-of-terms-used-in-satellite_planning"],
 
       # Install
-      'HTTP(S)Proxy' => "installing_satellite_server_in_a_connected_network_environment/index#configuring-satellite-server-to-use-an-http-proxy",
+      'HTTP(S)Proxy' => ["installing_satellite_server_in_a_connected_network_environment/index#configuring-satellite-server-to-use-an-http-proxy", "administer-configuring-satellite-server-to-use-an-http-proxy"],
 
       # Misc
       'GettingHelp' => "https://access.redhat.com/products/red-hat-satellite/#support",
     }.freeze
 
     PLUGINS_DOCUMENTATION = {
-      'foreman_azure' => "provisioning_hosts/index#provisioning-cloud-instances-on-microsoft-azure",
-      'foreman_discovery' => "provisioning_hosts/index#discovering-hosts-on-a-network",
-      'foreman_kubevirt' => "provisioning_hosts/index#provisioning-virtual-machines-on-openshift-virtualization",
+      'foreman_azure' => ["provisioning_hosts/index#provisioning-cloud-instances-on-microsoft-azure", "administer-provisioning-cloud-instances-on-microsoft-azure"],
+      'foreman_discovery' => ["provisioning_hosts/index#discovering-hosts-on-a-network", "administer-discovering-hosts-on-a-network"],
+      'foreman_kubevirt' => ["provisioning_hosts/index#provisioning-virtual-machines-on-openshift-virtualization", "administer-provisioning-virtual-machines-on-openshift-virtualization"],
     }.freeze
 
     DOCS_GUIDES_LINKS = {
       'Administering_Project' => {
-        'configuring-foreman-server-for-cloud-connection' => "administering_red_hat_satellite/index#configuring-satellite-server-for-cloud-connection",
+        'configuring-foreman-server-for-cloud-connection' => ["administering_red_hat_satellite/index#configuring-satellite-server-for-cloud-connection", "administer-configuring-satellite-server-for-cloud-connection"],
       },
       'Managing_Content' => {
-        'Products_and_Repositories_content-management' => "managing_content/index#Products_and_Repositories_content-management",
-        'dependency-solving-for-content-views' => "managing_content/index#dependency-solving-for-content-views",
+        'Products_and_Repositories_content-management' => ["managing_content/index#Products_and_Repositories_content-management", "administer-Products_and_Repositories_content-management"],
+        'dependency-solving-for-content-views' => ["managing_content/index#dependency-solving-for-content-views", "administer-dependency-solving-for-content-views"],
       },
       'Managing_Hosts' => {
-        'creating-a-job-template_managing-hosts' => "managing_hosts/index#creating-a-job-template-by-using-web-ui",
-        'executing-a-remote-job_managing-hosts' => "managing_hosts/index#Remote-Execution-in-Satellite_managing-hosts",
-        'registering-a-host_managing-hosts' => "managing_hosts/index#registering-hosts-by-using-global-registration",
-        'setting-minimal-data-collection' => "administering_red_hat_satellite/index#data-control-settings-for-hosted-red-hat-lightspeed",
+        'creating-a-job-template_managing-hosts' => ["managing_hosts/index#creating-a-job-template-by-using-web-ui", "administer-creating-a-job-template-by-using-web-ui"],
+        'executing-a-remote-job_managing-hosts' => ["managing_hosts/index#Remote-Execution-in-Satellite_managing-hosts", "administer-Remote-Execution-in-Satellite_managing-hosts"],
+        'registering-a-host_managing-hosts' => ["managing_hosts/index#registering-hosts-by-using-global-registration", "administer-registering-hosts-by-using-global-registration"],
+        'setting-minimal-data-collection' => ["administering_red_hat_satellite/index#data-control-settings-for-hosted-red-hat-lightspeed", "administer-data-control-settings-for-hosted-red-hat-lightspeed"],
       },
       'Managing_Configurations_Ansible' => {
-        'Importing_Ansible_Roles_and_Variables_ansible' => "managing_configurations_by_using_ansible_integration/index#Importing_Ansible_Roles_and_Variables_ansible",
-        'Overriding_Ansible_Variables_in_foreman_ansible' => "managing_configurations_by_using_ansible_integration/index#Overriding_Ansible_Variables_in_satellite_ansible",
+        'Importing_Ansible_Roles_and_Variables_ansible' => ["managing_configurations_by_using_ansible_integration/index#Importing_Ansible_Roles_and_Variables_ansible", "administer-Importing_Ansible_Roles_and_Variables_ansible"],
+        'Overriding_Ansible_Variables_in_foreman_ansible' => ["managing_configurations_by_using_ansible_integration/index#Overriding_Ansible_Variables_in_satellite_ansible", "administer-Overriding_Ansible_Variables_in_satellite_ansible"],
       },
       'Managing_Security_Compliance' => {
-        'Monitoring_Compliance_security-compliance' => "managing_security_compliance/index#Monitoring_Compliance_security-compliance",
-        'Managing_Compliance_Policies_security-compliance' => "managing_security_compliance/index#Managing_Compliance_Policies_security-compliance",
-        'configuring-scap-contents-for-compliance-policies-in-foreman' => "managing_security_compliance/index#configuring-scap-contents-for-compliance-policies-in-satellite",
-        'customizing-xccdf-profiles-with-tailoring-files' => "managing_security_compliance/index#customizing-xccdf-profiles-with-tailoring-files",
-        'deploying-compliance-policies_security-compliance' => "managing_security_compliance/index#deploying-compliance-policies_security-compliance",
+        'Monitoring_Compliance_security-compliance' => ["managing_security_compliance/index#Monitoring_Compliance_security-compliance", "administer-Monitoring_Compliance_security-compliance"],
+        'Managing_Compliance_Policies_security-compliance' => ["managing_security_compliance/index#Managing_Compliance_Policies_security-compliance", "administer-Managing_Compliance_Policies_security-compliance"],
+        'configuring-scap-contents-for-compliance-policies-in-foreman' => ["managing_security_compliance/index#configuring-scap-contents-for-compliance-policies-in-satellite", "administer-configuring-scap-contents-for-compliance-policies-in-satellite"],
+        'customizing-xccdf-profiles-with-tailoring-files' => ["managing_security_compliance/index#customizing-xccdf-profiles-with-tailoring-files", "administer-customizing-xccdf-profiles-with-tailoring-files"],
+        'deploying-compliance-policies_security-compliance' => ["managing_security_compliance/index#deploying-compliance-policies_security-compliance", "administer-deploying-compliance-policies_security-compliance"],
       }
     }.freeze
 

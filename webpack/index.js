@@ -14,14 +14,16 @@ addGlobalFill(
   'upgrade-page-upgrade-docs',
   'Satellite upgrade helper card',
   <SatelliteUpgradeHelperCard key="satellite-upgrade-helper-card" />,
-  1000,
+  1000
 );
 addGlobalFill(
   'upgrade-page-footer',
   'Satellite upgrade page footer',
   {
-    helpDesc: __('If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting.'),
+    helpDesc: __(
+      'If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting.'
+    ),
     helpLinkText: __('Contact support'),
   },
-  1000,
+  1000
 );
