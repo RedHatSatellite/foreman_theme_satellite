@@ -422,11 +422,17 @@ version: '6.8.000'
 documentation_version: "6.6"
 ```
 the metadata file should be called `/usr/share/satellite/metadata.yml` for
-production style deployments, or used from
+production style deployments, or used from the
 [source](https://github.com/RedHatSatellite/foreman_theme_satellite/blob/develop/config/metadata.yml)
-directory for development and test environments.
+directory for development and test environments. `SATELLITE_VERSION` and the
+`version` key take precedence over the lifecycle metadata.
 
-The mechanism resides in theme's
+The Satellite version is also provided by the `satellite-lifecycle` package in
+`/usr/share/satellite/lifecycle-metadata.yml` as `satellite_version`. This is
+used when the main metadata file is unavailable. If neither file is present,
+the theme falls back to `6.19.0-development`.
+
+The mechanism resides in the theme's
 [`engine.rb`](https://github.com/RedHatSatellite/foreman_theme_satellite/blob/develop/lib/foreman_theme_satellite/engine.rb#L119)
 
 ## Testing documentation
@@ -445,6 +451,11 @@ Another option is to add or change keys in `/usr/share/satellite/metadata.yml`:
 ``` yaml
 documentation_version: "6.6"
 ```
+
+The Satellite version itself is normally supplied by
+`/usr/share/satellite/lifecycle-metadata.yml` from the `satellite-lifecycle`
+package. Use the `version` key in `metadata.yml` or `SATELLITE_VERSION` only
+when an explicit override is required.
 
 There is also an automatic test that tests all documentation links on each PR,
 for the test to work
