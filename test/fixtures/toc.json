@@ -3,17 +3,8 @@
     "providing-feedback-on-red-hat-documentation_admin": [
 
     ],
-    "cloning-satellite-server": [
-      "cloning-process-overview",
-      "prerequisites-for-cloning",
-      "preparing-the-source-server-for-cloning",
-      "cloning-to-the-target-server",
-      "performing-post-cloning-tasks"
-    ],
-    "tuning-satellite-server-performance-with-predefined-profiles": [
-      "how-predefined-tuning-profiles-apply",
-      "predefined-tuning-profiles",
-      "applying-a-predefined-tuning-profile"
+    "tuning-performance-with-predefined-profiles": [
+
     ],
     "migrating_from_internal_databases_to_external_databases_admin": [
       "determining-whether-your-satellite-server-uses-internal-or-external-databases",
@@ -36,14 +27,8 @@
       "preparing-for-disaster-recovery-with-active-and-passive-project-server-and-backup-and-restore",
       "recovering-from-disaster-with-active-and-passive-server-and-backup-and-restore",
       "retrieving-the-status-of-services-by-using-cli_dr-backup-restore",
-      "Example_of_a_Weekly_Full_Backup_Followed_by_Daily_Incremental_Backups_dr-backup-restore",
       "preparing-for-disaster-recovery-with-two-active-project-servers",
       "recovering-from-disaster-with-two-active-project-servers"
-    ],
-    "usage-metrics-collection-in-satellite": [
-      "overview-of-usage-metrics-collection-in-satellite",
-      "reviewing-usage-metrics-collected-from-your-satellite",
-      "disabling-the-collection-of-usage-metrics"
     ],
     "managing-organizations-in-satellite": [
       "examples-of-using-organizations-in-satellite_admin",
@@ -81,93 +66,30 @@
       "creating-a-user-group-by-using-cli",
       "Removing_a_User_Group_admin"
     ],
-    "creating-and-managing-roles": [
-      "creating-a-role-by-using-web-ui",
-      "creating-a-role-by-using-cli",
-      "Cloning_a_Role_admin",
-      "adding-permissions-to-a-role-by-using-web-ui",
-      "adding-permissions-to-a-role-by-using-cli",
-      "Viewing_Permissions_of_a_Role_admin",
-      "Creating_a_Complete_Permission_Table_admin",
-      "Removing_a_Role_admin",
-      "predefined-roles-available-in-satellite",
-      "Granular_Permission_Filtering_admin",
-      "creating-a-granular-permission-filter-by-using-web-ui",
-      "creating-a-granular-permission-filter-by-using-cli",
-      "examples-of-using-granular-permission-filters",
-      "Supported_Operators_for_Granular_Search_admin"
-    ],
-    "configuring_email_notifications_admin": [
-      "Email_Notification_Types_admin",
-      "Configuring_Email_Notification_Preferences_admin",
-      "Testing_Email_Delivery_admin",
-      "Testing_Email_Notifications_admin",
-      "Changing_Email_Notifications_for_a_Host_admin"
-    ],
     "backing-up-satellite": [
       "planning-satellite-backup",
-      "performing-a-full-backup",
-      "Performing_a_Backup_Without_Pulp_Content_admin",
-      "Performing_an_Incremental_Backup_admin",
-      "Example_of_a_Weekly_Full_Backup_Followed_by_Daily_Incremental_Backups_admin",
-      "Performing_an_Online_Backup_admin",
-      "creating-a-conventional-backup",
+      "performing-a-full-offline-backup",
+      "performing-an-offline-backup-without-pulp-content",
+      "example-of-a-weekly-full-backup",
       "available-backup-methods",
       "best-practices-for-backing-up-satellite",
       "directories-created-during-backups",
-      "Estimating_the_Size_of_a_Backup_admin"
+      "estimating-the-size-of-a-backup"
     ],
-    "restoring-satellite-server-or-capsule-from-a-backup_admin": [
-      "Restoring_from_a_Full_Backup_admin",
-      "Restoring_from_Incremental_Backups_admin",
-      "restoring-capsule-server-by-using-a-virtual-machine-snapshot"
-    ],
-    "renaming-satellite-or-capsule_admin": [
-      "renaming-satellite_admin",
-      "renaming-capsule_admin"
-    ],
-    "configuring-satellite-for-red-hat-lightspeed-analytics": [
-      "red-hat-lightspeed-overview",
-      "enabling-hosted-red-hat-lightspeed",
-      "data-control-settings-for-hosted-red-hat-lightspeed",
-      "migrating-from-hosted-to-in-satellite-red-hat-lightspeed",
-      "migrating-from-in-satellite-to-hosted-red-hat-lightspeed",
-      "adding-satellite-server-ssh-key-to-authorized-keys",
-      "configuring-satellite-server-for-cloud-connection",
-      "minimizing-collected-data",
-      "obfuscating-hostnames-and-ip-addresses",
-      "removing-hosts-from-red-hat-lightspeed-inventory"
-    ],
-    "reducing-storage-use-on-satellite-server": [
-      "cleaning-audit-records",
-      "cleaning-report-records",
-      "cleaning-task-records",
-      "reclaiming-disk-space",
-      "deleting-audit-records-manually",
-      "deleting-audit-records-automatically",
-      "deleting-report-records",
-      "configuring-the-cleaning-unused-tasks-feature",
-      "deleting-task-records",
-      "deleting-a-task-by-id",
-      "recovering-from-a-full-disk",
-      "reclaiming-postgresql-space",
-      "reclaiming-space-from-on-demand-repositories"
+    "restoring-satellite-from-backup": [
+      "Restoring_from_a_Full_Backup_admin"
     ],
     "renewing-certificates": [
-      "planning-for-self-signed-ca-certificate-renewal",
+      "renewing-self-signed-certificates-on-satellite-server",
+      "renewing-self-signed-ca-certificates",
       "renewing-a-custom-ssl-certificate-on-satellite-server",
-      "renewing-a-custom-ssl-certificate-on-capsule-server"
+      "renewing-a-custom-server-ca-certificate"
     ],
-    "synchronizing-template-repositories": [
-      "synchronizing-templates-with-an-existing-repository_admin",
-      "Synchronizing_Templates_with_a_Local_Directory_admin",
-      "importing-templates-by-using-web-ui",
-      "importing-templates-by-using-cli",
-      "importing-templates-by-using-api",
-      "importing-templates-using-ansible",
-      "exporting-templates-by-using-web-ui",
-      "exporting-templates-by-using-cli",
-      "exporting-templates-by-using-api"
+    "managing-logs-for-satellite": [
+      "logging-architecture-overview",
+      "viewing-service-logs",
+      "setting-service-log-levels",
+      "log-level-parameters"
     ],
     "monitoring-satellite-resources": [
       "Using_the_Project_Content_Dashboard_admin",
@@ -183,12 +105,7 @@
       "webhook-behavior-and-integration",
       "creating-a-webhook-template_admin",
       "creating-a-webhook_admin",
-      "webhooks-available-events_admin",
-      "shellhooks-plugin-for-capsule",
-      "installing-shellhooks-plugin_admin",
-      "passing-arguments-to-shellhook-script-using-webhooks_admin",
-      "passing-arguments-to-shellhook-script-using-curl_admin",
-      "creating-a-shellhook-to-print-arguments_admin"
+      "webhooks-available-events_admin"
     ],
     "working-efficiently-with-web-ui": [
       "efficiency-tips-for-web-ui",
@@ -198,109 +115,11 @@
     "starting-and-stopping-satellite-services": [
 
     ],
-    "logging_and_reporting_problems_admin": [
-      "configuring-logging-type-and-layout",
-      "enabling-individual-loggers-for-selective-debugging",
-      "Overview_of_Individual_Loggers_admin",
-      "retrieving-the-status-of-services-by-using-cli_admin",
-      "restarting-satellite-services",
-      "Utilities_for_Processing_Log_Information_admin",
-      "Log_File_Directories_admin",
-      "system-journal-metadata_admin"
-    ],
-    "increasing-logging-levels-of-satellite-components": [
-      "increasing-the-logging-level-for-foreman",
-      "increasing-the-logging-level-for-red-hat-lightspeed-in-satellite",
-      "increasing-the-logging-level-for-hammer",
-      "increasing-the-logging-level-for-capsule",
-      "increasing-the-logging-level-for-candlepin",
-      "increasing-the-logging-level-for-redis",
-      "increasing-the-logging-level-for-satellite-installer",
-      "increasing-the-logging-level-for-pulp",
-      "increasing-the-logging-level-for-openvox-agent",
-      "increasing-the-logging-level-for-openvox-server"
-    ],
     "anonymizing-audit-records": [
-
-    ],
-    "managing_packages_on_the_base_operating_system_admin": [
-
-    ],
-    "administration-settings-information": [
-      "general-settings-information",
-      "background-tasks-settings",
-      "template_sync_settings_admin",
-      "host-discovery-settings",
-      "boot_disk_settings_admin",
-      "redhat_cloud_settings_admin",
-      "content-management-settings",
-      "user-authentication-settings",
-      "email-notification-settings",
-      "rss-notifications-settings",
-      "host-provisioning-settings",
-      "host-facts-settings",
-      "config_management_settings_admin",
-      "remote_execution_settings_admin",
-      "ansible-integration-settings"
-    ],
-    "usage-metrics-collected-by-satellite": [
 
     ]
   },
   "configuring_capsules_with_a_load_balancer": {
-    "providing-feedback-on-red-hat-documentation_load-balancing": [
-
-    ],
-    "overview-of-load-balancing-in-project_load-balancing": [
-      "components-of-a-load-balanced-setup_load-balancing",
-      "services-and-features-supported-in-a-load-balanced-setup_load-balancing",
-      "additional-maintenance-required-for-load-balancing_load-balancing"
-    ],
-    "preparing-capsule-servers-for-load-balancing_load-balancing": [
-      "registering-capsule-server",
-      "configuring-repositories-proxy_load-balancing",
-      "installing-capsule-packages",
-      "prerequisites-for-registering-capsule-server-to-satellite-server",
-      "registering-a-host-to-satellite-by-using-web-ui_load-balancing",
-      "registering-a-host-to-satellite-by-using-cli_load-balancing",
-      "registering-a-host-to-satellite-by-using-api_load-balancing"
-    ],
-    "configuring-capsule-servers-with-default-ssl-certificates-for-load-balancing-without-puppet_load-balancing": [
-      "Configuring_capsule_Server_with_Default_SSL_Certificates_for_Load_Balancing_without_Puppet_load-balancing"
-    ],
-    "configuring-capsule-servers-with-custom-ssl-certificates-for-load-balancing-without-puppet_load-balancing": [
-      "creating-a-custom-ssl-certificate_load-balancing",
-      "Configuring_capsule_Server_with_Custom_SSL_Certificates_for_Load_Balancing_without_Puppet_load-balancing"
-    ],
-    "configuring-capsule-servers-with-default-ssl-certificates-for-load-balancing-with-puppet_load-balancing": [
-      "Configuring_capsule_Server_with_Default_SSL_Certificates_to_Generate_and_Sign_Puppet_Certificates_load-balancing",
-      "Configuring_Remaining_capsule_Servers_with_Default_SSL_Certificates_for_Load_Balancing_load-balancing",
-      "managing-puppet-limitations-with-load-balancing-in-project_LB-default-ssl-with-puppet"
-    ],
-    "configuring-capsule-servers-with-custom-ssl-certificates-for-load-balancing-with-puppet_load-balancing": [
-      "creating-a-custom-ssl-certificate_load-balancing-with-custom-ssl-certificates-with-puppet",
-      "Configuring_capsule_Server_with_Custom_SSL_Certificates_to_Generate_and_Sign_Puppet_Certificates_load-balancing",
-      "Configuring_Remaining_capsule_Servers_with_Custom_SSL_Certificates_for_Load_Balancing_load-balancing",
-      "managing-puppet-limitations-with-load-balancing-in-project_LB-custom-ssl-with-puppet"
-    ],
-    "installing-and-configuring-the-load-balancer": [
-      "installing-the-load-balancer",
-      "ports-configuration-for-the-load-balancer"
-    ],
-    "verifying_the_load_balancing_configuration_load-balancing": [
-
-    ],
-    "registering_clients_to_the_load_balancer_load-balancing": [
-      "Setting_the_Load_Balancer_for_Host_Registration_load-balancing",
-      "registering-a-host-to-the-load-balancer-using-web-ui",
-      "registering-a-host-to-the-load-balancer-using-cli",
-      "registering-a-host-to-the-load-balancer-using-api",
-      "Registering_Clients_Using_the_Bootstrap_Script_load-balancing"
-    ],
-    "propagating-scap-content-through-the-load-balancer_load-balancing": [
-      "Propagating_SCAP_Content_using_Ansible_Deployment_load-balancing",
-      "Propagating_SCAP_Content_using_Puppet_Deployment_load-balancing"
-    ]
   },
   "configuring_authentication_for_red_hat_satellite_users": {
     "providing-feedback-on-red-hat-documentation_authentication": [
@@ -316,49 +135,28 @@
       "Resetting_the_Administrative_User_Password_authentication",
       "setting-a-custom-message-on-the-web-ui-login-page"
     ],
-    "configuring-kerberos-sso-with-identity_management-in-satellite": [
+    "configuring-kerberos-sso-with-identity-management-in-satellite": [
       "enrolling-satellite-server-in-freeipa-domain",
       "configuring-the-freeipa-authentication-source-on-satellite-server",
-      "configuring-host-based-access-control-for-Identity_Management-users-logging-in-to-project_authentication",
-      "configuring-hammer-cli-to-accept-Identity_Management-credentials_authentication",
-      "logging-in-to-hammer-cli-with-Identity_Management-credentials",
-      "logging-in-to-the-web-ui-with-Identity_Management-credentials-in-mozilla-firefox",
-      "logging-in-to-the-web-ui-with-Identity_Management-credentials-in-chrome",
-      "Configuring-a-cross-forest-trust-between-Identity_Management-and-Active-Directory-for-Satellite_authentication"
-    ],
-    "configuring-sso-and-2fa-with-keycloak-wildfly-in-project_keycloak-wildfly": [
-      "prerequisites-for-configuring-satellite-with-keycloak-authentication_keycloak-wildfly",
-      "registering-satellite-as-a-client-of-keycloak_keycloak-wildfly",
-      "configuring-the-satellite-client-in-keycloak_keycloak-wildfly",
-      "configuring-a-satellite-client-to-provide-web-ui-authentication-with-keycloak_keycloak-wildfly",
-      "configuring-a-satellite-client-to-provide-hammer-cli-authentication-with-keycloak_keycloak-wildfly",
-      "configuring-satellite-with-keycloak-for-totp-authentication_keycloak-wildfly",
-      "configuring-group-mapping-for-keycloak-authentication_keycloak-wildfly",
-      "logging-in-to-project-configured-with-keycloak-as-an-authentication-source_keycloak-wildfly"
-    ],
-    "configuring-sso-and-2fa-with-keycloak-in-project_keycloak-quarkus": [
-      "prerequisites-for-configuring-satellite-with-keycloak-authentication_keycloak-quarkus",
-      "registering-satellite-as-a-client-of-keycloak_keycloak-quarkus",
-      "configuring-the-satellite-client-in-keycloak_keycloak-quarkus",
-      "configuring-a-satellite-client-to-provide-web-ui-authentication-with-keycloak_keycloak-quarkus",
-      "configuring-a-satellite-client-to-provide-hammer-cli-authentication-with-keycloak_keycloak-quarkus",
-      "configuring-satellite-with-keycloak-for-totp-authentication_keycloak-quarkus",
-      "configuring-group-mapping-for-keycloak-authentication_keycloak-quarkus",
-      "logging-in-to-project-configured-with-keycloak-as-an-authentication-source_keycloak-quarkus"
+      "configuring-host-based-access-control-for-identity-management-users-logging-in-to-satellite",
+      "configuring-hammer-cli-to-accept-identity-management-credentials",
+      "logging-in-to-hammer-cli-with-identity-management-credentials",
+      "logging-in-to-the-web-ui-with-identity-management-credentials-in-mozilla-firefox",
+      "logging-in-to-the-web-ui-with-identity-management-credentials-in-chrome",
+      "configuring-a-cross-forest-trust-between-identity-management-and-active-directory-for-satellite"
     ],
     "configuring-kerberos-sso-for-active-directory-users-in-project_authentication": [
       "joining-the-satellite-system-to-an-ad-domain",
       "configuring-the-active-directory-authentication-source-on-satellite-server"
     ],
     "configuring-an-ldap-server-as-an-external-identity-provider-for-project_authentication": [
-      "Configuring_TLS_for_Secure_LDAP_authentication",
-      "Configuring_Project_to_Use_LDAP_authentication",
+      "obtaining-a-ca-certificate-for-ldaps",
+      "configuring-satellite-to-use-ldap",
       "Example_Settings_for_LDAP_Connections_authentication",
       "Example_LDAP_Filters_authentication"
     ],
     "managing-external-user-groups": [
       "associating-external-users-with-user-groups",
-      "refreshing-external-user-groups-for-ldap-using-cli",
       "refreshing-external-user-groups-for-ldap-using-web-ui"
     ],
     "resetting-external-authentication-configuration-for-kerberos-sso": [
@@ -391,14 +189,10 @@
       "configuring-capsule-server-with-a-custom-ssl-certificate"
     ],
     "performing-additional-configuration-on-capsule-server_capsule": [
-      "configuring-capsule-server-for-host-registration-and-provisioning",
       "configuring-pull-based-transport-for-remote-execution_capsule",
       "adding-lifecycle-environments-by-using-web-ui",
       "adding-lifecycle-environments-by-using-cli",
       "enabling-power-management-on-hosts_capsule"
-    ],
-    "capsule-server-scalability-considerations_capsule": [
-
     ]
   },
   "installing_satellite_server_in_a_connected_network_environment": {
@@ -416,43 +210,38 @@
     "preparing-your-environment-for-satellite-server-installation": [
       "opening-required-ports",
       "verifying-dns-resolution_satellite",
-      "preparing-for-using-external-databases_satellite",
       "configuring-http-proxy-to-connect-to-cdn_satellite",
       "registering-to-red-hat-subscription-management_satellite",
-      "configuring-repositories_satellite"
+      "configuring-repositories_satellite",
+      "logging-in-to-the-redhat-container-registry"
     ],
     "installing-satellite-server": [
-      "overview-of-the-satellite-installer-utility",
-      "installing-satellite-server-packages",
-      "configuring-satellite-server",
+      "deploy-satellite-server-configuration-with-the-default-database",
+      "deploy-satellite-server-configuration-with-an-external-database",
       "importing-red-hat-subscription-manifests-into-satellite",
       "obtaining-a-red-hat-subscription-manifest",
       "importing-a-red-hat-subscription-manifest-by-using-web-ui",
       "importing-a-red-hat-subscription-manifest-by-using-cli"
     ],
-    "tuning-satellite-server-performance-with-predefined-profiles": [
-      "how-predefined-tuning-profiles-apply",
-      "predefined-tuning-profiles",
-      "applying-a-predefined-tuning-profile"
+    "configuring-satellite-server-with-a-custom-ssl-certificate": [
+      "creating-a-custom-ssl-certificate_satellite",
+      "Deploying_a_Custom_SSL_Certificate_to_Server_satellite"
+    ],
+    "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite-server": [
+
+    ],
+    "tuning-performance-with-predefined-profiles": [
+
     ],
     "performing-additional-configuration-on-server_satellite": [
-      "configuring-satellite-server-as-insights-client",
-      "installing-and-configuring-red-hat-lightspeed-in-satellite",
       "importing-the-project-client-name-repository_satellite",
-      "configuring-pull-based-transport-for-remote-execution_satellite",
       "configuring-satellite-server-to-use-an-http-proxy",
       "enabling-power-management-on-hosts_satellite",
-      "Configuring_Server_for_Outgoing_Emails_satellite",
       "configuring-an-alternate-cname_satellite",
-      "configuring-satellite-server-with-a-custom-ssl-certificate",
-      "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-satellite-server",
-      "configuring-podman-to-use-an-http-proxy",
-      "installing-red-hat-lightspeed-in-satellite-on-a-connected-satellite-server",
       "enabling-the-project-client-name-repository_satellite",
       "synchronizing-the-project-client-name-repository_satellite",
       "adding-a-default-http-proxy-by-using-web-ui",
       "adding-a-default-http-proxy-by-using-cli",
-      "configuring-selinux-to-ensure-access-on-custom-ports_satellite",
       "using-an-http-proxy-for-all-http-requests-by-using-web-ui",
       "using-an-http-proxy-for-all-http-requests-by-using-cli",
       "excluding-hosts-from-receiving-proxied-requests-by-using-web-ui",
@@ -460,128 +249,13 @@
       "resetting-the-http-proxy-by-using-web-ui",
       "resetting-the-http-proxy-by-using-cli",
       "configuring-satellite-with-an-alternate-cname_satellite",
-      "configuring-hosts-to-use-an-alternate-cname-for-content-management_satellite",
-      "creating-a-custom-ssl-certificate_satellite",
-      "Deploying_a_Custom_SSL_Certificate_to_Server_satellite",
-      "deploying-a-custom-ssl-certificate-to-hosts"
+      "configuring-hosts-to-use-an-alternate-cname-for-content-management_satellite"
     ],
-    "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
+    "troubleshooting-host-header-rejection": [
 
     ]
   },
   "installing_satellite_server_in_a_disconnected_network_environment": {
-    "providing-feedback-on-red-hat-documentation_satellite": [
-
-    ],
-    "planning-satellite-server-installation_satellite": [
-      "operating-system-requirements",
-      "system-requirements_satellite",
-      "storage-requirements_satellite",
-      "best-practices-for-optimizing-storage",
-      "aws-requirements"
-    ],
-    "preparing-your-environment-for-satellite-server-installation": [
-      "opening-required-ports",
-      "verifying-dns-resolution_satellite",
-      "preparing-for-using-external-databases_satellite",
-      "configuring-http-proxy-to-connect-to-cdn_satellite",
-      "registering-to-red-hat-subscription-management_satellite",
-      "configuring-repositories_satellite"
-    ],
-    "installing-satellite-server": [
-      "downloading-the-binary-dvd-images_satellite",
-      "configuring-the-base-operating-system-with-offline-repositories_satellite",
-      "installing-from-the-offline-repositories_satellite",
-      "resolving-package-dependency-errors_satellite",
-      "overview-of-the-satellite-installer-utility",
-      "configuring-satellite-server",
-      "disabling-subscription-connection-by-using-web-ui",
-      "disabling-subscription-connection-by-using-cli",
-      "importing-red-hat-subscription-manifests-into-satellite",
-      "obtaining-a-red-hat-subscription-manifest",
-      "importing-a-red-hat-subscription-manifest-by-using-web-ui",
-      "importing-a-red-hat-subscription-manifest-by-using-cli"
-    ],
-    "tuning-satellite-server-performance-with-predefined-profiles": [
-      "how-predefined-tuning-profiles-apply",
-      "predefined-tuning-profiles",
-      "applying-a-predefined-tuning-profile"
-    ],
-    "performing-additional-configuration": [
-      "installing-and-configuring-red-hat-lightspeed-in-satellite",
-      "configuring-satellite-server-to-consume-content-from-a-custom-cdn-by-using-web-ui",
-      "configuring-satellite-server-to-consume-content-from-a-custom-cdn-by-using-cli",
-      "configuring-inter-satellite-synchronization",
-      "configuring-pull-based-transport-for-remote-execution_satellite",
-      "enabling-power-management-on-hosts_satellite",
-      "Configuring_Server_for_Outgoing_Emails_satellite",
-      "configuring-satellite-server-with-a-custom-ssl-certificate",
-      "installing-red-hat-lightspeed-in-satellite-with-the-satellite-iso-image",
-      "installing-red-hat-lightspeed-in-satellite-by-using-export-and-import",
-      "inter-satellite-synchronization-configurations",
-      "configuring-satellite-server-to-synchronize-content-through-exports-by-using-web-ui",
-      "configuring-satellite-server-to-synchronize-content-through-exports-by-using-cli",
-      "configuring-satellite-server-to-synchronize-content-over-a-network-by-using-web-ui",
-      "configuring-satellite-server-to-synchronize-content-over-a-network-by-using-cli",
-      "creating-a-custom-ssl-certificate_satellite",
-      "Deploying_a_Custom_SSL_Certificate_to_Server_satellite",
-      "deploying-a-custom-ssl-certificate-to-hosts"
-    ],
-    "restoring-manual-changes-overwritten-by-a-puppet-run_satellite": [
-
-    ],
-    "reverting-server-to-download-content-from-red-hat-cdn-by-using-web-ui": [
-
-    ],
-    "reverting-server-to-download-content-from-red-hat-cdn-by-using-cli": [
-
-    ]
-  },
-  "integrating_provisioning_infrastructure_services": {
-    "providing-feedback-on-red-hat-documentation_admin-network": [
-
-    ],
-    "configuring-dns-integration": [
-      "dns-service-providers",
-      "enabling-the-installer-managed-dns-service",
-      "integrating-a-local-self-managed-dns-service",
-      "integrating-a-generic-rfc-2136-compatible-remote-dns-server",
-      "integrating-idm-dns-with-tsig-authentication",
-      "integrating-idm-dns-update-with-gss-tsig-authentication",
-      "integrating-infoblox-dns",
-      "associating-the-dns-service-with-a-domain-and-subnet",
-      "disabling-dns-for-integration",
-      "configuring-freeipa-to-use-with-satellite-server",
-      "configuring-capsule-for-use-with-freeipa"
-    ],
-    "configuring-dhcp-integration": [
-      "dhcp-service-providers",
-      "enabling-the-installer-managed-dhcp-service",
-      "integrating-a-remote-isc-dhcp-server",
-      "integrating-infoblox-dhcp",
-      "configuring-for-uefi-http-boot-provisioning-in-an-ipv6-network_admin-network",
-      "associating-the-dhcp-service-with-a-subnet",
-      "disabling-capsule-dhcp-pinging",
-      "disabling-dhcp-for-integration",
-      "troubleshooting-dhcp-problems",
-      "enabling-omapi-authentication-in-isc-dhcp",
-      "sharing-the-dhcp-configuration-files-and-lease-database-over-nfs",
-      "configuring-server-or-proxy-for-use-with-isc-dhcp"
-    ],
-    "configuring-tftp-integration": [
-      "enabling-the-installer-managed-tftp-service",
-      "integrating-a-generic-tftp-server",
-      "associating-the-tftp-service-with-a-subnet",
-      "disabling-tftp-for-integration",
-      "configuring-server-for-use-with-tftp"
-    ],
-    "configuring-satellite-to-manage-the-lifecycle-of-a-host-registered-to-a-identity-management-realm": [
-      "installing-and-configuring-Identity_Management-packages-on-satellite-server-or-capsule-server",
-      "configuring-satellite-server-or-capsule-server-for-Identity_Management-realm-support",
-      "creating-a-realm-for-the-Identity_Management-enabled-capsule",
-      "updating-host-groups-with-realm-information",
-      "adding-hosts-to-a-Identity_Management-host-group"
-    ]
   },
   "managing_configurations_by_using_ansible_integration": {
     "providing-feedback-on-red-hat-documentation_ansible": [
@@ -595,7 +269,6 @@
 
     ],
     "configuring-ansible-definitions-to-apply-to-hosts": [
-      "adding-rhel-system-roles_ansible",
       "Importing_Ansible_Roles_and_Variables_ansible",
       "Overriding_Ansible_Variables_in_satellite_ansible",
       "Assigning_Ansible_Roles_to_a_Host_Group_ansible",
@@ -607,9 +280,6 @@
       "running-ansible-roles-on-a-host",
       "running-ansible-roles-on-a-host-group_ansible",
       "configuring-a-host-to-run-ansible-roles-in-check-mode"
-    ],
-    "using-ansible-vault-with-satellite_ansible": [
-
     ],
     "integrating_satellite_and_ansible_automation_platform_ansible": [
       "Adding_satellite_Server_to_Ansible_Automation_Platform_as_a_Dynamic_Inventory_Item_ansible",
@@ -623,78 +293,19 @@
     ]
   },
   "managing_configurations_by_using_puppet_integration": {
-    "providing-feedback-on-red-hat-documentation_managing-configurations-puppet": [
-
-    ],
-    "configuration-management-with-puppet-in-satellite": [
-      "how-puppet-integrates-with-satellite",
-      "high-level-steps-for-configuration-management-with-puppet",
-      "openvox-versions-supported-for-integration-with-satellite"
-    ],
-    "enabling-puppet-integration-with-satellite": [
-      "installing-openvox-server-on-satellite-server-and-capsule-servers",
-      "configuring-openvox-agent-on-a-host-during-provisioning",
-      "configuring-openvox-agent-on-a-host-during-registration",
-      "configuring-openvox-agent-on-a-host-manually"
-    ],
-    "disabling-puppet-integration-with-satellite": [
-
-    ],
-    "managing-puppet-modules_managing-configurations-puppet": [
-      "installing_a_puppet_module_managing-configurations-puppet",
-      "updating-a-puppet-module-on-your-satellite-server"
-    ],
-    "importing_puppet_classes_and_environments_managing-configurations-puppet": [
-
-    ],
-    "creating_a_custom_puppet_environment_managing-configurations-puppet": [
-
-    ],
-    "creating-a-puppet-config-group_managing-configurations-puppet": [
-
-    ],
-    "configuring_puppet_smart_class_parameters_managing-configurations-puppet": [
-      "Puppet_Parameter_Hierarchy_managing-configurations-puppet",
-      "Overriding_Smart_Class_Parameter_Globally_managing-configurations-puppet",
-      "Overriding_Smart_Class_Parameter_for_Organization_managing-configurations-puppet",
-      "Overriding_Smart_Class_Parameter_for_Location_managing-configurations-puppet",
-      "Overriding_Smart_Class_Parameter_Individual_Host_managing-configurations-puppet"
-    ],
-    "assigning-a-puppet-class-to-a-host-group_managing-configurations-puppet": [
-
-    ],
-    "assigning-a-puppet-class-to-an-individual-host_managing-configurations-puppet": [
-
-    ],
-    "enforcing-puppet-configuration-on-hosts_managing-configurations-puppet": [
-      "running-puppet-once-using-ssh_managing-configurations-puppet",
-      "configuring-puppet-intervals-of-automatic-enforcement",
-      "overriding-out-of-sync-interval-for-a-host-group_managing-configurations-puppet",
-      "overriding-out-of-sync-interval-for-an-individual-host_managing-configurations-puppet"
-    ],
-    "host-parameter-hierarchy": [
-
-    ]
   },
   "managing_content": {
     "providing-feedback-on-red-hat-documentation_content-management": [
 
     ],
-    "introduction_to_content_management_content-management": [
-      "content-management-capabilities-in-satellite",
-      "Content_Types_in_Satellite_content-management"
-    ],
-    "managing_red_hat_subscriptions_content-management": [
-      "tracking-subscription-usage-by-using-the-subscriptions-service",
-      "importing-red-hat-subscription-manifests-into-satellite",
-      "Locating_a_Red_Hat_Subscription_content-management",
-      "Adding_Red_Hat_Subscriptions_to_Subscription_Manifests_content-management",
-      "Removing_Red_Hat_Subscriptions_from_Subscription_Manifests_content-management",
-      "Updating_and_Refreshing_Red_Hat_Subscription_Manifests_content-management",
-      "red-hat-cdn-structure",
-      "obtaining-a-red-hat-subscription-manifest",
-      "importing-a-red-hat-subscription-manifest-by-using-web-ui",
-      "importing-a-red-hat-subscription-manifest-by-using-cli"
+    "getting-started-with-content-management": [
+      "creating-a-product-and-a-repository",
+      "importing-a-subscription-manifest-and-enabling-red-hat-repositories",
+      "synchronizing-your-content",
+      "defining-lifecycle-environments",
+      "publishing-and-promoting-a-content-view",
+      "creating-an-activation-key",
+      "registering-a-host-and-testing-package-delivery"
     ],
     "adding-content-to-satellite": [
       "Products_and_Repositories_content-management",
@@ -705,10 +316,9 @@
       "creating-products",
       "creating-custom-repositories",
       "uploading-content-to-custom-repositories",
-      "importing-custom-ssl-certificates-by-using-web-ui",
-      "importing-custom-ssl-certificates-by-using-cli",
       "extracting-gpg-keys-from-rpm-packages",
-      "importing-a-custom-gpg-key-by-using-web-ui",
+      "importing-content-credentials-by-using-web-ui",
+      "importing-custom-ssl-certificates-by-using-cli",
       "importing-a-custom-gpg-key-by-using-cli",
       "creating-a-custom-product-by-using-web-ui",
       "creating-a-custom-product-by-using-cli",
@@ -779,12 +389,8 @@
       "best-practices-for-lifecycle-environments_content-management",
       "creating-a-lifecycle-environment-path-by-using-web-ui",
       "creating-a-lifecycle-environment-path-by-using-cli",
-      "adding-lifecycle-environments-by-using-web-ui",
-      "adding-lifecycle-environments-by-using-cli",
       "removing-lifecycle-environments-from-server-by-using-web-ui",
-      "removing-lifecycle-environments-from-server-by-using-cli",
-      "removing-lifecycle-environments-from-capsule-by-using-web-ui",
-      "removing-lifecycle-environments-from-capsule-by-using-cli"
+      "removing-lifecycle-environments-from-server-by-using-cli"
     ],
     "managing-content-views-and-content-view-environments": [
       "workflow-for-creating-content-views",
@@ -968,7 +574,7 @@
       "disassociating-a-vm-from-satellite-without-removing-it-from-a-hypervisor",
       "Assigning_a_Host_to_a_Specific_Organization_managing-hosts",
       "Assigning_a_Host_to_a_Specific_Location_managing-hosts",
-      "changing-the-content-view-environment-of-a-host"
+      "changing-the-content-view-environments-of-a-host"
     ],
     "managing-host-content-settings-and-system-purpose": [
       "editing-the-system-purpose-of-a-host-by-using-web-ui",
@@ -989,18 +595,15 @@
       "nested-host-groups_managing-hosts",
       "creating-a-host-group-by-using-web-ui",
       "creating-a-host-group-by-using-cli",
-      "Creating_a_Host_Group_for_each_Lifecycle_Environment_managing-hosts",
       "adding-a-host-to-a-host-group_managing-hosts",
       "Changing_the_Host_Group_of_a_Host_managing-hosts"
     ],
     "registering-hosts-to-satellite": [
-      "supported-clients-in-registration_managing-hosts",
+      "supported-clients-in-registration",
       "registering-hosts-by-using-global-registration",
       "invalidating-registration-tokens",
-      "registering-hosts-by-using-the-bootstrap-script",
-      "katello-ca-consumer-rpm-and-rhsm-consumer-script",
       "global-parameters-for-registration_managing-hosts",
-      "Configuring_a_Host_for_Registration_managing-hosts",
+      "configuring-a-host-for-registration",
       "registering-a-host-by-using-web-ui",
       "registering-a-host-by-using-cli",
       "registering-a-host-by-using-api",
@@ -1015,29 +618,11 @@
       "invalidating-jwts-of-other-users-by-using-web-ui",
       "invalidating-jwts-of-other-users-by-using-cli",
       "invalidating-jwts-of-other-users-by-using-api",
-      "invalidating-jwts-of-all-users",
-      "running-the-bootstrap-script-on-the-host_managing-hosts",
-      "creating-a-puppet-environment-for-bootstrap-registration",
-      "setting-permissions-for-the-bootstrap-script-by-using-web-ui",
-      "setting-permissions-for-the-bootstrap-script-by-using-cli",
-      "Advanced_Bootstrap_Script_Configuration_managing-hosts",
-      "Migration_a_Host_From_One_Server_to_another_Server_managing-hosts",
-      "Migrating_a_Host_from_Red_Hat_Network_managing-hosts",
-      "Registering_a_Host_Without_Puppet_managing-hosts",
-      "Registering_a_Host_for_Content_Management_Only_managing-hosts",
-      "Changing_the_Method_the_Bootstrap_Script_Uses_to_Download_the_Consumer_RPM_managing-hosts",
-      "Providing_the_Hosts_IP_Address_managing-hosts",
-      "Enabling_Remote_Execution_on_the_Host_managing-hosts",
-      "Creating_a_Domain_for_a_Host_During_Registration_managing-hosts",
-      "Providing_an_Alternative_FQDN_for_the_Host_managing-hosts"
+      "invalidating-jwts-of-all-users"
     ],
     "restarting-applications-on-hosts-through-tracer": [
       "configuring-tracer-on-a-host_managing-hosts",
       "restarting-applications-on-a-host_managing-hosts"
-    ],
-    "using-custom-ssl-certificate-for-hosts": [
-      "deploying-a-custom-ssl-certificate-to-hosts",
-      "resetting-custom-ssl-certificate-to-default-self-signed-certificate-on-hosts"
     ],
     "refreshing-the-self-signed-ca-certificate-on-hosts": [
       "deploying-the-ca-certificate-on-a-host-by-using-script-rex",
@@ -1053,14 +638,6 @@
       "bonding-modes-available_managing-hosts",
       "configuring-a-baseboard-management-controller-interface",
       "network-interface-configuration-options"
-    ],
-    "upgrading_hosts_to_next_major_release_managing-hosts": [
-
-    ],
-    "converting-hosts-to-rhel": [
-      "overview-of-the-conversion-process",
-      "converting-a-host-to-rhel",
-      "ansible-variables-for-conversion_managing-hosts"
     ],
     "host-management-and-monitoring-by-using-cockpit": [
       "Enabling_Cockpit_on_Server_managing-hosts",
@@ -1130,15 +707,12 @@
       "remote-execution-overview",
       "getting-started-with-remote-execution",
       "configuring-remote-execution_managing-hosts",
-      "configuring-capsule-and-hosts-to-authenticate-with-ssh-certificates-during-remote-execution",
-      "tuning-authentication-and-performance-for-remote-execution_managing-hosts",
       "customizing-remote-jobs",
       "remote-execution-reference_managing-hosts",
       "Remote-Execution-in-Satellite_managing-hosts",
       "remote-execution-workflow_managing-hosts",
       "transport-modes-for-remote-execution_managing-hosts",
       "permissions-for-remote-execution_managing-hosts",
-      "Configuring_a_Host_to_Use_the_Pull_Client_managing-hosts",
       "Distributing_SSH_Keys_for_Remote_Execution_managing-hosts",
       "executing-a-remote-job-by-using-web-ui",
       "executing-a-remote-job-by-using-cli",
@@ -1153,15 +727,6 @@
       "adding-a-passphrase-to-ssh-key-used-for-remote-execution_managing-hosts",
       "Using_the_satellite_API_to_Obtain_SSH_Keys_for_Remote_Execution_managing-hosts",
       "Configuring_a_Kickstart_Template_to_Distribute_SSH_Keys_During_Provisioning_managing-hosts",
-      "enabling-ssh-certificate-authentication-on-capsule",
-      "disabling-ssh-certificate-authentication-on-capsule",
-      "rotating-capsule-ssh-certificate",
-      "configuring-registered-hosts-to-accept-ssh-certificate-from-capsule",
-      "enabling-ssh-host-certificate-verification-on-capsule",
-      "disabling-ssh-host-certificate-verification-on-capsule",
-      "configuring-a-keytab-for-kerberos-ticket-granting-tickets_managing-hosts",
-      "configuring-kerberos-authentication-for-remote-execution_managing-hosts",
-      "setting-the-job-rate-limit-on-capsule_managing-hosts",
       "creating-a-job-template-by-using-web-ui",
       "creating-a-job-template-by-using-cli",
       "importing-an-ansible-playbook-by-name_managing-hosts",
@@ -1185,11 +750,6 @@
       "removing-packages-from-a-host_managing-hosts",
       "managing-packages-on-a-host-by-using-api",
       "best-practices-for-host-patching"
-    ],
-    "installing-flatpak-applications-on-hosts": [
-      "configuring-podman-to-trust-the-certificate-authority",
-      "installing-flatpak-applications-on-a-host-from-satellite-server",
-      "installing-flatpak-applications-on-a-host-from-capsule-server"
     ],
     "consuming-custom-file-type-content-on-hosts": [
       "downloading-files-to-a-host-from-a-custom-file-type-repository-by-using-web-ui",
@@ -1217,9 +777,6 @@
       "generating-a-containerfile-command-by-using-cli",
       "generating-a-containerfile-command-by-using-api"
     ],
-    "troubleshooting-remote-jobs-timing-out-after-yggdrasil-update": [
-
-    ],
     "template_writing_reference_managing-hosts": [
       "template-rendering-and-erb-context",
       "Accessing_the_Template_Writing_Reference_managing-hosts",
@@ -1246,81 +803,8 @@
     ]
   },
   "managing_security_compliance": {
-    "providing-feedback-on-red-hat-documentation_security-compliance": [
-
-    ],
-    "security-compliance-management-in-satellite": [
-      "Security_Content_Automation_Protocol_security-compliance",
-      "SCAP_Content_in_satellite_security-compliance"
-    ],
-    "enabling-openscap": [
-
-    ],
-    "configuring-scap-contents-for-compliance-policies-in-satellite": [
-      "listing-available-scap-contents-using-web-ui",
-      "listing-available-scap-contents-using-cli",
-      "Loading_the_Default_SCAP_Contents_security-compliance",
-      "getting-supported-scap-contents-for-rhel_security-compliance",
-      "uploading-additional-scap-content-using-web-ui",
-      "uploading-additional-scap-content-using-cli",
-      "customizing-xccdf-profiles-with-tailoring-files"
-    ],
-    "managing_compliance_policies_security-compliance": [
-      "configuring-compliance-policy-deployment-methods_security-compliance",
-      "Creating_a_Compliance_Policy_security-compliance",
-      "Viewing_a_Compliance_Policy_security-compliance",
-      "Editing_a_Compliance_Policy_security-compliance",
-      "Deleting_a_Compliance_Policy_security-compliance",
-      "compliance-policy-deployment-options_security-compliance",
-      "configuring-satellite-for-ansible-compliance-policy-deployment",
-      "configuring-satellite-for-puppet-compliance-policy-deployment"
-    ],
-    "deploying-compliance-policies_security-compliance": [
-      "inclusion-of-remote-scap-resources_security-compliance",
-      "applying-remote-scap-resources-in-a-disconnected-environment_security-compliance",
-      "Deploying_a_Policy_in_a_Host_Group_Using_Ansible_security-compliance",
-      "Deploying_a_Policy_on_a_Host_Using_Ansible_security-compliance",
-      "Deploying_a_Policy_in_a_Host_Group_Using_Puppet_security-compliance",
-      "Deploying_a_Policy_on_a_Host_Using_Puppet_security-compliance"
-    ],
-    "running-a-security-compliance-scan-on-demand_security-compliance": [
-
-    ],
-    "monitoring_compliance_security-compliance": [
-      "Searching_Compliance_Reports_security-compliance",
-      "Compliance_Email_Notifications_security-compliance",
-      "Viewing_Compliance_Policy_Statistics_security-compliance",
-      "remediating-compliance-failures_security-compliance",
-      "Deleting_a_Compliance_Report_security-compliance"
-    ]
   },
   "monitoring_satellite_performance": {
-    "providing-feedback-on-red-hat-documentation_monitoring": [
-
-    ],
-    "metrics-overview_monitoring": [
-
-    ],
-    "metrics-solution-components_monitoring": [
-
-    ],
-    "setting-up-the-metrics-monitoring-solution_monitoring": [
-      "installing-pcp_monitoring",
-      "configuring-pcp-data-collection_monitoring",
-      "verifying-pcp-configuration_monitoring",
-      "enabling-web-ui-access-to-metrics_monitoring"
-    ],
-    "metrics-data-retention_monitoring": [
-      "changing-default-logging-interval_monitoring",
-      "changing-data-retention-policy_monitoring",
-      "viewing-data-storage-statistics_monitoring"
-    ],
-    "pcp-metrics_monitoring": [
-      "identifying-available-metrics_monitoring",
-      "retrieving-live-metrics_monitoring",
-      "retrieving-archived-metrics_monitoring",
-      "retrieving-metrics-in-the-web-ui_monitoring"
-    ]
   },
   "overview_concepts_and_deployment_considerations": {
     "providing-feedback-on-red-hat-documentation_planning": [
@@ -1329,630 +813,30 @@
     "satellite-use-cases": [
 
     ],
-    "major-satellite-components_planning": [
-      "Satellite-Server-Overview_planning",
-      "capsule-Overview_planning",
-      "Overview-of-Hosts-in-Satellite_planning",
-      "list-of-key-open-source-components-of-satellite",
-      "capsule-features"
-    ],
-    "tools-for-administration-of-satellite_planning": [
-      "web-ui-overview",
-      "Hammer-CLI-Overview_planning",
-      "API-Overview_planning",
-      "Remote-Execution-in-Satellite_planning",
-      "automating-satellite-management-with-satellite-ansible-collection",
-      "Kickstart-Workflow_planning"
-    ],
-    "supported-usage-and-versions-of-project-components_planning": [
-      "supported-usage-of-project-components_planning",
-      "Supported-Client-Architectures-for-Content-Management_planning",
-      "Supported-Client-Architectures-for-Host-Provisioning_planning",
-      "Supported-Client-Architectures-for-Configuration-Management_planning"
-    ],
-    "security-considerations-in-project": [
+    "satellite-security-capabilities": [
 
     ],
-    "networking-considerations-in-satellite": [
-      "capsule-networking",
-      "satellite-port-and-firewall-requirements",
-      "capsule-port-and-firewall-requirements",
-      "satellite-topology-with-hosts-connecting-to-a-capsule",
-      "satellite-topology-with-hosts-connecting-directly-to-satellite-server"
-    ],
-    "red-hat-offline-knowledge-portal_planning": [
-
-    ],
-    "content-flow-in-satellite_planning": [
-
-    ],
-    "provisioning-methods-in-satellite": [
-
-    ],
-    "expense-management-for-red-hat-subscriptions": [
-      "subscriptions-usage-data",
-      "subscriptions-tracking-tools",
-      "subscriptions-tracking-scenarios",
-      "expense-management-additional-resources"
-    ],
-    "deployment-path_planning": [
-      "installing-a-satellite-server_planning",
+    "deployment-path-for-satellite": [
+      "installing-a-satellite-server",
       "configuring-external-authentication-in-satellite",
       "planning-organization-and-location-context",
       "installing-capsule-servers_planning",
-      "adding-a-red-hat-subscription-to-project-planning",
-      "defining-your-content-library_planning",
-      "defining-content-access-strategies-for-hosts-planning",
-      "defining-role-based-access-control-policies",
-      "configuring-provisioning_planning",
-      "overview-of-recommended-disaster-recovery-plans",
-      "subscriptions-tracking-configuration",
-      "additional-deployment-tasks_planning",
-      "configuring-Satellite-Server-with-external-database_planning",
-      "roles-in-satellite",
-      "best-practices-for-role-based-access-control-in-satellite_planning"
-    ],
-    "common-deployment-scenarios": [
-      "single-locations-with-segregated-subnets",
-      "multiple-locations",
-      "content-view-scenarios",
-      "satellite-server-with-multiple-manifests",
-      "host-group-structures",
-      "inter-satellite-synchronization-scenarios",
-      "deploying-satellite-on-aws"
-    ],
-    "provisioning-requirements-in-satellite": [
-      "pxe-booting-in-satellite",
-      "http-booting-in-satellite"
-    ],
-    "technical-users-provided-and-required-by-satellite": [
-
-    ],
-    "glossary-of-terms-used-in-satellite_planning": [
-      "Activation_key",
-      "Ansible",
-      "Answer_file",
-      "ARF_report",
-      "Audits",
-      "Baseboard_management_controller_BMC",
-      "Boot_disk",
-      "Capsule",
-      "Catalog",
-      "Candlepin",
-      "Compliance_policy",
-      "Compute_profile",
-      "Compute_resource",
-      "Configuration_Management",
-      "Container",
-      "Container_image",
-      "Content",
-      "Content_delivery_network_CDN",
-      "Content_view",
-      "Composite_Content_View",
-      "Discovered_host",
-      "Discovery_image",
-      "Discovery_plugin",
-      "Discovery_rule",
-      "Docker_tag",
-      "ERB",
-      "Errata",
-      "External_node_classifier_ENC",
-      "Facter",
-      "Facts",
-      "Foreman",
-      "Full_host_image",
-      "Generic_image",
-      "Hammer",
-      "Host",
-      "Host_collection",
-      "Host_group",
-      "Host_image",
-      "Incremental_upgrade",
-      "Installation_Media",
-      "Job",
-      "Katello",
-      "Lazy_sync",
-      "Location",
-      "Library",
-      "Lifecycle_environment",
-      "Lifecycle_environment_path",
-      "Manifest",
-      "Migrating",
-      "OpenSCAP",
-      "Organization",
-      "Parameter",
-      "Parametrized_class",
-      "Patch-and-release-management",
-      "Permission",
-      "Product",
-      "Promote",
-      "Provisioning",
-      "Provisioning_template",
-      "Publish",
-      "Pulp",
-      "Puppet",
-      "Puppet_agent",
-      "Puppet_environment",
-      "Puppet_manifest",
-      "Puppet_server",
-      "Puppet_module",
-      "PXE",
-      "Recurring_logic",
-      "Registry",
-      "Remote-execution-REX",
-      "Repository",
-      "Resource_type",
-      "Role",
-      "SCAP_content",
-      "Subnet_image",
-      "Subscription",
-      "Subscription-Manager",
-      "Synchronization",
-      "Sync_plan",
-      "Tailoring_files",
-      "Task",
-      "Updating",
-      "Upgrading",
-      "User_group",
-      "User",
-      "Virtualization",
-      "virt-who",
-      "XCCDF_profiles"
+      "defining-your-content-library-and-content-access-strategy",
+      "defining-role-based-access-control-policies"
     ]
   },
   "provisioning_hosts": {
-    "providing-feedback-on-red-hat-documentation_provisioning": [
-
-    ],
-    "introduction-to-provisioning": [
-      "provisioning-methods-in-satellite",
-      "provisioning-hardware-types",
-      "supported-client-platforms-in-provisioning",
-      "supported-cloud-providers",
-      "supported-virtualization-infrastructures"
-    ],
-    "preparing-networking-for-host-management": [
-      "facts-and-nic-filtering",
-      "optimizing-performance-by-removing-nics-from-database",
-      "resources-for-network-based-provisioning",
-      "prerequisites-for-image-based-provisioning",
-      "adding-a-domain-to-satellite-server-by-using-web-ui",
-      "adding-a-domain-to-satellite-server-by-using-cli",
-      "adding-a-subnet-to-satellite-server-by-using-web-ui",
-      "adding-a-subnet-to-satellite-server-by-using-cli",
-      "troubleshooting-dns-problems",
-      "options-in-managed-dhcpv4",
-      "options-in-unmanaged-dhcpv6",
-      "multiple-subnets-or-domains-using-installer",
-      "dns-options-for-network-configuration",
-      "tftp-options-for-network-configuration"
-    ],
-    "preparing-provisioning-content": [
-      "preparing-a-synchronized-kickstart-repository",
-      "adding-installation-media-to-satellite-by-using-web-ui",
-      "adding-installation-media-to-satellite-by-using-cli",
-      "configuring-satellite-to-provision-from-a-builder-image",
-      "provisioning-from-a-builder-image-on-capsule",
-      "provisioning-from-a-builder-image-on-an-http-server",
-      "packages-required-in-a-builder-image"
-    ],
-    "preparing-client-platforms": [
-      "compute-profiles-in-satellite",
-      "creating-operating-systems-by-using-web-ui",
-      "creating-operating-systems-by-using-cli",
-      "updating-the-details-of-multiple-operating-systems",
-      "creating-architectures-by-using-web-ui",
-      "creating-architectures-by-using-cli",
-      "creating-hardware-models-by-using-web-ui",
-      "creating-hardware-models-by-using-cli",
-      "creating-compute-profiles-by-using-web-ui",
-      "creating-compute-profiles-by-using-cli"
-    ],
-    "preparing-templates-for-provisioning": [
-      "provisioning-templates",
-      "kinds-of-provisioning-templates",
-      "creating-provisioning-templates-by-using-web-ui",
-      "creating-provisioning-templates-by-using-cli",
-      "cloning-provisioning-templates",
-      "running-custom-code-during-host-provisioning-by-using-web-ui",
-      "running-custom-code-during-host-provisioning-by-using-cli",
-      "custom-provisioning-snippet-example-for-red-hat-enterprise-linux",
-      "deploying-ssh-keys-during-provisioning",
-      "associating-templates-with-operating-systems-by-using-web-ui",
-      "associating-templates-with-operating-systems-by-using-cli",
-      "creating-partition-tables-by-using-web-ui",
-      "creating-partition-tables-by-using-cli",
-      "associating-partition-tables-with-disk-encryption",
-      "dynamic-partition-example"
-    ],
-    "security-settings-for-provisioning": [
-      "configuring-the-security-token-validity-duration",
-      "setting-a-default-encrypted-root-password-for-hosts",
-      "provisioning-fips-compliant-hosts",
-      "changing-the-provisioning-password-hashing-algorithm",
-      "setting-the-fips-enabled-parameter",
-      "verifying-fips-mode-is-enabled"
-    ],
-    "provisioning-contexts-for-satellite-resources": [
-      "setting-the-provisioning-context-by-using-web-ui",
-      "setting-the-provisioning-context-by-using-cli"
-    ],
-    "using-network-boot-to-provision-hosts": [
-      "network-boot-provisioning-workflow",
-      "prerequisites-for-network-boot-provisioning",
-      "required-boot-order-for-network-boot_using-network-boot",
-      "configuring-capsule-to-provision-rhel-on-Secure-Boot-enabled-hosts",
-      "creating-hosts-with-pxe-boot-provisioning-by-using-web-ui",
-      "creating-hosts-with-pxe-boot-provisioning-by-using-cli",
-      "configuring-capsule-for-uefi-http-booting",
-      "creating-hosts-with-uefi-http-boot-provisioning-by-using-web-ui",
-      "creating-hosts-with-uefi-http-boot-provisioning-by-using-cli",
-      "using-ipxe-to-reduce-provisioning-times_using-network-boot",
-      "pxe-loaders-in-project",
-      "prerequisites-for-using-ipxe_using-network-boot",
-      "Configuring_iPXE_Environment_using-network-boot",
-      "Booting_Virtual_Machines_using-network-boot",
-      "Chainbooting_iPXE_from_PXELinux_using-network-boot"
-    ],
-    "using-boot-disks-to-provision-hosts": [
-      "boot-disk-workflow",
-      "boot-disk-types",
-      "generating-a-full-host-boot-disk-by-using-web-ui",
-      "generating-a-full-host-boot-disk-by-using-cli",
-      "generating-a-subnet-boot-disk-by-using-web-ui",
-      "generating-a-subnet-boot-disk-by-using-cli"
-    ],
-    "discovering-hosts-on-a-network": [
-      "prerequisites-for-using-discovery_provisioning",
-      "Installing_the_Discovery_Service_provisioning",
-      "discovery-in-pxe-mode",
-      "discovery-in-pxeless-mode",
-      "Automatic_Contexts_for_Discovered_Hosts_provisioning",
-      "creating-hosts-from-discovered-hosts-by-using-web-ui",
-      "creating-hosts-from-discovered-hosts-by-using-cli",
-      "creating-discovery-rules-by-using-web-ui",
-      "creating-discovery-rules-by-using-cli",
-      "Extending_the_Discovery_Image_provisioning",
-      "kernel-parameters-for-discovery-customization_provisioning",
-      "troubleshooting-discovery-failures",
-      "setting-discovery-as-the-default-PXE-boot-option_provisioning",
-      "performing-discovery-in-pxe-mode_provisioning",
-      "Customizing_the_Discovery_PXE_Boot_provisioning",
-      "host-discovery-from-multiple-capsule-servers",
-      "performing-discovery-in-pxeless-mode_provisioning",
-      "customizing-the-discovery-iso_provisioning"
-    ],
-    "provisioning-virtual-machines-on-kvm": [
-      "configuring-satellite-server-for-kvm-connections",
-      "adding-a-kvm-connection-by-using-web-ui",
-      "adding-a-kvm-connection-by-using-cli",
-      "adding-kvm-images-to-satellite-by-using-web-ui",
-      "adding-kvm-images-to-satellite-by-using-cli",
-      "adding-kvm-details-to-a-compute-profile-by-using-web-ui",
-      "adding-kvm-details-to-a-compute-profile-by-using-cli",
-      "creating-hosts-on-kvm-by-using-web-ui",
-      "creating-hosts-on-kvm-by-using-cli",
-      "deleting-a-virtual-machine-on-kvm"
-    ],
-    "provisioning-virtual-machines-in-vmware": [
-      "prerequisites-for-vmware-provisioning",
-      "vmware-user-privileges",
-      "adding-a-vmware-connection-to-server-by-using-web-ui",
-      "adding-a-vmware-connection-to-server-by-using-cli",
-      "adding-vmware-images-to-server-by-using-web-ui",
-      "adding-vmware-images-to-server-by-using-cli_provisioning",
-      "adding-vmware-details-to-a-compute-profile-by-using-web-ui",
-      "adding-vmware-details-to-a-compute-profile-by-using-cli",
-      "creating-hosts-on-vmware-by-using-web-ui",
-      "creating-hosts-on-vmware-by-using-cli",
-      "vmware-cloud-init-provisioning-overview",
-      "associating-the-userdata-and-cloud-init-templates-with-the-operating-system",
-      "preparing-an-image-to-use-the-cloud-init-template",
-      "Using_VMware_Cloud_Init_and_Userdata_Templates_for_Provisioning_provisioning",
-      "deleting-a-virtual-machine-on-vmware",
-      "importing-a-virtual-machine-from-vmware-into-satellite",
-      "caching-of-compute-resources",
-      "enabling-caching-of-compute-resources",
-      "refreshing-the-compute-resources-cache-by-using-web-ui",
-      "refreshing-the-compute-resources-cache-by-using-cli"
-    ],
-    "provisioning-virtual-machines-on-openshift-virtualization": [
-      "adding-kubevirt-connection_provisioning"
-    ],
-    "provisioning-cloud-instances-on-red-hat-openstack-services-on-openshift": [
-      "prerequisites-for-openstack-provisioning",
-      "adding-openstack-connection-by-using-web-ui",
-      "adding-openstack-connection-by-using-cli",
-      "adding-red-hat-openstack-services-on-openshift-images-to-satellite-by-using-web-ui",
-      "adding-red-hat-openstack-services-on-openshift-images-to-satellite-by-using-cli",
-      "adding-openstack-details-to-a-compute-profile-by-using-web-ui",
-      "adding-openstack-details-to-a-compute-profile-by-using-cli",
-      "creating-image-based-hosts-on-red-hat-openstack-services-on-openshift-by-using-web-ui",
-      "creating-image-based-hosts-on-red-hat-openstack-services-on-openshift-by-using-cli"
-    ],
-    "provisioning-cloud-instances-on-amazon-ec2": [
-      "http-proxy-for-communication-with-amazon-ec2",
-      "adding-an-amazon-ec2-connection-to-server-by-using-web-ui",
-      "adding-an-amazon-ec2-connection-to-server-by-using-cli",
-      "Creating_an_Image_for_Amazon_EC2_provisioning",
-      "adding-amazon-ec2-images-to-server-by-using-web-ui",
-      "adding-amazon-ec2-images-to-server-by-using-cli",
-      "adding-amazon-ec2-details-to-a-compute-profile-by-using-web-ui",
-      "adding-amazon-ec2-details-to-a-compute-profile-by-using-cli",
-      "creating-image-based-hosts-on-amazon-ec2-by-using-web-ui",
-      "creating-image-based-hosts-on-amazon-ec2-by-using-cli",
-      "connecting-to-an-amazon-ec2-instance-by-using-ssh",
-      "Configuring_a_Finish_Template_for_Amazon_EC2_provisioning",
-      "deleting-a-virtual-machine-on-amazon-ec2",
-      "more-information-about-amazon-web-services-and-satellite"
-    ],
-    "provisioning-cloud-instances-on-google-compute-engine": [
-      "prerequisites-for-google-compute-engine-provisioning",
-      "adding-a-gce-connection-by-using-web-ui",
-      "adding-a-gce-connection-by-using-cli",
-      "adding-google-compute-engine-images-to-satellite-by-using-web-ui",
-      "adding-google-compute-engine-images-to-satellite-by-using-cli",
-      "adding-gce-details-to-a-compute-profile-by-using-web-ui",
-      "adding-gce-details-to-a-compute-profile-by-using-cli",
-      "creating-image-based-hosts-on-google-compute-engine-by-using-web-ui",
-      "creating-image-based-hosts-on-google-compute-engine-by-using-cli",
-      "deleting-a-virtual-machine-on-google-compute-engine"
-    ],
-    "provisioning-cloud-instances-on-microsoft-azure": [
-      "prerequisites-for-microsoft-azure-provisioning",
-      "adding-a-microsoft-azure-connection-by-using-web-ui",
-      "adding-a-microsoft-azure-connection-by-using-cli",
-      "adding-microsoft-azure-images-to-satellite-by-using-web-ui",
-      "adding-microsoft-azure-images-to-satellite-by-using-cli",
-      "adding-microsoft-azure-details-to-a-compute-profile-by-using-web-ui",
-      "adding-microsoft-azure-details-to-a-compute-profile-by-using-cli",
-      "creating-image-based-hosts-on-microsoft-azure-by-using-web-ui",
-      "creating-image-based-hosts-on-microsoft-azure-by-using-cli",
-      "deleting-a-virtual-machine-on-microsoft-azure"
-    ],
-    "using-novnc-to-access-virtual-machines": [
-
-    ],
-    "building-cloud-images-for-satellite": [
-      "preconfigured-rhel-kvm-guest-images",
-      "host-requirements-for-custom-images_provisioning",
-      "supported-clients-in-registration_provisioning",
-      "Configuring_a_Host_for_Registration_provisioning",
-      "registering-a-host-by-using-web-ui",
-      "registering-a-host-by-using-cli",
-      "registering-a-host-by-using-api",
-      "registering-a-host-by-using-ansible",
-      "configuring-openvox-agent-on-a-host-manually",
-      "Completing_the_RHEL7_Image_provisioning"
-    ],
-    "host-parameter-hierarchy": [
-
-    ],
-    "permissions-required-to-provision-hosts": [
-
-    ],
-    "boot-loader-management-and-file-structure": [
-      "boot-loader-types-in-satellite",
-      "pxelinux-boot-loaders",
-      "grub2-uefi-boot-loaders",
-      "http-capable-boot-loaders"
-    ]
   },
   "tuning_performance_of_red_hat_satellite": {
-    "providing-feedback-on-red-hat-documentation_performance-tuning": [
-
-    ],
-    "introduction_to_performance_tuning_performance-tuning": [
-
-    ],
-    "selecting-an-installation-size": [
-
-    ],
-    "system_requirements_for_tuning_performance-tuning": [
-
-    ],
-    "hardware-and-operating-system-configuration": [
-      "Enabling_Tuned_Profiles_performance-tuning",
-      "transparent-hugepage-and-database-performance"
-    ],
-    "configuring_project_for_performance_performance-tuning": [
-      "considerations-for-performance-tuning",
-      "puma-tunings",
-      "Apache_HTTPD_Performance_Tuning_performance-tuning",
-      "tuning-dynflow",
-      "Pull_based_REX_transport_tuning_performance-tuning",
-      "tuning-postgresql",
-      "Redis_Tuning_performance-tuning",
-      "Smart_Proxy_Configuration_Tuning_performance-tuning",
-      "Puma_Workers_and_Threads_Auto_Tuning_performance-tuning",
-      "Manually_tuning_Puma_workers_and_threads_count_performance-tuning",
-      "Puma_Workers_and_Threads_Recommendations_performance-tuning",
-      "puma-workers-configuration",
-      "puma-threads-configuration",
-      "tuning_apache_httpd_child_processes_performance-tuning",
-      "Increasing_host_limit_for_pull_based_REX_transport_performance-tuning",
-      "Decreasing_performance_impact_of_the_pull-based_REX_transport_performance-tuning",
-      "benchmarking-raw-database-performance",
-      "Smart_Proxy_Performance_Tests_performance-tuning"
-    ]
   },
   "upgrading_red_hat_satellite": {
-    "providing-feedback-on-red-hat-documentation_upgrading-connected": [
-
-    ],
-    "preparing-for-satellite-upgrade": [
-      "upgrade-path-overview",
-      "planning-satellite-upgrade",
-      "following_the_progress_of_the_upgrade_upgrading-connected"
-    ],
-    "upgrading_satellite_upgrading-connected": [
-      "upgrading-your-satellite-server",
-      "synchronizing_the_new_repositories_upgrading-connected",
-      "upgrading_capsule_server_upgrading-connected",
-      "upgrading-the-external-database-operating-system",
-      "refreshing-clients-of-red-hat-lightspeed-in-satellite",
-      "upgrading-puppet-agent-7-to-openvox-agent-8"
-    ]
   },
   "upgrading_red_hat_satellite_disconnected": {
-    "providing-feedback-on-red-hat-documentation_upgrading-disconnected": [
-
-    ],
-    "red-hat-offline-knowledge-portal_upgrading-disconnected": [
-
-    ],
-    "preparing-for-satellite-upgrade": [
-      "upgrade-path-overview",
-      "planning-satellite-upgrade",
-      "following_the_progress_of_the_upgrade_upgrading-disconnected"
-    ],
-    "upgrading_satellite_upgrading-disconnected": [
-      "upgrading-container-images-of-red-hat-lightspeed-in-satellite",
-      "upgrading_a_disconnected_satellite_server_upgrading-disconnected",
-      "synchronizing_the_new_repositories_upgrading-disconnected",
-      "upgrading_capsule_server_upgrading-disconnected",
-      "upgrading-the-external-database-operating-system",
-      "refreshing-clients-of-red-hat-lightspeed-in-satellite",
-      "upgrading-puppet-agent-7-to-openvox-agent-8"
-    ]
   },
   "using_the_hammer_cli_tool": {
-    "providing-feedback-on-red-hat-documentation_hammer-cli": [
-
-    ],
-    "introduction-to-hammer": [
-      "hammer-compared-to-web-ui",
-      "satellite-api-compared-to-hammer-cli",
-      "getting-help-with-hammer-cli"
-    ],
-    "installing-standalone-hammer": [
-
-    ],
-    "hammer-authentication": [
-      "authenticating-hammer-using-a-configuration-file",
-      "authenticating-hammer-using-cli-options",
-      "authenticating-hammer-using-sessions"
-    ],
-    "hammer-configuration-option": [
-      "setting-a-default-organization-and-location-context",
-      "increasing-the-logging-level-for-hammer"
-    ],
-    "using-interactive-hammer-shell": [
-
-    ],
-    "formatting-hammer-output": [
-
-    ],
-    "hiding-header-output-from-hammer-commands": [
-
-    ],
-    "using-json-for-complex-parameters": [
-
-    ],
-    "troubleshooting-satellite-by-using-hammer": [
-
-    ],
-    "hammer-cheat-sheet": [
-      "general-information",
-      "organizations-locations-and-repositories",
-      "content-life-cycles",
-      "provisioning-environments",
-      "activation-keys",
-      "users-and-permissions",
-      "errata",
-      "hosts",
-      "tasks"
-    ]
   },
   "using_the_satellite_ansible_collection": {
-    "providing-feedback-on-red-hat-documentation_ansible-collection": [
-
-    ],
-    "introduction-to-satellite-ansible-collection": [
-      "Installing_the_Project_Ansible_Modules_ansible-collection",
-      "getting-help-with-satellite-ansible-collection"
-    ],
-    "creating-a-playbook-with-modules-from-satellite-ansible-collection": [
-
-    ],
-    "example-playbooks-based-on-modules-from-satellite-ansible-collection": [
-      "help-resources-for-example-playbooks-from-satellite-ansible-collection",
-      "playbook-example-enable-repositories-and-create-a-content-view",
-      "playbook-example-synchronize-repositories-and-publish-a-content-view"
-    ]
   },
   "using_the_satellite_rest_api": {
-    "providing-feedback-on-red-hat-documentation_rest-api": [
-
-    ],
-    "introduction-to-satellite-api": [
-      "overview-of-the-satellite-api_rest-api",
-      "satellite-api-compared-to-hammer-cli",
-      "getting-help-with-satellite-api"
-    ],
-    "api-syntax": [
-      "api-request-composition",
-      "json-response-format",
-      "relating-api-error-messages-to-the-api-reference",
-      "using-the-get-http-method",
-      "using-the-post-http-method",
-      "using-the-put-http-method",
-      "using-the-delete-http-method",
-      "json-response-format-for-single-objects",
-      "json-response-format-for-collections",
-      "json-response-metadata"
-    ],
-    "api-call-authentication": [
-      "ssl-authentication-overview",
-      "configuring-ssl-authentication",
-      "http-authentication-overview",
-      "token-authentication-overview",
-      "creating-a-personal-access-token_rest-api",
-      "revoking-a-personal-access-token_rest-api"
-    ],
-    "api-requests-in-various-languages": [
-      "calling-the-api-in-curl",
-      "calling-the-api-in-ruby",
-      "calling-the-api-in-python",
-      "passing-json-data-to-the-api-request",
-      "retrieving-a-list-of-resources",
-      "creating-a-user",
-      "modifying-a-user",
-      "creating-objects-by-using-ruby",
-      "using-apipie-bindings-with-ruby",
-      "creating-objects-by-using-python",
-      "retrieving-resource-information-by-using-python"
-    ],
-    "api-cheat-sheet": [
-      "working-with-hosts",
-      "working-with-lifecycle-environments",
-      "uploading-content-to-satellite-server",
-      "using-extended-searches",
-      "using-searches-with-pagination-control",
-      "overriding-smart-class-parameters",
-      "modifying-a-smart-class-parameter-by-using-an-external-file",
-      "deleting-openscap-reports",
-      "listing-hosts",
-      "requesting-information-for-a-host",
-      "listing-host-facts",
-      "searching-for-hosts-with-matching-patterns",
-      "searching-for-hosts-in-an-environment",
-      "searching-for-hosts-with-a-specific-fact-value",
-      "deleting-a-host",
-      "downloading-a-full-host-boot-disk-image",
-      "listing-lifecycle-environments",
-      "creating-linked-lifecycle-environments",
-      "updating-a-lifecycle-environment",
-      "deleting-a-lifecycle-environment",
-      "uploading-content-larger-than-2-mb",
-      "uploading-duplicate-content",
-      "returning-multiple-pages"
-    ],
-    "api-response_codes": [
-
-    ],
-    "creating_a_complete_permission_table_rest-api": [
-
-    ]
   }
 }
