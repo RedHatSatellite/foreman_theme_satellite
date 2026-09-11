@@ -1,16 +1,19 @@
 module ForemanThemeSatellite
   class Lifecycle
     class << self
+      def metadata
+        metadata_path = ::ForemanThemeSatellite::LIFECYCLE_METADATA_PATH
+        File.exist?(metadata_path) ? YAML.load_file(metadata_path) : {}
+      end
+
       # rubocop:disable Metrics/AbcSize
       def lifecycle_data(version)
-        metadata_path = ::ForemanThemeSatellite::LIFECYCLE_METADATA_PATH
-
+        yaml = metadata
         parsed = Foreman::Version.new(version)
         lifecycle_data = { current_version: version, short_version: "#{parsed.major}.#{parsed.minor}" }
 
-        return lifecycle_data unless File.exist?(metadata_path)
+        return lifecycle_data if yaml.empty?
 
-        yaml = YAML.load_file(metadata_path)
         raise "Unexpected lifecycle metadata file version '#{yaml['version']}'" unless yaml['version'] == '1'
 
         eol = yaml['releases'].fetch(lifecycle_data[:short_version], {})['end_of_life']

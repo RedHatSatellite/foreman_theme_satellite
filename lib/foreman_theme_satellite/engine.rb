@@ -125,12 +125,16 @@ module ForemanThemeSatellite
     @metadata_yaml.fetch(key, default)
   end
 
+  def self.lifecycle_metadata_field(key, default)
+    ForemanThemeSatellite::Lifecycle.metadata.fetch(key, default)
+  end
+
   def self.lifecycle_data
     @lifecycle_data ||= ForemanThemeSatellite::Lifecycle.lifecycle_data(get_satellite_version)
   end
 
   def self.get_satellite_version
-    metadata_field('version', '6.15.0-development')
+    metadata_field('version', lifecycle_metadata_field('satellite_version', '6.19.0-development'))
   end
 
   def self.get_satellite_short_version
