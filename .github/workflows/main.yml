@@ -31,3 +31,10 @@ jobs:
     with:
       plugin: foreman_theme_satellite
       foreman_version: ${{ matrix.foreman }}
+
+  toc-check:
+    name: Check TOC
+    uses: ./.github/workflows/toc-check.yml
+    with:
+      plugin_repository: ''
+      plugin_version: ''
