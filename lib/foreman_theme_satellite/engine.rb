@@ -135,7 +135,7 @@ module ForemanThemeSatellite
   end
 
   def self.get_satellite_version
-    metadata_field('version', nil) || lifecycle_metadata_field('satellite_version', '6.19.0-development')
+    metadata_field('version', nil) || lifecycle_metadata_field('satellite_version', '6.20.0-development')
   end
 
   def self.get_satellite_short_version
