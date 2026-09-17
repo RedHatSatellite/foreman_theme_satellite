@@ -430,7 +430,7 @@ directory for development and test environments. `SATELLITE_VERSION` and the
 The Satellite version is also provided by the `satellite-lifecycle` package in
 `/usr/share/satellite/lifecycle-metadata.yml` as `satellite_version`. This is
 used when the main metadata file is unavailable. If neither file is present,
-the theme falls back to `6.19.0-development`.
+the theme falls back to `6.20.0-development`.
 
 The mechanism resides in the theme's
 [`engine.rb`](https://github.com/RedHatSatellite/foreman_theme_satellite/blob/develop/lib/foreman_theme_satellite/engine.rb#L119)
