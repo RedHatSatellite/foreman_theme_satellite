@@ -3,10 +3,10 @@
   "locale_data": {
     "foreman_theme_satellite": {
       "": {
-        "Project-Id-Version": "foreman_theme_satellite 16.2.3",
+        "Project-Id-Version": "foreman_theme_satellite 16.5.0",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
-        "Last-Translator": "Ondřej Gajdušek, 2025",
+        "Last-Translator": "Ondřej Gajdušek, 2026",
         "Language-Team": "Korean (https://app.transifex.com/foreman/teams/114/ko/)",
         "MIME-Version": "1.0",
         "Content-Type": "text/plain; charset=UTF-8",
@@ -36,7 +36,7 @@
         "고객 포털"
       ],
       "Defaults to Red Hat online documentation. Override this setting to your Red Hat Offline Knowledge Portal instance URL for offline documentation support. Supports only HTTP and HTTPS schemes.": [
-        ""
+        "기본값은 Red Hat 온라인 문서로 설정되어 있습니다. 오프라인 문서를 사용하려면 이 설정을 Red Hat 오프라인 지식 포털 인스턴스 URL로 재정의하십시오. HTTP 및 HTTPS 체계만 지원합니다."
       ],
       "Documentation": [
         "문서 "
@@ -75,7 +75,7 @@
         "Red Hat Satellite 블로그"
       ],
       "Red Hat documentation server URL": [
-        ""
+        "Red Hat 문서 서버 URL"
       ],
       "Satellite ticketing system": [
         "Satellite 티켓팅 시스템"

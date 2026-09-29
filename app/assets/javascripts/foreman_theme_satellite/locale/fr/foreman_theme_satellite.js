@@ -3,10 +3,10 @@
   "locale_data": {
     "foreman_theme_satellite": {
       "": {
-        "Project-Id-Version": "foreman_theme_satellite 16.2.3",
+        "Project-Id-Version": "foreman_theme_satellite 16.5.0",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
-        "Last-Translator": "Ondřej Gajdušek, 2025",
+        "Last-Translator": "Ondřej Gajdušek, 2026",
         "Language-Team": "French (https://app.transifex.com/foreman/teams/114/fr/)",
         "MIME-Version": "1.0",
         "Content-Type": "text/plain; charset=UTF-8",
@@ -36,7 +36,7 @@
         "Portail clients"
       ],
       "Defaults to Red Hat online documentation. Override this setting to your Red Hat Offline Knowledge Portal instance URL for offline documentation support. Supports only HTTP and HTTPS schemes.": [
-        ""
+        "Par défaut, la documentation en ligne de Red Hat est utilisée. Pour bénéficier de la documentation hors ligne, remplacez ce paramètre par l'URL de votre instance du portail de connaissances Red Hat Offline. Seuls les protocoles HTTP et HTTPS sont pris en charge."
       ],
       "Documentation": [
         "Documentation"
@@ -75,7 +75,7 @@
         "Blog Red Hat Satellite"
       ],
       "Red Hat documentation server URL": [
-        ""
+        "URL du serveur de documentation Red Hat"
       ],
       "Satellite ticketing system": [
         "Gestionnaire de tickets Satellite"

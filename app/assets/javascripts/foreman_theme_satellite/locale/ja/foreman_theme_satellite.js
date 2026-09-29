@@ -3,10 +3,10 @@
   "locale_data": {
     "foreman_theme_satellite": {
       "": {
-        "Project-Id-Version": "foreman_theme_satellite 16.2.3",
+        "Project-Id-Version": "foreman_theme_satellite 16.5.0",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
-        "Last-Translator": "Ondřej Gajdušek, 2025",
+        "Last-Translator": "Ondřej Gajdušek, 2026",
         "Language-Team": "Japanese (https://app.transifex.com/foreman/teams/114/ja/)",
         "MIME-Version": "1.0",
         "Content-Type": "text/plain; charset=UTF-8",
@@ -30,13 +30,13 @@
         "ブログ"
       ],
       "Contact support": [
-        "サポートへのお問い合わせ"
+        "サポートへ問い合わせる"
       ],
       "Customer portal": [
         "カスタマーポータル"
       ],
       "Defaults to Red Hat online documentation. Override this setting to your Red Hat Offline Knowledge Portal instance URL for offline documentation support. Supports only HTTP and HTTPS schemes.": [
-        ""
+        "デフォルトでは、Red Hat のオンラインドキュメントを参照します。オフライン環境でドキュメントを参照する場合は、この設定をオーバーライドし、お使いの Red Hat Offline Knowledge Portal インスタンスの URL を指定してください。サポートされているスキームは HTTP および HTTPS のみです。"
       ],
       "Documentation": [
         "ドキュメント"
@@ -60,7 +60,7 @@
         "これが Satellite 6 自体のエラーであると思われる場合は、新規の問題として以下に提出してください:"
       ],
       "If you require assistance or encounter issues, reach out to Red Hat Support or explore the resources available in the Customer Portal for troubleshooting.": [
-        "サポートが必要な場合や問題が発生した場合は、Red Hat サポートに問い合わせるか、カスタマーポータルで利用可能なリソースを参照してトラブルシューティングしてください。"
+        "サポートが必要な場合や問題が発生した場合は、Red Hat Support チームに問い合わせるか、カスタマーポータルで利用可能なリソースを参照してトラブルシューティングしてください。"
       ],
       "Includes %{system} © 2009-%{year} Paul Kelly and Ohad Levy": [
         "%{system} (© 2009-%{year} Paul Kelly and Ohad Levy) を含む"
@@ -75,7 +75,7 @@
         "Red Hat Satellite ブログ"
       ],
       "Red Hat documentation server URL": [
-        ""
+        "Red Hat ドキュメントサーバーの URL"
       ],
       "Satellite ticketing system": [
         "Satellite チケットシステム"
