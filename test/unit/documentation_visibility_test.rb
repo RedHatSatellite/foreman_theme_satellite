@@ -11,6 +11,18 @@ class DocumentationVisibilityTest < ActiveSupport::TestCase
     assert_includes ApplicationHelper.ancestors, DocumentationVisibilityHelper
   end
 
+  test 'standalone authentication documentation links render as removal markers' do
+    helper = ApplicationController.helpers
+
+    %w[4.1.1LDAPAuthentication 5.7ExternalAuthentication].each do |section|
+      assert_equal DocumentationVisibilityHelper::DOCUMENTATION_URL_TO_REMOVE, helper.documentation_url(section)
+      assert_equal(
+        %(<div class="#{DocumentationVisibilityHelper::DOCUMENTATION_ELEMENT_TO_REMOVE_CLASS}"></div>),
+        helper.link_to('Documentation', helper.documentation_url(section))
+      )
+    end
+  end
+
   test 'template help and its inline documentation remain' do
     source = File.read(Rails.root.join('app/views/templates/_form.html.erb'))
     result = Deface::Override.apply(source, virtual_path: 'templates/_form')
@@ -21,15 +33,34 @@ class DocumentationVisibilityTest < ActiveSupport::TestCase
     assert_includes result, 'text_f f, :name'
   end
 
-  test 'authentication documentation and its divider are removed but actions remain' do
+  test 'authentication actions remain in source templates' do
     %w[auth_source_ldaps/_ldap_card_kebab auth_source_externals/_external_card_kebab].each do |path|
       source = File.read(Rails.root.join("app/views/#{path}.html.erb"))
       result = Deface::Override.apply(source, virtual_path: path)
 
-      refute_includes result, 'documentation_url'
-      refute_includes result, 'class="divider"'
+      assert_includes result, 'documentation_url'
       assert_includes result, 'link_to_if_authorized'
     end
+  end
+
+  test 'config groups empty state keeps action but removes documentation' do
+    source = File.read(ForemanPuppet::Engine.root.join('app/views/foreman_puppet/config_groups/welcome.html.erb'))
+    result = Deface::Override.apply(source, virtual_path: 'foreman_puppet/config_groups/welcome')
+
+    assert_not_includes result, 'documentation_url("using-config-groups")'
+    assert_not_includes result, ':documentation'
+    assert_includes result, "react_component('EmptyState'"
+    assert_includes result, ":description => description"
+    assert_includes result, ":action => action"
+  end
+
+  test 'environments empty state keeps content but removes documentation component' do
+    source = File.read(ForemanPuppet::Engine.root.join('app/views/foreman_puppet/environments/welcome.html.erb'))
+    result = Deface::Override.apply(source, virtual_path: 'foreman_puppet/environments/welcome')
+
+    assert_not_includes result, "react_component('WelcomeEnv'"
+    assert_includes result, "react_component('SatelliteWelcomeEnv'"
+    assert_includes result, 'authorized_for(action: :new)'
   end
 
   test 'About documentation and support remain after Satellite branding' do

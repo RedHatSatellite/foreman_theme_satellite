@@ -103,9 +103,6 @@ module ForemanThemeSatellite
         UINotifications::StringParser.send :prepend, DeprecationNotification::StringParser
         Notification.singleton_class.send :prepend, DeprecationNotification::Notification
         ApplicationHelper.prepend DocumentationVisibilityHelper
-        if defined?(BootdiskLinksHelper)
-          BootdiskLinksHelper.prepend BootdiskDocumentationVisibilityHelper
-        end
         LinksController.prepend DocumentationControllerBranding
         ProvisioningTemplatesController.include ProvisioningTemplatesControllerBranding
         ProvisioningTemplatesHelper.prepend ProvisioningTemplatesHelperBranding

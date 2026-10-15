@@ -9,11 +9,16 @@ import { Helmet } from 'react-helmet';
 import { installDocumentationHiding } from './documentation/hideDocumentation';
 
 import SatelliteUpgradeHelperCard from './components/fills/UpgradePage/SatelliteUpgradeHelperCard';
+import { SatelliteWelcomeEnv } from './components/SatelliteWelcomeEnv';
 
 const SATELLITE_FILL_WEIGHT = 1000;
 
 // register components for erb mounting
 componentRegistry.register({ name: 'Helmet', type: Helmet });
+componentRegistry.register({
+  name: 'SatelliteWelcomeEnv',
+  type: SatelliteWelcomeEnv,
+});
 
 addGlobalFill(
   'upgrade-page-upgrade-docs',

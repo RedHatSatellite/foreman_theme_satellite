@@ -6,8 +6,10 @@ module DocumentationControllerBranding
   # Keep the detailed mappings below for future restoration. All public
   # documentation redirects currently land on the configured version's index.
   def external_url(type:, options: {})
-    if %w[manual docs plugin_manual wiki].include?(type.to_s) ||
-        (type.to_s == 'upgrade' && options[:section] == 'documentation')
+    documentation_redirect = %w[manual docs plugin_manual wiki].include?(type.to_s)
+    upgrade_documentation_redirect = type.to_s == 'upgrade' && options[:section] == 'documentation'
+
+    if documentation_redirect || upgrade_documentation_redirect
       documentation_root_url
     else
       super
@@ -66,7 +68,7 @@ module DocumentationControllerBranding
     "#{unversioned_documentation_root}/#{ForemanThemeSatellite.documentation_version}"
   end
 
-  alias documentation_root documentation_root_url
+  alias_method :documentation_root, :documentation_root_url
 
   def unversioned_documentation_root
     "#{Setting[:satellite_documentation_url]}/en/documentation/red_hat_satellite"
