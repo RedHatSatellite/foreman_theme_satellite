@@ -16,7 +16,7 @@ const controlIds = [
 const controlIdSet = new Set(controlIds);
 
 const controlSelector = controlIds
-  .map((id) => `[data-ouia-component-id="${id}"]`)
+  .map(id => `[data-ouia-component-id="${id}"]`)
   .join(',');
 
 const dropdownItemSelector =
@@ -24,13 +24,7 @@ const dropdownItemSelector =
 
 const httpHref = /^https?:\/\//i;
 
-const satelliteDocsPattern =
-  /\/(?:[a-z]{2}(?:-[a-z]{2})?\/documentation|documentation\/[a-z]{2}(?:-[a-z]{2})?)\/red_hat_satellite(?:\/|$)/i;
-
-const satelliteArticles = new Set([
-  '/solutions/satellite6-tasks',
-  '/articles/1586183',
-]);
+const satelliteDocsPattern = /\/(?:[a-z]{2}(?:-[a-z]{2})?\/documentation|documentation\/[a-z]{2}(?:-[a-z]{2})?)\/red_hat_satellite(?:\/|$)/i;
 
 const isDocumentationControl = (node, documentationLabel) => {
   const id = node.getAttribute('data-ouia-component-id');
@@ -54,11 +48,11 @@ const syncDocumentationControl = (node, documentationLabel) => {
 const hideDocumentationIn = (root, documentationLabel) => {
   if (!root || root.nodeType !== 1) return;
   syncDocumentationControl(root, documentationLabel);
-  root.querySelectorAll(controlSelector).forEach((node) => {
+  root.querySelectorAll(controlSelector).forEach(node => {
     node.classList.add(hiddenClass);
   });
   const itemId = `${documentationLabel}-dropdown-item`;
-  root.querySelectorAll(dropdownItemSelector).forEach((node) => {
+  root.querySelectorAll(dropdownItemSelector).forEach(node => {
     if (node.getAttribute('data-ouia-component-id') === itemId) {
       node.classList.add(hiddenClass);
     }
@@ -72,7 +66,7 @@ export const hideDocumentation = (
   // Recalculate so a React node reused for a functional link becomes visible.
   doc
     .querySelectorAll(`.${hiddenClass}`)
-    .forEach((node) => node.classList.remove(hiddenClass));
+    .forEach(node => node.classList.remove(hiddenClass));
   hideDocumentationIn(doc.documentElement || doc, documentationLabel);
 };
 
@@ -87,10 +81,7 @@ const normalizeLink = (link, landingPath) => {
   } catch (error) {
     return;
   }
-  const satelliteArticle =
-    url.hostname === 'access.redhat.com' &&
-    satelliteArticles.has(url.pathname.replace(/\/$/, ''));
-  if (satelliteDocsPattern.test(url.pathname) || satelliteArticle) {
+  if (satelliteDocsPattern.test(url.pathname)) {
     link.setAttribute('href', landingPath);
   }
 };
@@ -100,7 +91,7 @@ const normalizeIn = (root, landingPath) => {
   if (typeof root.matches === 'function' && root.matches('a[href]')) {
     normalizeLink(root, landingPath);
   }
-  root.querySelectorAll('a[href]').forEach((link) => {
+  root.querySelectorAll('a[href]').forEach(link => {
     normalizeLink(link, landingPath);
   });
 };
@@ -119,7 +110,7 @@ export const installDocumentationHiding = (
   hideDocumentation(doc, documentationLabel);
   if (landingPath) normalizeSatelliteDocumentation(doc, landingPath);
 
-  const removeMenuKeyboard = installMenuKeyboard(doc, (node) =>
+  const removeMenuKeyboard = installMenuKeyboard(doc, node =>
     isDocumentationControl(node, documentationLabel)
   );
   const pending = [];
@@ -127,9 +118,9 @@ export const installDocumentationHiding = (
   const flush = () => {
     scheduled = false;
     const batch = pending.splice(0);
-    batch.forEach((change) => {
+    batch.forEach(change => {
       if (change.type === 'childList') {
-        change.added.forEach((node) => {
+        change.added.forEach(node => {
           hideDocumentationIn(node, documentationLabel);
           if (landingPath) normalizeIn(node, landingPath);
         });
@@ -149,8 +140,8 @@ export const installDocumentationHiding = (
     });
   };
 
-  const observer = new doc.defaultView.MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
+  const observer = new doc.defaultView.MutationObserver(mutations => {
+    mutations.forEach(mutation => {
       if (mutation.type === 'childList') {
         if (mutation.addedNodes.length === 0) return;
         pending.push({ type: 'childList', added: [...mutation.addedNodes] });

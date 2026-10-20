@@ -6,7 +6,7 @@ const dropdownSelector = '.pf-v5-c-dropdown';
 const menuSelector = '.pf-v5-c-dropdown__menu';
 const itemSelector = '[role="menuitem"]';
 
-const isVisible = (node) => {
+const isVisible = node => {
   const { defaultView } = node.ownerDocument;
   for (let ancestor = node; ancestor; ancestor = ancestor.parentElement) {
     const style = defaultView.getComputedStyle(ancestor);
@@ -29,7 +29,7 @@ export default function installMenuKeyboard(doc, isDocumentationControl) {
     const items = [...menu.querySelectorAll(itemSelector)];
     if (!items.some(isDocumentationControl)) return false;
     const available = items.filter(
-      (item) =>
+      item =>
         !isDocumentationControl(item) &&
         !item.hasAttribute('disabled') &&
         item.getAttribute('aria-disabled') !== 'true' &&
@@ -51,7 +51,7 @@ export default function installMenuKeyboard(doc, isDocumentationControl) {
     return true;
   };
 
-  const handleEvent = (event) => {
+  const handleEvent = event => {
     const dropdown = event.target.closest(dropdownSelector);
     if (!dropdown) return;
     const toggle = event.target.closest('[aria-expanded]');
@@ -84,6 +84,6 @@ export default function installMenuKeyboard(doc, isDocumentationControl) {
   return () => {
     doc.removeEventListener('keydown', handleEvent, true);
     doc.removeEventListener('click', handleEvent, true);
-    frames.forEach((frame) => doc.defaultView.cancelAnimationFrame(frame));
+    frames.forEach(frame => doc.defaultView.cancelAnimationFrame(frame));
   };
 }

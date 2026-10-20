@@ -152,14 +152,14 @@ test('direct Satellite links use the landing redirect while other products and s
     'https://docs.redhat.com/en/documentation/red_hat_satellite/6.19/managing_hosts/index#chapter',
     'https://access.redhat.com/documentation/en-us/red_hat_satellite/6.10/html/guide/chapter',
     'https://offline.example/docs/en/documentation/red_hat_satellite/6.19/guide',
-    'https://access.redhat.com/solutions/satellite6-tasks#task',
-    'https://access.redhat.com/articles/1586183',
   ];
   const preserved = [
     'https://docs.redhat.com/en/documentation/subscription_central/1/guide',
     'https://docs.ansible.com/ansible/latest/guide',
     'https://access.redhat.com/products/red-hat-satellite#get-support',
     'https://access.redhat.com/labs/satelliteupgradehelper',
+    'https://access.redhat.com/solutions/satellite6-tasks#task',
+    'https://access.redhat.com/articles/1586183',
   ];
   createDOM(
     [...satelliteUrls, ...preserved]
