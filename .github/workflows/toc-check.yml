@@ -1,0 +1,77 @@
+---
+name: Check TOC
+
+on:
+  workflow_call:
+    inputs:
+      plugin:
+        type: string
+        default: 'foreman_theme_satellite'
+      plugin_repository:
+        type: string
+        default: 'RedHatSatellite/foreman_theme_satellite'
+      plugin_version:
+        type: string
+        default: 'develop'
+      foreman_repository:
+        default: theforeman/foreman
+        type: string
+      foreman_version:
+        default: develop
+        type: string
+      documentation_toc_artifact:
+        description: >-
+          Caller artifact with toc.json and aliases.json (any layout under the artifact root).
+          When empty, skip download and /tmp/toc.json is not created here.
+        default: ""
+        type: string
+
+env:
+  BUNDLE_WITHOUT: "console:development:journald:libvirt"
+
+jobs:
+  verify-toc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download documentation TOC
+        if: ${{ inputs.documentation_toc_artifact != '' }}
+        uses: actions/download-artifact@v8
+        with:
+          name: ${{ inputs.documentation_toc_artifact }}
+          path: /tmp/documentation-toc-artifact
+
+      - name: Check out Foreman
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ inputs.foreman_repository }}
+          ref: ${{ inputs.foreman_version }}
+          path: foreman
+
+      - name: Check out plugin
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ inputs.plugin_repository }}
+          ref: ${{ inputs.plugin_version }}
+          path: ${{ inputs.plugin }}
+
+      - name: Set up dependencies
+        run: |
+          echo 'gemspec name: "${{ inputs.plugin }}", path: "../${{ inputs.plugin }}"' >> foreman/bundler.d/foreman_theme_satellite.local.rb
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+          working-directory: foreman
+
+      - name: Deploy TOC files
+        if: ${{ inputs.documentation_toc_artifact != '' }}
+        run: |
+          [ -f /tmp/documentation-toc-artifact/toc.json ] && cp /tmp/documentation-toc-artifact/toc.json ${{ inputs.plugin }}/test/fixtures/toc.json
+          [ -f /tmp/documentation-toc-artifact/aliases.json ] && cp /tmp/documentation-toc-artifact/aliases.json ${{ inputs.plugin }}/test/fixtures/aliases.json
+
+      - name: Check TOC
+        working-directory: foreman
+        run: |
+          bundle exec rake foreman_theme_satellite:validate_docs
