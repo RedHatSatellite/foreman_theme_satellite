@@ -95,6 +95,18 @@
       "renaming-satellite_admin",
       "renaming-capsule_admin"
     ],
+    "configuring-satellite-for-red-hat-lightspeed-analytics": [
+      "red-hat-lightspeed-overview",
+      "enabling-hosted-red-hat-lightspeed",
+      "data-control-settings-for-hosted-red-hat-lightspeed",
+      "migrating-from-hosted-to-in-satellite-red-hat-lightspeed",
+      "migrating-from-in-satellite-to-hosted-red-hat-lightspeed",
+      "adding-satellite-server-ssh-key-to-authorized-keys",
+      "configuring-satellite-server-for-cloud-connection",
+      "minimizing-collected-data",
+      "obfuscating-hostnames-and-ip-addresses",
+      "removing-hosts-from-red-hat-lightspeed-inventory"
+    ],
     "maintaining-satellite-server_admin": [
       "deleting-audit-records-manually_admin",
       "Deleting_Audit_Records_Automatically_admin",
@@ -304,9 +316,6 @@
       "associating-external-users-with-user-groups",
       "refreshing-external-user-groups-for-ldap-using-cli",
       "refreshing-external-user-groups-for-ldap-using-web-ui"
-    ],
-    "resetting-external-authentication-configuration-for-kerberos-sso": [
-
     ],
     "resetting-external-authentication-configuration-for-kerberos-sso": [
 
@@ -889,7 +898,6 @@
       "disabling-cockpit-on-project_managing-hosts"
     ],
     "monitoring-hosts-by-using-red-hat-lightspeed-in-cloud": [
-      "configuring-satellite-server-for-cloud-connection",
       "data-control-settings",
       "deploying-insights-client-on-registered-hosts_insights-in-cloud",
       "synchronizing-red-hat-lightspeed-recommendations-for-hosts",
