@@ -15,8 +15,10 @@ concurrency:
 jobs:
   rubocop:
     name: Rubocop
-    uses: theforeman/actions/.github/workflows/rubocop.yml@v0
+    uses: theforeman/actions/.github/workflows/rubocop.yml@v1
     with:
+      ruby: '3.0'
+      runner: ubuntu-24.04
       command: bundle exec rubocop --parallel --format github
 
   test:
@@ -26,8 +28,9 @@ jobs:
       fail-fast: false
       matrix:
         foreman:
-          - develop
-    uses: theforeman/actions/.github/workflows/foreman_plugin.yml@v0
+          - 3.18-stable
+    uses: theforeman/actions/.github/workflows/foreman_plugin.yml@v1
     with:
       plugin: foreman_theme_satellite
       foreman_version: ${{ matrix.foreman }}
+      runner: ubuntu-24.04
