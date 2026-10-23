@@ -30,5 +30,6 @@ jobs:
           - develop
     uses: theforeman/actions/.github/workflows/foreman_plugin.yml@v1
     with:
+      runner: ubuntu-22.04
       plugin: foreman_theme_satellite
       foreman_version: ${{ matrix.foreman }}
