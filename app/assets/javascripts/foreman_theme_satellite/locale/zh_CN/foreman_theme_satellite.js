@@ -3,10 +3,10 @@
   "locale_data": {
     "foreman_theme_satellite": {
       "": {
-        "Project-Id-Version": "foreman_theme_satellite 16.2.3",
+        "Project-Id-Version": "foreman_theme_satellite 16.5.0",
         "Report-Msgid-Bugs-To": "",
         "PO-Revision-Date": "2023-11-21 10:43+0000",
-        "Last-Translator": "Ondřej Gajdušek, 2025",
+        "Last-Translator": "Ondřej Gajdušek, 2026",
         "Language-Team": "Chinese (China) (https://app.transifex.com/foreman/teams/114/zh_CN/)",
         "MIME-Version": "1.0",
         "Content-Type": "text/plain; charset=UTF-8",
@@ -36,7 +36,7 @@
         "客户门户"
       ],
       "Defaults to Red Hat online documentation. Override this setting to your Red Hat Offline Knowledge Portal instance URL for offline documentation support. Supports only HTTP and HTTPS schemes.": [
-        ""
+        "默认为 Red Hat 在线文档。如需离线文档支持，请将这个设置覆盖为您的 Red Hat Offline Knowledge Portal 的实例 URL。仅支持 HTTP 和 HTTPS 协议。"
       ],
       "Documentation": [
         "文档"
@@ -75,7 +75,7 @@
         "Red Hat Satellite 部落格"
       ],
       "Red Hat documentation server URL": [
-        ""
+        "Red Hat 文档服务器 URL"
       ],
       "Satellite ticketing system": [
         "Satellite 的票證系統"

@@ -7,14 +7,14 @@
 # tim123, 2023
 # Amit Upadhye <aupadhye@redhat.com>, 2023
 # Ewoud Kohl van Wijngaarden <ewoud+transifex@kohlvanwijngaarden.nl>, 2024
-# Ondřej Gajdušek, 2025
+# Ondřej Gajdušek, 2026
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: foreman_theme_satellite 16.2.3\n"
+"Project-Id-Version: foreman_theme_satellite 16.5.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2023-11-21 10:43+0000\n"
-"Last-Translator: Ondřej Gajdušek, 2025\n"
+"Last-Translator: Ondřej Gajdušek, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/foreman/teams/114/zh"
 "_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -42,7 +42,7 @@ msgid "Customer portal"
 msgstr "客户门户"
 
 msgid "Defaults to Red Hat online documentation. Override this setting to your Red Hat Offline Knowledge Portal instance URL for offline documentation support. Supports only HTTP and HTTPS schemes."
-msgstr ""
+msgstr "默认为 Red Hat 在线文档。如需离线文档支持，请将这个设置覆盖为您的 Red Hat Offline Knowledge Portal 的实例 URL。仅支持 HTTP 和 HTTPS 协议。"
 
 msgid "Documentation"
 msgstr "文档"
@@ -81,7 +81,7 @@ msgid "Red Hat Satellite Blog"
 msgstr "Red Hat Satellite 部落格"
 
 msgid "Red Hat documentation server URL"
-msgstr ""
+msgstr "Red Hat 文档服务器 URL"
 
 msgid "Satellite ticketing system"
 msgstr "Satellite 的票證系統"
