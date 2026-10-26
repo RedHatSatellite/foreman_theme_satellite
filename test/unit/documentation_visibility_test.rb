@@ -44,7 +44,7 @@ class DocumentationVisibilityTest < ActiveSupport::TestCase
   end
 
   test 'config groups empty state keeps action but removes documentation' do
-    source = File.read(ForemanPuppet::Engine.root.join('app/views/foreman_puppet/config_groups/welcome.html.erb'))
+    source = puppet_view_source('foreman_puppet/config_groups/welcome.html.erb')
     result = Deface::Override.apply(source, virtual_path: 'foreman_puppet/config_groups/welcome')
 
     assert_not_includes result, 'documentation_url("using-config-groups")'
@@ -55,7 +55,7 @@ class DocumentationVisibilityTest < ActiveSupport::TestCase
   end
 
   test 'environments empty state keeps content but removes documentation component' do
-    source = File.read(ForemanPuppet::Engine.root.join('app/views/foreman_puppet/environments/welcome.html.erb'))
+    source = puppet_view_source('foreman_puppet/environments/welcome.html.erb')
     result = Deface::Override.apply(source, virtual_path: 'foreman_puppet/environments/welcome')
 
     assert_not_includes result, "react_component('WelcomeEnv'"
@@ -71,5 +71,19 @@ class DocumentationVisibilityTest < ActiveSupport::TestCase
     assert_includes result, 'apipie_apipie_path'
     assert_includes result, 'apipie_dsl_apipie_dsl_path'
     assert_includes result, 'Customer Portal'
+  end
+
+  private
+
+  # Plugin CI does not install foreman_puppet. Use its templates when present,
+  # and a snapshot of those welcome pages otherwise.
+  def puppet_view_source(relative_path)
+    File.read(puppet_view_path(relative_path))
+  end
+
+  def puppet_view_path(relative_path)
+    return theme_fixture_file(relative_path) unless defined?(::ForemanPuppet)
+
+    ::ForemanPuppet::Engine.root.join('app/views', relative_path)
   end
 end
