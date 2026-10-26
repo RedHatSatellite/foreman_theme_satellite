@@ -73,11 +73,18 @@ that will be branded automatically to
 Many times we need to use a downstream link instead of an upstream one. The most
 common example for this is pointing to a documentation link.
 
-All links to documentation in Foreman are local and redirected to
-`links_controller`. This controller is prepended with
-`documentation_controller_branding` concern that uses dictionary stored in
-`lib/foreman_theme_satellite/documentation.rb` to redirect documentation to
-downstream URLs.
+Documentation controls are hidden by this theme. Inline documentation links remain
+visible, and the `manual`, `docs`, `plugin_manual`, `wiki`, and upgrade documentation
+routes redirect to the configured Satellite version's landing page:
+`{base}/en/documentation/red_hat_satellite/{version}`. The base comes from the
+`satellite_documentation_url` setting, including offline documentation servers.
+Direct Satellite documentation links in the page are rewritten to `/links/manual`
+(with the application's URL prefix). Support and the upgrade helper keep their
+existing destinations.
+
+The detailed mappings in `lib/foreman_theme_satellite/documentation.rb` are retained
+for future restoration, but these redirects currently bypass them. The mapping
+examples below describe that retained mechanism, not the active redirect behavior.
 
 In foreman:
 ``` ruby
