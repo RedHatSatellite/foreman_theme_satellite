@@ -26,6 +26,17 @@ class LifecycleTest < ActiveSupport::TestCase
     assert_equal expected, lifecycle_data
   end
 
+  test "uses a generic development version when no version metadata is available" do
+    use_lifecycle_metadata('lifecycle-metadata-nope.yml')
+    ForemanThemeSatellite.instance_variable_set(:@metadata_yaml, {})
+
+    assert_equal 'development-version', ForemanThemeSatellite.get_satellite_version
+    assert_equal 'development-version', ForemanThemeSatellite.get_satellite_short_version('development-version')
+    lifecycle_data = ForemanThemeSatellite::Lifecycle.lifecycle_data('development-version')
+
+    assert_equal 'development-version', lifecycle_data[:short_version]
+  end
+
   test "uses the Satellite version from lifecycle metadata" do
     use_lifecycle_metadata('lifecycle-metadata-version.yml')
     ForemanThemeSatellite.instance_variable_set(:@metadata_yaml, {})

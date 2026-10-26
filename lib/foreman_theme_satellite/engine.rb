@@ -135,11 +135,12 @@ module ForemanThemeSatellite
   end
 
   def self.get_satellite_version
-    metadata_field('version', nil) || lifecycle_metadata_field('satellite_version', '6.19.0-development')
+    metadata_field('version', nil) || lifecycle_metadata_field('satellite_version', 'development-version')
   end
 
-  def self.get_satellite_short_version
-    Foreman::Version.new(SATELLITE_VERSION).short
+  def self.get_satellite_short_version(version = SATELLITE_VERSION)
+    parsed = Foreman::Version.new(version)
+    parsed.major && parsed.minor ? parsed.short : version
   end
 
   def self.documentation_version
