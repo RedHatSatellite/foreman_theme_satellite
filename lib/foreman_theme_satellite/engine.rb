@@ -102,6 +102,7 @@ module ForemanThemeSatellite
 
         UINotifications::StringParser.send :prepend, DeprecationNotification::StringParser
         Notification.singleton_class.send :prepend, DeprecationNotification::Notification
+        ApplicationHelper.prepend DocumentationVisibilityHelper
         LinksController.prepend DocumentationControllerBranding
         ProvisioningTemplatesController.include ProvisioningTemplatesControllerBranding
         ProvisioningTemplatesHelper.prepend ProvisioningTemplatesHelperBranding
