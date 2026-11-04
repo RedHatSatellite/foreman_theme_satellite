@@ -10,7 +10,8 @@ module ForemanThemeSatellite
       def lifecycle_data(version)
         yaml = metadata
         parsed = Foreman::Version.new(version)
-        lifecycle_data = { current_version: version, short_version: "#{parsed.major}.#{parsed.minor}" }
+        short_version = parsed.major && parsed.minor ? "#{parsed.major}.#{parsed.minor}" : version
+        lifecycle_data = { current_version: version, short_version: short_version }
 
         return lifecycle_data if yaml.empty?
 
