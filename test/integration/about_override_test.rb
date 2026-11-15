@@ -13,5 +13,6 @@ class AboutOverrideIntegrationTest < ActionDispatch::IntegrationTest
     assert page.has_content?("Red Hat Inc.")
     assert page.has_selector?("p#sat-copyright-p")
     assert page.has_selector?('//*[@id="about"]/div[1]/div/ul/li[1]/a', :text => "Capsules"), "Translation changes didn't work"
+    assert_no_match(/libera\.chat|\bIRC\b/, page.body)
   end
 end
